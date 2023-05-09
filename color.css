@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+ /* body{
+    
+    background-image:url(bannerimg.jpeg); /*enlazamos la imgen que queremos de fondo
+    background-repeat: no-repeat; /*para que la imagen no se repita si hay espacio sobrante 
+    background-size: cover; /*que la imagen ocupe al 100% 
+ 
+}  */
+
+.header{
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100 px;
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .logo img{
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+}
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+.header .navegacion{
+    list-style: none;   
+}
+.header .navegacion li {
+    display: inline-block;   
+    padding: 0 20px;
+
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #359381;
+    padding: 9px 25px;
+    border: none;
+    background-color: #ffffff00;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background: #359381;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.header .navegacion a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+.header .navegacion a:hover{
+    background: #359381;
+    color: #fff;
+    transform: scale(1.1);
+}
