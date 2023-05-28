@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&family=Sigmar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sigmar {
+    font-family: 'Sigmar', cursive;
+    font-weight: 400;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.releway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    position: relative;
+    background-color: #fcf2eb;
+    height: 100%;
+    /* border: solid 10px rgb(0, 255, 64); */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
+/*                             HEADER                           */
+
+
+
+header {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    /* background-color: rgba(165, 42, 42, 0.461); */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.headersi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    width: 1200px;
+    height: 80px;
+}
+
+.FOTO-LOGO {
+    padding-top: 10px;
+    transition: all 0.3s;
+}
+
+.FOTO-LOGO:hover {
+    transform: scale(1.2);
+}
+
+.navegacion {
+    display: flex;
+    /* background-color: blanchedalmond; */
+    justify-content: space-between;
+    width: 550px;
+
+}
+.TEXTO-LINK{
+    text-decoration: none;
+}
+.navegacion h3 {
+    font-size: 12pt;
+    padding: 0 8px 0 8px;
+    color: rgb(255, 167, 90);
+    transition: all 0.4s ease 0s;
+}
+
+.navegacion h3:hover {
+    transform: scale(1.1);
+    background-color: #ffa75a;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 0 8px 0 8px;
+    border-radius: 50px;
+}
+
+
+
+.img-header {
+    display: flex;
+    position: relative;
+    /* background-color: rgb(58, 99, 224); */
+    width: auto;
+    height: 80px;
+    align-items: center;
+}
+
+.redes {
+    /* background-color: rgb(165, 42, 42); */
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+
+}
+
+.redes-header {
+    /* background-color: rgb(144, 224, 58); */
+    height: 20px;
+
+}
+
+.redes-header:hover {
+    box-shadow: 0 0 10px #f7cdaa;
+
+}
+
+
+
+
+/*                                  MAIN INDEX                                */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*cartel del perrito*/
+
+
+.contenedor1-main-index {
+    height: 800px;
+    width: 100%;
+    background-image: url("../img/fondo-main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.caja1 {
+    display: flex;
+    /* background-color: #ffa75a; */
+    bottom: 0;
+}
+
+.CAJA-PERRO-CARTEL-ONDA {
+    /* background-color: rgb(0, 255, 34); */
+    width: 100%;
+    height: 0;
+
+}
+
+.caja2 {
+    z-index: 4;
+    margin-top: 110px;
+    display: flex;
+    /* background-color: rgb(0, 136, 255); */
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-perro-cartel {
+    width: 250px;
+    height: auto;
+}
+
+.contenedor-descripcion {
+    position: relative;
+    z-index: 3;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: #f7cdaa;
+    width: 1000px;
+    height: 580px;
+}
+
+.logo-caja {
+    position: relative;
+    top: -20px;
+    width: 390px;
+    height: auto;
+}
+
+.linea {
+    position: relative;
+    top: -20px;
+    background-color: #ffa75a;
+    width: 10px;
+    height: 72%;
+    margin: 0px 50px;
+    border-radius: 20px;
+}
+
+.descripcion-greatpet {
+    position: relative;
+    top: -20px;
+    /* background-color: #ff1201ef; */
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    color: #603813;
+    font-size: 22px;
+}
+
+
+.ondas {
+    z-index: 6;
+    /* background-color: #6ac77000; */
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: -200PX;
+    /*CONSULTAR AL PROFE*/
+}
+
+/*TERMINA cartel del perrito*/
+
+
+
+/*TARJETAS*/
+
+.contenedor2-main-index{
+    /* background-color: #daeeb4; */
+    height: 1000px;
+    width: 1200px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjetas{
+    /* background-color: #ceb6a3; */
+    border-radius: 10%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarj{
+    background-color: #f7cdaa;
+    height: 200px;
+    width: 65%;
+    border-radius: 100px;
+    border-bottom-right-radius: 30px;
+    margin: 35PX;
+    display: flex;
+    align-items: center;
+}
+
+
+.logotipo-tarjeta{
+    background-color: rgba(238, 130, 238, 0);
+    height:100%;
+    width: 360px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.borde1{
+    /* background-color: #f9fceb; */
+    height: 100%;
+    width: 100%;
+    border: solid 7px #fcf2eb;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.borde2{
+    
+    height: 100%;
+    width: 100%;
+    background-color: #f7cdaa;
+    border: solid 5px #ffa75a00;
+    border-radius: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-tarjeta{
+    /* background-color: rgb(0, 255, 255); */
+    width:800px;
+    padding-left:50px;
+    position: relative;
+    top: -8px;
+}
+
+.img-tarjeta1{
+    height: 150px;
+    width: 140px;
+
+}
+
+.img-tarjeta2{
+    height: 135px;
+    width: 135px;
+
+}
+.img-tarjeta3{
+    position: relative;
+    height: 140px;
+    width: 140px;
+    top: -8px;
+
+}
+.img-tarjeta4{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 7px;
+
+}
+
+
+.titulo-tarjeta{
+    font-size: 25pt;
+    color: #ffa75a;
+}
+.parrafo-tarjeta{
+    font-size: 14pt;
+    color: #603813;
+}
+
+.caja-ir{
+    position:relative;
+    background-color: #ffa75a;
+    height: 50px;
+    width: 150px;
+    bottom: -70px;
+    left: 8px;
+    border-top-left-radius:100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ir{
+    font-size: 30pt;
+    color: #f7cdaa;
+    text-decoration: none;
+}
+
+
+/*                                           MAIN ADOPCION                                        */
+
+ .contenedor2-main-adopcion{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+/*      CARTEL PRINCIPAL ADOPCION     */
+
+
+
+
+
+.caja-fodo-titulo-adopta{
+    display: flex;
+    background-color: #f7cdaa;
+    margin-top: 120px;
+    width: 100%;
+    height: 150PX;
+    /* height: 270px; */
+    justify-content: center;
+}
+
+.contanedora-caja-fodo-titulo-adopta{
+    background-color: #f7cdaa;
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+.img-gato-adopcion{
+    /* background-color: #944e15; */
+    width: 150px;
+    height: 150px;
+    display: flex;
+ justify-content: center;
+}
+
+.img-gato-adopcion-header{
+    height: 150px;
+    width: auto;
+    position: relative;
+    top: 25px;
+
+}
+
+.img-perro-adopcion{
+    /* background-color: #fbff00; */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-perro-adopcion-header{
+    height: 130px;
+    width: auto;
+    position: relative;
+    top: 20.1px;
+}
+
+.texto-adopcion-header{
+    /* background-color:#c5f7aa; */
+    width: 50%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.titulo-adopcion-header{
+    /* background-color: #f1d1b7; */
+    position: relative;
+    font-size: 33pt;
+    top: -5px;
+    color: #ffa75a;
+    letter-spacing: 1.5px;
+}
+
+.mensaje-adopcion-header{
+    /* background-color: antiquewhite; */
+    position: relative;
+    font-size: 17pt;
+    color: #603813
+}
+
+
+
+
+
+
+
+/*     TERMINA CARTEL PRINCIPAL ADOPCION     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                          FOOTER                          */
+
+
+footer {   
+    background-color:#603813;
+    padding: 1em 0;
+    height: 300px;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.caja-contenedora-footer{
+    /* background-color: #b4e9bd; */
+    width: 1650px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.contenedor-img-footer{
+    /* background-color: #e3bf9e; */
+    width: calc(1400px / 4 - 40px);
+    height: 100%;
+    margin:0 200px 0 0px;
+}
+
+.img-footer{
+    width: 100%;
+    height: 100%;
+    margin:0 20px 0 0px;
+
+}
+
+
+
+.mini-info-footer{
+    /* background-color: #ff7e06; */
+    width: calc(1400px / 4 - 40px);
+    height: 100%;
+    margin:0 80px 0 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor-mini-info-footer{
+    /* background-color: #ff0606; */
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -4px;
+}
+
+.titulo-footer{
+    /* background-color: #ffe606; */
+    width: 100%;
+    font-size: 8pt;
+    margin-top: 25px;
+    color:#ffa75a;
+    letter-spacing: 3px;
+}
+
+.linea-quines-somos{
+    background-color: #ffa75a;
+    width: 90%;
+    height: 3px;
+    margin: 13px 0 10px 0;
+}
+
+.info-footer{
+    /* background-color: rgb(0, 255, 255); */
+    text-align: start;
+    width: 66%;
+    font-size:16pt;
+    color:#f7cdaa;
+    letter-spacing: 2px;
+    
+}
+
+
+.contactos-footer{
+    /* background-color: #ff7e06; */
+    width: calc(1400px / 4 - 40px);
+    height: 100%;
+    margin:0 80px 0 0px;
+    position: relative;
+    /* top: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.contenedor-contactos-footer{   
+    /* background-color: #f7cdaa;  */
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -2px;
+}
+
+.titulo-contactos-footer{
+    /* background-color: blueviolet; */
+    width: 100%;
+    font-size: 10pt;
+    margin-top: 25px;
+    color:#ffa75a;
+    letter-spacing: 5px;
+}
+
+.linea-contactos{
+    background-color: #ffa75a;
+    width: 90%;
+    height: 3px;
+    margin: 13px 0 10px 0;
+}
+
+.caja-contactos--{
+    /* background-color: rgb(0, 255, 255); */
+    text-align: start;
+    width: 75%;
+    font-size:16pt;
+    color:#f7cdaa;
+    letter-spacing: 1px;
+}
+
+.a-footer{
+    margin: 0px 10px 10px 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.redes-footer{
+    /* background-color: #df7f7f; */
+    width: calc(1400px / 4 - 40px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.caja-redes-footer{
+    /* background-color: #fcf2eb; */
+    width: 100%;
+    position: relative;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.titulo-seguinos{
+    /* background-color: blueviolet; */
+    width: 100%;
+    font-size: 20pt;
+    margin-top: 25px;
+    color:#ffa75a;
+    letter-spacing: 5px;
+}
+
+.linea-seguinos{
+    background-color: #ffa75a;
+    width: 100%;
+    height: 3px;
+    margin: 13px 0 10px 0;
+}
+
+.caja-de-redes-footer{
+    /* background-color: #00da25; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-footer-img{
+    margin: 4px;
+    height: 50px;
+    width: 50px;
+}
