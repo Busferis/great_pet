@@ -483,7 +483,7 @@ main{
     background-color: #f7cdaa;
     margin: 80px 0 200px 0;
     width: 1200px;
-    height:1500px;
+    height:1600px;
     border-radius: 130px;
     display: flex;
     flex-direction: column;
@@ -498,7 +498,7 @@ main{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    margin: 10px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 .titulo-filtrar{
@@ -564,13 +564,15 @@ main{
 .img-lupa-busqueda{
     width: 50px;
 }
-
-
+.fondo-tarjetas{
+    /* background-color: rgba(255, 0, 0, 0.396); */
+    width: 100%; 
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
 
 .caja-contenedora-tarjetas-perros-adopcion{
-    background-color: rgba(0, 255, 255, 0.396);
-    width: 100%; 
-    height: 84%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -580,10 +582,111 @@ main{
 .tarjeta1{
     background-color: #fcf2eb;
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-radius: 70px;
-    margin: 30px;
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.foto-animales-adopcion{
+    background-image: url("img/perro-tarjeta.jpg");
+    height: 45%;
+    border-top-left-radius:70px;
+    border-top-right-radius:70px;
+    width: 100%;
+}
+
+.caja-descripcion-animales{
+    background-color: rgb(133, 186, 162);
+    height: 55%;
+    width: 100%;
+    border-bottom-left-radius:70px;
+    border-bottom-right-radius:70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion-animales{
+    margin-top: 10px; 
+background-color: #c15f5f;
+width: 230px;
+height: 176px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding:10px 0;
+}
+
+.filas-descripcion{
+    background-color: #ffa75a;
+    width: 100%;
+    height: calc(95% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filas-descripcion h6{
+    font-size: 15pt;
+    position: relative;
+    left: -50px;
+}
+
+.linea-tarjeta-descripcion-animales{
+    background-color: #603813;
+    width: 5px;
+    height: 45px;
+    position: relative;
+    left: -30PX;
+    
+}
+
+.filas-descripcion h5{
+    font-size: 12pt;
+    position: relative;
+    left: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.vermas-adopta{
+    /* background-color: rgba(255, 251, 0, 0.538); */
+    width: 100%;
+    height:50px;
+    margin-top: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-ver-mas{
+    background-color: #fcf2eb;
+    width: 150px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    border: solid 5px #ffa75a;
+}
+
+.texto-ver-mas h5{
+font-size: 20pt;
+color:#603813;
+}
+
 
 /*termina tarjetas adopcion perros y gatos*/
 
