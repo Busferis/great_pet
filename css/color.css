@@ -21,6 +21,10 @@
     font-weight: 300;
 }
 
+header{
+    background-color: rgb(255, 255, 255)
+}
+
 body {
     position: relative;
     background-color: #fcf2eb;
@@ -39,7 +43,6 @@ body {
 
 
 header {
-    position: absolute;
     z-index: 1000;
     display: flex;
     /* background-color: rgba(165, 42, 42, 0.461); */
