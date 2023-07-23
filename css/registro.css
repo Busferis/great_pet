@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&family=Sigmar&display=swap');
+
+.sigmar {
+    font-family: 'Sigmar', cursive;
+    font-weight: 400;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.releway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.input{
+	display: flex;
+	flex-direction: column;
+	/*width: 70%;*/
+}
+.button{
+	display: flex;
+	flex-direction: column;
+}
