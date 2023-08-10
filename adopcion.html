@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link rel="icon" href="img/logo_pestaña.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/color.css">
 
@@ -24,24 +25,29 @@
                 <a class="TEXTO-LINK" href="index.html">
                     <h3>Inicio</h3>
                 </a>
-                <a class="TEXTO-LINK" href="adopcion.html">
+                <a class="TEXTO-LINK" href="#">
                     <h3>Adopcion</h3>
                 </a>
                 <a class="TEXTO-LINK" href="#">
                     <h3>Busqueda</h3>
                 </a>
                 <a class="TEXTO-LINK" href="#">
+                    <h3>QR</h3>
+                </a>
+                <a class="TEXTO-LINK" href="#">
                     <h3>Servicios</h3>
                 </a>
             </div>
-            <div class="redes">
-
-                <img class="redes-header" src="img/gmail-logo.png" alt="GMAIL">
-                <img class="redes-header" src="img/ig-logo.png" alt="INSTAGRAM">
-                <img class="redes-header" src="img/facebook-logo.png" alt="FACEBOOK">
+            <div class="redes roboto">
+                <h5 class="inicio-seccion">Iniciar Seccion</h5><h5 class="registrarse">Registrarse</h5>
             </div>
         </div>
     </header>
+
+
+
+
+
 
 
 
@@ -58,12 +64,8 @@
                     </div>
 
                     <div class="texto-adopcion-header">
-                        <div class="titulo-adopcion-header sigmar">
-                            <H5>MASCOTAS EN ADOPCION</H5>
-                        </div>
-                        <div class="mensaje-adopcion-header releway">
-                            <p>El hogar se viste de alegría cuando adoptas una mascota.</p>
-                        </div>
+                        <div class="titulo-adopcion-header sigmar"><H5>MASCOTAS EN ADOPCION</H5></div>
+                        <div class="mensaje-adopcion-header releway"><p>El hogar se viste de alegría cuando adoptas una mascota.</p></div>
                     </div>
 
                     <div class="img-perro-adopcion">
@@ -72,143 +74,95 @@
                 </div>
             </div>
 
+            <div class="caja-contenedora-tarjetas-adopcion">
+                <div class="caja-filtro-adopcion">
+                    <div class="selec-filtro">
+
+                     <select name="select-filtro-oficial-1" class="SELECT-1 roboto">
+                        <option value="value2" selected class="options-select">Perros</option>
+                        <option value="value3" class="options-select">Gatos</option>
+                    </select>
+
+                      <select name="select-filtro-oficial-2" class="SELECT-1 roboto">
+                        <option value="value2" class="options-select">- 1 Año</option>
+                        <option value="value2" class="options-select" selected>1 Año</option>
+                        <option value="value2" class="options-select">2 Año</option>
+                        <option value="value2" class="options-select">3 Año</option>
+                        <option value="value2" class="options-select">4 Año</option>
+                        <option value="value2" class="options-select">5 Año</option>
+                        <option value="value2" class="options-select">6 Año</option>
+                        <option value="value2" class="options-select">7 Año</option>
+                        <option value="value2" class="options-select">8 Año</option>
+                        <option value="value2" class="options-select">9 Año</option>
+                        <option value="value2" class="options-select">10 Año</option>
+                        <option value="value2" class="options-select">11 Año</option>
+                        <option value="value2" class="options-select">12 Año</option>
+                        <option value="value2" class="options-select">13 Año</option>
+                        <option value="value2" class="options-select">14 Año</option>
+                        <option value="value2" class="options-select">15 Año</option>
+                      </select>
 
 
+                      <select name="select-filtro-oficial-3" class="SELECT-1 roboto">
+                        <option value="value2" selected class="options-select">Masculino</option>
+                        <option value="value3" class="options-select">Femenino</option>
+                      </select>
 
 
-            <div class="caja-contenedora-tarjetas-perro-gatos">
+                      <input type="button" value="search" class="material-icons-outlined buscar-filtro-adopcion">
 
-                <div class="caja-adopcion-perro-gatos">
 
-                    <div class="titulo-filtrar sigmar">
-                        <h2>Filtrar:</h2>
                     </div>
 
-                    <div class="linea-filtro"></div>
+                </div>
+                <div class="linea-filtro-adopcion-tarjetas"></div>
 
-                    <div class="filtro-adopcion-perro-gatos">
-
-                        <div class="caja-filtro">
-                            <select name="perros-gatos" class="selec-perros-gatos">
-                                <option class="opcion" value="activo"> PERROS </option>
-                                <option class="opcion" value="activo"> GATOS </option>
-                            </select>
-                        </div>
+                <div class="contenedor-tarjetas-adopcion-mini-descripcion">
+                    
+                    <div class="tarjetas-adopcion-mini-descripcion-columns">
+                        
+                    <div class="tarjetas-adopcion-mini-descripcion-row">
 
 
 
-                        <div class="caja-filtro">
-                            <select name="edad" class="selec-edad">
-                                <option class="opcion" value="activo"> 0 AÑOS </option>
-                                <option class="opcion" value="activo"> 1 AÑO </option>
-                                <option class="opcion" value="activo"> 2 AÑOS </option>
-                                <option class="opcion" value="activo"> 3 AÑOS </option>
-                                <option class="opcion" value="activo"> 4 AÑOS </option>
-                                <option class="opcion" value="activo"> 5 AÑOS </option>
-                                <option class="opcion" value="activo"> 6 AÑOS </option>
-                                <option class="opcion" value="activo"> 7 AÑOS </option>
-                                <option class="opcion" value="activo"> 8 AÑOS </option>
-                                <option class="opcion" value="activo"> 9 AÑOS </option>
-                                <option class="opcion" value="activo"> 10 AÑOS </option>
-                                <option class="opcion" value="activo"> 11 AÑOS </option>
-                                <option class="opcion" value="activo"> 12 AÑOS </option>
-                                <option class="opcion" value="activo"> 13 AÑOS </option>
-                                <option class="opcion" value="activo"> 14 AÑOS </option>
-                                <option class="opcion" value="activo"> 15 AÑOS </option>
-                                <option class="opcion" value="activo"> 16 AÑOS </option>
-                                <option class="opcion" value="activo"> 17 AÑOS </option>
-                                <option class="opcion" value="activo"> 18 AÑOS </option>
-                                <option class="opcion" value="activo"> 19 AÑOS </option>
-                                <option class="opcion" value="activo"> 20 AÑOS </option>
-                            </select>
-                        </div>
-                        <div class="caja-filtro">
-                            <select name="sexo" class="selec-sexo" value="SEXO">
-                                <option class="opcion" value="">MASCULINO</option>
-                                <option class="opcion" value="">FEMENINO</option>
-                            </select>
-                        </div>
-
-                        <div class="buscar-filtro">
-                            <img class="img-lupa-busqueda" src="img/busqueda-tarjeta.png" alt="">
-                        </div>
-
-                    </div>
-                  </div>
-
-                 <div class="buscar-perro-gato">
-
-                   </div>
-
-                  <div class="fondo-tarjetas">
-
-                    <div class="caja-contenedora-tarjetas-perros-adopcion">
+                        <div class="tarjeta1-adopcion-mini-descripcion">
+                            <div class="img-perro-en-adopcion">
+                                <div class="caja-contenedora-nombre roboto"><h3>Ruperto</h3></div>
+                            </div>
+                            <div class="mini-informacion-tarjeta-adopcion">
+                                <div class="ubicacion-mascota-adopcion-tarjeta"></div>
+                                <div class="raza-mascota-adopcion-tarjeta"></div>
+                                <div class="edad-mascota-adopcion-tarjeta"></div>
+                                <div class="sexo-mascota-adopcion-tarjeta"></div>
 
 
-
-
-
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1">
-                                <!-- <div class="foto-animales-adopcion"></div>
-                                <div class="caja-descripcion-animales">
-                                    <div class="descripcion-animales">
-                                        <div class="filas-descripcion roboto"><h6>SEXO</h6> <div class="linea-tarjeta-descripcion-animales"></div><h5>Masculino</h5></div>
-                                        <div class="filas-descripcion roboto"><h6>RAZA</h6><div class="linea-tarjeta-descripcion-animales"></div><h5>Sin raza</h5></div>
-                                        <div class="filas-descripcion roboto"><h6>EDAD</h6><div class="linea-tarjeta-descripcion-animales"></div><h5>2 años</h5></div>
-                                    </div>
-                                    <div class="vermas-adopta">
-                                        <div class="texto-ver-mas releway"><h5>Ver Mas</h5></div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
 
 
 
 
-
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1"></div>
-                        </div>
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1"></div>
-                        </div>
-
-                        </div>
-
-                      <div class="caja-contenedora-tarjetas-perros-adopcion">
-
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1"></div>
-                        </div>
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1"></div>
-                        </div>
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1"></div>
-                        </div>
-
+                        <div class="tarjeta1-adopcion-mini-descripcion"></div>
+                        <div class="tarjeta1-adopcion-mini-descripcion"></div>
                     </div>
 
-                    <div class="caja-contenedora-tarjetas-perros-adopcion">
+                    <div class="tarjetas-adopcion-mini-descripcion-row">
+                        <div class="tarjeta1-adopcion-mini-descripcion"></div>
+                        <div class="tarjeta1-adopcion-mini-descripcion"></div>
+                        <div class="tarjeta1-adopcion-mini-descripcion"></div>
+                    </div>
 
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1"></div>
-                        </div>
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1"></div>
-                        </div>
-                        <div class="tarjetas-row">
-                            <div class="tarjeta1"></div>
-                        </div>
-
+                    <div class="tarjetas-adopcion-mini-descripcion-row">
+                        <div class="tarjeta1-adopcion-mini-descripcion"></div>
+                        <div class="tarjeta1-adopcion-mini-descripcion"></div>
+                        <div class="tarjeta1-adopcion-mini-descripcion"></div>
                     </div>
 
                 </div>
+                </div>
+
 
             </div>
-
 
 
 
