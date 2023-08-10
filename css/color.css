@@ -146,7 +146,7 @@ header {
 .inicio-seccion:hover{
     background-color: #ffdbc2;
     transform: scale(1.1);
-    border: 3px solid rgb(255, 167, 90);
+    /* border: 3px solid rgb(255, 167, 90); */
     color: rgb(255, 167, 90);}
 
 
