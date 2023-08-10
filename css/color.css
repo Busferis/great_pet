@@ -167,9 +167,9 @@ header {
 }
 
 .registrarse:hover{
-    background-color: #ffdbc2;
+    /* background-color: #ffdbc2; */
     border: 3px solid rgb(255, 167, 90);
-    color: rgb(255, 167, 90);
+    /* color: rgb(255, 167, 90); */
     transform: scale(1.1);
 }
 
