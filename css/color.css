@@ -898,7 +898,7 @@ footer {
     
 }
 .caja-contenedora-footer{
-    background-color: #b4e9bd;
+    /* background-color: #b4e9bd; */
     width: 90%;
     height: 100%;
     display: flex;
