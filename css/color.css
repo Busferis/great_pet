@@ -65,14 +65,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     width: 1400px;
     height: 100px;
     margin-top: 20px;
 }
 
 .FOTO-LOGO {
-    background-color: #f7cdaa;
+    /* background-color: #f7cdaa; */
     padding-top: 6px;
     /* margin-right:200px ; */
     transition: all 0.3s;
@@ -84,7 +84,7 @@ header {
 
 .navegacion {
     display: flex;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     justify-content: space-between;
     width: 550px;
     margin-left: 130px;
