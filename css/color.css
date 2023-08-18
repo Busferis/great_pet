@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&family=Sigmar&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +12,20 @@
     font-weight: 400;
 }
 
+.roboto2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing:1px;
+}
+
 .roboto {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-
+.texto_black{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400;
+}
 .releway {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -152,12 +161,13 @@ header {
 
 
 .registrarse{
-    background-color:#f7cdaa;
-    border: 3px solid #ffdbc2;
-    height: 35px;
+    background-color: #f7cdaa;
+    /* border: 3px solid #ffdbc2; */
+    height: 43px;
+    width: 138px;
     color: rgb(201, 110, 5);
-    border-radius: 20px;
-    margin:5px;
+    border-radius: 7px;
+    margin: 5px;
     padding: 12px;
     font-size: 13pt;
     transition: all 0.3s;
@@ -168,9 +178,10 @@ header {
 
 .registrarse:hover{
     /* background-color: #ffdbc2; */
-    border: 3px solid rgb(255, 167, 90);
+    background-color: rgb(255, 188, 129);
+    /* border: 3px solid rgb(255, 167, 90); */
     /* color: rgb(255, 167, 90); */
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 
@@ -594,7 +605,7 @@ main{
     border-radius: 20PX;
     background-color:rgb(255, 167, 90);
     border-style: none;
-    color: #fcf2eb;
+    color:#603813;
     font-size: 14pt;
     text-align: center;
 
@@ -602,7 +613,7 @@ main{
 
 .options-select{
  background-color:#fcc290 ;
- color:  #fcf2eb;
+ color: #603813
 }
 
 .buscar-filtro-adopcion{
@@ -676,7 +687,6 @@ justify-content: space-between;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .img-perro-en-adopcion{
     position: relative;
@@ -689,57 +699,175 @@ justify-content: space-between;
     background-size: cover;
 }
 
-.caja-contenedora-nombre{
-    position: absolute;
-    background-color: #f3852c;
+.cajacontenedora_nombre_huesos{
     height: 50px;
-    width: 50%; 
+    position: absolute;
     bottom: -25px;
-    right: 90px;
-    border-radius: 20px;
+    background-color: #ff000000;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18pt;
 }
 
-.mini-informacion-tarjeta-adopcion{
-    background-color: #ff0000;
-    height: 45%;
+.contenedor_nombre_centrado{
+    background-color: #ffa75a;
+    height: 42px;
+    padding: 0 5px;
+    max-width: 220px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fcf2eb;
+    font-size: 23pt;
+}
+
+
+
+.hueso1{
+    background-color: rgba(127, 255, 212, 0);
+    height: 100%;
+    width: 50px;
+}
+.medida_hueso_centrado{
+    position: relative;
+    top: -12px;
+}
+
+.caja-ubicaciom_mascota_adopcion_tarjeta{
+    background-color: rgba(21, 170, 170, 0);
     width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.material-icons-outlined{
+    font-size: 25pt;
+}
+
+.ubicaciom_mascota_adopcion_tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 13pt;
+    white-space: nowrap;
+    color: #603813;
+    
+
+}
+
+
+
+.texto_ubicacion_mascota{
+}
+
+
+.mini-informacion-tarjeta-adopcion{
+    background-color: #ff330000;
+    height: 40%;
+    width: 100%;
+    margin-top: 43px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content:space-between;
 
 }
 
-.ubicacion-mascota-adopcion-tarjeta{
-    background-color: #ffa75a;
-    height:  calc(80% / 4 );
-    width: 100%;
+
+.des-mascota-adopcion-tarjeta{
+
+    background-color: #fcf2eb;
+    height:  calc(88% / 4 );
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
 }
 
-.ubicacion-mascota-adopcion-tarjeta{
-    background-color: #ffa75a;
-    height:  calc(80% / 4 );
-    width: 100%;
+.caja_contenedora_dato1{
+    position: absolute;
+    background-color: #d1beac00;
+    width:130px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja1_minidescripcion_iz{
+    background-color:#6cb0d800;
+    height: 42px;
+    max-width: 151px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 15pt;
+    left: 60px;
+}
+.linea-recta-medio{
+background-color: #603813;
+width: 8px;
+height: 80%;
+border-radius: 4PX;
+margin-left: 130px;
 }
 
-.raza-mascota-adopcion-tarjeta{
-    background-color: #ffa75a;
-    height:  calc(80% / 4 );
+.caja_contededora_dato{
+    background-color: #6cb0d800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    left: 30px;
 }
-.edad-mascota-adopcion-tarjeta{
-    background-color: #ffa75a;
-    height:  calc(80% / 4 );
+
+.caja1_minidescripcion_der{
+    background-color:#f5f10000;
+    max-width: 162px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13PT;
+}
+
+
+.contenedor_VER-MAS-mascota-adopcion-tarjeta{
+    background-color: rgba(127, 255, 212, 0);
     width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.sexo-mascota-adopcion-tarjeta{
+
+.VER-MAS-mascota-adopcion-tarjeta{
     background-color: #ffa75a;
-    height:  calc(80% / 4 );
-    width: 100%;
+    width: 145px;
+    height: 55px;
+    border-radius: 18px;
+    border: #efc49f solid 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fcf2eb;
+    font-size: 19pt;
+    transition: all 0.2s;
 }
+
+.VER-MAS-mascota-adopcion-tarjeta:hover{
+    background-color: #fcb77b;
+    border: #fcf2eb solid 5px;
+    transform: scale(1.1);
+}
+
+
 
 
 
