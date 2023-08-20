@@ -8,7 +8,7 @@ if (isset($_SESSION["idUsuario"])) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_POST["email"]) && isset($_POST["password"])) {
-		$con = mysqli_connect("localhost", "great_pet", "password", "great_pet");
+		$con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
 
 		$email = $_POST["email"];
         $password = $_POST["password"];
