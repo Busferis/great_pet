@@ -8,12 +8,12 @@ if (isset($_SESSION["idUsuario"])) {
 }
 
 if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirmar_password"])) {
-        $con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
+        $con = mysqli_connect("localhost", "great_pet", "password", "great_pet");
 
         $nombre = $_POST["nombre"];
         $apellido = $_POST["apellido"];
         $email = $_POST["email"];
-        $password = $_POST["password"];
+        $password = md5($_POST["password"]);
         $confirmarPassword = $_POST["confirmar_password"];
 
         if (!isset($_POST["politica_privacidad"])) {
