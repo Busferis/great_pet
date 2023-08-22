@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,26 +14,28 @@
     font-weight: 400;
 }
 
-.roboto2{
+.roboto2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    letter-spacing:1px;
+    letter-spacing: 1px;
 }
 
 .roboto {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-.texto_black{
+
+.texto_black {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 400;
 }
+
 .releway {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
 
-.lexend{
+.lexend {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 700;
 }
@@ -47,12 +50,12 @@ body {
     min-height: 100vh;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
-.d-c{   
+.d-c {
     display: contents;
 }
 
@@ -64,7 +67,7 @@ a{
 
 /*                                  MAIN INDEX                                */
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +174,7 @@ main{
 
 /*TARJETAS*/
 
-.contenedor2-main-index{
+.contenedor2-main-index {
     /* background-color: #daeeb4; */
     height: 1000px;
     width: 1200px;
@@ -181,7 +184,7 @@ main{
     justify-content: center;
 }
 
-.tarjetas{
+.tarjetas {
     /* background-color: #ceb6a3; */
     border-radius: 10%;
     height: 100%;
@@ -192,7 +195,7 @@ main{
     justify-content: center;
 }
 
-.tarj{
+.tarj {
     background-color: #f7cdaa;
     height: 200px;
     width: 65%;
@@ -204,16 +207,16 @@ main{
 }
 
 
-.logotipo-tarjeta{
+.logotipo-tarjeta {
     background-color: rgba(238, 130, 238, 0);
-    height:100%;
+    height: 100%;
     width: 360px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.borde1{
+.borde1 {
     /* background-color: #f9fceb; */
     height: 100%;
     width: 100%;
@@ -224,8 +227,8 @@ main{
     justify-content: center;
 }
 
-.borde2{
-    
+.borde2 {
+
     height: 100%;
     width: 100%;
     background-color: #f7cdaa;
@@ -236,33 +239,35 @@ main{
     align-items: center;
 }
 
-.texto-tarjeta{
+.texto-tarjeta {
     /* background-color: rgb(0, 255, 255); */
-    width:800px;
-    padding-left:50px;
+    width: 800px;
+    padding-left: 50px;
     position: relative;
     top: -8px;
 }
 
-.img-tarjeta1{
+.img-tarjeta1 {
     height: 150px;
     width: 140px;
 
 }
 
-.img-tarjeta2{
+.img-tarjeta2 {
     height: 135px;
     width: 135px;
 
 }
-.img-tarjeta3{
+
+.img-tarjeta3 {
     position: relative;
     height: 140px;
     width: 140px;
     top: -8px;
 
 }
-.img-tarjeta4{
+
+.img-tarjeta4 {
     position: relative;
     height: 150px;
     width: 150px;
@@ -271,35 +276,43 @@ main{
 }
 
 
-.titulo-tarjeta{
+.titulo-tarjeta {
     font-size: 25pt;
     color: #ffa75a;
 }
-.parrafo-tarjeta{
+
+.parrafo-tarjeta {
     font-size: 14pt;
     color: #603813;
 }
 
-.caja-ir{
-    position:relative;
+.caja-ir {
+    position: relative;
     background-color: #ffa75a;
     height: 50px;
     width: 150px;
     bottom: -70px;
     left: 8px;
-    border-top-left-radius:100px;
+    border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
 
-.ir{
+.caja-ir:hover {
+    transform: scale(1.1);
+    background-color: #f8b67c;
+
+}
+
+.ir {
     font-size: 30pt;
     color: #f7cdaa;
 }
 
-.ir-link{
+.ir-link {
     text-decoration: none !important;
 }
 
@@ -309,13 +322,13 @@ main{
 
 /*                                           MAIN ADOPCION                                        */
 
- .contenedor2-main-adopcion{
+.contenedor2-main-adopcion {
     background-color: #fcf2eb;
     width: 100%;
     height: 2500px;
     display: flex;
     flex-direction: column;
-    
+
     /* justify-content: center; */
     align-items: center;
 }
@@ -330,7 +343,7 @@ main{
 
 
 
-.caja-fodo-titulo-adopta{
+.caja-fodo-titulo-adopta {
     display: flex;
     background-color: #f7cdaa;
     margin-top: 120px;
@@ -340,25 +353,25 @@ main{
     justify-content: center;
 }
 
-.contanedora-caja-fodo-titulo-adopta{
+.contanedora-caja-fodo-titulo-adopta {
     background-color: #f7cdaa;
     height: 100%;
     width: 1200px;
     display: flex;
     justify-content: center;
     align-items: end;
-    
+
 }
 
-.img-gato-adopcion{
+.img-gato-adopcion {
     /* background-color: #944e15; */
     width: 150px;
     height: 150px;
     display: flex;
- justify-content: center;
+    justify-content: center;
 }
 
-.img-gato-adopcion-header{
+.img-gato-adopcion-header {
     height: 150px;
     width: auto;
     position: relative;
@@ -366,7 +379,7 @@ main{
 
 }
 
-.img-perro-adopcion{
+.img-perro-adopcion {
     /* background-color: #fbff00; */
     width: 150px;
     height: 150px;
@@ -374,14 +387,14 @@ main{
     justify-content: center;
 }
 
-.img-perro-adopcion-header{
+.img-perro-adopcion-header {
     height: 130px;
     width: auto;
     position: relative;
     top: 20.1px;
 }
 
-.texto-adopcion-header{
+.texto-adopcion-header {
     /* background-color:#c5f7aa; */
     width: 50%;
     height: 150px;
@@ -393,7 +406,7 @@ main{
     margin: 0 5px;
 }
 
-.titulo-adopcion-header{
+.titulo-adopcion-header {
     /* background-color: #f1d1b7; */
     position: relative;
     font-size: 33pt;
@@ -402,7 +415,7 @@ main{
     letter-spacing: 1.5px;
 }
 
-.mensaje-adopcion-header{
+.mensaje-adopcion-header {
     /* background-color: antiquewhite; */
     position: relative;
     font-size: 17pt;
@@ -425,17 +438,17 @@ main{
 
 /*                   CAJA PRINCIPAL ADOPCION                      */
 
-.caja-contenedora-tarjetas-adopcion{
+.caja-contenedora-tarjetas-adopcion {
     /* background-color: #ffa75a; */
     margin-top: 50px;
     height: 2050px;
-    width:1400px ;
+    width: 1400px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.caja-filtro-adopcion{
+.caja-filtro-adopcion {
     /* background-color: blueviolet; */
     height: 130px;
     width: 100%;
@@ -444,7 +457,7 @@ main{
     justify-content: center;
 }
 
-.selec-filtro{
+.selec-filtro {
     /* background-color: #f7cdaa; */
     width: 60%;
     height: 100px;
@@ -455,26 +468,26 @@ main{
 
 }
 
-.SELECT-1{
+.SELECT-1 {
     height: 60PX;
     width: 200PX;
     border-radius: 20PX;
-    background-color:rgb(255, 167, 90);
+    background-color: rgb(255, 167, 90);
     border-style: none;
-    color:#603813;
+    color: #603813;
     font-size: 14pt;
     text-align: center;
 
 }
 
-.options-select{
- background-color:#fcc290 ;
- color: #603813
+.options-select {
+    background-color: #fcc290;
+    color: #603813
 }
 
-.buscar-filtro-adopcion{
+.buscar-filtro-adopcion {
     background-color: #ffa75a;
-    color:  #603813;
+    color: #603813;
     border: 4px solid #603813;
     height: 70px;
     width: 70px;
@@ -483,19 +496,19 @@ main{
     transition: all 0.3s;
 }
 
-.buscar-filtro-adopcion:hover{
-    color:  #fcf2eb;
+.buscar-filtro-adopcion:hover {
+    color: #fcf2eb;
     transform: scale(1.3);
 
 }
 
 
 
-.linea-filtro-adopcion-tarjetas{
-background-color: #603813;
-height: 13px;
-width: 100%;
-border-radius: 20px;
+.linea-filtro-adopcion-tarjetas {
+    background-color: #603813;
+    height: 13px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 
@@ -508,18 +521,18 @@ border-radius: 20px;
 
 
 
-.contenedor-tarjetas-adopcion-mini-descripcion{
-/* background-color: rgb(109, 153, 192); */
+.contenedor-tarjetas-adopcion-mini-descripcion {
+    /* background-color: rgb(109, 153, 192); */
 
-height: 1650px;
-width: 85%;
-margin-top: 70px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    height: 1650px;
+    width: 85%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.tarjetas-adopcion-mini-descripcion-row{
+.tarjetas-adopcion-mini-descripcion-row {
     /* background-color: #541360; */
     display: flex;
     justify-content: space-between;
@@ -529,14 +542,14 @@ justify-content: space-between;
 
 
 
-.tarjetas-adopcion-mini-descripcion-columns{
+.tarjetas-adopcion-mini-descripcion-columns {
     display: flex;
     flex-direction: column;
-  
+
 
 }
 
-.tarjeta1-adopcion-mini-descripcion{
+.tarjeta1-adopcion-mini-descripcion {
     background-color: #f7cdaa;
     height: 550px;
     width: calc(100% / 3 - 2%);
@@ -544,7 +557,8 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
 }
-.img-perro-en-adopcion{
+
+.img-perro-en-adopcion {
     position: relative;
     background-image: url("../img/img-perro-tarjeta-adopcion.webp");
     height: 50%;
@@ -554,7 +568,8 @@ justify-content: space-between;
     background-position: center;
     background-size: cover;
 }
-.tito_img-perro-en-adopcion{
+
+.tito_img-perro-en-adopcion {
     position: relative;
     background-image: url("../img/tito_calderon.jpg");
     height: 50%;
@@ -565,7 +580,7 @@ justify-content: space-between;
     background-size: cover;
 }
 
-.cajacontenedora_nombre_huesos{
+.cajacontenedora_nombre_huesos {
     height: 50px;
     position: absolute;
     bottom: -25px;
@@ -576,7 +591,7 @@ justify-content: space-between;
     align-items: center;
 }
 
-.contenedor_nombre_centrado{
+.contenedor_nombre_centrado {
     background-color: #ffa75a;
     height: 42px;
     padding: 0 5px;
@@ -585,23 +600,24 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#fcf2eb;
+    color: #fcf2eb;
     font-size: 23pt;
 }
 
 
 
-.hueso1{
+.hueso1 {
     background-color: rgba(127, 255, 212, 0);
     height: 100%;
     width: 50px;
 }
-.medida_hueso_centrado{
+
+.medida_hueso_centrado {
     position: relative;
     top: -12px;
 }
 
-.caja-ubicaciom_mascota_adopcion_tarjeta{
+.caja-ubicaciom_mascota_adopcion_tarjeta {
     background-color: rgba(21, 170, 170, 0);
     width: 100%;
     height: 45px;
@@ -610,11 +626,12 @@ justify-content: space-between;
     align-items: center;
 
 }
-.material-icons-outlined{
+
+.material-icons-outlined {
     font-size: 25pt;
 }
 
-.ubicaciom_mascota_adopcion_tarjeta{
+.ubicaciom_mascota_adopcion_tarjeta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -622,17 +639,16 @@ justify-content: space-between;
     font-size: 13pt;
     white-space: nowrap;
     color: #603813;
-    
+
 
 }
 
 
 
-.texto_ubicacion_mascota{
-}
+.texto_ubicacion_mascota {}
 
 
-.mini-informacion-tarjeta-adopcion{
+.mini-informacion-tarjeta-adopcion {
     background-color: #ff330000;
     height: 40%;
     width: 100%;
@@ -640,15 +656,15 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 
 }
 
 
-.des-mascota-adopcion-tarjeta{
+.des-mascota-adopcion-tarjeta {
 
     background-color: #fcf2eb;
-    height:  calc(88% / 4 );
+    height: calc(88% / 4);
     width: 80%;
     border-radius: 15px;
     display: flex;
@@ -656,16 +672,17 @@ justify-content: space-between;
     /* justify-content: space-around; */
 }
 
-.caja_contenedora_dato1{
+.caja_contenedora_dato1 {
     position: absolute;
     background-color: #d1beac00;
-    width:130px ;
+    width: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.caja1_minidescripcion_iz{
-    background-color:#6cb0d800;
+
+.caja1_minidescripcion_iz {
+    background-color: #6cb0d800;
     height: 42px;
     max-width: 151px;
     display: flex;
@@ -675,15 +692,16 @@ justify-content: space-between;
     font-size: 15pt;
     left: 60px;
 }
-.linea-recta-medio{
-background-color: #603813;
-width: 8px;
-height: 80%;
-border-radius: 4PX;
-margin-left: 130px;
+
+.linea-recta-medio {
+    background-color: #603813;
+    width: 8px;
+    height: 80%;
+    border-radius: 4PX;
+    margin-left: 130px;
 }
 
-.caja_contededora_dato{
+.caja_contededora_dato {
     background-color: #6cb0d800;
     display: flex;
     justify-content: center;
@@ -692,8 +710,8 @@ margin-left: 130px;
     left: 30px;
 }
 
-.caja1_minidescripcion_der{
-    background-color:#f5f10000;
+.caja1_minidescripcion_der {
+    background-color: #f5f10000;
     max-width: 162px;
     overflow: hidden;
     height: 100%;
@@ -703,11 +721,11 @@ margin-left: 130px;
     font-size: 13PT;
 }
 
-.a_contenedor_VER-MAS-mascota-adopcion-tarjeta{
-background-color: #603813;
+.a_contenedor_VER-MAS-mascota-adopcion-tarjeta {
+    background-color: #603813;
 }
 
-.contenedor_VER-MAS-mascota-adopcion-tarjeta{
+.contenedor_VER-MAS-mascota-adopcion-tarjeta {
     /* background-color: rgb(127, 255, 212); */
     width: 100%;
     height: 15%;
@@ -717,7 +735,7 @@ background-color: #603813;
     /* margin: 5px 0; */
 }
 
-.VER-MAS-mascota-adopcion-tarjeta{
+.VER-MAS-mascota-adopcion-tarjeta {
     background-color: #ffa75a;
     width: 145px;
     height: 55px;
@@ -731,7 +749,7 @@ background-color: #603813;
     transition: all 0.2s;
 }
 
-.VER-MAS-mascota-adopcion-tarjeta:hover{
+.VER-MAS-mascota-adopcion-tarjeta:hover {
     background-color: #fcb77b;
     border: #fcf2eb solid 5px;
     transform: scale(1.1);
@@ -746,7 +764,7 @@ background-color: #603813;
 
 /*                                              MAS INFO TARJETAS DE MASCOTAS                          */
 
-.contenedor-MAS-main-adopcion{
+.contenedor-MAS-main-adopcion {
     background-color: #fcf2eb;
     width: 100%;
     /* height: 1300px; */
@@ -757,7 +775,7 @@ background-color: #603813;
     padding-bottom: 200px; */
 }
 
-.contenedora_caja_mas_info{
+.contenedora_caja_mas_info {
     background-color: #fcf2eb;
     margin-top: 110px;
     width: 100%;
@@ -767,16 +785,16 @@ background-color: #603813;
     align-items: center;
 }
 
-.caja-mas-info-mascotas{
+.caja-mas-info-mascotas {
     background-color: #f7cdaa;
     width: 1150px;
     min-width: 1150PX;
     height: 800px;
     border-radius: 100px;
-    
+
 }
 
-.caja-titulo-mas-sobre-mi{
+.caja-titulo-mas-sobre-mi {
     position: relative;
     /* background-color: aquamarine; */
     width: 100%;
@@ -786,9 +804,9 @@ background-color: #603813;
     align-items: center;
 }
 
-.titulo-mas-sobre-mi{
+.titulo-mas-sobre-mi {
     position: absolute;
-    background-color:#f7cdaa;
+    background-color: #f7cdaa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -797,12 +815,12 @@ background-color: #603813;
     height: 100px;
     border-radius: 40px;
     top: -40px;
-    color:#f5911e;
+    color: #f5911e;
     font-size: 30PT;
     letter-spacing: 2px;
 }
 
-.contenedora-foto-historia{
+.contenedora-foto-historia {
     height: 45%;
     /* background-color: #94653c; */
     width: 100%;
@@ -812,20 +830,20 @@ background-color: #603813;
     justify-content: space-around;
 }
 
-.imagen-animal-ver-mas{
-position: relative;
-background-color: azure;
-height: 100%;
-width: 40%;
-border-radius: 60px;
-border: 6px #fcf2eb solid;
+.imagen-animal-ver-mas {
+    position: relative;
+    background-color: azure;
+    height: 100%;
+    width: 40%;
+    border-radius: 60px;
+    border: 6px #fcf2eb solid;
 
 }
 
 
-.FOTO-animal-ver-mas{
+.FOTO-animal-ver-mas {
     background-image: url("/img/tito_calderon.jpg");
-    height: 100%; 
+    height: 100%;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -833,7 +851,7 @@ border: 6px #fcf2eb solid;
     border-radius: 55px;
 }
 
-.contenedor_nombre_mascota_ver_mas{
+.contenedor_nombre_mascota_ver_mas {
     position: absolute;
     /* background-color: #c09fef59; */
     width: 100%;
@@ -843,10 +861,11 @@ border: 6px #fcf2eb solid;
     align-items: center;
     justify-content: center;
 }
-.nombre_mascota_ver_mas{
+
+.nombre_mascota_ver_mas {
     background-color: #f5911e;
     color: #fcf2eb;
-    height:40PX;
+    height: 40PX;
     padding: 30px 30px;
     display: flex;
     align-items: center;
@@ -855,13 +874,13 @@ border: 6px #fcf2eb solid;
     max-width: 100%;
     overflow: hidden;
     border-radius: 25px;
-    border:6px #f7cdaa solid;
+    border: 6px #f7cdaa solid;
 
 }
 
 
 
-.historia-animal-ver-mas{
+.historia-animal-ver-mas {
     /* background-color: rgb(241, 255, 240); */
     height: 100%;
     width: 40%;
@@ -873,7 +892,7 @@ border: 6px #fcf2eb solid;
 }
 
 
-.titulo_historia_ver_mas{
+.titulo_historia_ver_mas {
     /* background-color: aquamarine; */
     width: 100%;
     height: 60px;
@@ -884,14 +903,14 @@ border: 6px #fcf2eb solid;
     color: #f5911e;
 }
 
-.linea_titulo_descripcion_historia{
+.linea_titulo_descripcion_historia {
     background-color: #fcf2eb;
     width: 100%;
     height: 8px;
     border-radius: 50px;
 }
 
-.dedscripcion_historia_ver_mas{
+.dedscripcion_historia_ver_mas {
     /* background-color: rgba(165, 42, 42, 0.251); */
     width: 90%;
     /* margin: auto; */
@@ -900,13 +919,13 @@ border: 6px #fcf2eb solid;
 
 }
 
-.dedscripcion_historia_ver_mas p{
+.dedscripcion_historia_ver_mas p {
     font-size: 19pt;
     color: #603813;
 }
 
 
-.caja-info_refuguio_ver_mas{
+.caja-info_refuguio_ver_mas {
     /* background-color: rgba(0, 0, 255, 0.324); */
     width: 100%;
     height: 350px;
@@ -915,48 +934,49 @@ border: 6px #fcf2eb solid;
     align-items: center;
 }
 
-.info_refuguio_ver_mas{
+.info_refuguio_ver_mas {
     /* background-color: #2afc00f7; */
-    width:45%;
+    width: 45%;
     height: 80%;
 }
 
 
-.titulo_refuguio_ver_mas{
+.titulo_refuguio_ver_mas {
     /* background-color: blueviolet; */
-width: 100%;
-height: 23%;
-font-size: 40PT;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #f5911e;
+    width: 100%;
+    height: 23%;
+    font-size: 40PT;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5911e;
 }
 
 
-.linea-refugio-ver-mas{
+.linea-refugio-ver-mas {
     background-color: #fcf2eb;
     width: 100%;
     height: 3%;
     border-radius: 50px;
 }
 
-.contatos_imagen_refugio_ver_mas{
+.contatos_imagen_refugio_ver_mas {
     /* background-color: blueviolet; */
-width: 100%;
-height: 74%;
-display: flex;
-align-items: center;
-justify-content: space-around;
+    width: 100%;
+    height: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.contenedor_img_refuguio_ver_mas{
-/* background-color: rgb(255, 0, 0); */
-width: 35%;
-height: 170px;
+.contenedor_img_refuguio_ver_mas {
+    /* background-color: rgb(255, 0, 0); */
+    width: 35%;
+    height: 170px;
 
 }
-.img_refuguio_ver_mas{
+
+.img_refuguio_ver_mas {
     height: 100%;
     width: 100%;
     background-image: url('/img/refuguio.png');
@@ -965,7 +985,7 @@ height: 170px;
     background-size: cover;
 }
 
-.cajas_contactos_refuguio_ver_mas{
+.cajas_contactos_refuguio_ver_mas {
     /* background-color: rgb(25, 0, 255); */
     width: 70%;
     height: 200px;
@@ -973,17 +993,17 @@ height: 170px;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px 0px;
-    
+
 }
 
 
-.cajas_contenedoras_contactos_ver_mas{ 
+.cajas_contenedoras_contactos_ver_mas {
     background-color: aqua;
     height: 22px;
 }
 
 
-.cajas_contenedoras_contactos_ver_mas{
+.cajas_contenedoras_contactos_ver_mas {
     background-color: #fcf2eb00;
     height: 60px;
     border-radius: 20px;
@@ -992,31 +1012,31 @@ height: 170px;
     align-items: center;
     justify-content: center;
 
-} 
+}
 
-.icons_telefono_mail{
+.icons_telefono_mail {
     /* background-color: rgba(127, 255, 212, 0.437); */
     font-size: 40pt;
-    color:#f7cdaa;
+    color: #f7cdaa;
 
 }
 
-.mail_telefono_refugio_ver_mas{
-    background-color: #fcf2eb; 
+.mail_telefono_refugio_ver_mas {
+    background-color: #fcf2eb;
     height: 100%;
     display: flex;
     padding: 10px;
     border-radius: 20px;
     align-items: center;
     font-size: 12pt;
-     overflow: hidden; 
+    overflow: hidden;
 }
 
 .mail_telefono_refugio_ver_mas p u {
     margin: 0 10px 0 10px;
 }
 
-.fondo_caja_contenedora_raaum{
+.fondo_caja_contenedora_raaum {
     /* background-color: rgb(48, 34, 10); */
     width: 100%;
     height: 1000px;
@@ -1026,7 +1046,7 @@ height: 170px;
 }
 
 
-.caja_contenedora_raaum{
+.caja_contenedora_raaum {
     /* background-color: rgb(255, 144, 144); */
     height: 900px;
     width: 1700px;
@@ -1036,26 +1056,26 @@ height: 170px;
     align-items: center;
 }
 
-.titulo_raaum{
-/* background-color: #603813; */
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-width: 100%;
-font-size: 50pt;
-height: 23%;
-color: #ffa75a;
+.titulo_raaum {
+    /* background-color: #603813; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 50pt;
+    height: 23%;
+    color: #ffa75a;
 }
 
-.linea_raaum{
+.linea_raaum {
     background-color: #de7718;
     width: 90%;
     height: 1.5%;
     margin-top: 20px;
 }
 
-.cajas_descripcion{
+.cajas_descripcion {
     position: relative;
     /* background-color: #359225bd; */
     width: 1400px;
@@ -1066,7 +1086,7 @@ color: #ffa75a;
     padding-top: 40px;
 }
 
-.caja_raaum{
+.caja_raaum {
     background-color: #f7cdaa;
     width: 600px;
     height: 75%;
@@ -1077,32 +1097,32 @@ color: #ffa75a;
 }
 
 
-.titulo_recomendaciones_raaum{
+.titulo_recomendaciones_raaum {
     /* background-color: rgba(127, 255, 212, 0.233); */
-    height:20%;
+    height: 20%;
     width: 100%;
     font-size: 24pt;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    color:#ffa75a;
+    color: #ffa75a;
 }
 
-.linea_recomendaciones_raaum{
-background-color: #f5911e;
-height: 1%;
-width: 90%;
+.linea_recomendaciones_raaum {
+    background-color: #f5911e;
+    height: 1%;
+    width: 90%;
 }
 
-.descripcion_recomendaciones_raaum{
-/* background-color: #efc49f8e; */
-height: 79%;
-width: 78%;
-padding: 20px;
-font-size: 17pt;
-text-align: center;
-display: flex;
+.descripcion_recomendaciones_raaum {
+    /* background-color: #efc49f8e; */
+    height: 79%;
+    width: 78%;
+    padding: 20px;
+    font-size: 17pt;
+    text-align: center;
+    display: flex;
 
 }
 
@@ -1110,3 +1130,275 @@ display: flex;
 
 /*                 ADOPCION                  */
 
+/*                                 SERVICIOS                             */
+
+.contenedor-sevicios-main-adopcion {
+    background-color: #fcf2eb;
+    width: 100%;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;
+        padding-bottom: 200px; */
+
+}
+
+.caja-contenedora-header-foto-recomendaciones {
+    background-color: #f7cdaa;
+    height: 300px;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedora-header-foto-recomendaciones {
+    /* background-color: rgba(228, 183, 125, 0.363); */
+    width: 1400px;
+    height: 100%;
+    display: flex;
+}
+
+.img_perro_servicios {
+    /* background-color: rgba(0, 255, 255, 0.308); */
+    background-image: url('/img/Cachorro-feliz-31175d68.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 370px;
+    height: 100%;
+    margin: 0 0 0 150px;
+}
+
+
+.contenedor-titulo_mensaje_servicios {
+    /* background-color: rgba(0, 255, 55, 0.226); */
+    width: 880px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo_mensaje_servicios {
+    /* background-color: #de7718; */
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.titulo_recomendaciones_servicios {
+    /* background-color: aquamarine; */
+    height: 90px;
+    width: 80%;
+}
+
+.mesaje_servicios_ {
+    /* background-color: aquamarine; */
+    height: 90px;
+    width: 100%;
+}
+
+.titulo_recomendaciones_servicios {
+    font-size: 45pt;
+    /* background-color: #603813; */
+    display: flex;
+    justify-content: center;
+    color: #ee920c;
+}
+
+.mesaje_servicios_ {
+    /* background-color: #690b0b; */
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    color: #603813;
+}
+
+
+
+
+/*                             TARJETAS RECOMENDACIONES                         */
+
+
+
+
+.contenedora_tarjetas_recomendaciones {
+    /* background-color: #ee920c; */
+    width: 1100px;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 100px 0;
+}
+
+.tarjeta_servicios {
+    background-color: #f7cdaa;
+    width: 90%;
+    height: 420px;
+    border-radius: 50px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+
+.contenedor_imagen_refuguio_tarjeta {
+    /* background-color: rgba(137, 43, 226, 0.212); */
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagen_refuguio_tarjeta {
+    background-image: url('/img/refuguio.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 65%;
+    width: 90%;
+
+}
+
+.bimagen_refuguio_tarjeta {
+    background-image: url('/img/forrajeria.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 60%;
+    width: 70%;
+
+}
+
+.cimagen_refuguio_tarjeta {
+    background-image: url('/img/peluqueria-canina.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 65%;
+    width: 90%;
+
+}
+
+.titulo_descripcion_contactos {
+    /* background-color: rgba(165, 42, 42, 0.356); */
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.titulo_tipo_reco {
+    /* background-color: chocolate; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.nombre_empresa_servicio {
+    /* background-color: #603813; */
+    color: #ee920c;
+    font-size: 30pt;
+    padding-top: 20px;
+}
+
+.tipo_servicio {
+    background-color: #ee920c;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+
+}
+
+.contenedor_tipo_servicios {
+    position: absolute;
+    /* background-color: red; */
+    width: 520px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: end;
+
+}
+
+
+.linea_reco_refuguios {
+    background-color: #603813;
+    width: 82%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.contenedor_parrafo_info_reco {
+    /* background-color: rgba(0, 0, 255, 0.438); */
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parrafo_info_reco {
+    /* background-color: burlywood; */
+    font-size: 15pt;
+    width: 80%;
+    margin: 20px 0 0 20px;
+}
+
+.contactos_refu {
+    /* background-color: chartreuse; */
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_contactos_refuguios {
+    /* background-color: azure; */
+    height: 60px;
+    width: 640px;
+    display: flex;
+    padding: 0 10px;
+}
+
+.contactos_refuguios_mail_num {
+    background-color: #fcf2eb;
+    height: 100%;
+    padding: 0 20px 0 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.email_num_ref {
+    padding: 0 0 0 10px;
+    color: 603813;
+    font-size: 12pt;
+}
+
+
+
+
+/*                             FIN TARJETAS RECOMENDACIONES                        */
+
+
+/*                              FIN SERVICIOS                               */
