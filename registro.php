@@ -7,22 +7,23 @@ if (isset($_SESSION["idUsuario"])) {
     exit();
 }
 
-if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirmar_password"])) {
+if (isset($_POST["email"]) && isset($_POST["password"])) {
         $con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
 
         $nombre = $_POST["nombre"];
         $apellido = $_POST["apellido"];
         $email = $_POST["email"];
         $password = md5($_POST["password"]);
-        $confirmarPassword = $_POST["confirmar_password"];
+        // $confirmarPassword = $_POST["confirmar_password"];
 
         if (!isset($_POST["politica_privacidad"])) {
             echo "Debes aceptar la Política de Privacidad antes de continuar.";
         }
 
-        else if ($password !== $confirmarPassword) {
-            echo "Las contraseñas no coinciden.";
-        } else {
+        // else if ($password !== $confirmarPassword) {
+        //     echo "Las contraseñas no coinciden.";
+        // } 
+        else {
             $sql = "SELECT * FROM `usuarios` WHERE email = '$email'";
             $res = mysqli_query($con, $sql);
 
@@ -32,7 +33,7 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
                 $insertarSql = "INSERT INTO `usuarios` (email, contraseña, nombre, apellido, fechaRegistro) VALUES ('$email', '$password', '$nombre', '$apellido', CURRENT_TIMESTAMP)";
                 if (mysqli_query($con, $insertarSql)) {
                     $_SESSION["registro_exitoso"] = true;
-                    header("Location: index.html");
+                    header("Location: login.php");
                     exit();
                 } else {
                     echo "Error en el registro. Por favor, inténtalo de nuevo.";
@@ -61,7 +62,7 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
             <input type="text" name="apellido" placeholder="Apellido" required>
             <input type="email" name="email" placeholder="Correo electronico" required>
             <input type="password" name="password" placeholder="Contraseña" id="myInput" required>
-            <input type="password" name="confirmar_password" placeholder="Repetir contraseña" id="myInput2" required>
+            <!-- <input type="password" name="confirmar_password" placeholder="Repetir contraseña" id="myInput2" required> -->
             <div>
                 <input type="checkbox" onclick="myFunction()"><label>Mostrar contraseña</label>
             </div>
@@ -74,12 +75,12 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
               } else {
                 x.type = "password";
               }
-              var y = document.getElementById("myInput2");
-              if (y.type === "password") {
-                y.type = "text";
-              } else {
-                y.type = "password";
-              }
+            //   var y = document.getElementById("myInput2");
+            //   if (y.type === "password") {
+            //     y.type = "text";
+            //   } else {
+            //     y.type = "password";
+            //   }
             }
         </script>
         <div class="checkbox">

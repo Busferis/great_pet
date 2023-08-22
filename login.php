@@ -10,19 +10,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_POST["email"]) && isset($_POST["password"])) {
 		$con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
 
-		$email = $_POST["email"];
-        $password = $_POST["password"];
+		if ($con) {
+			var_dump($con);
+		} else {
+			echo "No conectado";
+		}
 
-		$sql = "SELECT * FROM `usuarios` WHERE email = '$email' AND password = '$password'";
+		$email = $_POST["email"];
+        $password = md5($_POST["password"]);
+
+		$sql = "SELECT * FROM `usuarios` WHERE email = '$email' AND contraseña = '$password'";
+
+		if ($sql) {
+			var_dump($sql);
+		} else {
+			echo "No SQL";
+		}
+
 		$res = mysqli_query($con, $sql);
+
+		if ($res) {
+			echo var_dump($sql);
+		} else {
+			echo "No listo";
+		}
 
 		if (mysqli_num_rows($res) > 0) {
 			$row = mysqli_fetch_assoc($res);
-    		$idUsuario = $row['idUsuario'];
-    		$_SESSION["idUsuario"] = $idUsuario;
-    		$_SESSION["emailUsuario"] = $email;
-            $_SESSION["pwdUsuario"] = $password;
-	        header("Location: index.html");
+			$nombreUsuario = $row['nombre'];
+    		$_SESSION["nombreUsuario"] = $nombreUsuario;
+	        header("Location: panel.php");
 	        exit();
 	    } else {
 	        echo "Correo o contraseña inválidos.";
@@ -45,16 +62,38 @@ if (isset($_SESSION["registro_exitoso"])) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
-<body>
-	<h1>webgenerator Fernando Ismael Bustamante</h1>
+<body class="releway">
+    <h1 class="roboto">Iniciar sesión</h1>
 	<form action="" method="POST">
-		<div>
-			Direccion de e-mail <input type="text" name="email" required>
-			Contraseña <input type="text" name="password" required>
+		<div class="input">
+			<input type="text" name="email" placeholder="Correo electronico" required>
+			<input type="password" name="password" placeholder="Contraseña" id="myInput" required>
+			<div>
+                <input type="checkbox" onclick="myFunction()"><label>Mostrar contraseña</label>
+            </div>
 		</div>
-		<a href="register.php">Registrarse</a>
-		<input type="submit" value="Ingresar">
+		<div class="botones">
+			<a href="registro.php">Registrarse</a>
+			<input type="submit" value="Ingresar">
+		</div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myInput");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            //   var y = document.getElementById("myInput2");
+            //   if (y.type === "password") {
+            //     y.type = "text";
+            //   } else {
+            //     y.type = "password";
+            //   }
+            }
+        </script>
 	</form>
 </body>
 </html>

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,26 +14,28 @@
     font-weight: 400;
 }
 
-.roboto2{
+.roboto2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    letter-spacing:1px;
+    letter-spacing: 1px;
 }
 
 .roboto {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-.texto_black{
+
+.texto_black {
     font-family: 'Archivo Black', sans-serif;
     font-weight: 400;
 }
+
 .releway {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
 
-.lexend{
+.lexend {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 700;
 }
@@ -51,8 +54,13 @@ a{
     text-decoration: none;
 }
 
+.redesu a{
+    text-decoration: none;
+    color: cyan;
+}
 
-.d-c{   
+
+.d-c {
     display: contents;
 }
 
@@ -60,168 +68,11 @@ a{
 
 
 
-header {
-    position: absolute;
-    z-index: 1000;
-    display: flex;
-    /* background-color: rgba(165, 42, 42, 0.461); */
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-}
-
-.headersi {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: aquamarine; */
-    width: 1400px;
-    height: 100px;
-    margin-top: 20px;
-}
-
-.FOTO-LOGO {
-    /* background-color: #f7cdaa; */
-    padding-top: 6px;
-    /* margin-right:200px ; */
-    transition: all 0.3s;
-}
-
-.FOTO-LOGO:hover {
-    transform: scale(1.2);
-}
-
-.navegacion {
-    display: flex;
-    /* background-color: blanchedalmond; */
-    justify-content: space-between;
-    width: 550px;
-    margin-left: 130px;
-
-}
-.TEXTO-LINK{
-    text-decoration: none;
-}
-.navegacion h3 {
-    font-size: 15pt;
-    padding: 0 8px 0 8px;
-    color: rgb(255, 167, 90);
-    transition: all 0.4s ease 0s;
-    /* height: 20px; */
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navegacion h3:hover {
-    transform: scale(1.1);
-    background-color: #ffa75a;
-    color: white;
-    width: auto;
-    height: 30px;
-    padding: 0 20px;
-    border-radius: 50px;
-
-}
-
-
-
-.img-header {
-    display: flex;
-    position: relative;
-    /* background-color: rgb(58, 99, 224); */
-    left: 40px;
-    width: auto;
-    height: 100px;
-    align-items: center;
-}
-
-.redes{
-    
-    /* background-color: #603813;   */
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
-}
-.inicio-seccion{
-    background-color: rgb(255, 167, 90);
-    height: 35px;
-    color: #fcf2eb;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 12px;
-    font-size: 13pt;
-    transition: all 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inicio-seccion:hover{
-    background-color: #ffdbc2;
-    transform: scale(1.1);
-    /* border: 3px solid rgb(255, 167, 90); */
-    color: rgb(255, 167, 90);
-    cursor: pointer;}
-
-
-.registrarse{
-    background-color: #f7cdaa;
-    /* border: 3px solid #ffdbc2; */
-    height: 43px;
-    width: 138px;
-    color: rgb(201, 110, 5);
-    border-radius: 7px;
-    margin: 5px;
-    padding: 12px;
-    font-size: 13pt;
-    transition: all 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.registrarse:hover{
-    /* background-color: #ffdbc2; */
-    background-color: rgb(255, 188, 129);
-    /* border: 3px solid rgb(255, 167, 90); */
-    /* color: rgb(255, 167, 90); */
-    /* transform: scale(1.1); */
-}
-
-
-
-/* .redes {
-    background-color: rgb(165, 42, 42);
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-
-}
-
-.redes-header {
-    background-color: rgb(144, 224, 58);
-    height: 20px;
-
-}
-
-.redes-header:hover {
-    box-shadow: 0 0 10px #f7cdaa;
-
-} */
-
-
 
 
 /*                                  MAIN INDEX                                */
 
-
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,7 +179,7 @@ main{
 
 /*TARJETAS*/
 
-.contenedor2-main-index{
+.contenedor2-main-index {
     /* background-color: #daeeb4; */
     height: 1000px;
     width: 1200px;
@@ -338,7 +189,7 @@ main{
     justify-content: center;
 }
 
-.tarjetas{
+.tarjetas {
     /* background-color: #ceb6a3; */
     border-radius: 10%;
     height: 100%;
@@ -349,7 +200,7 @@ main{
     justify-content: center;
 }
 
-.tarj{
+.tarj {
     background-color: #f7cdaa;
     height: 200px;
     width: 65%;
@@ -361,16 +212,16 @@ main{
 }
 
 
-.logotipo-tarjeta{
+.logotipo-tarjeta {
     background-color: rgba(238, 130, 238, 0);
-    height:100%;
+    height: 100%;
     width: 360px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.borde1{
+.borde1 {
     /* background-color: #f9fceb; */
     height: 100%;
     width: 100%;
@@ -381,8 +232,8 @@ main{
     justify-content: center;
 }
 
-.borde2{
-    
+.borde2 {
+
     height: 100%;
     width: 100%;
     background-color: #f7cdaa;
@@ -393,33 +244,35 @@ main{
     align-items: center;
 }
 
-.texto-tarjeta{
+.texto-tarjeta {
     /* background-color: rgb(0, 255, 255); */
-    width:800px;
-    padding-left:50px;
+    width: 800px;
+    padding-left: 50px;
     position: relative;
     top: -8px;
 }
 
-.img-tarjeta1{
+.img-tarjeta1 {
     height: 150px;
     width: 140px;
 
 }
 
-.img-tarjeta2{
+.img-tarjeta2 {
     height: 135px;
     width: 135px;
 
 }
-.img-tarjeta3{
+
+.img-tarjeta3 {
     position: relative;
     height: 140px;
     width: 140px;
     top: -8px;
 
 }
-.img-tarjeta4{
+
+.img-tarjeta4 {
     position: relative;
     height: 150px;
     width: 150px;
@@ -428,48 +281,59 @@ main{
 }
 
 
-.titulo-tarjeta{
+.titulo-tarjeta {
     font-size: 25pt;
     color: #ffa75a;
 }
-.parrafo-tarjeta{
+
+.parrafo-tarjeta {
     font-size: 14pt;
     color: #603813;
 }
 
-.caja-ir{
-    position:relative;
+.caja-ir {
+    position: relative;
     background-color: #ffa75a;
     height: 50px;
     width: 150px;
     bottom: -70px;
     left: 8px;
-    border-top-left-radius:100px;
+    border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
 }
 
-.ir{
+.caja-ir:hover {
+    transform: scale(1.1);
+    background-color: #f8b67c;
+
+}
+
+.ir {
     font-size: 30pt;
     color: #f7cdaa;
 }
 
-.ir-link{
+.ir-link {
     text-decoration: none !important;
 }
+
+/*                                            ADOPCION                                                      */
+
 
 
 /*                                           MAIN ADOPCION                                        */
 
- .contenedor2-main-adopcion{
+.contenedor2-main-adopcion {
     background-color: #fcf2eb;
     width: 100%;
     height: 2500px;
     display: flex;
     flex-direction: column;
-    
+
     /* justify-content: center; */
     align-items: center;
 }
@@ -484,7 +348,7 @@ main{
 
 
 
-.caja-fodo-titulo-adopta{
+.caja-fodo-titulo-adopta {
     display: flex;
     background-color: #f7cdaa;
     margin-top: 120px;
@@ -494,25 +358,25 @@ main{
     justify-content: center;
 }
 
-.contanedora-caja-fodo-titulo-adopta{
+.contanedora-caja-fodo-titulo-adopta {
     background-color: #f7cdaa;
     height: 100%;
     width: 1200px;
     display: flex;
     justify-content: center;
     align-items: end;
-    
+
 }
 
-.img-gato-adopcion{
+.img-gato-adopcion {
     /* background-color: #944e15; */
     width: 150px;
     height: 150px;
     display: flex;
- justify-content: center;
+    justify-content: center;
 }
 
-.img-gato-adopcion-header{
+.img-gato-adopcion-header {
     height: 150px;
     width: auto;
     position: relative;
@@ -520,7 +384,7 @@ main{
 
 }
 
-.img-perro-adopcion{
+.img-perro-adopcion {
     /* background-color: #fbff00; */
     width: 150px;
     height: 150px;
@@ -528,14 +392,14 @@ main{
     justify-content: center;
 }
 
-.img-perro-adopcion-header{
+.img-perro-adopcion-header {
     height: 130px;
     width: auto;
     position: relative;
     top: 20.1px;
 }
 
-.texto-adopcion-header{
+.texto-adopcion-header {
     /* background-color:#c5f7aa; */
     width: 50%;
     height: 150px;
@@ -547,7 +411,7 @@ main{
     margin: 0 5px;
 }
 
-.titulo-adopcion-header{
+.titulo-adopcion-header {
     /* background-color: #f1d1b7; */
     position: relative;
     font-size: 33pt;
@@ -556,7 +420,7 @@ main{
     letter-spacing: 1.5px;
 }
 
-.mensaje-adopcion-header{
+.mensaje-adopcion-header {
     /* background-color: antiquewhite; */
     position: relative;
     font-size: 17pt;
@@ -579,17 +443,17 @@ main{
 
 /*                   CAJA PRINCIPAL ADOPCION                      */
 
-.caja-contenedora-tarjetas-adopcion{
+.caja-contenedora-tarjetas-adopcion {
     /* background-color: #ffa75a; */
     margin-top: 50px;
     height: 2050px;
-    width:1400px ;
+    width: 1400px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.caja-filtro-adopcion{
+.caja-filtro-adopcion {
     /* background-color: blueviolet; */
     height: 130px;
     width: 100%;
@@ -598,7 +462,7 @@ main{
     justify-content: center;
 }
 
-.selec-filtro{
+.selec-filtro {
     /* background-color: #f7cdaa; */
     width: 60%;
     height: 100px;
@@ -609,26 +473,26 @@ main{
 
 }
 
-.SELECT-1{
+.SELECT-1 {
     height: 60PX;
     width: 200PX;
     border-radius: 20PX;
-    background-color:rgb(255, 167, 90);
+    background-color: rgb(255, 167, 90);
     border-style: none;
-    color:#603813;
+    color: #603813;
     font-size: 14pt;
     text-align: center;
 
 }
 
-.options-select{
- background-color:#fcc290 ;
- color: #603813
+.options-select {
+    background-color: #fcc290;
+    color: #603813
 }
 
-.buscar-filtro-adopcion{
+.buscar-filtro-adopcion {
     background-color: #ffa75a;
-    color:  #603813;
+    color: #603813;
     border: 4px solid #603813;
     height: 70px;
     width: 70px;
@@ -637,43 +501,43 @@ main{
     transition: all 0.3s;
 }
 
-.buscar-filtro-adopcion:hover{
-    color:  #fcf2eb;
+.buscar-filtro-adopcion:hover {
+    color: #fcf2eb;
     transform: scale(1.3);
 
 }
 
 
 
-.linea-filtro-adopcion-tarjetas{
-background-color: #603813;
-height: 13px;
-width: 100%;
-border-radius: 20px;
+.linea-filtro-adopcion-tarjetas {
+    background-color: #603813;
+    height: 13px;
+    width: 100%;
+    border-radius: 20px;
 }
 
 
 
 
 
-/* ASADADSADASDAS DA DSA DAS DA A DAD SA DSAD SADD D   */
+/*                          tarjetas                                       */
 
 
 
 
 
-.contenedor-tarjetas-adopcion-mini-descripcion{
-/* background-color: rgb(109, 153, 192); */
+.contenedor-tarjetas-adopcion-mini-descripcion {
+    /* background-color: rgb(109, 153, 192); */
 
-height: 1650px;
-width: 85%;
-margin-top: 70px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+    height: 1650px;
+    width: 85%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.tarjetas-adopcion-mini-descripcion-row{
+.tarjetas-adopcion-mini-descripcion-row {
     /* background-color: #541360; */
     display: flex;
     justify-content: space-between;
@@ -683,14 +547,14 @@ justify-content: space-between;
 
 
 
-.tarjetas-adopcion-mini-descripcion-columns{
+.tarjetas-adopcion-mini-descripcion-columns {
     display: flex;
     flex-direction: column;
-  
+
 
 }
 
-.tarjeta1-adopcion-mini-descripcion{
+.tarjeta1-adopcion-mini-descripcion {
     background-color: #f7cdaa;
     height: 550px;
     width: calc(100% / 3 - 2%);
@@ -698,7 +562,8 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
 }
-.img-perro-en-adopcion{
+
+.img-perro-en-adopcion {
     position: relative;
     background-image: url("../img/img-perro-tarjeta-adopcion.webp");
     height: 50%;
@@ -709,7 +574,18 @@ justify-content: space-between;
     background-size: cover;
 }
 
-.cajacontenedora_nombre_huesos{
+.tito_img-perro-en-adopcion {
+    position: relative;
+    background-image: url("../img/tito_calderon.jpg");
+    height: 50%;
+    width: 100%;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cajacontenedora_nombre_huesos {
     height: 50px;
     position: absolute;
     bottom: -25px;
@@ -720,7 +596,7 @@ justify-content: space-between;
     align-items: center;
 }
 
-.contenedor_nombre_centrado{
+.contenedor_nombre_centrado {
     background-color: #ffa75a;
     height: 42px;
     padding: 0 5px;
@@ -729,23 +605,24 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#fcf2eb;
+    color: #fcf2eb;
     font-size: 23pt;
 }
 
 
 
-.hueso1{
+.hueso1 {
     background-color: rgba(127, 255, 212, 0);
     height: 100%;
     width: 50px;
 }
-.medida_hueso_centrado{
+
+.medida_hueso_centrado {
     position: relative;
     top: -12px;
 }
 
-.caja-ubicaciom_mascota_adopcion_tarjeta{
+.caja-ubicaciom_mascota_adopcion_tarjeta {
     background-color: rgba(21, 170, 170, 0);
     width: 100%;
     height: 45px;
@@ -754,11 +631,12 @@ justify-content: space-between;
     align-items: center;
 
 }
-.material-icons-outlined{
+
+.material-icons-outlined {
     font-size: 25pt;
 }
 
-.ubicaciom_mascota_adopcion_tarjeta{
+.ubicaciom_mascota_adopcion_tarjeta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -766,17 +644,16 @@ justify-content: space-between;
     font-size: 13pt;
     white-space: nowrap;
     color: #603813;
-    
+
 
 }
 
 
 
-.texto_ubicacion_mascota{
-}
+.texto_ubicacion_mascota {}
 
 
-.mini-informacion-tarjeta-adopcion{
+.mini-informacion-tarjeta-adopcion {
     background-color: #ff330000;
     height: 40%;
     width: 100%;
@@ -784,15 +661,15 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 
 }
 
 
-.des-mascota-adopcion-tarjeta{
+.des-mascota-adopcion-tarjeta {
 
     background-color: #fcf2eb;
-    height:  calc(88% / 4 );
+    height: calc(88% / 4);
     width: 80%;
     border-radius: 15px;
     display: flex;
@@ -800,16 +677,17 @@ justify-content: space-between;
     /* justify-content: space-around; */
 }
 
-.caja_contenedora_dato1{
+.caja_contenedora_dato1 {
     position: absolute;
     background-color: #d1beac00;
-    width:130px ;
+    width: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.caja1_minidescripcion_iz{
-    background-color:#6cb0d800;
+
+.caja1_minidescripcion_iz {
+    background-color: #6cb0d800;
     height: 42px;
     max-width: 151px;
     display: flex;
@@ -819,15 +697,16 @@ justify-content: space-between;
     font-size: 15pt;
     left: 60px;
 }
-.linea-recta-medio{
-background-color: #603813;
-width: 8px;
-height: 80%;
-border-radius: 4PX;
-margin-left: 130px;
+
+.linea-recta-medio {
+    background-color: #603813;
+    width: 8px;
+    height: 80%;
+    border-radius: 4PX;
+    margin-left: 130px;
 }
 
-.caja_contededora_dato{
+.caja_contededora_dato {
     background-color: #6cb0d800;
     display: flex;
     justify-content: center;
@@ -836,8 +715,8 @@ margin-left: 130px;
     left: 30px;
 }
 
-.caja1_minidescripcion_der{
-    background-color:#f5f10000;
+.caja1_minidescripcion_der {
+    background-color: #f5f10000;
     max-width: 162px;
     overflow: hidden;
     height: 100%;
@@ -847,17 +726,21 @@ margin-left: 130px;
     font-size: 13PT;
 }
 
+.a_contenedor_VER-MAS-mascota-adopcion-tarjeta {
+    background-color: #603813;
+}
 
-.contenedor_VER-MAS-mascota-adopcion-tarjeta{
-    background-color: rgba(127, 255, 212, 0);
+.contenedor_VER-MAS-mascota-adopcion-tarjeta {
+    /* background-color: rgb(127, 255, 212); */
     width: 100%;
     height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin: 5px 0; */
 }
 
-.VER-MAS-mascota-adopcion-tarjeta{
+.VER-MAS-mascota-adopcion-tarjeta {
     background-color: #ffa75a;
     width: 145px;
     height: 55px;
@@ -871,7 +754,7 @@ margin-left: 130px;
     transition: all 0.2s;
 }
 
-.VER-MAS-mascota-adopcion-tarjeta:hover{
+.VER-MAS-mascota-adopcion-tarjeta:hover {
     background-color: #fcb77b;
     border: #fcf2eb solid 5px;
     transform: scale(1.1);
@@ -882,492 +765,645 @@ margin-left: 130px;
 
 
 
-/* ASADADSADASDAS DA DSA DAS DA A DAD SA DSAD SADD D   */
+/*                                          FIN tarjetas Adopcion                                            */
 
+/*                                              MAS INFO TARJETAS DE MASCOTAS                          */
 
-
-
-/*                 TERMINA CAJA PRINCIPAL ADOPCION                  */
-
-
-
-
-
-/*                          FOOTER                          */
-
-
-footer {   
-    background-color:#603813;
-    padding: 1em 0;
-    height: 300px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-
-
-.caja-contenedora-footer{
-    /* background-color: #b4e9bd; */
-    width: 90%;
-    min-width: 1250px;
-    max-width: 1500px;
-    height: 100%;
-    padding: 3px;
-    display: flex;
-}
-
-
-.caja-footer_1{
-    /* background-color: #ec954427; */
-    height: 100%;
-    width:340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.img-footer{
-    width: 300px;
-    height: 250px;
-}
-
-.contenedor_caja_2_3_4{
-    /* background-color: #efc49f; */
-    margin-top: 25PX;
-    height: 100%;
-    display: flex;
-    margin-left: 120px;
-    align-items: center;
-    width: 950px;
-    justify-content: space-between;
-}
-
-.caja-titulo-texto-footer{
-    /* background-color: rgb(0, 0, 255); */
-    height: 95%;
-    width: 240px;
-}
-
-.caja-footer_2-titulo{
-    /* background-color: #b4e9bd57; */
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo-contactos-footer{
-    /* background-color: blueviolet;  */
+.contenedor-MAS-main-adopcion {
+    background-color: #fcf2eb;
     width: 100%;
-    font-size: 12pt;
-    color:#ffa75a;
-    letter-spacing: 1px;
-}
-.caja-footer_3-linea{
-    background-color: #ffa75a;
-    width: 100%;
-    height: 3px;
-    margin-top:5px ;
-    border-radius: 10px;
-}
-
-.caja-footer_4-descripcion{
-    /* background-color: #ff0000; */
-    display: flex;
-    justify-content: center;
-    height: 190px;
-}
-
-.caja-des{
-     /* background-color: rgb(0, 255, 255);  */
-    text-align: start;
-    font-size:12pt;
-    /* white-space: nowrap; */
-    color:#f7cdaa;
-    width: 190px;
-    letter-spacing: 1px;
-    padding-top: 15px;
-    
-    
-}
-
-
-.caja-des h5{
-   font-size:13pt;
-}
-
-.hlds{
-    margin-top: 10px;
-}
-
-
-/* .contenedor-img-footer{
-     background-color: #e3bf9e; 
-    width: calc(1400px / 4 - 40px);
-    height: 100%;
-    margin:0 200px 0 0px;
-}
-
-.img-footer{
-    width: 100%;
-    height: 100%;
-    margin:0 20px 0 0px;
-
-}
-
-
-
-.mini-info-footer{
-    /* background-color: #ff7e06; -----------
-    width: calc(1400px / 4 - 40px);
-    height: 100%;
-    margin:0 80px 0 0px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.contenedor-mini-info-footer{
-    /* background-color: #ff0606; ------------
-    width: 100%;
-    height: 95%;
+    /* height: 1300px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: -4px;
+    /* justify-content: center;
+    padding-bottom: 200px; */
 }
 
-.titulo-footer{
-    /* background-color: #ffe606; ------------
+.contenedora_caja_mas_info {
+    background-color: #fcf2eb;
+    margin-top: 110px;
     width: 100%;
-    font-size: 8pt;
-    margin-top: 25px;
-    color:#ffa75a;
-    letter-spacing: 3px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.linea-quines-somos{
-    background-color: #ffa75a;
-    width: 90%;
-    height: 3px;
-    margin: 13px 0 10px 0;
+.caja-mas-info-mascotas {
+    background-color: #f7cdaa;
+    width: 1150px;
+    min-width: 1150PX;
+    height: 800px;
+    border-radius: 100px;
+
 }
 
-.info-footer{
-    /* background-color: rgb(0, 255, 255); ----------
-    text-align: start;
-    width: 66%;
-    font-size:16pt;
-    color:#f7cdaa;
+.caja-titulo-mas-sobre-mi {
+    position: relative;
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-mas-sobre-mi {
+    position: absolute;
+    background-color: #f7cdaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #fcf2eb;
+    width: 650px;
+    height: 100px;
+    border-radius: 40px;
+    top: -40px;
+    color: #f5911e;
+    font-size: 30PT;
     letter-spacing: 2px;
-    
 }
 
+.contenedora-foto-historia {
+    height: 45%;
+    /* background-color: #94653c; */
+    width: 100%;
+    padding: 0 45px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
 
-.contactos-footer{
-    /* background-color: #ff7e06; -------
-    width: calc(1400px / 4 - 40px);
+.imagen-animal-ver-mas {
+    position: relative;
+    background-color: azure;
     height: 100%;
-    margin:0 80px 0 0px;
-    position: relative;
-    /* top: 10px; -------
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    width: 40%;
+    border-radius: 60px;
+    border: 6px #fcf2eb solid;
 
 }
 
-.contenedor-contactos-footer{   
-    /* background-color: #f7cdaa;  --------
-    width: 90%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: -2px;
-}
 
-.titulo-contactos-footer{
-    /* background-color: blueviolet; ----------
-    width: 100%;
-    font-size: 10pt;
-    margin-top: 25px;
-    color:#ffa75a;
-    letter-spacing: 5px;
-}
-
-.linea-contactos{
-    background-color: #ffa75a;
-    width: 90%;
-    height: 3px;
-    margin: 13px 0 10px 0;
-}
-
-.caja-contactos--{
-    /* background-color: rgb(0, 255, 255); ------------
-    text-align: start;
-    width: 75%;
-    font-size:16pt;
-    color:#f7cdaa;
-    letter-spacing: 1px;
-}
-
-.a-footer{
-    margin: 0px 10px 10px 0 ;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.redes-footer{
-    /* background-color: #df7f7f; --------------
-    width: calc(1400px / 4 - 40px);
+.FOTO-animal-ver-mas {
+    background-image: url("/img/tito_calderon.jpg");
     height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 55px;
+}
+
+.contenedor_nombre_mascota_ver_mas {
+    position: absolute;
+    /* background-color: #c09fef59; */
+    width: 100%;
+    height: 70px;
+    bottom: -28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
-.caja-redes-footer{
-    /* background-color: #fcf2eb; ------------
-    width: 100%;
-    position: relative;
-    top: -20px;
+.nombre_mascota_ver_mas {
+    background-color: #f5911e;
+    color: #fcf2eb;
+    height: 40PX;
+    padding: 30px 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-content: center;
-}
-
-.titulo-seguinos{
-    /* background-color: blueviolet; ---------
-    width: 100%;
-    font-size: 20pt;
-    margin-top: 25px;
-    color:#ffa75a;
-    letter-spacing: 5px;
-}
-
-.linea-seguinos{
-    background-color: #ffa75a;
-    width: 100%;
-    height: 3px;
-    margin: 13px 0 10px 0;
-}
-
-.caja-de-redes-footer{
-    /* background-color: #00da25; ---------
-    display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
-}
-
-.redes-footer-img{
-    margin: 4px;
-    height: 50px;
-    width: 50px;
-}
-
-.wrapper {
-    position: relative;
-    width:400px;
-    height:440px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px; /*le doy redondes a la caja contenedora de login ---------
-    backdrop-filter:blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 40pt;
+    max-width: 100%;
     overflow: hidden;
-    transform: scale(0);
-    transition: transform .5s ease, height .2s ease;
-}
+    border-radius: 25px;
+    border: 6px #f7cdaa solid;
 
-.wrapper.active-popup{
-transform: scale(1);
 }
 
 
 
-
-.wrapper.active{
-    height:520px;
+.historia-animal-ver-mas {
+    /* background-color: rgb(241, 255, 240); */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
 }
 
 
-
-
-.wrapper .form-box{
+.titulo_historia_ver_mas {
+    /* background-color: aquamarine; */
     width: 100%;
-    padding: 40px;
-}
-
- .wrapper .form-box.login{
-   transition: transform .18 ease;
-   transform: translateX(0);
-}  
-
-
-.wrapper.active .form-box.login {
-    transition: none;
-    transform: translateX(-400px);
-}
-
-
-.wrapper .form-box.register{
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
-}
-
-.wrapper.active .form-box.register{
-    transition: transform .18 ease;
-    transform: translateX(0);
- } 
-
-.wrapper .icon-close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background-color: #162938;
-    font-size: 2em;
-    color: #fff;
+    height: 60px;
+    font-size: 30pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-left-radius:20px;
-    cursor: pointer;
-    z-index: 1;
+    color: #f5911e;
 }
 
-.form-box h2{
-    font-size: 2em;
-    color: #162938;
-    text-align: center;
-}
-
-.input-box{
-    position: relative;
+.linea_titulo_descripcion_historia {
+    background-color: #fcf2eb;
     width: 100%;
-    height:50px;
-    border-bottom:2px solid #162938;
-    margin:30px 0; 
+    height: 8px;
+    border-radius: 50px;
+}
+
+.dedscripcion_historia_ver_mas {
+    /* background-color: rgba(165, 42, 42, 0.251); */
+    width: 90%;
+    /* margin: auto; */
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.dedscripcion_historia_ver_mas p {
+    font-size: 19pt;
+    color: #603813;
 }
 
 
-
-
-.input-box input {
-    width:100% ;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #162938;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
-
-.input-box .icon {
-    position:absolute;
-    right: 8px;
-    font-size:1.2em;
-    color: #162938;
-    line-height: 57px;
-}
-
-.remember-forgot{
-    font-size: .9em;
-    color: #162938;
-    font-weight: 500;
-    margin: -15px 0 15px;
+.caja-info_refuguio_ver_mas {
+    /* background-color: rgba(0, 0, 255, 0.324); */
+    width: 100%;
+    height: 350px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
-.remember-forgot label input {
-    accent-color: #162938;
-    margin-right: 3px;
-    margin-left: 3px;
- }
- .remember-forgot a{
-    color: #162938;
-    text-decoration: none;
- }
+.info_refuguio_ver_mas {
+    /* background-color: #2afc00f7; */
+    width: 45%;
+    height: 80%;
+}
 
- .remember-forgot a:hover{
-    text-decoration: underline;
- }
- .btn{
+
+.titulo_refuguio_ver_mas {
+    /* background-color: blueviolet; */
     width: 100%;
-    height: 45px;
-    background: #162938;
-    border:none;
-    outline: none;
-    border-radius:6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #fff;
-    font-weight: 500;
- }
-
- .login-register{
-    font-size: .9em;
-    color: #162938;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
- }
-
- .login-register p a{
-    color: #162938;
-    text-decoration: none;
-    font-weight: 600;
- }
-
- .login-register p a:hover {
-    text-decoration: underline;
- }
-
- .input-box label {
-    position: absolute;
-    top: 50%;
-    left:5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none ;
-    transition: .5s;
+    height: 23%;
+    font-size: 40PT;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5911e;
 }
 
-.input-box input:focus~label,
-.input-box input:valid~label{
 
-    top:-5px;
+.linea-refugio-ver-mas {
+    background-color: #fcf2eb;
+    width: 100%;
+    height: 3%;
+    border-radius: 50px;
+}
 
-} */
+.contatos_imagen_refugio_ver_mas {
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor_img_refuguio_ver_mas {
+    /* background-color: rgb(255, 0, 0); */
+    width: 35%;
+    height: 170px;
+
+}
+
+.img_refuguio_ver_mas {
+    height: 100%;
+    width: 100%;
+    background-image: url('/img/refuguio.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cajas_contactos_refuguio_ver_mas {
+    /* background-color: rgb(25, 0, 255); */
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+
+}
+
+
+.cajas_contenedoras_contactos_ver_mas {
+    background-color: aqua;
+    height: 22px;
+}
+
+
+.cajas_contenedoras_contactos_ver_mas {
+    background-color: #fcf2eb00;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icons_telefono_mail {
+    /* background-color: rgba(127, 255, 212, 0.437); */
+    font-size: 40pt;
+    color: #f7cdaa;
+
+}
+
+.mail_telefono_refugio_ver_mas {
+    background-color: #fcf2eb;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 12pt;
+    overflow: hidden;
+}
+
+.mail_telefono_refugio_ver_mas p u {
+    margin: 0 10px 0 10px;
+}
+
+.fondo_caja_contenedora_raaum {
+    /* background-color: rgb(48, 34, 10); */
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caja_contenedora_raaum {
+    /* background-color: rgb(255, 144, 144); */
+    height: 900px;
+    width: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_raaum {
+    /* background-color: #603813; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 50pt;
+    height: 23%;
+    color: #ffa75a;
+}
+
+.linea_raaum {
+    background-color: #de7718;
+    width: 90%;
+    height: 1.5%;
+    margin-top: 20px;
+}
+
+.cajas_descripcion {
+    position: relative;
+    /* background-color: #359225bd; */
+    width: 1400px;
+    height: 75.5%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+.caja_raaum {
+    background-color: #f7cdaa;
+    width: 600px;
+    height: 75%;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titulo_recomendaciones_raaum {
+    /* background-color: rgba(127, 255, 212, 0.233); */
+    height: 20%;
+    width: 100%;
+    font-size: 24pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    color: #ffa75a;
+}
+
+.linea_recomendaciones_raaum {
+    background-color: #f5911e;
+    height: 1%;
+    width: 90%;
+}
+
+.descripcion_recomendaciones_raaum {
+    /* background-color: #efc49f8e; */
+    height: 79%;
+    width: 78%;
+    padding: 20px;
+    font-size: 17pt;
+    text-align: center;
+    display: flex;
+
+}
+
+
+
+/*                 ADOPCION                  */
+
+/*                                 SERVICIOS                             */
+
+.contenedor-sevicios-main-adopcion {
+    background-color: #fcf2eb;
+    width: 100%;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;
+        padding-bottom: 200px; */
+
+}
+
+.caja-contenedora-header-foto-recomendaciones {
+    background-color: #f7cdaa;
+    height: 300px;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedora-header-foto-recomendaciones {
+    /* background-color: rgba(228, 183, 125, 0.363); */
+    width: 1400px;
+    height: 100%;
+    display: flex;
+}
+
+.img_perro_servicios {
+    /* background-color: rgba(0, 255, 255, 0.308); */
+    background-image: url('/img/Cachorro-feliz-31175d68.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 370px;
+    height: 100%;
+    margin: 0 0 0 150px;
+}
+
+
+.contenedor-titulo_mensaje_servicios {
+    /* background-color: rgba(0, 255, 55, 0.226); */
+    width: 880px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo_mensaje_servicios {
+    /* background-color: #de7718; */
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.titulo_recomendaciones_servicios {
+    /* background-color: aquamarine; */
+    height: 90px;
+    width: 80%;
+}
+
+.mesaje_servicios_ {
+    /* background-color: aquamarine; */
+    height: 90px;
+    width: 100%;
+}
+
+.titulo_recomendaciones_servicios {
+    font-size: 45pt;
+    /* background-color: #603813; */
+    display: flex;
+    justify-content: center;
+    color: #ee920c;
+}
+
+.mesaje_servicios_ {
+    /* background-color: #690b0b; */
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    color: #603813;
+}
+
+
+
+
+/*                             TARJETAS RECOMENDACIONES                         */
+
+
+
+
+.contenedora_tarjetas_recomendaciones {
+    /* background-color: #ee920c; */
+    width: 1100px;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0 50px 0;
+}
+
+.tarjeta_servicios {
+    background-color: #f7cdaa;
+    width: 90%;
+    height: 420px;
+    border-radius: 50px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+
+.contenedor_imagen_refuguio_tarjeta {
+    /* background-color: rgba(137, 43, 226, 0.212); */
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagen_refuguio_tarjeta {
+    background-image: url('/img/refuguio.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 65%;
+    width: 90%;
+
+}
+
+.bimagen_refuguio_tarjeta {
+    background-image: url('/img/forrajeria.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 60%;
+    width: 70%;
+
+}
+
+.cimagen_refuguio_tarjeta {
+    background-image: url('/img/peluqueria-canina.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 65%;
+    width: 90%;
+
+}
+
+.titulo_descripcion_contactos {
+    /* background-color: rgba(165, 42, 42, 0.356); */
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.titulo_tipo_reco {
+    /* background-color: chocolate; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.nombre_empresa_servicio {
+    /* background-color: #603813; */
+    color: #ee920c;
+    font-size: 30pt;
+    padding-top: 20px;
+}
+
+.tipo_servicio {
+    background-color: #ee920c;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+
+}
+
+.contenedor_tipo_servicios {
+    position: absolute;
+    /* background-color: red; */
+    width: 520px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: end;
+
+}
+
+
+.linea_reco_refuguios {
+    background-color: #603813;
+    width: 82%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.contenedor_parrafo_info_reco {
+    /* background-color: rgba(0, 0, 255, 0.438); */
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parrafo_info_reco {
+    /* background-color: burlywood; */
+    font-size: 15pt;
+    width: 80%;
+    margin: 20px 0 0 20px;
+}
+
+.contactos_refu {
+    /* background-color: chartreuse; */
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_contactos_refuguios {
+    /* background-color: azure; */
+    height: 60px;
+    width: 640px;
+    display: flex;
+    padding: 0 10px;
+}
+
+.contactos_refuguios_mail_num {
+    background-color: #fcf2eb;
+    height: 100%;
+    padding: 0 20px 0 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.email_num_ref {
+    padding: 0 0 0 10px;
+    color: 603813;
+    font-size: 12pt;
+}
+
+
+
+
+/*                             FIN TARJETAS RECOMENDACIONES                        */
+
+
+/*                              FIN SERVICIOS                               */
