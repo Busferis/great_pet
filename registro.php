@@ -67,6 +67,13 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                 <input type="checkbox" onclick="myFunction()"><label>Mostrar contraseña</label>
             </div>
         </div>
+        <hr class="hr">
+        <div class="checkbox">
+            <input type="checkbox" name="politica_privacidad"><label>Acepto la <a href="politica_de_privacidad.php">Politica de Privacidad</a> de Great Pet</label>
+        </div>
+        <div class="button">
+            <input type="submit" value="Registrar">
+        </div>
         <script>
             function myFunction() {
               var x = document.getElementById("myInput");
@@ -83,12 +90,6 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
             //   }
             }
         </script>
-        <div class="checkbox">
-            <input type="checkbox" name="politica_privacidad"><label>Acepto la <a href="politica_de_privacidad.php">Politica de Privacidad</a> de Great Pet</label>
-        </div>
-        <div class="button">
-            <input type="submit" value="Registrar">
-        </div>
     </form>
 </body>
 </html>

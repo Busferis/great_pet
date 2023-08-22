@@ -20,6 +20,10 @@ a{
     text-decoration: none;
 }
 
+.hr{
+	margin-bottom: -1px;
+}
+
 body{
 	display: flex;
 	flex-direction: column;
