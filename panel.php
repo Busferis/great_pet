@@ -52,8 +52,13 @@ if (isset($_SESSION["nombreUsuario"])) {
             </div>
             <div class="redesu roboto">
                 <?php
-                    echo '<h1>'.$nombreUsuario.'</h1>';
-                    echo '<a href="logout.php">Cerrar sesión de ' . $nombreUsuario . '</a>';
+                    echo '<p>Bienvenido</p>';
+                    echo '<a href="perfil.php"><h1>'.$nombreUsuario.'</h1></a>';
+                    echo '<a href="logout.php">
+                            <span class="material-icons-outlined">
+                                logout
+                            </span>
+                          </a>';
                 ?>
             </div>
         </div>
