@@ -1424,3 +1424,72 @@ main {
 
 
 /*                              FIN SERVICIOS                               */
+
+
+
+/*                            QR                            */
+
+.contenedor-QR-main-adopcion {
+    background-color: #fcf2eb;
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;
+    padding-bottom: 200px; */
+}
+
+.fondo_contenedor-cartel_gato_qr{
+    background-color: #e60cee52;
+    width: 100%;
+    height: 270px;  
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+
+}
+.contenedor-cartel_gato_qr{
+    background-color: rgba(0, 255, 255, 0.348);
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.contenedor_img_gato_qr{
+    background-color: rgba(128, 255, 0, 0.347);
+    height: 100%;
+    /* width: auto; */
+    width: 300px;
+}
+
+.titulo_mensaje_gato_qr{
+    background-color: blueviolet    ;
+    height: 70%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo_gato_qr{
+    background-color: #6038137e;
+    height: 60%;
+    width: 90%;
+    font-size: 50pt;
+    color: #ffa75a;
+    display: flex;
+    justify-content: center;
+}
+.mensaje_gato_qr{
+    background-color: aquamarine;
+    height: 40%;
+    width: 100%;
+}
+
+/*                          FIN QR                            */
