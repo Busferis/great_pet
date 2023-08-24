@@ -55,6 +55,15 @@ header {
 }
 
 .navegacion h3:hover {
+    background-color: #ffa75a;
+    color: white;
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 50px;
+
+}
+
+/* .navegacion h3:active{
     transform: scale(1.1);
     background-color: #ffa75a;
     color: white;
@@ -62,8 +71,7 @@ header {
     height: 30px;
     padding: 0 20px;
     border-radius: 50px;
-
-}
+} */
 
 
 
