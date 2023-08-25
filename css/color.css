@@ -54,7 +54,7 @@ a {
     text-decoration: none;
 }
 
-.redesu{
+.redesu {
     width: 280px;
     display: flex;
     flex-direction: column;
@@ -63,16 +63,16 @@ a {
     color: white;
 }
 
-.redesu:hover{
+.redesu:hover {
     color: #f7cdaa;
     cursor: pointer;
 }
 
-.redesu p{
+.redesu p {
     font-size: 12pt;
 }
 
-.redesu a{
+.redesu a {
     text-decoration: none;
     color: cyan;
 }
@@ -368,7 +368,7 @@ main {
 .caja-fodo-titulo-adopta {
     display: flex;
     background-color: #f7cdaa;
-    margin-top: 120px;
+    margin-top: 130px;
     width: 100%;
     height: 150PX;
     /* height: 270px; */
@@ -528,7 +528,7 @@ main {
 
 .linea-filtro-adopcion-tarjetas {
     background-color: #603813;
-    height: 13px;
+    height: 5px;
     width: 100%;
     border-radius: 20px;
 }
@@ -548,7 +548,7 @@ main {
 
     height: 1650px;
     width: 85%;
-    margin-top: 70px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1170,7 +1170,7 @@ main {
     background-color: #f7cdaa;
     height: 300px;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 130px;
     display: flex;
     justify-content: center;
 }
@@ -1432,25 +1432,26 @@ main {
 .contenedor-QR-main-adopcion {
     background-color: #fcf2eb;
     width: 100%;
-    height: 1300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 200px;
     /* justify-content: center;
     padding-bottom: 200px; */
 }
 
-.fondo_contenedor-cartel_gato_qr{
-    background-color: #e60cee52;
+.fondo_contenedor-cartel_gato_qr {
+    background-color: #f7cdaa;
     width: 100%;
-    height: 270px;  
+    height: 270px;
     margin-top: 110px;
     display: flex;
     justify-content: center;
 
 }
-.contenedor-cartel_gato_qr{
-    background-color: rgba(0, 255, 255, 0.348);
+
+.contenedor-cartel_gato_qr {
+    /* background-color: rgba(0, 255, 255, 0.348); */
     width: 1200px;
     height: 100%;
     display: flex;
@@ -1460,36 +1461,247 @@ main {
 
 }
 
-.contenedor_img_gato_qr{
-    background-color: rgba(128, 255, 0, 0.347);
+.contenedor_img_gato_qr {
+    /* background-color: rgba(128, 255, 0, 0.347); */
+    background-image: url('/img/GATO_QR_HEADER.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
-    /* width: auto; */
-    width: 300px;
+    width: auto;
+    width: 239px;
 }
 
-.titulo_mensaje_gato_qr{
-    background-color: blueviolet    ;
+.titulo_mensaje_gato_qr {
+    /* background-color: blueviolet    ; */
     height: 70%;
-    width: 600px;
+    width: 700px;
+    color: #603813;
+    font-size: 17pt;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 
 }
 
-.titulo_gato_qr{
-    background-color: #6038137e;
-    height: 60%;
+.titulo_gato_qr {
+    /* background-color: #6038137e; */
+    height: 50%;
     width: 90%;
     font-size: 50pt;
     color: #ffa75a;
     display: flex;
     justify-content: center;
 }
-.mensaje_gato_qr{
-    background-color: aquamarine;
+
+.mensaje_gato_qr {
+    /* background-color: aquamarine; */
+    padding-top: 5px;
     height: 40%;
     width: 100%;
 }
+
+
+/*                                tarjetas qr                             */
+
+
+.fondo_contenedor_tarjetas_mascotas_qr {
+    /* background-color: aquamarine; */
+    margin-top: 130px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contenedor_tarjetas_mascotas_qr {
+    background-color: #f7cdaa;
+    width: 1200px;
+    min-width: 1200px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70PX;
+}
+
+.titulo_selecciona_mascota {
+    /* background-color: rgba(255, 0, 0, 0.377); */
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45pt;
+    padding-top: 25px;
+    color: #ffa75a;
+}
+
+.linea_titulo_tarjetas_mascotas_qr {
+    background-color: #603813;
+    width: 90%;
+    height: 7px;
+}
+
+.contenedor_tarjetas_qr {
+    /* background-color: burlywood; */
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_horizontal_tarjetas_mascotas_qr {
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    margin-top: 30PX;
+}
+
+
+.tarjetas_mascotas_qr {
+    background-color: #ffa75a;
+    height: 190px;
+    width: 450px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.tarjetas_mascotas_qr_añadir_mascota {
+    background-color: #ffa75a49;
+    border: #ffa75a 5px solid;
+    height: 190px;
+    width: 450px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    transition: all 0.32s;
+}
+
+
+.tarjetas_mascotas_qr_añadir_mascota:hover {
+    transform: scale(1.04);
+}
+
+
+.contenedor_mas_a_m{
+    /* background-color: #fcf2eb; */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50PX;
+}
+.mas_añadir_m{
+    font-size: 70pt;
+    color: #f19000;
+}
+
+.texto_añadir_mascota{
+    font-size: 20PT;
+    color: #f19000;
+}
+
+
+
+.img_tarjeta_qr_mascota {
+    /* background-color: #de7718; */
+    background-image: url('/img/perro_qrrrr.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: COVER;
+    width: 190px;
+    height: 100%;
+    border-radius: 30px;
+    border: #f7cdaa 10PX SOLID;
+}
+
+.img_tarjeta_qr_mascotaB{
+    /* background-color: #de7718; */
+    background-image: url('/img/gato_qrrrrrr.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: COVER;
+    width: 190px;
+    height: 100%;
+    border-radius: 30px;
+    border: #f7cdaa 10PX SOLID;
+}
+
+.img_tarjeta_qr_mascotaC{
+    /* background-color: #de7718; */
+    background-image: url('/img/juani_qrrrrrr.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: COVER;
+    width: 190px;
+    height: 100%;
+    border-radius: 30px;
+    border: #f7cdaa 10PX SOLID;
+}
+
+
+
+.contenedor_nombre_crear_qr_mascota {
+    /* background-color: rgba(255, 242, 127, 0.397); */
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.nombre_mascota_tarjeta_qr{
+    /* background-color: #f5911e88; */
+    width: 100%;
+    height: 60px;
+    color: #fce8d9;
+    font-size: 30pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 15PX;
+}
+
+.contenedor_generador_qr{
+    background-color: #fce8d9;
+    height: 60px;
+    border-radius: 20px;
+    padding: 0 15PX;
+    font-size: 17pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #f7cdaa 5px solid;
+    color: #ffa75a;
+    transition: all 0.3s;
+}
+
+.contenedor_generador_qr:hover{
+    background-color: #ffa75a;
+    color: #fce8d9;
+    transform: scale(1.1);
+}
+
+
+
+/*                          FIN   tarjetas qr                             */
+
+
+
+
+
+
+
+
 
 /*                          FIN QR                            */

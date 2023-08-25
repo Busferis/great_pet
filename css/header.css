@@ -45,7 +45,7 @@ header {
 .navegacion h3 {
     font-size: 15pt;
     padding: 0 8px 0 8px;
-    color: rgb(255, 167, 90);
+    color: #ffa75a;
     transition: all 0.4s ease 0s;
     /* height: 20px; */
     height: 30px;
@@ -62,17 +62,6 @@ header {
     border-radius: 50px;
 
 }
-
-/* .navegacion h3:active{
-    transform: scale(1.1);
-    background-color: #ffa75a;
-    color: white;
-    width: auto;
-    height: 30px;
-    padding: 0 20px;
-    border-radius: 50px;
-} */
-
 
 
 .img-header {
