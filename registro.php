@@ -55,41 +55,43 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     <link rel="stylesheet" href="css/registro.css">
 </head>
 <body class="releway">
-	<h1 class="roboto">Registro</h1>
-	<form action="" method="POST">
-        <div class="input">
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="text" name="apellido" placeholder="Apellido" required>
-            <input type="email" name="email" placeholder="Correo electronico" required>
-            <input type="password" name="password" placeholder="Contraseña" id="myInput" required>
-            <!-- <input type="password" name="confirmar_password" placeholder="Repetir contraseña" id="myInput2" required> -->
-            <div>
-                <input type="checkbox" onclick="myFunction()"><label>Mostrar contraseña</label>
+    <div class="registro">
+        <h1 class="roboto">Registro</h1>
+        <form action="" method="POST">
+            <div class="input">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="email" name="email" placeholder="Correo electronico" required>
+                <input type="password" name="password" placeholder="Contraseña" id="myInput" required>
+                <!-- <input type="password" name="confirmar_password" placeholder="Repetir contraseña" id="myInput2" required> -->
+                <div>
+                    <input type="checkbox" onclick="myFunction()"><label>Mostrar contraseña</label>
+                </div>
             </div>
-        </div>
-        <hr class="hr">
-        <div class="checkbox">
-            <input type="checkbox" name="politica_privacidad"><label>Acepto la <a href="politica_de_privacidad.php">Politica de Privacidad</a> de Great Pet</label>
-        </div>
-        <div class="button">
-            <input type="submit" value="Registrar">
-        </div>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myInput");
-              if (x.type === "password") {
-                x.type = "text";
-              } else {
-                x.type = "password";
-              }
-            //   var y = document.getElementById("myInput2");
-            //   if (y.type === "password") {
-            //     y.type = "text";
-            //   } else {
-            //     y.type = "password";
-            //   }
-            }
-        </script>
-    </form>
+            <hr class="hr">
+            <div class="checkbox">
+                <input type="checkbox" name="politica_privacidad"><label>Acepto la <a href="politica_de_privacidad.php">Politica de Privacidad</a> de Great Pet</label>
+            </div>
+            <div class="button">
+                <input type="submit" value="Registrar">
+            </div>
+            <script>
+                function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+                //   var y = document.getElementById("myInput2");
+                //   if (y.type === "password") {
+                //     y.type = "text";
+                //   } else {
+                //     y.type = "password";
+                //   }
+                }
+            </script>
+        </form>
+    </div>
 </body>
 </html>

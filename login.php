@@ -65,35 +65,37 @@ if (isset($_SESSION["registro_exitoso"])) {
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body class="releway">
-    <h1 class="roboto">Iniciar sesión</h1>
-	<form action="" method="POST">
-		<div class="input">
-			<input type="text" name="email" placeholder="Correo electronico" required>
-			<input type="password" name="password" placeholder="Contraseña" id="myInput" required>
-			<div>
-                <input type="checkbox" onclick="myFunction()"><label>Mostrar contraseña</label>
-            </div>
-		</div>
-		<div class="botones">
-			<a href="registro.php">Registrarse</a>
-			<input type="submit" value="Ingresar">
-		</div>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myInput");
-              if (x.type === "password") {
-                x.type = "text";
-              } else {
-                x.type = "password";
-              }
-            //   var y = document.getElementById("myInput2");
-            //   if (y.type === "password") {
-            //     y.type = "text";
-            //   } else {
-            //     y.type = "password";
-            //   }
-            }
-        </script>
-	</form>
+	<div class="login">
+		<h1 class="roboto">Iniciar sesión</h1>
+		<form action="" method="POST">
+			<div class="input">
+				<input type="text" name="email" placeholder="Correo electronico" required>
+				<input type="password" name="password" placeholder="Contraseña" id="myInput" required>
+				<div>
+					<input type="checkbox" onclick="myFunction()"><label>Mostrar contraseña</label>
+				</div>
+			</div>
+			<div class="botones">
+				<a href="registro.php">Registrarse</a>
+				<input type="submit" value="Ingresar">
+			</div>
+			<script>
+				function myFunction() {
+				var x = document.getElementById("myInput");
+				if (x.type === "password") {
+					x.type = "text";
+				} else {
+					x.type = "password";
+				}
+				//   var y = document.getElementById("myInput2");
+				//   if (y.type === "password") {
+				//     y.type = "text";
+				//   } else {
+				//     y.type = "password";
+				//   }
+				}
+			</script>
+		</form>
+	</div>
 </body>
 </html>
