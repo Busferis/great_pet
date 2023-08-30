@@ -33,7 +33,7 @@
 
 .logo_negro-fondo-cartel{
     position: absolute;
-    background-image: url('/img/LOGO-BUSQUEDA-NEGRA.png');
+    background-image: url('../img/LOGO-BUSQUEDA-NEGRA.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -48,7 +48,7 @@
 
 .img_cartel_mensaje{
     /* background-color: rgb(5, 222, 222); */
-    background-image: url('/img/gato.png');
+    background-image: url('../img/gato.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -220,7 +220,7 @@
 }
 
 .tipo_de_recompensas{
-    background-image: url('/img/recopensa-efectivo-busqueda.png');
+    background-image: url('../img/recopensa-efectivo-busqueda.png');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -375,6 +375,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*          INFO MASCOTA QR                       */
 
 .contenedor-qr-realizado-main-adopcion {
@@ -437,7 +454,7 @@
 
 
 .caja-foto-mascota-qr-realizado{
-    background-image: url('/img/juani_qrrrrrr.png');
+    background-image: url('../img/juani_qrrrrrr.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -514,14 +531,16 @@
 }
 
 .datos-qr-realizado{
-    background-color: rgba(240, 248, 255, 0.279);
+    /* background-color: rgba(240, 248, 255, 0.279); */
     height: 250px;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    font-size: 18pt;
+    text-align: center;
+    color: #603813;
 }
 
 .datos-dueño-qr-realizado{

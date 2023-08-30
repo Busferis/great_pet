@@ -36,7 +36,7 @@
 .logo_negro-fondo-cartel{
     position: absolute;
     /* background-color: black; */
-    background-image: url('/img/LOGO-SERVICIOS-NEGRO.png');
+    background-image: url('../img/LOGO-SERVICIOS-NEGRO.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -50,7 +50,7 @@
 
 .img_perro_servicios {
     /* background-color: rgba(0, 255, 255, 0.308); */
-    background-image: url('/img/Cachorro-feliz-31175d68.png');
+    background-image: url('../img/Cachorro-feliz-31175d68.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,7 +148,7 @@
 }
 
 .imagen_refuguio_tarjeta {
-    background-image: url('/img/refuguio.png');
+    background-image: url('../img/refuguio.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -159,7 +159,7 @@
 }
 
 .bimagen_refuguio_tarjeta {
-    background-image: url('/img/forrajeria.png');
+    background-image: url('../img/forrajeria.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@
 }
 
 .cimagen_refuguio_tarjeta {
-    background-image: url('/img/peluqueria-canina.png');
+    background-image: url('../img/peluqueria-canina.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -53,7 +53,7 @@
 .logo_negro-fondo-cartel{
     position: absolute;
     /* background-color:red; */
-    background-image: url('/img/LOGO-ADOPCION-NEGRO.png');
+    background-image: url('../img/LOGO-ADOPCION-NEGRO.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -71,7 +71,7 @@
 .img-perro-adopcion {
     position: relative;
     /* background-color: #de7718; */
-    background-image: url('/img/perro-header.png');
+    background-image: url('../img/perro-header.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -532,7 +532,7 @@
 
 
 .FOTO-animal-ver-mas {
-    background-image: url("/img/tito_calderon.jpg");
+    background-image: url("../img/tito_calderon.jpg");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -669,7 +669,7 @@
 .img_refuguio_ver_mas {
     height: 100%;
     width: 100%;
-    background-image: url('/img/refuguio.png');
+    background-image: url('../img/refuguio.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
