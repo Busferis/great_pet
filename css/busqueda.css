@@ -1,5 +1,14 @@
+
+
+
 .contenedor2-main-adopcion{
-    height: 1000px;
+    width: 100%;
+    height: 2500px;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+    align-items: center;
 }
 .contenedor_cartel_busqueda{
     background-color: #f7cdaa;
@@ -11,21 +20,355 @@
 
 }
 .cartel_mensaje-busqueda{
-        background-color: rgba(53, 84, 68, 0.227);
+        /* background-color: rgba(7, 108, 56, 0.227); */
+        position: relative;
         width: 1400px;
+        min-width: 1400px;
         height: 100%;
         display: flex;
+        align-items: center;
+        overflow: hidden;
+
 }
+
+.logo_negro-fondo-cartel{
+    position: absolute;
+    background-image: url('/img/LOGO-BUSQUEDA-NEGRA.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 430px;
+    height: 410px;
+    opacity: 0.02;
+    right: 0;
+    top: -40px;
+    z-index: 3;
+
+}
+
 .img_cartel_mensaje{
+    /* background-color: rgb(5, 222, 222); */
+    background-image: url('/img/gato.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 100%;
+    margin-left: 20px;
+
+}
+
+.titulo_mensaje_busqueda{
+    /* background-color: blueviolet    ; */
+    position: absolute;
+    height: 70%;
+    width: 800px;
+    color: #603813;
+    font-size: 17pt;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    left: 270px;
+    z-index: 4;
+}
+
+.titulo-cartel{
+        /* background-color: #6038137e; */
+        width: 90%;
+        font-size: 45pt;
+        color: #ee920c;
+        display: flex;
+        justify-content: center;
+}
+.mensaje-cartel{
+        /* background-color: rgba(6, 54, 38, 0.33); */
+        padding-top: 5px;
+        height: 45px;
+        width: 100%;
+        font-size: 25pt;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+        padding-bottom:30px ;
+        z-index: 4;
+}
+
+
+
+
+
+
+
+
+
+
+.caja-contenedora-tarjetas-adopcion {
+    /* background-color: #ffa75a; */
+    margin-top: 50px;
+    height: 2050px;
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja-filtro-adopcion {
+    /* background-color: blueviolet; */
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selec-filtro {
+    /* background-color: #f7cdaa; */
+    width: 75%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.SELECT-1 {
+    height: 60PX;
+    width: 300PX;
+    border-radius: 20PX;
+    background-color: rgb(255, 167, 90);
+    border-style: none;
+    color: #603813;
+    font-size: 14pt;
+    text-align: center;
+
+}
+
+.options-select {
+    background-color: #fcc290;
+    color: #603813
+}
+
+.buscar-filtro-adopcion {
+    background-color: #ffa75a;
+    color: #603813;
+    border: 4px solid #603813;
+    height: 70px;
+    width: 70px;
+    font-size: 40pt;
+    border-radius: 33px;
+    transition: all 0.3s;
+}
+
+.buscar-filtro-adopcion:hover {
+    color: #fcf2eb;
+    transform: scale(1.3);
+
+}
+
+
+
+.linea-filtro-adopcion-tarjetas {
+    background-color: #603813;
+    height: 5px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.contenedor-tarjetas-busqueda-mini-descripcion {
+    /* background-color: rgb(109, 153, 192); */
+    height: 1650px;
+    width: 85%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjetas-busqueda-mini-descripcion-row {
+    /* background-color: #541360; */
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 0 0;
+}
+
+.tarjeta1-busqueda-mini-descripcion {
+    position: relative;
+    background-color: #f7cdaa;
+    height: 500px;
+    width: calc(90% / 3 - 2%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.tito_img-perro-en-busqueda {
+    position: relative;
+    background-image: url("../img/tito_calderon.jpg");
+    height: 46%;
+    width: 100%;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tipo_de_recompensas{
+    background-image: url('/img/recopensa-efectivo-busqueda.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 80PX;
+    width: 60PX;
+    right: -6PX;
+    top: -17PX;
+
+}
+
+.cajacontenedora_nombre {
+    height: 50px;
+    position: absolute;
+    bottom: -20px;
+    background-color: #ff000000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_nombre_centrado {
+    background-color: #ffa75a;
+    border: #f7cdaa 5px solid;
+    padding: 3px 12px;
+    max-width: 220px;
+    border-radius: 19px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcf2eb;
+    font-size: 23pt;
+}
+
+.mini-informacion-tarjeta-busqueda{
+        /* background-color: #ff330074; */
+        height: 36%;
+        width: 100%;
+        margin-top: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     
 }
-.titulo_mensaje_busqueda{
-        /* background-color: rgba(0, 255, 255, 0.308); */
-        background-image: url('/img/gato.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 370px;
-        height: 100%;
-        margin: 0 0 0 150px;
+
+.des-mascota-busqueda-tarjeta {
+    background-color: #fcf2eb;
+    height: calc(88% / 4);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.localidad-dato-busqueda{
+    padding: 0 10px;
+    max-width: 330px;
+    min-width: 300px;
+    overflow: hidden;
+}
+.tamoño-defauld-dato{
+    width: 300px;
+    max-width: 330px;
+}
+
+.caja-ubicaciom_mascota_busqueda_tarjeta {
+    background-color: rgba(21, 170, 170, 0);
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ubicaciom_mascota_busqueda_tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 11pt;
+    white-space: nowrap;
+    color: #603813;
+
+}
+
+.caja_contenedora_dato1 {
+    position: absolute;
+    /* background-color: #d1beac; */
+    width: 148px;
+    display: flex;
+    font-size: 14pt;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea-recta-medio-tarjetas {
+    background-color: #603813;
+    width: 4px;
+    height: 80%;
+    border-radius: 4PX;
+    margin-left: 148px;
+}
+
+.caja_contededora_dato {
+    /* background-color: #6cb0d8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 148px;
+    max-width: 148px;
+    left: 30px;
+}
+
+.caja1_minidescripcion_der {
+    font-size: 14PT;
+}
+
+.contenedor_VER-MAS-mascota-adopcion-tarjeta {
+    /* background-color: rgb(127, 255, 212); */
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 5px 0; */
+}
+
+
+
+.VER-MAS-mascota-adopcion-tarjeta {
+    background-color: #ffa75a;
+    width: 145px;
+    height: 55px;
+    border-radius: 18px;
+    border: #efc49f solid 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fcf2eb;
+    font-size: 19pt;
+    transition: all 0.2s;
+}
+
+.VER-MAS-mascota-adopcion-tarjeta:hover {
+    background-color: #fcb77b;
+    border: #fcf2eb solid 5px;
+    transform: scale(1.1);
 }

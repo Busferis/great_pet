@@ -14,63 +14,89 @@
 .fondo_contenedor-cartel_gato_qr {
     background-color: #f7cdaa;
     width: 100%;
-    height: 270px;
-    margin-top: 110px;
+    height: 300px;
+    margin-top: 130px;
     display: flex;
     justify-content: center;
-
+    overflow: hidden;
 }
 
 .contenedor-cartel_gato_qr {
     /* background-color: rgba(0, 255, 255, 0.348); */
-    width: 1200px;
+    width: 1400px;
+    min-width: 1400px;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    position: relative;
 
 }
 
+.logo_negro-fondo-cartel{
+    position: absolute;
+    /* background-color: black; */
+    background-image: url('/img/LOGO-QR-NEGRO.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 430px;
+    height: 350px;
+    opacity: 0.02;
+    right: -35px;
+    top: 0px;
+    z-index: 3;
+    transform: rotate(4deg);
+
+}
+
+
 .contenedor_img_gato_qr {
     /* background-color: rgba(128, 255, 0, 0.347); */
+    position: relative;
     background-image: url('/img/GATO_QR_HEADER.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    width: auto;
     width: 239px;
+    margin-left: 60px;
+    bottom: -6px;
 }
 
 .titulo_mensaje_gato_qr {
+    position: absolute;
     /* background-color: blueviolet    ; */
-    height: 70%;
-    width: 700px;
+    width: 800px;
     color: #603813;
     font-size: 17pt;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
+    left: 300px;
+    z-index: 4;
 
 }
 
 .titulo_gato_qr {
-    /* background-color: #6038137e; */
-    height: 50%;
+    /* background-color: #eb3b70; */
+    height: 90px;
     width: 90%;
     font-size: 50pt;
-    color: #ffa75a;
+    color: #ee920c;
     display: flex;
     justify-content: center;
+    /* padding-top: 20px; */
 }
 
 .mensaje_gato_qr {
     /* background-color: aquamarine; */
     padding-top: 5px;
-    height: 40%;
     width: 100%;
+    font-size: 25PT;
+    display: flex;
+    justify-content: center;
 }
 
 

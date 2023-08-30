@@ -26,8 +26,26 @@
 .contenedora-header-foto-recomendaciones {
     /* background-color: rgba(228, 183, 125, 0.363); */
     width: 1400px;
+    min-width: 1400px;
     height: 100%;
     display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo_negro-fondo-cartel{
+    position: absolute;
+    /* background-color: black; */
+    background-image: url('/img/LOGO-SERVICIOS-NEGRO.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 430px;
+    height: 350px;
+    opacity: 0.02;
+    right: 0PX;
+    top: 0px;
+    z-index: 3;
 }
 
 .img_perro_servicios {
@@ -38,17 +56,19 @@
     background-size: cover;
     width: 370px;
     height: 100%;
-    margin: 0 0 0 150px;
 }
 
 
 .contenedor-titulo_mensaje_servicios {
+    position: absolute;
     /* background-color: rgba(0, 255, 55, 0.226); */
     width: 880px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 5;
+    left: 320px;
 }
 
 .titulo_mensaje_servicios {
@@ -74,7 +94,7 @@
 }
 
 .titulo_recomendaciones_servicios {
-    font-size: 45pt;
+    font-size: 50pt;
     /* background-color: #603813; */
     display: flex;
     justify-content: center;
@@ -83,7 +103,7 @@
 
 .mesaje_servicios_ {
     /* background-color: #690b0b; */
-    font-size: 20pt;
+    font-size: 25pt;
     display: flex;
     justify-content: center;
     color: #603813;

@@ -27,47 +27,58 @@
 
 
 .caja-fodo-titulo-adopta {
-    display: flex;
     background-color: #f7cdaa;
-    margin-top: 130px;
+    height: 300px;
     width: 100%;
-    height: 150PX;
-    /* height: 270px; */
+    margin-top: 130px;
+    display: flex;
     justify-content: center;
 }
 
 .contanedora-caja-fodo-titulo-adopta {
-    background-color: #f7cdaa;
-    height: 100%;
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-
-}
-
-.img-gato-adopcion {
-    /* background-color: #944e15; */
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-}
-
-.img-gato-adopcion-header {
-    height: 150px;
-    width: auto;
+    /* background-color: #e4d2c5; */
     position: relative;
-    top: 25px;
+    width: 1400px;
+    min-width: 1400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 
 }
+
+
+
+
+.logo_negro-fondo-cartel{
+    position: absolute;
+    /* background-color:red; */
+    background-image: url('/img/LOGO-ADOPCION-NEGRO.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 490Px;
+    height: 410px;
+    opacity: 0.02;
+    right: 0PX;
+    top: -10px;
+    z-index: 3;
+
+}
+
+
 
 .img-perro-adopcion {
-    /* background-color: #fbff00; */
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    /* background-color: #de7718; */
+    background-image: url('/img/perro-header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 270px;
+    margin-top: 30px;
+    z-index: 3;
 }
 
 .img-perro-adopcion-header {
@@ -79,29 +90,30 @@
 
 .texto-adopcion-header {
     /* background-color:#c5f7aa; */
-    width: 50%;
+    width: 890px;
     height: 150px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 5px;
+    margin-bottom: 20px;
+    z-index: 5;
 }
 
 .titulo-adopcion-header {
     /* background-color: #f1d1b7; */
     position: relative;
-    font-size: 33pt;
+    font-size: 50pt;
     top: -5px;
-    color: #ffa75a;
+    color: #ee920c;
     letter-spacing: 1.5px;
 }
 
 .mensaje-adopcion-header {
     /* background-color: antiquewhite; */
     position: relative;
-    font-size: 17pt;
+    font-size: 25pt;
     color: #603813
 }
 
@@ -322,8 +334,6 @@
     font-size: 13pt;
     white-space: nowrap;
     color: #603813;
-
-
 }
 
 
@@ -404,9 +414,6 @@
     font-size: 13PT;
 }
 
-.a_contenedor_VER-MAS-mascota-adopcion-tarjeta {
-    background-color: #603813;
-}
 
 .contenedor_VER-MAS-mascota-adopcion-tarjeta {
     /* background-color: rgb(127, 255, 212); */
