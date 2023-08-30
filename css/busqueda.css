@@ -372,3 +372,213 @@
     border: #fcf2eb solid 5px;
     transform: scale(1.1);
 }
+
+
+
+/*          INFO MASCOTA QR                       */
+
+.contenedor-qr-realizado-main-adopcion {
+    background-color: #fcf2eb;
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.caja-centradora-qr-realizado{
+    background-color: #f7cdaa;
+    width: 1000px;
+    height: 900px;
+    border-radius: 100px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.caja-titulo-qr-realizado{
+    background-color: #f7cdaa;
+    border: #fcf2eb 8px solid;
+    height: 10%;
+    width: 55%;
+    position: absolute;
+    top: -50px;
+    border-radius: 40px;
+    color: #ffa75a;
+    font-size: 38pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caja-mascota-info-foto-qr-marcota-realizado{
+    /* background-color: rgba(127, 255, 212, 0.334); */
+    width: 90%;
+    height: 40%;
+    margin-top: 70px;
+    padding: 5px;
+    display: flex;
+}
+
+.caja-info-mascota-qr-realizado{
+    /* background-color: rgba(165, 42, 163, 0.434); */
+    width: 50%;
+    height: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.caja-foto-mascota-qr-realizado{
+    background-image: url('/img/juani_qrrrrrr.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #fcf2eb 4px solid;
+    width: 50%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+
+.caja-mascota-info-foto-qr-marcota-realizadob{
+    /* background-color: rgba(127, 255, 212, 0.692); */
+    width: 90%;
+    height: 44%;
+    margin-top: 30PX;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.caja-info-dueño-qr-realizado{
+    /* background-color: rgba(255, 0, 0, 0.387); */
+    width: 450px;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.caja-ubicacion-mascota-qr-realizado{
+    /* background-color: rgba(0, 0, 255, 0.33); */
+    width: 450px;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.img-ubicacion-qr-realizado{
+    
+    border-radius: 40px;
+    border: #fcebfb 10px solid;
+    top: 80px;
+    width: 85%;
+    height: 80%;
+    position: absolute;
+
+}
+
+
+.titulo-info-qr-realizado{
+    /* background-color: rgba(127, 255, 212, 0.393); */
+    width: 100%;
+    height: 16%;
+    font-size: 30pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffa75a;
+
+}
+
+.linea-qr-realizado{
+    background-color:#fcebfb;
+    height: 1.5%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.datos-qr-realizado{
+    background-color: rgba(240, 248, 255, 0.279);
+    height: 250px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.datos-dueño-qr-realizado{
+    /* background-color: rgba(240, 248, 255, 0.279); */
+    height: 170px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.caja-datos-dueño-qr-realizado{
+    /* background-color: #563313; */
+    height: calc(85% /3);
+    display: flex;
+    align-items: center;
+    width: 360px;
+    margin-left: 90px;
+    
+}
+
+.a-dato-qr-r{
+    background-color: #ffa75a;
+    display: inline;
+    padding: 10px 13px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17pt;
+    margin-right: 10px;
+}
+
+.b-dato-qr-r{
+    background-color:#fcf2eb;
+    display: inline;
+    padding: 9px 13px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    font-size: 15pt;
+    max-width: 270px;
+}
+
+.a-linea-qr-realizado{
+    background-color:#fcebfb;
+    height: 1.5%;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/*                           FIN INFO MASCOTA QR                       */
