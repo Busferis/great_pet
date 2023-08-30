@@ -9,7 +9,7 @@ if (isset($_SESSION["nombreUsuario"])) {
 }
 
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -24,6 +24,7 @@ if (isset($_SESSION["nombreUsuario"])) {
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Great Pet</title>
 </head>
 
@@ -40,10 +41,10 @@ if (isset($_SESSION["nombreUsuario"])) {
                 <a class="TEXTO-LINK" href="adopcion.html">
                     <h3>Adopcion</h3>
                 </a>
-                <a class="TEXTO-LINK" href="#">
+                <a class="TEXTO-LINK" href="busqueda.html">
                     <h3>Busqueda</h3>
                 </a>
-                <a class="TEXTO-LINK" href="#">
+                <a class="TEXTO-LINK" href="qr_panel.php">
                     <h3>QR</h3>
                 </a>
                 <a class="TEXTO-LINK" href="servicios.html">
@@ -58,7 +59,7 @@ if (isset($_SESSION["nombreUsuario"])) {
                             <span class="material-icons-outlined">
                                 logout
                             </span>
-                          </a>';
+                        </a>';
                 ?>
             </div>
         </div>
@@ -139,7 +140,7 @@ if (isset($_SESSION["nombreUsuario"])) {
                             sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamLorem ipsum dolor
                             sit amet, c adipiscing </div>
                     </div>
-                    <a class="ir-link" href="#">
+                    <a class="ir-link" href="busqueda.html">
                         <div class="caja-ir">
                             <h3 class="ir sigmar">IR</h3>
                         </div>
@@ -163,7 +164,7 @@ if (isset($_SESSION["nombreUsuario"])) {
                             sit amet, c adipiscing </div>
                     </div>
 
-                    <a class="ir-link" href="#">
+                    <a class="ir-link" href="qr.html">
                         <div class="caja-ir">
                             <h3 class="ir sigmar">IR</h3>
                         </div>

@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+if (isset($_SESSION["nombreUsuario"])) {
+    $nombreUsuario = $_SESSION["nombreUsuario"];
+} else{
+    header("Location: login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,7 +38,7 @@
                 <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
             </a>
             <div class="navegacion roboto">
-                <a class="TEXTO-LINK" href="index.html">
+                <a class="TEXTO-LINK" href="panel.php">
                     <h3>Inicio</h3>
                 </a>
                 <a class="TEXTO-LINK" href="adopcion.html">
@@ -42,11 +54,16 @@
                     <h3>Servicios</h3>
                 </a>
             </div>
-            <div class="redes roboto">
-
-                <div class="redes roboto">
-                    <a href="login.php" class="registrarse">Iniciar sesión</a>
-                </div>
+            <div class="redesu roboto">
+                <?php
+                    echo '<p>Bienvenido</p>';
+                    echo '<a href="perfil.php"><h1>'.$nombreUsuario.'</h1></a>';
+                    echo '<a href="logout.php">
+                            <span class="material-icons-outlined">
+                                logout
+                            </span>
+                          </a>';
+                ?>
             </div>
         </div>
     </header>
@@ -82,7 +99,94 @@
             </div>
 
             <div class="fondo_contenedor_tarjetas_mascotas_qr">
-                <a href="login.php" class="registrarse">Iniciar sesión</a>
+                <div class="contenedor_tarjetas_mascotas_qr">
+                    <div class="titulo_selecciona_mascota lexend">
+                        <P>SELECCIONA TU MASCOTA</P>
+                    </div>
+                    <div class="linea_titulo_tarjetas_mascotas_qr"></div>
+                    <div class="contenedor_tarjetas_qr">
+
+                        <div class="contenedor_horizontal_tarjetas_mascotas_qr">
+
+                            <div class="tarjetas_mascotas_qr">
+
+                                <div class="img_tarjeta_qr_mascota"></div>
+
+                                <div class="contenedor_nombre_crear_qr_mascota">
+                                    <div class="nombre_mascota_tarjeta_qr lexend">
+                                        <p>Laika</p>
+                                    </div>
+                                    <a href="qr-realizado.html">
+                                    <div class="contenedor_generador_qr roboto2">
+                                        <p>Descargar QR</p>
+                                    </div>
+                                </a>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="tarjetas_mascotas_qr">
+                                <div class="img_tarjeta_qr_mascotaB"></div>
+
+                                <div class="contenedor_nombre_crear_qr_mascota">
+                                    <div class="nombre_mascota_tarjeta_qr lexend">
+                                        <p>Greta</p>
+                                    </div>
+                                    <a href="qr-realizado.html">
+                                        <div class="contenedor_generador_qr roboto2">
+                                            <p>Descargar QR</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="contenedor_horizontal_tarjetas_mascotas_qr">
+
+                            <div class="tarjetas_mascotas_qr">
+
+                                <div class="img_tarjeta_qr_mascotaC"></div>
+
+                                <div class="contenedor_nombre_crear_qr_mascota">
+                                    <div class="nombre_mascota_tarjeta_qr lexend">
+                                        <p>Juanita</p>
+                                    </div>
+                                    <a href="qr-realizado.html">
+                                        <div class="contenedor_generador_qr roboto2">
+                                            <p>Descargar QR</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+
+                            <a href="#">
+                            <div class="tarjetas_mascotas_qr_añadir_mascota">
+                                <div class="contenedor_mas_a_m">
+                                    <span class="material-icons-outlined mas_añadir_m">
+                                        add
+                                    </span>
+
+                                    <div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div>
+
+                                </div>
+                            </div>
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
             </div>
 
 
