@@ -1,0 +1,31 @@
+.contenedor2-main-adopcion{
+    height: 1000px;
+}
+.contenedor_cartel_busqueda{
+    background-color: #f7cdaa;
+    height: 300px;
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+
+}
+.cartel_mensaje-busqueda{
+        background-color: rgba(53, 84, 68, 0.227);
+        width: 1400px;
+        height: 100%;
+        display: flex;
+}
+.img_cartel_mensaje{
+    
+}
+.titulo_mensaje_busqueda{
+        /* background-color: rgba(0, 255, 255, 0.308); */
+        background-image: url('/img/gato.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 370px;
+        height: 100%;
+        margin: 0 0 0 150px;
+}

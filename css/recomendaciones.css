@@ -1,0 +1,271 @@
+
+
+/*                                 SERVICIOS                             */
+
+.contenedor-sevicios-main-adopcion {
+    background-color: #fcf2eb;
+    width: 100%;
+    height: 2200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;
+        padding-bottom: 200px; */
+
+}
+
+.caja-contenedora-header-foto-recomendaciones {
+    background-color: #f7cdaa;
+    height: 300px;
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedora-header-foto-recomendaciones {
+    /* background-color: rgba(228, 183, 125, 0.363); */
+    width: 1400px;
+    height: 100%;
+    display: flex;
+}
+
+.img_perro_servicios {
+    /* background-color: rgba(0, 255, 255, 0.308); */
+    background-image: url('/img/Cachorro-feliz-31175d68.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 370px;
+    height: 100%;
+    margin: 0 0 0 150px;
+}
+
+
+.contenedor-titulo_mensaje_servicios {
+    /* background-color: rgba(0, 255, 55, 0.226); */
+    width: 880px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo_mensaje_servicios {
+    /* background-color: #de7718; */
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.titulo_recomendaciones_servicios {
+    /* background-color: aquamarine; */
+    height: 90px;
+    width: 80%;
+}
+
+.mesaje_servicios_ {
+    /* background-color: aquamarine; */
+    height: 90px;
+    width: 100%;
+}
+
+.titulo_recomendaciones_servicios {
+    font-size: 45pt;
+    /* background-color: #603813; */
+    display: flex;
+    justify-content: center;
+    color: #ee920c;
+}
+
+.mesaje_servicios_ {
+    /* background-color: #690b0b; */
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    color: #603813;
+}
+
+
+
+
+/*                             TARJETAS RECOMENDACIONES                         */
+
+
+
+
+.contenedora_tarjetas_recomendaciones {
+    /* background-color: #ee920c; */
+    width: 1100px;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0 50px 0;
+}
+
+.tarjeta_servicios {
+    background-color: #f7cdaa;
+    width: 90%;
+    height: 420px;
+    border-radius: 50px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+
+.contenedor_imagen_refuguio_tarjeta {
+    /* background-color: rgba(137, 43, 226, 0.212); */
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagen_refuguio_tarjeta {
+    background-image: url('/img/refuguio.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 65%;
+    width: 90%;
+
+}
+
+.bimagen_refuguio_tarjeta {
+    background-image: url('/img/forrajeria.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 60%;
+    width: 70%;
+
+}
+
+.cimagen_refuguio_tarjeta {
+    background-image: url('/img/peluqueria-canina.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #603813; */
+    height: 65%;
+    width: 90%;
+
+}
+
+.titulo_descripcion_contactos {
+    /* background-color: rgba(165, 42, 42, 0.356); */
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.titulo_tipo_reco {
+    /* background-color: chocolate; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.nombre_empresa_servicio {
+    /* background-color: #603813; */
+    color: #ee920c;
+    font-size: 30pt;
+    padding-top: 20px;
+}
+
+.tipo_servicio {
+    background-color: #ee920c;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+
+}
+
+.contenedor_tipo_servicios {
+    position: absolute;
+    /* background-color: red; */
+    width: 520px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: end;
+
+}
+
+
+.linea_reco_refuguios {
+    background-color: #603813;
+    width: 82%;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.contenedor_parrafo_info_reco {
+    /* background-color: rgba(0, 0, 255, 0.438); */
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parrafo_info_reco {
+    /* background-color: burlywood; */
+    font-size: 15pt;
+    width: 80%;
+    margin: 20px 0 0 20px;
+}
+
+.contactos_refu {
+    /* background-color: chartreuse; */
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_contactos_refuguios {
+    /* background-color: azure; */
+    height: 60px;
+    width: 640px;
+    display: flex;
+    padding: 0 10px;
+}
+
+.contactos_refuguios_mail_num {
+    background-color: #fcf2eb;
+    height: 100%;
+    padding: 0 20px 0 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.email_num_ref {
+    padding: 0 0 0 10px;
+    color: 603813;
+    font-size: 12pt;
+}
+
+
+
+
+/*                             FIN TARJETAS RECOMENDACIONES                        */
