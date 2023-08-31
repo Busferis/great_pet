@@ -87,7 +87,9 @@ main {
     width: 400px;
     height: 400px;
     color: #603813;
-    font-size: 22px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
 }
 
 

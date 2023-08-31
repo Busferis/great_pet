@@ -47,7 +47,8 @@ footer {
     display: flex;
     margin-left: 120px;
     align-items: center;
-    width: 950px;
+    /* width: 950px; */
+    width: 600px;
     justify-content: space-between;
 }
 

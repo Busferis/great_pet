@@ -41,7 +41,7 @@
     background-size: cover;
     width: 430px;
     height: 350px;
-    opacity: 0.02;
+    opacity: 0.05;
     right: -35px;
     top: 0px;
     z-index: 3;
@@ -511,6 +511,246 @@
 /*                           FIN INFO MASCOTA QR                       */
 
 
+/*                   RESPONSIVE                                         */
+
+.fondo_qr_responsive{
+    background-color: #fce8d9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor_todo_qr{
+    /* background-color: rgba(127, 255, 212, 0.504); */
+    width: 600px;
+}
+
+.me_encontraste{
+    /* background-color: #ee920c; */
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+    font-size: 35pt;
+    color: #ffa75a;
+    margin-top: 50px;
+}
+
+.mega_tarjeta_mascota_qr{
+    background-color: #f7cdaa;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.contenedor_img1{
+    padding: 20px;
+    margin-bottom: 90px;
+}
+
+.foto_1{
+    /* background-color: rgb(2, 2, 0); */
+    background-image: url('../img/juani_qrrrrrr.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+
+}
+
+.nombre_mascota_reponsive_qr{
+    position: absolute;
+    background-color: #ee920c;
+    color: #f7cdaa;
+    border: #f7cdaa 10px solid;
+    display: flex;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 35pt;
+    bottom: -10px;
+    right: -10px;
+}
+
+
+.contenedores_datos_mascota{
+    position: relative;
+    background-color: #ffa75a;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.tituli_contenedor_responsive_qr{
+    position: absolute;
+    background-color: #ffa75a;
+    padding: 5px 35px;
+    font-size: 32pt;
+    color: #fce8d9;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    top: -50px;
+    left: 40px;
+}
+
+
+
+.caja_contenedora_datos_qr_reponsive{
+    /* background-color: brown; */
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0 90px 0;
+}
+
+.contenedor_color_dartos_qr_re{
+    /* background-color: blueviolet; */
+    width: 95%;
+    height: 90px;
+    display: flex;
+}
+
+.color_pate_iz1{
+    background-color: #f7cdaa;
+    height: 100%;
+    width: 40%;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25pt;
+    color: #603813;
+    overflow: hidden;
+}
+.color_pate_dr1{
+    background-color: #fce8d9;
+    height: 100%;
+    width: 60%;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25pt;
+    color: #ffa75a;
+    overflow: hidden;
+
+
+}
+
+
+
+
+/* 2 */
+
+
+
+
+
+.contenedores_datos_mascota2{
+    position: relative;
+    background-color: #f7cdaa;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+}
+
+
+.tituli_contenedor_responsive_qr2{
+    position: absolute;
+    background-color: #f7cdaa;
+    padding: 5px 35px;
+    font-size: 32pt;
+    color: #ee920c;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    top: -50px;
+    left: 40px;
+}
+
+
+.color_pate_iz2{
+    background-color: #ffa75a;
+    height: 100%;
+    width: 40%;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25pt;
+    color: #fce8d9;
+    overflow: hidden;
+    text-align: center;
+}
+
+.color_pate_dr2{
+    background-color: #fce8d9;
+    height: 100%;
+    width: 60%;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25pt;
+    color: #ffa75a;
+    overflow: hidden;
+
+
+}
+
+.caja_contenedora_datos_qr_reponsive2{
+    /* background-color: brown; */
+    height: 250px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0 90px 0;
+}
+
+.contenedor_color_dartos_qr_re2{
+    /* background-color: blueviolet; */
+    width: 95%;
+    height: 100px;
+    display: flex;
+}
+
+.caja_img_wp_qr_re{
+    /* background-color: #ee920c; */
+    width: 100px;
+    height: 100%;
+}
+
+
+.img-ubicacion-qr-realizado2{
+    
+    border-radius: 40px;
+    border: #fcebfb 10px solid;
+    top: 50px;
+    width: 85%;
+    height: 80%;
+    position: absolute;
+
+}
+
+/*                FIN   RESPONSIVE                                      */
 
 
 /*                          FIN QR                            */

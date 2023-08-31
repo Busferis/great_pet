@@ -1,7 +1,4 @@
-
-
-
-.contenedor2-main-adopcion{
+.contenedor2-main-adopcion {
     width: 100%;
     height: 2500px;
     display: flex;
@@ -10,7 +7,8 @@
     /* justify-content: center; */
     align-items: center;
 }
-.contenedor_cartel_busqueda{
+
+.contenedor_cartel_busqueda {
     background-color: #f7cdaa;
     height: 300px;
     width: 100%;
@@ -19,19 +17,20 @@
     justify-content: center;
 
 }
-.cartel_mensaje-busqueda{
-        /* background-color: rgba(7, 108, 56, 0.227); */
-        position: relative;
-        width: 1400px;
-        min-width: 1400px;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
+
+.cartel_mensaje-busqueda {
+    /* background-color: rgba(7, 108, 56, 0.227); */
+    position: relative;
+    width: 1400px;
+    min-width: 1400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 
 }
 
-.logo_negro-fondo-cartel{
+.logo_negro-fondo-cartel {
     position: absolute;
     background-image: url('../img/LOGO-BUSQUEDA-NEGRA.png');
     background-repeat: no-repeat;
@@ -39,14 +38,14 @@
     background-size: cover;
     width: 430px;
     height: 410px;
-    opacity: 0.02;
+    opacity: 0.05;
     right: 0;
     top: -40px;
     z-index: 3;
 
 }
 
-.img_cartel_mensaje{
+.img_cartel_mensaje {
     /* background-color: rgb(5, 222, 222); */
     background-image: url('../img/gato.png');
     background-position: center;
@@ -58,7 +57,7 @@
 
 }
 
-.titulo_mensaje_busqueda{
+.titulo_mensaje_busqueda {
     /* background-color: blueviolet    ; */
     position: absolute;
     height: 70%;
@@ -74,25 +73,26 @@
     z-index: 4;
 }
 
-.titulo-cartel{
-        /* background-color: #6038137e; */
-        width: 90%;
-        font-size: 45pt;
-        color: #ee920c;
-        display: flex;
-        justify-content: center;
+.titulo-cartel {
+    /* background-color: #6038137e; */
+    width: 90%;
+    font-size: 45pt;
+    color: #ee920c;
+    display: flex;
+    justify-content: center;
 }
-.mensaje-cartel{
-        /* background-color: rgba(6, 54, 38, 0.33); */
-        padding-top: 5px;
-        height: 45px;
-        width: 100%;
-        font-size: 25pt;
-        display:flex ;
-        align-items: center;
-        justify-content: center;
-        padding-bottom:30px ;
-        z-index: 4;
+
+.mensaje-cartel {
+    /* background-color: rgba(6, 54, 38, 0.33); */
+    padding-top: 5px;
+    height: 45px;
+    width: 100%;
+    font-size: 25pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    z-index: 4;
 }
 
 
@@ -219,7 +219,7 @@
     background-size: cover;
 }
 
-.tipo_de_recompensas{
+.tipo_de_recompensas {
     background-image: url('../img/recopensa-efectivo-busqueda.png');
     background-position: center;
     background-size: cover;
@@ -241,6 +241,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .contenedor_nombre_centrado {
     background-color: #ffa75a;
     border: #f7cdaa 5px solid;
@@ -255,16 +256,16 @@
     font-size: 23pt;
 }
 
-.mini-informacion-tarjeta-busqueda{
-        /* background-color: #ff330074; */
-        height: 36%;
-        width: 100%;
-        margin-top: 23px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    
+.mini-informacion-tarjeta-busqueda {
+    /* background-color: #ff330074; */
+    height: 36%;
+    width: 100%;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .des-mascota-busqueda-tarjeta {
@@ -276,13 +277,14 @@
     /* justify-content: space-around; */
 }
 
-.localidad-dato-busqueda{
+.localidad-dato-busqueda {
     padding: 0 10px;
     max-width: 330px;
     min-width: 300px;
     overflow: hidden;
 }
-.tamoño-defauld-dato{
+
+.tamoño-defauld-dato {
     width: 300px;
     max-width: 330px;
 }
@@ -397,14 +399,14 @@
 .contenedor-qr-realizado-main-adopcion {
     background-color: #fcf2eb;
     width: 100%;
-    height: 1300px;
+    /* height: 1300px; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.caja-centradora-qr-realizado{
+.caja-centradora-qr-realizado {
     background-color: #f7cdaa;
     width: 1000px;
     height: 900px;
@@ -414,10 +416,10 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    
+
 }
 
-.caja-titulo-qr-realizado{
+.caja-titulo-qr-realizado {
     background-color: #f7cdaa;
     border: #fcf2eb 8px solid;
     height: 10%;
@@ -433,7 +435,7 @@
 }
 
 
-.caja-mascota-info-foto-qr-marcota-realizado{
+.caja-mascota-info-foto-qr-marcota-realizado {
     /* background-color: rgba(127, 255, 212, 0.334); */
     width: 90%;
     height: 40%;
@@ -442,7 +444,7 @@
     display: flex;
 }
 
-.caja-info-mascota-qr-realizado{
+.caja-info-mascota-qr-realizado {
     /* background-color: rgba(165, 42, 163, 0.434); */
     width: 50%;
     height: 100%;
@@ -453,7 +455,7 @@
 }
 
 
-.caja-foto-mascota-qr-realizado{
+.caja-foto-mascota-qr-realizado {
     background-image: url('../img/juani_qrrrrrr.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -465,7 +467,7 @@
 }
 
 
-.caja-mascota-info-foto-qr-marcota-realizadob{
+.caja-mascota-info-foto-qr-marcota-realizadob {
     /* background-color: rgba(127, 255, 212, 0.692); */
     width: 90%;
     height: 44%;
@@ -476,7 +478,7 @@
 
 }
 
-.caja-info-dueño-qr-realizado{
+.caja-info-dueño-qr-realizado {
     /* background-color: rgba(255, 0, 0, 0.387); */
     width: 450px;
     height: 100%;
@@ -488,7 +490,7 @@
 }
 
 
-.caja-ubicacion-mascota-qr-realizado{
+.caja-ubicacion-mascota-qr-realizado {
     /* background-color: rgba(0, 0, 255, 0.33); */
     width: 450px;
     height: 100%;
@@ -499,8 +501,8 @@
     position: relative;
 }
 
-.img-ubicacion-qr-realizado{
-    
+.img-ubicacion-qr-realizado {
+
     border-radius: 40px;
     border: #fcebfb 10px solid;
     top: 80px;
@@ -511,7 +513,7 @@
 }
 
 
-.titulo-info-qr-realizado{
+.titulo-info-qr-realizado {
     /* background-color: rgba(127, 255, 212, 0.393); */
     width: 100%;
     height: 16%;
@@ -523,14 +525,14 @@
 
 }
 
-.linea-qr-realizado{
-    background-color:#fcebfb;
+.linea-qr-realizado {
+    background-color: #fcebfb;
     height: 1.5%;
     width: 100%;
     margin-bottom: 15px;
 }
 
-.datos-qr-realizado{
+.datos-qr-realizado {
     /* background-color: rgba(240, 248, 255, 0.279); */
     height: 250px;
     width: 90%;
@@ -543,7 +545,7 @@
     color: #603813;
 }
 
-.datos-dueño-qr-realizado{
+.datos-dueño-qr-realizado {
     /* background-color: rgba(240, 248, 255, 0.279); */
     height: 170px;
     width: 90%;
@@ -556,17 +558,17 @@
 
 
 
-.caja-datos-dueño-qr-realizado{
+.caja-datos-dueño-qr-realizado {
     /* background-color: #563313; */
     height: calc(85% /3);
     display: flex;
     align-items: center;
     width: 360px;
     margin-left: 90px;
-    
+
 }
 
-.a-dato-qr-r{
+.a-dato-qr-r {
     background-color: #ffa75a;
     display: inline;
     padding: 10px 13px;
@@ -578,8 +580,8 @@
     margin-right: 10px;
 }
 
-.b-dato-qr-r{
-    background-color:#fcf2eb;
+.b-dato-qr-r {
+    background-color: #fcf2eb;
     display: inline;
     padding: 9px 13px;
     border-radius: 15px;
@@ -589,8 +591,8 @@
     max-width: 270px;
 }
 
-.a-linea-qr-realizado{
-    background-color:#fcebfb;
+.a-linea-qr-realizado {
+    background-color: #fcebfb;
     height: 1.5%;
     width: 90%;
     margin-bottom: 15px;
@@ -600,4 +602,129 @@
 
 
 
+
+
+/*                           NIVELES DE RECOPENSAS                           */
+.cajacontenedora-explicacion_recompensas {
+    /* background-color: aquamarine; */
+    height: 800px;
+    width: 1400px;
+    margin: 100px 0 200px 0;
+}
+
+.titulo-recom {
+    /* background-color: #ffe1007d; */
+    height: 15%;
+    width: 100%;
+    font-size: 50pt;
+    color: #ffa75a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea_recom {
+    background-color: #ffa75a;
+    height: 7px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contenedor_t_d_r {
+    /* background-color: rgba(205, 50, 50, 0.434); */
+    height: 84%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja_recompensas {
+    background-color: #f7cdaa;
+    width: calc(90% / 3);
+    height: 85%;
+    border-radius: 50PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo_tipo_de_recompensa {
+    /* background-color: #ee940c6e; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40pt;
+    padding-top: 10px;
+    color: #ffa75a;
+}
+
+.linea_tarjeta_recompensas {
+    background-color: #ffa75a;
+    width: 90%;
+    height: 5px;
+    margin-bottom: 15px;
+}
+
+.tipo_efectivo{
+
+    background-image: url('../img/recopensa-efectivo-busqueda.png');
+}
+.tipo_regalo{
+
+    background-image: url('../img/recopensa-regalo-busqueda.png');
+}
+.tipo_gracias{
+
+    background-image: url('../img/recopensa-gracias-busqueda.png');
+}
+
+.img_tipo_recompensas {
+    /* background-color: #0cee326e; */
+    background-position: center;
+    background-size: cover;
+    width: 240px;
+    height: 330px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.explic_tipo_recompensa {
+    /* background-color: rgba(0, 0, 255, 0.496); */
+    height: 110px;
+    width: 90%;
+    text-align: center;
+    font-size: 18pt;
+    color: #603813;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                           FIN NIVELES DE RECOPENSAS                        */
+
+
+
 /*                           FIN INFO MASCOTA QR                       */
+
+
+
