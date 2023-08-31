@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+if (isset($_SESSION["nombreUsuario"])) {
+    $nombreUsuario = $_SESSION["nombreUsuario"];
+} else{
+    header("Location: login.php");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -22,31 +34,37 @@
 <body>
     <header>
         <div class="headersi">
-            <a href="index.html">
+            <a href="panel.php">
                 <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
             </a>
             <div class="navegacion roboto">
-                <a class="TEXTO-LINK" href="index.html">
+                <a class="TEXTO-LINK" href="panel.php">
                     <h3>Inicio</h3>
                 </a>
-                <a class="TEXTO-LINK" href="adopcion.html">
+                <a class="TEXTO-LINK" href="adopcion_panel.php">
                     <h3>Adopcion</h3>
                 </a>
                 <a class="TEXTO-LINK" href="busqueda.html">
                     <h3>Busqueda</h3>
                 </a>
-                <a class="TEXTO-LINK" href="#">
+                <a class="TEXTO-LINK" href="">
                     <h3>QR</h3>
                 </a>
                 <a class="TEXTO-LINK" href="servicios.html">
                     <h3>Servicios</h3>
                 </a>
             </div>
-            <div class="redes roboto">
-
-                <div class="redes roboto">
-                    <a href="login.php" class="registrarse">Iniciar sesión</a>
-                </div>
+            <div class="redesu roboto">
+                <?php
+                    echo '<p style="color:black">Bienvenido, '.$nombreUsuario.'</p>';
+                    echo '<div class="puto">';
+                    echo '<a href="perfil.php" class="perfil"><h3>Perfil</h3></a>';
+                    echo '<a href="logout.php">
+                            <span class="material-icons-outlined log-off">
+                                logout
+                            </span>
+                        </a></div>';
+                ?>
             </div>
         </div>
     </header>

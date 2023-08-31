@@ -9,7 +9,7 @@ if (isset($_SESSION["nombreUsuario"])) {
 }
 
 ?>
- 
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -24,26 +24,27 @@ if (isset($_SESSION["nombreUsuario"])) {
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Great Pet</title>
 </head>
 
 <body>
     <header>
         <div class="headersi">
-            <a href="index.html">
+            <a href="">
                 <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
             </a>
             <div class="navegacion roboto">
-                <a class="TEXTO-LINK" href="#">
+                <a class="TEXTO-LINK" href="">
                     <h3>Inicio</h3>
                 </a>
-                <a class="TEXTO-LINK" href="adopcion.html">
+                <a class="TEXTO-LINK" href="adopcion_panel.php">
                     <h3>Adopcion</h3>
                 </a>
-                <a class="TEXTO-LINK" href="#">
+                <a class="TEXTO-LINK" href="busqueda.html">
                     <h3>Busqueda</h3>
                 </a>
-                <a class="TEXTO-LINK" href="#">
+                <a class="TEXTO-LINK" href="qr_panel.php">
                     <h3>QR</h3>
                 </a>
                 <a class="TEXTO-LINK" href="servicios.html">
@@ -52,13 +53,14 @@ if (isset($_SESSION["nombreUsuario"])) {
             </div>
             <div class="redesu roboto">
                 <?php
-                    echo '<p>Bienvenido</p>';
-                    echo '<a href="perfil.php"><h1>'.$nombreUsuario.'</h1></a>';
+                    echo '<p style="color:white">Bienvenido, '.$nombreUsuario.'</p>';
+                    echo '<div class="puto">';
+                    echo '<a href="perfil.php" class="perfil"><h3>Perfil</h3></a>';
                     echo '<a href="logout.php">
-                            <span class="material-icons-outlined">
+                            <span class="material-icons-outlined log-off">
                                 logout
                             </span>
-                          </a>';
+                        </a></div>';
                 ?>
             </div>
         </div>
@@ -139,7 +141,7 @@ if (isset($_SESSION["nombreUsuario"])) {
                             sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamLorem ipsum dolor
                             sit amet, c adipiscing </div>
                     </div>
-                    <a class="ir-link" href="#">
+                    <a class="ir-link" href="busqueda.html">
                         <div class="caja-ir">
                             <h3 class="ir sigmar">IR</h3>
                         </div>
@@ -163,7 +165,7 @@ if (isset($_SESSION["nombreUsuario"])) {
                             sit amet, c adipiscing </div>
                     </div>
 
-                    <a class="ir-link" href="#">
+                    <a class="ir-link" href="qr.html">
                         <div class="caja-ir">
                             <h3 class="ir sigmar">IR</h3>
                         </div>
