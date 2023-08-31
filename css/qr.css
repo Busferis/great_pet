@@ -523,7 +523,7 @@
 
 .contenedor_todo_qr{
     /* background-color: rgba(127, 255, 212, 0.504); */
-    width: 600px;
+    width: 500px;
 }
 
 .me_encontraste{
@@ -561,8 +561,8 @@
 
 .nombre_mascota_reponsive_qr{
     position: absolute;
-    background-color: #ee920c;
-    color: #f7cdaa;
+    background-color: #ffa75a;
+    color: #603813;
     border: #f7cdaa 10px solid;
     display: flex;
     display: inline-block;
