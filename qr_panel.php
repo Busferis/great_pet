@@ -34,20 +34,20 @@ if (isset($_SESSION["nombreUsuario"])) {
 <body>
     <header>
         <div class="headersi">
-            <a href="index.html">
+            <a href="panel.php">
                 <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
             </a>
             <div class="navegacion roboto">
                 <a class="TEXTO-LINK" href="panel.php">
                     <h3>Inicio</h3>
                 </a>
-                <a class="TEXTO-LINK" href="adopcion.html">
+                <a class="TEXTO-LINK" href="adopcion_panel.php">
                     <h3>Adopcion</h3>
                 </a>
                 <a class="TEXTO-LINK" href="busqueda.html">
                     <h3>Busqueda</h3>
                 </a>
-                <a class="TEXTO-LINK" href="#">
+                <a class="TEXTO-LINK" href="">
                     <h3>QR</h3>
                 </a>
                 <a class="TEXTO-LINK" href="servicios.html">
@@ -56,13 +56,14 @@ if (isset($_SESSION["nombreUsuario"])) {
             </div>
             <div class="redesu roboto">
                 <?php
-                    echo '<p>Bienvenido</p>';
-                    echo '<a href="perfil.php"><h1>'.$nombreUsuario.'</h1></a>';
+                    echo '<p style="color:black">Bienvenido, '.$nombreUsuario.'</p>';
+                    echo '<div class="puto">';
+                    echo '<a href="perfil.php" class="perfil"><h3>Perfil</h3></a>';
                     echo '<a href="logout.php">
-                            <span class="material-icons-outlined">
+                            <span class="material-icons-outlined log-off">
                                 logout
                             </span>
-                          </a>';
+                        </a></div>';
                 ?>
             </div>
         </div>
