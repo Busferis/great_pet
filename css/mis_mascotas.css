@@ -1,0 +1,189 @@
+
+.contenedor-MAS-main-adopcion{
+    display: flex;
+    justify-content: center;
+}
+
+
+.caja_principal1{
+    /* background-color: aquamarine; */
+    width: 1100px;
+    max-width: 1100px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 20px 0 50px 0;
+    background-color: #f7cdaa;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.titulo_principal {
+    /* background-color: rgba(255, 0, 0, 0.377); */
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45pt;
+    color: #ffa75a;
+}
+
+.linea_mis_mascotas {
+    background-color: #603813;
+    width: 84%;
+    height: 7px;
+}
+
+
+.contenedor_tarjetas_mis_mascotas {
+    /* background-color: rgb(51, 158, 99); */
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_horizontal_tarjetas_mascotas_mis_mascotas {
+    /* background-color: rgb(34, 21, 3); */
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30PX;
+}
+
+.tarjetas_mascotas_mis_mascotas {
+    background-color: #ffa75a;
+
+    height: 200px;
+    
+    width: calc(95% / 2 );
+    border-radius: 30px;
+    display: flex;
+}
+
+
+.img_tarjeta_mis_mascota {
+    /* background-color: #de7718; */
+    background-image: url('../img/perro_qrrrr.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: COVER;
+    width: 190px;
+    height: 100%;
+    border-radius: 30px;
+    border: #f7cdaa 10PX SOLID;
+}
+
+.contenedor_nombre_mis_mascota {
+    /* background-color: rgba(255, 242, 127, 0.397); */
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.nombre_mascota_tarjeta_mis_mascotas{
+    /* background-color: #f5911e88; */
+    width: 100%;
+    height: 60px;
+    color: #fce8d9;
+    font-size: 30pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 15PX;
+}
+
+
+.contenedor_ver_delet{
+    /* background-color: aqua; */
+    display: flex;
+    width: 180px;
+    justify-content: space-evenly;
+}
+
+
+.contenedor_generador_mis_mascotas{
+    background-color: #fce8d9;
+    height: 60px;
+    border-radius: 20px;
+    padding: 0 12PX;
+    font-size: 17pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #f7cdaa 5px solid;
+    color: #ffa75a;
+    transition: all 0.3s;
+}
+
+.contenedor_generador_mis_mascotas:hover {
+    transform: scale(1.1);
+}
+
+.delete{
+    /* background-color: #f19000; */
+    font-size: 24pt;
+}
+.delete:hover{
+    color: rgb(252, 89, 89);
+}
+
+
+.fondo_tarjeta_agregar_mascota{
+
+    background-color: #ffa75a76;
+    border: solid 6px #ffa75a;
+    height: 200px;
+    width: 440PX;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.fondo_tarjeta_agregar_mascota:hover{
+
+    transform: scale(1.03);
+    border: solid 6px #ffa75a85;
+
+    
+}
+
+
+.contenedor_mas_a_m{
+    /* background-color: #6b112e; */
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20PX;
+}
+.mas_añadir_m{
+    font-size: 60pt;
+    color: #f19000;
+}
+
+.texto_añadir_mascota{
+    font-size: 22PT;
+    color: #f19000;
+}
+.tamaño_agregar_mascotas{
+    /* background-color: #f19000; */
+    width: calc(95% / 2);
+}
+
+
+
