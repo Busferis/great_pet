@@ -14,7 +14,7 @@
     max-width: 1300px;
     margin-top: 100px;
     border-radius: 20px;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 50px 0;
     background-color: #f7cdaa;
     border-radius: 60px;
     display: flex;
@@ -30,14 +30,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 45pt;
+    font-size: 60pt;
     color: #ffa75a;
 
 
 }
 .linea_mis_mascotas {
     background-color: #603813;
-    width: 84%;
+    width: 90%;
     height: 7px;
 }
 
@@ -97,4 +97,31 @@
     font-size: 15pt;
     padding-left:20px;
     color:#603813;
+}
+
+.contenedor_boton_modificar{
+    /* background-color: aquamarine; */
+    height: 70px;
+    width: 100%;
+    padding: 0 75px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.modificar_datos{
+    background-color: #ffa75a;
+    height: 100%;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 20pt;
+    color:#603813;
+    border: solid 0 transparent;
+    transition: all 0.3s;
+}
+
+.modificar_datos:hover{
+    color:#603813ac;
+    transform: scale(1.1);
+    border: solid 6px #60381371;
 }
