@@ -14,6 +14,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         $apellido = $_POST["apellido"];
         $email = $_POST["email"];
         $password = md5($_POST["password"]);
+        $localidad = $_POST["localidad"];
         // $confirmarPassword = $_POST["confirmar_password"];
 
         if (!isset($_POST["politica_privacidad"])) {
@@ -30,7 +31,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
             if (mysqli_num_rows($res) > 0) {
             	echo "El email ya está registrado.";
             } else {
-                $insertarSql = "INSERT INTO `usuarios` (email, contraseña, nombre, apellido, fechaRegistro) VALUES ('$email', '$password', '$nombre', '$apellido', CURRENT_TIMESTAMP)";
+                $insertarSql = "INSERT INTO `usuarios` (email, contraseña, nombre, apellido, localidad, fechaRegistro) VALUES ('$email', '$password', '$nombre', '$apellido', '$localidad', CURRENT_TIMESTAMP)";
                 if (mysqli_query($con, $insertarSql)) {
                     $_SESSION["registro_exitoso"] = true;
                     header("Location: login.php");
@@ -62,6 +63,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                 <input type="text" name="nombre" placeholder="Nombre" required>
                 <input type="text" name="apellido" placeholder="Apellido" required>
                 <input type="email" name="email" placeholder="Correo electronico" required>
+                <select name="localidad">
+                    <option value="1667">Tortuguitas</option>
+                </select>
                 <input type="password" name="password" placeholder="Contraseña" id="myInput" required>
                 <!-- <input type="password" name="confirmar_password" placeholder="Repetir contraseña" id="myInput2" required> -->
                 <div>
