@@ -31,7 +31,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
             if (mysqli_num_rows($res) > 0) {
             	echo "El email ya está registrado.";
             } else {
-                $insertarSql = "INSERT INTO `usuarios` (email, contraseña, nombre, apellido, localidad, fechaRegistro) VALUES ('$email', '$password', '$nombre', '$apellido', '$localidad', CURRENT_TIMESTAMP)";
+                $insertarSql = "INSERT INTO `usuarios` (email, contraseña, nombre, apellido, localidad, contacto, fechaRegistro) VALUES ('$email', '$password', '$nombre', '$apellido', '$localidad', NULL, CURRENT_TIMESTAMP)";
                 if (mysqli_query($con, $insertarSql)) {
                     $_SESSION["registro_exitoso"] = true;
                     header("Location: login.php");
