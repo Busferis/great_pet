@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_SESSION["idUsuario"])) {
+if (isset($_SESSION["id_usuario"])) {
     header("Location: panel.php");
     exit();
 }
@@ -19,8 +19,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		if (mysqli_num_rows($res) > 0) {
 			$row = mysqli_fetch_assoc($res);
-			$nombreUsuario = $row['nombre'];
-    		$_SESSION["nombreUsuario"] = $nombreUsuario;
+			$id_usuario = $row['id_usuario'];
+			$nombre = $row['nombre'];
+			$apellido = $row['apellido'];
+			$email = $row['email'];
+			$localidad = $row['localidad'];
+			$_SESSION["id_usuario"] = $id_usuario;
+    		$_SESSION["nombre"] = $nombre;
+			$_SESSION["apellido"] = $apellido;
+			$_SESSION["email"] = $email;
+			$_SESSION["localidad"] = $localidad;
 	        header("Location: panel.php");
 	        exit();
 	    } else {

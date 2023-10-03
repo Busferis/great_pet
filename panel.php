@@ -1,11 +1,14 @@
 <?php
 session_start();
 
-if (isset($_SESSION["nombreUsuario"])) {
-    $nombreUsuario = $_SESSION["nombreUsuario"];
+if (isset($_SESSION["nombre"])) {
+    $nombre = $_SESSION["nombre"];
 } else{
     header("Location: login.php");
     exit();
+}
+if (isset($_SESSION["id_usuario"])) {
+    $id_usuario = $_SESSION["id_usuario"];
 }
 
 ?>
@@ -53,9 +56,9 @@ if (isset($_SESSION["nombreUsuario"])) {
             </div>
             <div class="redesu roboto">
                 <?php
-                    echo '<p style="color:white">Bienvenido, '.$nombreUsuario.'</p>';
+                    echo '<p style="color:white">Bienvenido, '.$nombre.'</p>';
                     echo '<div class="puto">';
-                    echo '<a href="perfil.php" class="perfil"><h3>Perfil</h3></a>';
+                    echo '<a href="mi_usuario.php" class="perfil"><h3>Perfil</h3></a>';
                     echo '<a href="logout.php">
                             <span class="material-icons-outlined log-off">
                                 logout
