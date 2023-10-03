@@ -268,13 +268,13 @@ if (isset($_SESSION["id_usuario"])) {
 
 
 
-                <div class="caja-titulo-texto-footer">
+                <!-- <div class="caja-titulo-texto-footer">
                     <div class="caja-footer_2-titulo"></div>
                     <div class="caja-footer_3-linea"></div>
                     <div class="caja-footer_4-descripcion">
                         
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>
