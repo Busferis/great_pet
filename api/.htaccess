@@ -1,0 +1,8 @@
+# Habilitamos la ingenieria de reescritura de url
+RewriteEngine On
+
+# lo que viene despues del dominio no es un nombre de archivo
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# pasamos lo que viene despues del dominio a section
+RewriteRule ^(.*)$ index.php?section=$1
