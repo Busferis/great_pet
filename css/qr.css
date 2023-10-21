@@ -142,10 +142,15 @@
 }
 
 .contenedor_tarjetas_qr {
-    /* background-color: burlywood; */
+/*    background-color: #87b2de;*/
     width: 85%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }
 
 .contenedor_horizontal_tarjetas_mascotas_qr {
@@ -208,7 +213,7 @@
 
 .img_tarjeta_qr_mascota {
     /* background-color: #de7718; */
-    background-image: url('../img/perro_qrrrr.jpg');
+    background-image: url('');
     background-position: center;
     background-repeat: no-repeat;
     background-size: COVER;
@@ -218,29 +223,7 @@
     border: #f7cdaa 10PX SOLID;
 }
 
-.img_tarjeta_qr_mascotaB{
-    /* background-color: #de7718; */
-    background-image: url('../img/gato_qrrrrrr.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: COVER;
-    width: 190px;
-    height: 100%;
-    border-radius: 30px;
-    border: #f7cdaa 10PX SOLID;
-}
 
-.img_tarjeta_qr_mascotaC{
-    /* background-color: #de7718; */
-    background-image: url('../img/juani_qrrrrrr.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: COVER;
-    width: 190px;
-    height: 100%;
-    border-radius: 30px;
-    border: #f7cdaa 10PX SOLID;
-}
 
 
 

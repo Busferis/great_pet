@@ -1,0 +1,17 @@
+[
+   {
+      "nombre":"Juana",
+      "apellido":"Gomez",
+      "fechaNac":"2005-08-02"
+   },
+   {
+      "nombre":"Gonzalo",
+      "apellido":"Mayorga",
+      "fechaNac":"2005-08-13"
+   },
+   {
+      "nombre":"Mariano",
+      "apellido":"Torena",
+      "fechaNac":"2005-04-10"
+   }
+]
