@@ -534,11 +534,13 @@
     font-size: 35pt;
     color: #ffa75a;
     margin-top: 50px;
+
 }
 
 .mega_tarjeta_mascota_qr{
     background-color: #f7cdaa;
     height: 100%;
+    width: 100;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
@@ -580,7 +582,7 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -591,32 +593,57 @@
 .tituli_contenedor_responsive_qr{
     position: absolute;
     background-color: #ffa75a;
-    padding: 5px 35px;
-    font-size: 32pt;
+    padding: 5px 15px;
+    font-size: 28pt;
     color: #fce8d9;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     top: -50px;
-    left: 40px;
+    left: 30px;
 }
+.tituli_contenedor_responsive_qr2{
 
+    position: absolute;
+    background-color: #ffa75a;
+    padding: 5px 15px;
+    font-size: 28pt;
+    color: #fce8d9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    top: -50px;
+    right: 52px;
+}
 
 
 .caja_contenedora_datos_qr_reponsive{
-    /* background-color: brown; */
-    height: 350px;
-    width: 500px;
+    /* background-color: rgba(165, 42, 42, 0.205); */
+    height: 250px;
+    width: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 40px 0 90px 0;
 }
+
+
+.arriba_caja_contenedora_datos_qr_reponsive{
+position: relative;
+top: -30px;
+}
+
+
+
+
+
+
+
+
 
 .contenedor_color_dartos_qr_re{
     /* background-color: blueviolet; */
     width: 95%;
-    height: 90px;
+    height: 50px;
     display: flex;
 }
 
@@ -629,7 +656,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25pt;
+    font-size: 15pt;
     color: #603813;
     overflow: hidden;
 }
@@ -642,49 +669,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25pt;
+    font-size: 14pt;
     color: #ffa75a;
     overflow: hidden;
 
 
 }
 
-
-
-
-/* 2 */
-
-
-
-
-
-.contenedores_datos_mascota2{
-    position: relative;
+.color_pate_iz2{
     background-color: #f7cdaa;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    height: 50px;
+    width: 100%;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -20px;
+    font-size: 15pt;
+    color: #603813;
+    overflow: hidden;
+    text-align: center;
 }
 
 
-.tituli_contenedor_responsive_qr2{
-    position: absolute;
+.color_pate_dr2{
+    background-color: #fce8d9;
+    height: 80px;
+    width: 100%;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    color: #ffa75a;
+    overflow: hidden;
+
+
+}
+
+.color_pate_iz222{
     background-color: #f7cdaa;
-    padding: 5px 35px;
-    font-size: 32pt;
-    color: #ee920c;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    top: -50px;
-    left: 40px;
-}
-
-
-.color_pate_iz2{
-    background-color: #ffa75a;
     height: 100%;
     width: 40%;
     border-bottom-left-radius: 35px;
@@ -692,13 +717,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25pt;
-    color: #fce8d9;
+    font-size: 13pt;
+    color: #603813;
     overflow: hidden;
-    text-align: center;
 }
 
-.color_pate_dr2{
+
+.color_pate_dr222{
     background-color: #fce8d9;
     height: 100%;
     width: 60%;
@@ -707,12 +732,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25pt;
+    font-size: 10pt;
     color: #ffa75a;
     overflow: hidden;
 
 
 }
+
+/* 2 */
+
+
+
+
 
 .caja_contenedora_datos_qr_reponsive2{
     /* background-color: brown; */
@@ -728,14 +759,14 @@
 .contenedor_color_dartos_qr_re2{
     /* background-color: blueviolet; */
     width: 95%;
-    height: 100px;
-    display: flex;
+    height: 130px;
+    /* display: flex; */
 }
 
 .caja_img_wp_qr_re{
     /* background-color: #ee920c; */
-    width: 100px;
-    height: 100%;
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -749,6 +780,45 @@
     position: absolute;
 
 }
+
+
+
+
+/* 2 */
+
+
+.contenedores_datos_mascota2{
+    position: relative;
+    background-color: #f7cdaa;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    top: -60px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.tituli_contenedor_responsive_qr3{
+    position: absolute;
+    background-color: #f7cdaa;
+    padding: 5px 15px;
+    font-size: 28pt;
+    color: #ffa75a;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    top: -40px;
+    left: 30px;
+
+}
+
+
+
+
+
+
+
+/* f7cdaa */
 
 /*                FIN   RESPONSIVE                                      */
 
