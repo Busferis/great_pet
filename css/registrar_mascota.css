@@ -209,6 +209,7 @@ transition: all 0.3s;
 
 .subir_imagen:hover{
     & .subir_imagen_icono{
+        color: rgba(128, 128, 128, 0.478);
         transform: scale(1.1);
     }
 }
