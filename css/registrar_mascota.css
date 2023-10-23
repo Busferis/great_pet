@@ -261,11 +261,11 @@ padding: 0 10px;
     .caja_logos_perro_gato{
     
         /* background-color: red; */
-        width: 93%;
+        width: 100%;
         height: 72%;
+        /* padding: ; */
         display: flex;
         justify-content: center;
-        padding: 0 0px;
         align-items: center;
         
     
@@ -286,7 +286,7 @@ padding: 0 10px;
 
 
 .boton {
-    margin: 10px;
+    margin: 5px;
 }
 
 .lbl-switch {
@@ -351,7 +351,7 @@ padding: 0 10px;
 .perro_gato_switch{
     position: absolute;
     top: 21px;
-    left: 9px;
+    left: 10px;
     font-size: 15pt;
     color: #603813;
 }
