@@ -143,6 +143,7 @@ border: #ffa75a solid 5px;
     width: 140px;
     border-radius: 32px;
     display: flex;
+    color: #603813;
     align-items: center;
     justify-content: space-between;
     padding-left: 15px;
