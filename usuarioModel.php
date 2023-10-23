@@ -16,7 +16,7 @@
 
 		public function listAll(){
 
-			$response = $this->db->query("SELECT * FROM usuarios");
+			$response = $this->db->query("SELECT * FROM adoptables");
 
 			$list = array("errno" => 400, "error" => "No hay usuarios");
 
@@ -58,29 +58,6 @@
 
 			return $list;
 		}
-
-
-		public function listar_mascota_qr($parameters){
-
-			$id_usuario = $parameters[0];
-
-			$response = $this->db->query("SELECT * FROM mascotas WHERE id_usuarios=$id_usuario");
-
-			$list = array("errno" => 400, "error" => "No hay mascota");
-
-			if($response->num_rows > 0 ){
-
-				// responde con una matriz asociativa
-				$list = $response->fetch_all(MYSQLI_ASSOC);
-
-				$list = array(array("errno" => 200, "error" => "Se han listado mascota", "num_rows" => $response->num_rows), $list);
-
-			}
-
-			return $list;
-
-		}
-
 
 		public function listByCantPage($parameters){
 

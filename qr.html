@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/qr.css">
-
     <title>Great Pet</title>
 </head>
 
@@ -87,86 +86,45 @@
                         <P>SELECCIONA TU MASCOTA</P>
                     </div>
                     <div class="linea_titulo_tarjetas_mascotas_qr"></div>
-                    <div class="contenedor_tarjetas_qr">
-
-                        <div class="contenedor_horizontal_tarjetas_mascotas_qr">
-
-                            <div class="tarjetas_mascotas_qr">
-
-                                <div class="img_tarjeta_qr_mascota"></div>
-
-                                <div class="contenedor_nombre_crear_qr_mascota">
-                                    <div class="nombre_mascota_tarjeta_qr lexend">
-                                        <p>Laika</p>
-                                    </div>
-                                    <a href="qr-responsive.html">
-                                    <div class="contenedor_generador_qr roboto2">
-                                        <p>Descargar QR</p>
-                                    </div>
-                                </a>
-                                </div>
-
-                            </div>
+                    <div class="contenedor_tarjetas_qr" id="tarjeta_qr_contenedor">
 
 
 
 
-                            <div class="tarjetas_mascotas_qr">
-                                <div class="img_tarjeta_qr_mascotaB"></div>
+                      
 
-                                <div class="contenedor_nombre_crear_qr_mascota">
-                                    <div class="nombre_mascota_tarjeta_qr lexend">
-                                        <p>Greta</p>
-                                    </div>
-                                    <a href="qr-realizado.html">
-                                        <div class="contenedor_generador_qr roboto2">
-                                            <p>Descargar QR</p>
+
+                            <template id="tarjeta_qr">
+
+
+                                <div class="tarjetas_mascotas_qr">
+
+                                    <div class="img_tarjeta_qr_mascota"></div>
+
+                                    <div class="contenedor_nombre_crear_qr_mascota">
+                                        <div class="nombre_mascota_tarjeta_qr lexend">
+                                            <span class="tarjeta_qr_nombre">Laika</span>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
 
-                        </div>
-
-
-
-                        <div class="contenedor_horizontal_tarjetas_mascotas_qr">
-
-                            <div class="tarjetas_mascotas_qr">
-
-                                <div class="img_tarjeta_qr_mascotaC"></div>
-
-                                <div class="contenedor_nombre_crear_qr_mascota">
-                                    <div class="nombre_mascota_tarjeta_qr lexend">
-                                        <p>Juanita</p>
+                                        <a>
+                                            <div class="contenedor_generador_qr roboto2 ">
+                                                <p class="descargar_qr_">Descargar QR</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <a href="qr-realizado.html">
-                                        <div class="contenedor_generador_qr roboto2">
-                                            <p>Descargar QR</p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-
-
-
-                            <a href="#">
-                            <div class="tarjetas_mascotas_qr_añadir_mascota">
-                                <div class="contenedor_mas_a_m">
-                                    <span class="material-icons-outlined mas_añadir_m">
-                                        add
-                                    </span>
-
-                                    <div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div>
 
                                 </div>
-                            </div>
-                            </a>
-
-                        </div>
 
 
+                            </template>
+
+
+
+
+                           
+
+
+                            
 
                     </div>
                 </div>
@@ -179,29 +137,6 @@
 
         </div>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -284,5 +219,55 @@
     </footer>
 
 </body>
+
+<script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+
+<script>
+    async function loadListado(url) {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    }
+
+    loadListado("https://mattprofe.com.ar/alumno/great_pet/api/usuario/listar_mascota_qr/2").then(mascotas => {
+        if (mascotas[0].errno == 200) {
+
+            mascotas[1].forEach(mascota => {
+                const tpl = tarjeta_qr.content;
+                const clon = tpl.cloneNode(true);
+                clon.querySelector(".tarjeta_qr_nombre") .textContent = mascota.nombre;
+                clon.querySelector(".img_tarjeta_qr_mascota") .style.backgroundImage = "url('img/"+mascota.imagen+"')"; 
+                clon.querySelector(".descargar_qr_").id = mascota.id_mascota;
+                tarjeta_qr_contenedor.appendChild(clon);
+            }) 
+        }
+
+        tarjeta_qr_contenedor.innerHTML=tarjeta_qr_contenedor.innerHTML+'<a href="#"><div class="tarjetas_mascotas_qr_añadir_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></a>';
+
+    })
+    function descargarQr(nombre,id){
+        imagen = document.createElement("img");
+        new QRious({
+            element: imagen,
+            value: "https://mattprofe.com.ar/alumno/great_pet/qr-responsive.html?id_mascota="+id, 
+            size: 500,
+            backgroundAlpha: 0, 
+            foreground: "black",
+            level: "H",
+        });
+        const enlace = document.createElement("a");
+        enlace.href = imagen.src;
+        enlace.download = nombre+"-Great-Pet.png";
+        enlace.click();
+    }
+    tarjeta_qr_contenedor.addEventListener("click", e => { 
+
+        console.log(e)
+        if (e.target.className=="descargar_qr_") {
+            descargarQr(e.target.id,e.target.id);
+        }
+    });
+
+</script>
 
 </html>
