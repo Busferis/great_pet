@@ -38,6 +38,7 @@
     background-color: #603813;
     width: 770px;
     height: 7px;
+    border-radius: 20px;
 }
 
 
@@ -111,15 +112,6 @@ transition: all 0.3s;
         transform: scale(1.1);
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 

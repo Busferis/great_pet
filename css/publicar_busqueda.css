@@ -1,0 +1,270 @@
+
+.contenedor-MAS-main-adopcion{
+    display: flex;
+    justify-content: center;
+}
+
+
+.caja_principal1{
+     margin-top: 100px;   /*     111111111111111111111111111111111111  BORRAR   1111111111111111111111111111                   */
+    position: relative;
+    width: 900px;
+    max-width: 1100px;
+    /* height: 700px; */
+    /* margin-top: 100px; */
+    border-radius: 20px;
+    padding: 20px 0 30px 0;
+    background-color: #f7cdaa;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.titulo_principal {
+    /* background-color: rgba(255, 0, 0, 0.377); */
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45pt;
+    color: #ffa75a;
+}
+
+.linea_mis_mascotas {
+    background-color: #603813;
+    width: 770px;
+    height: 7px;
+    border-radius: 20px;
+}
+
+
+.contenedor_tarjetas_mis_mascotas {
+    /* background-color: rgb(51, 158, 99); */
+    width: 900px;
+    height:520px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* padding: 20px 0 0 0; */
+
+}
+
+.caja_contenedor_descripcion{
+    position: relative;
+    background-color: #ffa75a;
+    width: 700px;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.titulo_descripcion{
+    font-size: 18pt;
+    color: #603813;
+}
+.descripcion_ensi{
+width: 100%;
+width: 100%;
+height:161px;
+border: none;
+border-radius: 20px;
+margin-top: 10px;
+padding: 10px;
+font-size: 20px;
+margin-bottom: 10PX;
+resize: none;
+}
+
+.descripcion_ensi:focus {
+    outline: none; /* Elimina el resaltado de enfoque al hacer clic en el área de texto */
+}
+
+#contador{
+    position: absolute;
+    background-color: #f7cdaa;
+    width: 60px;
+    height: 30px;
+    left: 620px;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #603813;
+
+
+}
+
+.contenedor_selec_fecha{
+    /* background-color: aquamarine; */
+    height: 40%;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seleccionnm{
+    /* background-color: brown; */
+    border: #ffa75a solid 5px;
+    height: 200px;
+    width: 400PX;
+    border-radius: 30px;
+
+}
+
+.titulo_selecionar{
+    background-color: #ffa75a;
+    font-size: 18pt;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.opciones_rew{
+    /* background-color: #f7aabb; */
+    padding: 0px 0 0 10px;
+ display: flex;  
+ width: 100%;
+ height:142px;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+.recompensas_img{
+    /* background-color: aqua; */
+    height: 100px;
+    width: 80px;
+    transition: all 0.3s;
+}
+.recompensas_img:hover{
+    transform: scale(1.07);
+}   
+
+.recompensas_img::after{
+    background-color: #ffa75a;
+}   
+
+#opcion3, #opcion2, #opcion1{
+    display: none;
+}
+
+
+.opciones_rew label {
+    height: 120px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: #ffffff00; /* Color de fondo predeterminado */
+    /* border: #ffa75a 1px solid; */
+}
+
+/* Cambia el color de fondo cuando la opción de radio está marcada */
+.opciones_rew input[type="radio"]:checked + label {
+    
+    border: #ffa75a 7px solid;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fechaaa
+{
+    background-color:#ffa75a;
+    height: 110px;
+    border-radius: 20px;
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+}
+
+.fecha2{ 
+    /* background-color: #ffa75a; */
+    font-size: 18pt;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    
+    
+}
+
+#fecha{
+    height: 40px;
+    border:none;
+    padding: 0 20px 0 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: #bd9c8100 4px solid ;
+    color: #603813;
+}
+
+#fecha:focus {
+    border: #603813 4px solid ;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+.boton_enviar{
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 140px;
+    height: 60px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border: none;
+    background-color: #ffa75a;
+    font-size: 18pt;
+    color: #603813;
+    transition: all 0.3s;
+}
+
+.boton_enviar:hover{
+    color: #60381369;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
