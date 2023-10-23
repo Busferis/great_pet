@@ -1,0 +1,311 @@
+
+.contenedor-MAS-main-adopcion{
+    display: flex;
+    justify-content: center;
+}
+
+
+.caja_principal1{
+     margin-top: 100px;   /*     111111111111111111111111111111111111  BORRAR   1111111111111111111111111111                   */
+    position: relative;
+    width: 900px;
+    max-width: 1100px;
+    height: 700px;
+    /* margin-top: 100px; */
+    border-radius: 20px;
+    padding: 20px 0 80px 0;
+    background-color: #f7cdaa;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.titulo_principal {
+    /* background-color: rgba(255, 0, 0, 0.377); */
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45pt;
+    color: #ffa75a;
+}
+
+.linea_mis_mascotas {
+    background-color: #603813;
+    width: 770px;
+    height: 7px;
+}
+
+
+.contenedor_tarjetas_mis_mascotas {
+    /* background-color: rgb(51, 158, 99); */
+    width: 900px;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+.contenedores_columnas1{
+    /* background-color: blueviolet; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-right: 15PX;
+
+}
+
+.caja_tipo_de_especie{
+border: #ffa75a solid 5px;
+    width: 90%;
+    height: 150px;
+    border-radius: 30px;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.titulo_de_tipo_de_especie{
+    background-color: #ffa75a;
+    width: 100%;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 18pt;
+    color: #603813;
+}
+
+
+.caja_logos_perro_gato{
+
+    /* background-color: red; */
+    width: 93%;
+    height: 72%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px;
+    align-items: center;
+    
+
+}
+
+#miBoton{
+    border: none;
+    /* border: #ffa75a solid; */
+    background-color: #ffa75a;
+    height: 70px;
+    width: 140px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    color: #603813;
+    transition: all 0.3s;
+}
+
+.logo_gato{
+    /* background-color: #f7cdaa; */
+    background-image: url("../img/boton_gato.png");
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    
+
+
+}
+
+#miBoton:hover{
+
+    transform: scale(1.1);
+}
+
+
+#miBoton2{
+    border: none;
+    background-color: #ffa75a;
+    height: 70px;
+    width: 140px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    transition: all 0.3s;
+}
+
+.logo_perro{
+    /* background-color: #f7cdaa; */
+    background-image: url("../img/perro-boton2.png");
+    background-size: cover;
+    background-position: center;
+    height: 70px;
+    width: 70px;
+    
+
+}
+
+#miBoton2:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.caja_subir_foto{
+    background-color: #ffa75a;
+    width: 90%;
+    height: 280px;
+    border-radius: 20px;
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.titulo_agregar_img{
+    /* background-color: aqua; */
+    font-size: 18pt;
+    display: flex;
+    align-items: center;
+    color: #603813;
+}
+
+.subir_imagen{
+    background-color: aliceblue;
+    height: 215px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subir_imagen_icono{
+font-size: 80pt;
+color: gray;
+transition: all 0.3s;
+}
+
+.subir_imagen:hover{
+    & .subir_imagen_icono{
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedores_columnas2{
+    /* background-color: rgb(43, 226, 137); */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin-left: 15PX;
+
+
+}
+
+.caja_informacion{
+    background-color: #ffa75a;
+    height: calc(80% / 4);
+    width: 90%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.titulo_NRES{
+    /* background-color: aqua; */
+    font-size: 18pt;
+    color: #603813;
+}
+
+.input_text{
+width: 100%;
+height: 30px;
+border: none;
+border-radius: 10px;
+padding: 0 10px;
+}
+
+#genero{
+    
+width: 100%;
+height: 30px;
+border: none;
+border-radius: 10px;
+padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.boton_guardar_mascota{
+    position: absolute;
+    background-color: #ffa75a;
+    height: 70px;
+    width: 200px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25pt;
+    color: #603813;
+    bottom: -10px;
+    right: -10px;
+    transition: all 0.3s;
+
+}
+
+
+.boton_guardar_mascota:hover{
+    color: #60381369;
+    transform: scale(1.1);
+}
