@@ -107,6 +107,7 @@ transition: all 0.3s;
 }
 
 .subir_imagen:hover{
+    cursor: pointer;
     & .subir_imagen_icono{
         color: rgba(128, 128, 128, 0.478);
         transform: scale(1.1);
@@ -167,8 +168,9 @@ border-radius: 10px;
 padding: 0 10px;
 }
 
-
-
+#genero:hover{
+    cursor: pointer;    
+}
 
 
 
@@ -199,6 +201,7 @@ padding: 0 10px;
 .boton_guardar_mascota:hover{
     color: #60381369;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 
@@ -279,6 +282,10 @@ padding: 0 10px;
 
 .boton {
     margin: 5px;
+}
+
+.boton:hover {
+    cursor: pointer;
 }
 
 .lbl-switch {
