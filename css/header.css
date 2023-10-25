@@ -295,16 +295,14 @@
             /* background-color: #a7ff5a; */
             display: block;
             position: absolute;
-            color: #603813;
+            color: #ee940c;
             left: 20px;
             top: 23px;
             z-index: 101;
             font-size: 30pt;
         }
 
-        .menu-icon_index{
-            color: #ee940c;
-        }
+
 
 
     
