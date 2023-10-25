@@ -107,13 +107,17 @@ transition: all 0.3s;
 }
 
 .subir_imagen:hover{
-    cursor: pointer;
     & .subir_imagen_icono{
         color: rgba(128, 128, 128, 0.478);
         transform: scale(1.1);
     }
 }
 
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
 
 
 
@@ -159,7 +163,7 @@ border-radius: 10px;
 padding: 0 10px;
 }
 
-#genero{
+#sexo{
     
 width: 100%;
 height: 30px;
@@ -168,9 +172,6 @@ border-radius: 10px;
 padding: 0 10px;
 }
 
-#genero:hover{
-    cursor: pointer;    
-}
 
 
 
@@ -179,7 +180,9 @@ padding: 0 10px;
 
 
 
-.boton_guardar_mascota{
+
+
+input[type=submit]{
     position: absolute;
     background-color: #ffa75a;
     height: 70px;
@@ -194,11 +197,11 @@ padding: 0 10px;
     bottom: -10px;
     right: -10px;
     transition: all 0.3s;
-
+    border: none;
 }
 
 
-.boton_guardar_mascota:hover{
+input[type=submit]:hover{
     color: #60381369;
     transform: scale(1.1);
     cursor: pointer;
@@ -284,10 +287,6 @@ padding: 0 10px;
     margin: 5px;
 }
 
-.boton:hover {
-    cursor: pointer;
-}
-
 .lbl-switch {
     display: inline-block;
     height: 70px;
@@ -320,26 +319,26 @@ padding: 0 10px;
 
 
 
-#btn-switch:checked~.lbl-switch:after {
+#especie_1:checked~.lbl-switch:after {
     left: 69px;
 }
 
-#btn-switch:checked~.lbl-switch {
+#especie_1:checked~.lbl-switch {
     background-color: #ffa75a;
 
 }
 
-#btn-switch2:checked~.lbl-switch:after {
+#especie_2:checked~.lbl-switch:after {
     left:69px;
 }
 
-#btn-switch2:checked~.lbl-switch {
+#especie_2:checked~.lbl-switch {
     background-color: #ffa75a;
 
 }
 
-#btn-switch,
-#btn-switch2 {
+#especie_1,
+#especie_2 {
     display: none;
 }
 
