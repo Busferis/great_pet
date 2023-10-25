@@ -34,7 +34,7 @@
 
     .navegacion {
         display: flex;
-        /* background-color: blanchedalmond; */
+        /* background-color: rgb(68, 255, 0); */
         justify-content: space-between;
         width: 550px;
         margin-left: 130px;
@@ -197,9 +197,16 @@
         font-size: 30px;
         /* background-color: aqua; */
     }
+    .nombre_proyecto_en_menu{
+        display: none;
+    }
+    .linea_menu_res{
+        display: none;
+    }
 
 
     @media (max-width: 800px) {
+        
         header{
             background-color: #f7cdaa00;
             /* padding-left: 20px; */
@@ -243,21 +250,49 @@
             display: none;
             flex-direction: column;
             background-color: #f7cdaa;
+            border: #f5911e 5px solid;
             position: absolute;
-            top: 0px;
-            left: -130px;
-            width: 100%;
+            height: 500px;
+            top: 20px;
+            left: -125px;
+            width: 60%;
+            min-width: 300px;
             text-align: center;
-            padding: 70px 0 0px 0;
+            padding: 60px 0 0px 0;
             z-index: 100;
+            border-radius: 20px;
+            /* border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px; */
         }
     
         .menu.active {
             display: flex;
         }
+        
+        .nombre_proyecto_en_menu{
+            position: relative;
+            display: block;
+            top: -20px;
+            /* left: -50px; */
+            font-size: 30pt;
+            color:#f5911e;
+            margin-bottom: 40px;
+        }
+
+        .linea_menu_res{
+            display: block;
+            position: absolute;
+            height: 5px;
+            background-color: #603813;
+            width: 90%;
+            top: 60px;
+            margin-top: 40px;
+            border-radius: 20px;
+            left: 15px;
+        }
     
         .menu-icon {
-            /* background-color: #ffa75a; */
+            /* background-color: #a7ff5a; */
             display: block;
             position: absolute;
             color: #603813;
@@ -268,7 +303,7 @@
         }
 
         .menu-icon_index{
-            color: #ee920c;
+            color: #ee940c;
         }
 
 
@@ -283,13 +318,16 @@
             margin: 10px 0;
             text-align: center; /* Centra horizontalmente el texto */
         }
-        .navegacion{
+        .navegacion li{
+            position: relative;
+            top: -40px;
+            background-color: ;
         }
 
         .TEXTO-LINK{
             /* background-color: aqua; */
             font-size: 20pt;
-            color: #ee920c;
+            color: #ee940c;
         }
 
         .contenedor_navegacion{

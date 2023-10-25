@@ -30,26 +30,50 @@
             </a>
 
             <nav class=" roboto2">
-            <div class="menu-icon" id="menu-icon">&#9776;</div>
+                <div class="menu-icon" id="menu-icon">&#9776;</div>
                 <ul class="navegacion menu" id="menu">
-                    <div class="contenedor_navegacion">
-                    <li><a class="TEXTO-LINK" href="index.html"><h4>Inicio</h4></a></li>
-                     </div>
+                    <H2 class="nombre_proyecto_en_menu sigmar">Great Pet</H2>
 
-                     <div class="contenedor_navegacion">
-                    <li><a class="TEXTO-LINK" href="#"><h4>Adopción</h4></a></li>
+                    <div class="linea_menu_res"></div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="index.html">
+                                <h4>Inicio</h4>
+                            </a>
+                        </li>
                     </div>
 
                     <div class="contenedor_navegacion">
-                    <li><a class="TEXTO-LINK" href="busqueda.html"><h4>Búsqueda</h4></a></li>
+                        <li>
+                            <a class="TEXTO-LINK" href="#">
+                                <h4>Adopción</h4>
+                            </a>
+                        </li>
                     </div>
 
                     <div class="contenedor_navegacion">
-                    <li><a class="TEXTO-LINK" href="qr.html"><h4>QR</h4></a></li>
-                   </div>
+                        <li>
+                            <a class="TEXTO-LINK" href="busqueda.html">
+                                <h4>Búsqueda</h4>
+                            </a>
+                        </li>
+                    </div>
 
                     <div class="contenedor_navegacion">
-                    <li><a class="TEXTO-LINK" href="servicios.html"><h4>Servicios</h4></a></li>
+                        <li>
+                            <a class="TEXTO-LINK" href="qr.html">
+                                <h4>QR</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="servicios.html">
+                                <h4>Servicios</h4>
+                            </a>
+                        </li>
                     </div>
                 </ul>
             </nav>
@@ -78,11 +102,11 @@
                             <div class="tito_img-perro-en-adopcion">
 
                                 <div class="cajacontenedora_nombre_huesos">
-                                    <div class="hueso1"><img class="medida_hueso_centrado"
-                                            src="img/hueso_izquierdo.svg" alt=""></div>
+                                    <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_izquierdo.svg"
+                                            alt=""></div>
                                     <div class="contenedor_nombre_centrado roboto2">Aqui va el nombre</div>
-                                    <div class="hueso1"><img class="medida_hueso_centrado"
-                                            src="img/hueso_derecho.svg" alt=""></div>
+                                    <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_derecho.svg"
+                                            alt=""></div>
                                 </div>
 
                             </div>
@@ -171,7 +195,7 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
             </div>
 
@@ -217,7 +241,7 @@
                 </div>
 
                 <div id="listado">
-            
+
                 </div>
 
             </div>
@@ -304,48 +328,48 @@
     </footer>
 
     <script type="text/javascript">
-        
-            let page = 1;
+
+        let page = 1;
+
+        refreshPage();
+
+        btn__next.addEventListener("click", e => {
+            page++;
 
             refreshPage();
-        
-            btn__next.addEventListener("click", e => {
-                    page++;
+        })
 
-                    refreshPage();
-            })
+        btn__previous.addEventListener("click", e => {
 
-            btn__previous.addEventListener("click", e => {
-
-                    if(page>1){
-                        page--;
-                    }
-
-                    refreshPage();
-                
-            })
-
-
-            function refreshPage(){
-                    visor__page.innerHTML = page;
-
-                    listado.innerHTML = "";
-
-                    getAlumnos().then(alumnos => {
-
-                        console.log(alumnos);
-
-                        alumnos.forEach( row => {
-                            createCard(row);        
-                        });
-
-                    });
+            if (page > 1) {
+                page--;
             }
 
-        // peticion a la api en modo get
-        async function getAlumnos(){
+            refreshPage();
 
-            const response = await fetch("api/usuario/listByCantPage/10/"+page);
+        })
+
+
+        function refreshPage() {
+            visor__page.innerHTML = page;
+
+            listado.innerHTML = "";
+
+            getAlumnos().then(alumnos => {
+
+                console.log(alumnos);
+
+                alumnos.forEach(row => {
+                    createCard(row);
+                });
+
+            });
+        }
+
+        // peticion a la api en modo get
+        async function getAlumnos() {
+
+            const response = await fetch("api/usuario/listByCantPage/10/" + page);
 
             const data = await response.json();
 
@@ -355,7 +379,7 @@
 
         // peticion a la api en modo post
 
-        async function postUsuario(info){
+        async function postUsuario(info) {
 
             let frm = new FormData;
 
@@ -376,22 +400,22 @@
 
 
         // crear una plantilla
-        function createCard (info) {
-                console.log(info);
-                const tpl = tpl__carnet.content
-                const clon = tpl.cloneNode(true);
+        function createCard(info) {
+            console.log(info);
+            const tpl = tpl__carnet.content
+            const clon = tpl.cloneNode(true);
 
-                clon.querySelector(".tarjeta1-adopcion-mini-descripcion").setAttribute("id-card", "carnet-"+info.id_adoptable);
-                clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
-                clon.querySelector(".caja1_minidescripcion_sexo").innerHTML = info.sexo;
-                clon.querySelector(".caja1_minidescripcion_raza").innerHTML = info.raza;
-                clon.querySelector(".caja1_minidescripcion_edad").innerHTML = info.edad;
+            clon.querySelector(".tarjeta1-adopcion-mini-descripcion").setAttribute("id-card", "carnet-" + info.id_adoptable);
+            clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
+            clon.querySelector(".caja1_minidescripcion_sexo").innerHTML = info.sexo;
+            clon.querySelector(".caja1_minidescripcion_raza").innerHTML = info.raza;
+            clon.querySelector(".caja1_minidescripcion_edad").innerHTML = info.edad;
 
-                clon.querySelector(".tito_img-perro-en-adopcion").setAttribute("src", "https://picsum.photos/200/300?random="+info.id);
+            clon.querySelector(".tito_img-perro-en-adopcion").setAttribute("src", "https://picsum.photos/200/300?random=" + info.id);
 
-                listado.appendChild(clon)
+            listado.appendChild(clon)
         }
-        
+
 
     </script>
     <script src="menu_responsive.js"></script>
