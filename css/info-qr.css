@@ -1,0 +1,846 @@
+/*                            QR                            */
+
+@media screen and (min-width:601px) {
+    .contenedor-QR-main-adopcion {
+        background-color: #fcf2eb;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 200px;
+        /* justify-content: center;
+        padding-bottom: 200px; */
+    }
+    
+    .fondo_contenedor-cartel_gato_qr {
+        background-color: #f7cdaa;
+        width: 100%;
+        height: 300px;
+        margin-top: 130px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .contenedor-cartel_gato_qr {
+        /* background-color: rgba(0, 255, 255, 0.348); */
+        width: 1400px;
+        min-width: 1400px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    
+    }
+    
+    .logo_negro-fondo-cartel{
+        position: absolute;
+        /* background-color: black; */
+        background-image: url('../img/LOGO-QR-NEGRO.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 430px;
+        height: 350px;
+        opacity: 0.05;
+        right: -35px;
+        top: 0px;
+        z-index: 3;
+        transform: rotate(4deg);
+    
+    }
+    
+    
+    .contenedor_img_gato_qr {
+        /* background-color: rgba(128, 255, 0, 0.347); */
+        position: relative;
+        background-image: url('../img/GATO_QR_HEADER.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 239px;
+        margin-left: 60px;
+        bottom: -6px;
+    }
+    
+    .titulo_mensaje_gato_qr {
+        position: absolute;
+        /* background-color: blueviolet    ; */
+        width: 800px;
+        color: #603813;
+        font-size: 17pt;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+        left: 300px;
+        z-index: 4;
+    
+    }
+    
+    .titulo_gato_qr {
+        /* background-color: #eb3b70; */
+        height: 90px;
+        width: 90%;
+        font-size: 50pt;
+        color: #ee920c;
+        display: flex;
+        justify-content: center;
+        /* padding-top: 20px; */
+    }
+    
+    .mensaje_gato_qr {
+        /* background-color: aquamarine; */
+        padding-top: 5px;
+        width: 100%;
+        font-size: 25PT;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    /*                                tarjetas qr                             */
+    
+    
+    .fondo_contenedor_tarjetas_mascotas_qr {
+        /* background-color: aquamarine; */
+        margin-top: 130px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .contenedor_tarjetas_mascotas_qr {
+        background-color: #f7cdaa;
+        width: 1200px;
+        min-width: 1200px;
+        border-radius: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70PX;
+    }
+    
+    .titulo_selecciona_mascota {
+        /* background-color: rgba(255, 0, 0, 0.377); */
+        width: 100%;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45pt;
+        padding-top: 25px;
+        color: #ffa75a;
+    }
+    
+    .linea_titulo_tarjetas_mascotas_qr {
+        background-color: #603813;
+        width: 90%;
+        height: 7px;
+    }
+    
+    .contenedor_tarjetas_qr {
+        /* background-color: burlywood; */
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedor_horizontal_tarjetas_mascotas_qr {
+        /* background-color: antiquewhite; */
+        width: 100%;
+        display: flex;
+        height: 200px;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 20px 0 20px;
+        margin-top: 30PX;
+    }
+    
+    
+    .tarjetas_mascotas_qr {
+        background-color: #ffa75a;
+        height: 190px;
+        width: 450px;
+        border-radius: 30px;
+        display: flex;
+    }
+    
+    .tarjetas_mascotas_qr_añadir_mascota {
+        background-color: #ffa75a49;
+        border: #ffa75a 5px solid;
+        height: 190px;
+        width: 450px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        transition: all 0.32s;
+    }
+    
+    
+    .tarjetas_mascotas_qr_añadir_mascota:hover {
+        transform: scale(1.04);
+    }
+    
+    
+    .contenedor_mas_a_m{
+        /* background-color: #fcf2eb; */
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50PX;
+    }
+    .mas_añadir_m{
+        font-size: 70pt;
+        color: #f19000;
+    }
+    
+    .texto_añadir_mascota{
+        font-size: 20PT;
+        color: #f19000;
+    }
+    
+    
+    
+    .img_tarjeta_qr_mascota {
+        /* background-color: #de7718; */
+        background-image: url('../img/perro_qrrrr.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: COVER;
+        width: 190px;
+        height: 100%;
+        border-radius: 30px;
+        border: #f7cdaa 10PX SOLID;
+    }
+    
+    .img_tarjeta_qr_mascotaB{
+        /* background-color: #de7718; */
+        background-image: url('../img/gato_qrrrrrr.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: COVER;
+        width: 190px;
+        height: 100%;
+        border-radius: 30px;
+        border: #f7cdaa 10PX SOLID;
+    }
+    
+    .img_tarjeta_qr_mascotaC{
+        /* background-color: #de7718; */
+        background-image: url('../img/juani_qrrrrrr.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: COVER;
+        width: 190px;
+        height: 100%;
+        border-radius: 30px;
+        border: #f7cdaa 10PX SOLID;
+    }
+    
+    
+    
+    .contenedor_nombre_crear_qr_mascota {
+        /* background-color: rgba(255, 242, 127, 0.397); */
+        width: 58%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    
+    .nombre_mascota_tarjeta_qr{
+        /* background-color: #f5911e88; */
+        width: 100%;
+        height: 60px;
+        color: #fce8d9;
+        font-size: 30pt;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 15PX;
+    }
+    
+    .contenedor_generador_qr{
+        background-color: #fce8d9;
+        height: 60px;
+        border-radius: 20px;
+        padding: 0 15PX;
+        font-size: 17pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: #f7cdaa 5px solid;
+        color: #ffa75a;
+        transition: all 0.3s;
+    }
+    
+    .contenedor_generador_qr:hover{
+        background-color: #ffa75a;
+        color: #fce8d9;
+        transform: scale(1.1);
+    }
+    
+    
+    
+    /*                          FIN   tarjetas qr                             */
+    
+    
+    /*                            INFO MASCOTA QR                       */
+    
+    .contenedor-qr-realizado-main-adopcion {
+        background-color: #fcf2eb;
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .caja-centradora-qr-realizado{
+        background-color: #f7cdaa;
+        width: 1000px;
+        height: 900px;
+        border-radius: 100px;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        
+    }
+    
+    .caja-titulo-qr-realizado{
+        background-color: #f7cdaa;
+        border: #fcf2eb 8px solid;
+        height: 10%;
+        width: 55%;
+        position: absolute;
+        top: -50px;
+        border-radius: 40px;
+        color: #ffa75a;
+        font-size: 38pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .caja-mascota-info-foto-qr-marcota-realizado{
+        /* background-color: rgba(127, 255, 212, 0.334); */
+        width: 90%;
+        height: 40%;
+        margin-top: 70px;
+        padding: 5px;
+        display: flex;
+    }
+    
+    .caja-info-mascota-qr-realizado{
+        /* background-color: rgba(165, 42, 163, 0.434); */
+        width: 50%;
+        height: 100%;
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .caja-foto-mascota-qr-realizado{
+        background-image: url('../img/juani_qrrrrrr.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: #fcf2eb 4px solid;
+        width: 50%;
+        height: 100%;
+        border-radius: 40px;
+    }
+    
+    
+    .caja-mascota-info-foto-qr-marcota-realizadob{
+        /* background-color: rgba(127, 255, 212, 0.692); */
+        width: 90%;
+        height: 44%;
+        margin-top: 30PX;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .caja-info-dueño-qr-realizado{
+        /* background-color: rgba(255, 0, 0, 0.387); */
+        width: 450px;
+        height: 100%;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    
+    .caja-ubicacion-mascota-qr-realizado{
+        /* background-color: rgba(0, 0, 255, 0.33); */
+        width: 450px;
+        height: 100%;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .img-ubicacion-qr-realizado{
+        
+        border-radius: 40px;
+        border: #fcebfb 10px solid;
+        top: 80px;
+        width: 85%;
+        height: 80%;
+        position: absolute;
+    
+    }
+    
+    
+    .titulo-info-qr-realizado{
+        /* background-color: rgba(127, 255, 212, 0.393); */
+        width: 100%;
+        height: 16%;
+        font-size: 30pt;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffa75a;
+    
+    }
+    
+    .linea-qr-realizado{
+        background-color:#fcebfb;
+        height: 1.5%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .datos-qr-realizado{
+        /* background-color: rgba(240, 248, 255, 0.279); */
+        height: 250px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .datos-dueño-qr-realizado{
+        /* background-color: rgba(240, 248, 255, 0.279); */
+        height: 170px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .caja-datos-qr-realizado{
+        /* background-color: #563313; */
+        height: calc(85% /4);
+        display: flex;
+        align-items: center;
+        width: 300px;
+        margin-left: 90px;
+        
+    }
+    
+    .caja-datos-dueño-qr-realizado{
+        /* background-color: #563313; */
+        height: calc(85% /3);
+        display: flex;
+        align-items: center;
+        width: 360px;
+        margin-left: 90px;
+        
+    }
+    
+    .a-dato-qr-r{
+        background-color: #ffa75a;
+        display: inline;
+        padding: 10px 13px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17pt;
+        margin-right: 10px;
+    }
+    
+    .b-dato-qr-r{
+        background-color:#fcf2eb;
+        display: inline;
+        padding: 9px 13px;
+        border-radius: 15px;
+        display: flex;
+        overflow: hidden;
+        font-size: 15pt;
+        max-width: 270px;
+    }
+    
+    .a-linea-qr-realizado{
+        background-color:#fcebfb;
+        height: 1.5%;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .fondo_qr_responsive {
+        display: none;
+    }
+
+}
+
+
+
+/*                           FIN INFO MASCOTA QR                       */
+
+
+
+
+/*                   RESPONSIVE                                         */
+
+@media screen and (max-width:600px) {
+    .fondo_qr_responsive{
+        background-color: #fce8d9;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .contenedor_todo_qr{
+        /* background-color: rgba(127, 255, 212, 0.504); */
+        width: 430px;
+    }
+    
+    .me_encontraste{
+        /* background-color: #ee920c; */
+        width: 100%;
+        display: flex;
+        justify-content:center ;
+        font-size: 26pt;
+        color: #ffa75a;
+        margin-top: 50px;
+    }
+    
+    .mega_tarjeta_mascota_qr{
+        background-color: #f7cdaa;
+        height: 100%;
+        width: 100;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        margin-top: 15px;
+
+    }
+
+    .contenedor_img1{
+        padding: 20px;
+        margin-bottom: 90px;
+    }
+    
+    .foto_1{
+        /* background-color: rgb(2, 2, 0); */
+        background-image: url('../img/juani_qrrrrrr.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px;
+        width: 100%;
+        height: 450px;
+        position: relative;
+    
+    }
+    
+    .nombre_mascota_reponsive_qr{
+        position: absolute;
+        background-color: #ffa75a;
+        color: #603813;
+        border: #f7cdaa 10px solid;
+        display: flex;
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 30px;
+        font-size: 35pt;
+        bottom: -10px;
+        right: -10px;
+    }
+    
+    
+    .contenedores_datos_mascota{
+        position: relative;
+        background-color: #ffa75a;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    
+    
+    
+    .tituli_contenedor_responsive_qr{
+        position: absolute;
+        background-color: #ffa75a;
+        padding: 5px 15px;
+        font-size: 28pt;
+        color: #fce8d9;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        top: -50px;
+        left: 30px;
+    }
+    .tituli_contenedor_responsive_qr2{
+    
+        position: absolute;
+        background-color: #ffa75a;
+        padding: 5px 15px;
+        font-size: 28pt;
+        color: #fce8d9;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        top: -50px;
+        right: 35px;
+    }
+    
+    
+    .caja_contenedora_datos_qr_reponsive{
+        /* background-color: rgba(165, 42, 42, 0.205); */
+        height: 250px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 40px 0 90px 0;
+    }
+    
+    
+    .arriba_caja_contenedora_datos_qr_reponsive{
+    position: relative;
+    top: -30px;
+    }
+    
+    .contenedor_color_dartos_qr_re{
+        /* background-color: blueviolet; */
+        width: 95%;
+        height: 50px;
+        display: flex;
+    }
+    
+    .color_pate_iz1{
+        background-color: #f7cdaa;
+        height: 100%;
+        width: 40%;
+        border-bottom-left-radius: 35px;
+        border-top-left-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15pt;
+        color: #603813;
+        overflow: hidden;
+    }
+    .color_pate_dr1{
+        background-color: #fce8d9;
+        height: 100%;
+        width: 60%;
+        border-bottom-right-radius: 35px;
+        border-top-right-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14pt;
+        /* color: #ffa75a; */
+        color: #603813;
+        overflow: hidden;
+    
+    
+    }
+    
+    .color_pate_iz2{
+        background-color: #f7cdaa;
+        height: 50px;
+        width: 100%;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15pt;
+        color: #603813;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    
+    .color_pate_dr2{
+        background-color: #fce8d9;
+        height: 80px;
+        width: 100%;
+        border-bottom-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10pt;
+        color: #ffa75a;
+        overflow: hidden;
+    
+    
+    }
+    
+    .color_pate_iz222{
+        background-color: #f7cdaa;
+        height: 100%;
+        width: 40%;
+        border-bottom-left-radius: 35px;
+        border-top-left-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13pt;
+        color: #603813;
+        overflow: hidden;
+    }
+    
+    
+    .color_pate_dr222{
+        background-color: #fce8d9;
+        height: 100%;
+        width: 60%;
+        border-bottom-right-radius: 35px;
+        border-top-right-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10pt;
+        /* color: #ffa75a; */
+        color: #603813;
+        overflow: hidden;
+    
+    
+    }
+    
+    /* 2 */
+    
+    
+    
+    
+    
+    .caja_contenedora_datos_qr_reponsive2{
+        /* background-color: brown; */
+        height: 250px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 40px 0 90px 0;
+    }
+    
+    .contenedor_color_dartos_qr_re2{
+        /* background-color: blueviolet; */
+        width: 95%;
+        height: 130px;
+        /* display: flex; */
+    }
+    
+    .caja_img_wp_qr_re{
+        /* background-color: #ee920c; */
+        width: 70px;
+        height: 70px;
+    }
+    
+    
+    .img-ubicacion-qr-realizado2{
+        
+        border-radius: 40px;
+        border: #fcebfb 10px solid;
+        top: 50px;
+        width: 85%;
+        height: 80%;
+        position: absolute;
+    
+    }
+    
+    
+    
+    
+    /* 2 */
+    
+    
+    .contenedores_datos_mascota2{
+        position: relative;
+        background-color: #f7cdaa;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        top: -60px;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .tituli_contenedor_responsive_qr3{
+        position: absolute;
+        background-color: #f7cdaa;
+        padding: 5px 15px;
+        font-size: 28pt;
+        color: #ffa75a;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        top: -40px;
+        left: 30px;
+    
+    }
+
+    .contenedor-qr-realizado-main-adopcion {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* f7cdaa */
+
+/*                FIN   RESPONSIVE                                      */
+
+
+/*                          FIN QR                            */

@@ -99,7 +99,7 @@
 
                                 <div class="tarjetas_mascotas_qr">
 
-                                    <div class="img_tarjeta_qr_mascota"> </div>
+                                    <div class="img_tarjeta_qr_mascota"></div>
 
                                     <div class="contenedor_nombre_crear_qr_mascota">
                                         <div class="nombre_mascota_tarjeta_qr lexend">
@@ -242,14 +242,14 @@
             }) 
         }
 
-        tarjeta_qr_contenedor.innerHTML=tarjeta_qr_contenedor.innerHTML+'<a href="#"><div class="tarjetas_mascotas_qr_añadir_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></a>';
+        tarjeta_qr_contenedor.innerHTML=tarjeta_qr_contenedor.innerHTML+'<a href="registrar_mascota.html"><div class="tarjetas_mascotas_qr_añadir_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></a>';
 
     })
     function descargarQr(nombre,id){
         imagen = document.createElement("img");
         new QRious({
             element: imagen,
-            value: "https://mattprofe.com.ar/alumno/great_pet/qr-responsive.html?id_mascota="+id, 
+            value: "https://mattprofe.com.ar/alumno/great_pet/info-qr.html?id_mascota="+id, 
             size: 500,
             backgroundAlpha: 0, 
             foreground: "black",
