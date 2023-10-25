@@ -28,6 +28,8 @@ if (isset($_SESSION["id_usuario"])) {
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="menu/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <title>Great Pet</title>
 </head>
 
@@ -55,7 +57,18 @@ if (isset($_SESSION["id_usuario"])) {
                 </a>
             </div>
             <div class="redesu roboto">
-                <?php
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombre.'' ?>
+                        <span class="material-icons-outlined dropbtn flecha_abajo">
+                            expand_more
+                        </span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="mi_usuario.php" class="opciones roboto">Mi Perfil</a>
+                        <a href="mis_mascotas.php" class="opciones roboto">Mis Mascotas</a>
+                        <a href="logout.php" class="opciones roboto">Cerrar sesión</a>
+                    </div>
+                </div>
+                <!-- <?php
                     echo '<p style="color:white">Bienvenido, '.$nombre.'</p>';
                     echo '<div class="puto">';
                     echo '<a href="mi_usuario.php" class="perfil"><h3>Perfil</h3></a>';
@@ -64,8 +77,9 @@ if (isset($_SESSION["id_usuario"])) {
                                 logout
                             </span>
                         </a></div>';
-                ?>
+                ?> -->
             </div>
+            <script src="menu/script.js"></script>
         </div>
     </header>
 
