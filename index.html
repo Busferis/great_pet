@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/color.css">
@@ -17,28 +18,39 @@
 </head>
 
 <body>
+   
     <header>
         <div class="headersi">
+
             <a href="index.html">
                 <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
             </a>
-            <div class="navegacion roboto">
-                <a class="TEXTO-LINK" href="#">
-                    <h3>Inicio</h3>
-                </a>
-                <a class="TEXTO-LINK" href="adopcion.html">
-                    <h3>Adopcion</h3>
-                </a>
-                <a class="TEXTO-LINK" href="busqueda.html">
-                    <h3>Busqueda</h3>
-                </a>
-                <a class="TEXTO-LINK" href="qr.html">
-                    <h3>QR</h3>
-                </a>
-                <a class="TEXTO-LINK" href="servicios.html">
-                    <h3>Servicios</h3>
-                </a>
-            </div>
+
+            <nav class=" roboto2">
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+                <ul class="navegacion menu" id="menu">
+                    <div class="contenedor_navegacion">
+                    <li><a class="TEXTO-LINK" href="#"><h4>Inicio</h4></a></li>
+                     </div>
+
+                     <div class="contenedor_navegacion">
+                    <li><a class="TEXTO-LINK" href="adopcion.html"><h4>Adopción</h4></a></li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                    <li><a class="TEXTO-LINK" href="busqueda.html"><h4>Búsqueda</h4></a></li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                    <li><a class="TEXTO-LINK" href="qr.html"><h4>QR</h4></a></li>
+                   </div>
+
+                    <div class="contenedor_navegacion">
+                    <li><a class="TEXTO-LINK" href="servicios.html"><h4>Servicios</h4></a></li>
+                    </div>
+                </ul>
+            </nav>
+
             <div class="redes roboto">
                 <a href="login.php" class="registrarse">Iniciar sesión</a>
             </div>
@@ -54,12 +66,15 @@
                         <img class="imagen-perro-cartel" src="img/perrocartel.png" alt="">
                         <div class="contenedor-descripcion">
                             <div class="descripcion-greatpet releway">
-                                <p>GREAT PET, donde el cuidado animal es nuestra pasión. Te brindamos detalles sobre la adopción de mascotas, servicios de búsqueda para peludos perdidos y recomendaciónes de las mejores tiendas de mascotas . Tu compañero peludo merece lo mejor, y estamos aquí para hacerlo posible.</p>
+                                <p>GREAT PET, donde el cuidado animal es nuestra pasión. Te brindamos detalles sobre la
+                                    adopción de mascotas, servicios de búsqueda para peludos perdidos y recomendaciónes
+                                    de las mejores tiendas de mascotas . Tu compañero peludo merece lo mejor, y estamos
+                                    aquí para hacerlo posible.</p>
                             </div>
                             <div class="linea"></div>
                             <img class="logo-caja" src="img/logo_definitivo.png" alt="s">
-                           
-                            
+
+
 
                         </div>
                     </div>
@@ -201,7 +216,7 @@
                             <div class="a-footer">
                                 <a>
                                     Great Peat es una asociación civil sin fines de lucro abocada a difundir, proteger y
-                                        promover los derechos de los animales.</a>
+                                    promover los derechos de los animales.</a>
                             </div>
 
                         </div>
@@ -222,7 +237,7 @@
                         <div class="caja-des roboto">
 
                             <div class="a-footer">
-                                <H5 >Gmail :</H5>
+                                <H5>Gmail :</H5>
                                 <a><u>greatpet2023@gmail.com</u></a>
                             </div>
                             <div class="a-footer ">
@@ -240,17 +255,16 @@
 
 
 
-                <!-- <div class="caja-titulo-texto-footer">
-                    <div class="caja-footer_2-titulo"></div>
-                    <div class="caja-footer_3-linea"></div>
-                    <div class="caja-footer_4-descripcion">
-                        
-                    </div>
-                </div> -->
             </div>
         </div>
     </footer>
 
+
+
+
+
 </body>
+
+<script src="menu_responsive.js"></script>
 
 </html>

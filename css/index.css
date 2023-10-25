@@ -250,3 +250,12 @@ main {
 .ir-link {
     text-decoration: none !important;
 }
+
+@media (max-width: 600px) {
+
+    main, footer{
+        display: none;
+
+    }
+    
+}
