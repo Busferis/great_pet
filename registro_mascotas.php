@@ -77,7 +77,7 @@ else{
     <main>
         <div class="contenedor-MAS-main-adopcion">
             <div class="caja_principal1">
-                <form action="" method="POST" enctype="multipart/form-data">
+                <form action="" method="POST" enctype="multipart/form-data" class="estructura_from">
 
                     <div class="titulo_principal lexend">
                         <P>Registrar mascota</P>

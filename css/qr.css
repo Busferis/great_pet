@@ -1,4 +1,6 @@
+
 /*                            QR                            */
+
 
 .contenedor-QR-main-adopcion {
     background-color: #fcf2eb;
@@ -207,19 +209,19 @@
 .texto_añadir_mascota{
     font-size: 20PT;
     color: #f19000;
-}z
+}
 
 
 
 .img_tarjeta_qr_mascota {
-    /* background-color: #de7718; */
+    background-color: #de7718;
     background-image: url('');
     background-position: center;
     background-repeat: no-repeat;
     background-size: COVER;
     width: 190px;
     height: 100%;
-    border-radius: px;
+    border-radius:30px;
     border: #f7cdaa 10PX SOLID;
 }
 

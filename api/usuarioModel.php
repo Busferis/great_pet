@@ -4,7 +4,8 @@
 	/**
 	 * 
 	 */
-	class Usuario
+
+	 class Usuario
 	{
 		
 		public $db;
@@ -64,7 +65,7 @@
 
 			$id_usuario = $parameters[0];
 
-			$response = $this->db->query("SELECT * FROM mascotas WHERE id_usuarios=$id_usuario");
+			$response = $this->db->query("SELECT * FROM mascotas WHERE id_usuario=$id_usuario");
 
 			$list = array("errno" => 400, "error" => "No hay mascota");
 
