@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (isset($_SESSION["nombre"])) {
+    $nombre = $_SESSION["nombre"];
+}
+if (isset($_SESSION["id_usuario"])) {
+    $id_usuario = $_SESSION["id_usuario"];
+    $modo = 1;
+} else{
+    $modo = 0;
+}
+$_SESSION["pagina"] = 5;
+var_dump($_SESSION["pagina"]);
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,15 +32,39 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" type="text/css" href="menu/styles.css">
 
     <title>Great Pet</title>
 </head>
 
 <body>
+
+    <template id="tpl__carnet1">
+        <div class="redesu roboto">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombre.'' ?>
+                    <span class="material-icons-outlined dropbtn flecha_abajo">
+                        expand_more
+                    </span></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="mi_usuario.php" class="opciones roboto">Mi Perfil</a>
+                    <a href="mis_mascotas.php" class="opciones roboto">Mis Mascotas</a>
+                    <a href="logout.php" class="opciones roboto">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="tpl__carnet2">
+        <div class="redes roboto">
+            <a href="login.php" class="registrarse">Iniciar sesión</a>
+        </div>
+    </template>
+
     <header>
         <div class="headersi">
 
-            <a href="index.html">
+            <a href="index.php">
                 <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
             </a>
 
@@ -36,7 +77,7 @@
                     <div class="linea_menu_res"></div>
                     <div class="contenedor_navegacion">
                         <li>
-                            <a class="TEXTO-LINK" href="index.html">
+                            <a class="TEXTO-LINK" href="index.php">
                                 <h4>Inicio</h4>
                             </a>
                         </li>
@@ -44,7 +85,7 @@
 
                     <div class="contenedor_navegacion">
                         <li>
-                            <a class="TEXTO-LINK" href="adopcion.html">
+                            <a class="TEXTO-LINK" href="adopcion.php">
                                 <h4>Adopción</h4>
                             </a>
                         </li>
@@ -52,7 +93,7 @@
 
                     <div class="contenedor_navegacion">
                         <li>
-                            <a class="TEXTO-LINK" href="busqueda.html">
+                            <a class="TEXTO-LINK" href="busqueda.php">
                                 <h4>Búsqueda</h4>
                             </a>
                         </li>
@@ -60,7 +101,7 @@
 
                     <div class="contenedor_navegacion">
                         <li>
-                            <a class="TEXTO-LINK" href="qr.html">
+                            <a class="TEXTO-LINK" href="qr.php">
                                 <h4>QR</h4>
                             </a>
                         </li>
@@ -76,9 +117,10 @@
                 </ul>
             </nav>
 
-            <div class="redes roboto">
-                <a href="login.php" class="registrarse">Iniciar sesión</a>
+            <div id="boton_sesion">
+                
             </div>
+            <script src="menu/script.js"></script>
         </div>
     </header>
 
@@ -385,6 +427,27 @@
 
         </div>
     </footer>
+
+    <script type="text/javascript">
+
+        function modo(){
+            var modo=<?php echo $modo; ?>;
+            boton_sesion.innerHTML = "";
+            if (modo==1) {
+                const tpl = tpl__carnet1.content
+                const clon = tpl.cloneNode(true);
+                boton_sesion.appendChild(clon);
+            }
+            if (modo==0) {
+                const tpl = tpl__carnet2.content
+                const clon = tpl.cloneNode(true);
+                boton_sesion.appendChild(clon);
+            }
+        }
+
+        modo();
+
+    </script>
 
     <script src="menu_responsive.js"></script>
 

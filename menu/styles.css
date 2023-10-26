@@ -19,6 +19,7 @@
 .flecha_abajo{
     position: absolute;
     right: 4px;
+    font-size: 24px;
 }
 
 /* Estilo para el contenido del menú desplegable */

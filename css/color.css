@@ -56,3 +56,6 @@ a {
     grid-template-columns: auto auto auto;
     gap: 35px;
 }
+h4{
+    letter-spacing: 1px;
+}
