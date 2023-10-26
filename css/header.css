@@ -219,6 +219,7 @@
             display: none;
             display: flex;
             width: 100%;
+            min-width: 450px;
             height: 100px;
             background-color: #f7cdaa;
             position: relative;
@@ -319,7 +320,6 @@
         .navegacion li{
             position: relative;
             top: -40px;
-            background-color: ;
         }
 
         .TEXTO-LINK{

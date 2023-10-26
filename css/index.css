@@ -286,7 +286,9 @@ main {
 
 
     .descripcion-greatpet{
-        width: 200px;
+        /* background-color: #ffa75a; */
+        width: 180px;
+        min-width: 180px;
         height: 200px;
         font-size: 15px;
     }
@@ -309,6 +311,7 @@ main {
 
     .ondas{
      display: none;
+        min-width: 461px;;
     }
     .ondas_responsive {
         display: block;
@@ -325,12 +328,14 @@ main {
 
     .contenedor2-main-index{
         /* display: none; */
-        width: 500px;
+        width: 440px;
+        min-width: 440px;
         margin-bottom: 100px;
 
     }
 
     .tarjetas{
+        /* background-color: aqua; */
         top: -140px;
     }
 
@@ -400,7 +405,7 @@ main {
     .caja-ir {
         position: absolute;
         bottom: 0;
-        left: 300px;
+        left: 250px;
         height: 40px;
         width: 100px;
         
@@ -413,4 +418,5 @@ main {
 
 
 }
+
 

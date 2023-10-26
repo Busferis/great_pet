@@ -816,3 +816,11 @@
     display: flex;
 
 }
+
+@media (max-width: 800px) {
+
+    .caja-contenedora-tarjetas-adopcion{
+        display: none;
+    }
+
+}

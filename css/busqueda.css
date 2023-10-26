@@ -19,7 +19,7 @@
 }
 
 .cartel_mensaje-busqueda {
-    /* background-color: rgba(7, 108, 56, 0.227); */
+    /* background-color: rgba(0, 255, 123, 0.4); */
     position: relative;
     width: 1400px;
     min-width: 1400px;
@@ -58,7 +58,7 @@
 }
 
 .titulo_mensaje_busqueda {
-    /* background-color: blueviolet    ; */
+    /* background-color: rgba(137, 43, 226, 0.942); */
     position: absolute;
     height: 70%;
     width: 800px;
@@ -74,7 +74,7 @@
 }
 
 .titulo-cartel {
-    /* background-color: #6038137e; */
+    /* background-color: #2200e37e; */
     width: 90%;
     font-size: 45pt;
     color: #ee920c;
@@ -83,7 +83,7 @@
 }
 
 .mensaje-cartel {
-    /* background-color: rgba(6, 54, 38, 0.33); */
+    /* background-color: rgb(234, 255, 0); */
     padding-top: 5px;
     height: 45px;
     width: 100%;
@@ -187,7 +187,9 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .tarjetas-busqueda-mini-descripcion-row {
@@ -290,7 +292,7 @@
 }
 
 .caja-ubicaciom_mascota_busqueda_tarjeta {
-    background-color: rgba(21, 170, 170, 0);
+    /* background-color: rgba(21, 170, 170, 0.6); */
     width: 100%;
     height: 45px;
     display: flex;
@@ -668,15 +670,17 @@
     margin-bottom: 15px;
 }
 
-.tipo_efectivo{
+.tipo_efectivo {
 
     background-image: url('../img/recopensa-efectivo-busqueda.png');
 }
-.tipo_regalo{
+
+.tipo_regalo {
 
     background-image: url('../img/recopensa-regalo-busqueda.png');
 }
-.tipo_gracias{
+
+.tipo_gracias {
 
     background-image: url('../img/recopensa-gracias-busqueda.png');
 }
@@ -727,4 +731,261 @@
 /*                           FIN INFO MASCOTA QR                       */
 
 
+/*                  RESPONSIVE                           */
 
+@media (max-width: 800px) {
+
+
+
+
+    .contenedor_cartel_busqueda {
+        margin-top: 0;
+        height: 400px;
+        min-width: 450px;
+    }
+
+
+    .cartel_mensaje-busqueda {
+        min-width: 400px;
+        max-width: 650px;
+        margin: 0 10px;
+
+    }
+
+
+    .logo_negro-fondo-cartel {
+        /* display: none; */
+        width: 330px;
+        height: 310px;
+        top: auto;
+        bottom: -30px;
+        right: -0px;
+        z-index: 2;
+        /* transform: scaleX(-1); */
+        
+    }
+
+    .img_cartel_mensaje {
+        /* display: none; */
+        width: 250px;
+        height: 320px;
+        position: absolute;
+        top: 81px;
+        margin: 0;
+        z-index: 9;
+        
+
+    }
+
+    .titulo_mensaje_busqueda {
+
+        /* display: none; */
+        position: relative;
+        left: 200px;
+        align-items: start;
+        min-width: 230px;
+        max-width: 450px;
+
+    }
+
+    .titulo-cartel {
+        /* display: none; */
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        width: auto;
+    }
+
+    .mensaje-cartel {
+        /* display: none; */
+        font-size: 13pt;
+        justify-content: start;
+        align-items: start;
+        padding: 5px 0 2px 0;
+        height: 40px;
+    }
+
+
+
+    .caja-contenedora-tarjetas-adopcion {
+        /* display: none; */
+        width: 100%;
+    }
+
+    .caja-filtro-adopcion{
+        /* display: none; */
+        width: 90%;
+        height: 80px;
+    }
+
+    .selec-filtro{
+        /* display: none; */
+        width: 100%;
+    }
+
+    .SELECT-1 {
+        width: 100px;
+        font-size: 10pt;
+    }
+
+    .buscar-filtro-adopcion:hover {
+        color: #fcf2eb;
+        transform: scale(1.15);
+    
+    }
+
+
+    .linea-filtro-adopcion-tarjetas{
+        /* display: none; */
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .contenedor-tarjetas-busqueda-mini-descripcion{
+        /* display: none; */
+        height: 1800px;
+        width: 400px;
+
+    }
+
+    .tarjeta1-busqueda-mini-descripcion{
+        /* display: none; */
+
+    }
+
+    .tarjeta1-busqueda-mini-descripcion{
+        height: 300px;
+        width: 170px;
+        border-radius: 30px;
+    }
+
+    .tito_img-perro-en-busqueda{
+        border-radius: 23px;
+        /* height: 50%; */
+    }
+
+    .tipo_de_recompensas{
+        height: 60px;
+        width: 40px;
+    }
+
+    .contenedor_nombre_centrado{
+        font-size: 15pt;
+        border-radius: 14px;
+    }
+
+
+    .icono_location{
+        display: none;
+    }
+
+    .localidad-dato-busqueda{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .caja-ubicaciom_mascota_busqueda_tarjeta{
+        width: 100%;
+    }
+
+    .tamoño-defauld-dato{
+        width: 100%;
+    }
+
+    .ubicaciom_mascota_busqueda_tarjeta{
+        font-size: 8pt;
+    }
+
+    .caja_contenedora_dato1{
+        width: 80px;
+        font-size: 10pt;
+        width: 50px;
+        margin-left: 10px;
+    }
+
+
+    .linea-recta-medio-tarjetas{
+        margin-left: 60px;
+    }
+    .caja_contededora_dato{
+        /* background-color: #ee920c; */
+        margin-left: 10px;
+        width: auto;
+        max-width: 80px;
+    }
+
+    .caja1_minidescripcion_der {
+        font-size: 9PT;
+        overflow: hidden;
+    }
+
+
+    .mini-informacion-tarjeta-busqueda{
+        margin-top: 18px;
+    }
+
+
+    .VER-MAS-mascota-adopcion-tarjeta{
+        width: 100px;
+        height: 35px;
+        border-radius: 12px;
+        font-size: 15pt;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 615px) {
+
+    .mensaje-cartel {
+     width: 300px;
+    text-align: center;
+
+    }
+
+
+    @media (max-width: 520px) {
+        .titulo-cartel {
+            width: 200PX;
+        }
+
+        .titulo_mensaje_busqueda {
+            align-items: center;
+            position: relative;
+            left: 200px;
+            text-align: center;
+            width: 280px;
+
+        }
+        .mensaje-cartel {
+         width: 230px;
+    
+        }
+
+    }
+
+    @media (max-width: 462px) {
+        .titulo_mensaje_busqueda {
+            width: 10px;
+            white-space: pre-line;
+
+        }
+        .mensaje-cartel {
+            width: 220px;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            padding-top: -10;
+           }
+    }
+
+}
