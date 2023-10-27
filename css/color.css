@@ -61,6 +61,17 @@ a {
     justify-content: center;
     margin-top: 60px;
 }
+#listado1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 35px;
+}
 h4{
     letter-spacing: 1px;
+}
+.btn__control{
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+    align-items: center;
 }

@@ -28,6 +28,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/mis_mascotas.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />    
 
     <title>Great Pet</title>
 </head>
@@ -107,6 +114,92 @@
         </div>
 
     </content>
+
+    <footer>
+        <div class="caja-contenedora-footer">
+
+            <div class="caja-footer_1">
+                <img class="img-footer" src="img/logo-footer.png" alt="">
+            </div>
+
+            <div class="contenedor_caja_2_3_4">
+                <div class="caja-titulo-texto-footer">
+                    <div class="caja-footer_2-titulo">
+                        <div class="titulo-contactos-footer roboto">
+                            <h2>¿Quienes somos?</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="caja-footer_3-linea"></div>
+
+
+                    <div class="caja-footer_4-descripcion">
+                        <div class="caja-des caja-des1 roboto">
+
+                            <div class="a-footer">
+                                <a>
+                                    Great Peat es una asociación civil sin fines de lucro abocada a difundir, proteger y
+                                    promover los derechos de los animales.</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="caja-titulo-texto-footer">
+                    <div class="caja-footer_2-titulo">
+                        <div class="titulo-contactos-footer roboto">
+                            <h2>Contactos</h2>
+                        </div>
+                    </div>
+                    <div class="caja-footer_3-linea caja-footer_3-linea2"></div>
+                    <div class="caja-footer_4-descripcion">
+                        <div class="caja-des caja-dess roboto">
+
+                            <a href="mailto:dani.gimenez5330@gmail.com" >
+
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-regular fa-envelope" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Gmail</p>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/541162444423" enlaces_footer >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-whatsapp" style="color: #f7cdaa;"></i>
+                                    </div>
+                                    <p class="enlaces_footer">WhatsApp</p>
+                                </div>
+                            </a>
+
+                            <a href="#" >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-instagram" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Instagram</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript">
 

@@ -13,6 +13,7 @@
     /* margin-top: 100px; */
     border-radius: 20px;
     padding: 20px 0 50px 0;
+    margin-bottom: 20px;
     background-color: #f7cdaa;
     border-radius: 60px;
     display: flex;
@@ -63,6 +64,7 @@
     height: 200px;
     
 /*    width: calc(95% / 2 );*/
+    width: 400px;
     border-radius: 30px;
     display: flex;
 }
@@ -146,7 +148,7 @@
     background-color: #ffa75a76;
     border: solid 6px #ffa75a;
     height: 200px;
-    width: 370px;
+    width: 400px;
     border-radius: 30px;
     display: flex;
     justify-content: center;

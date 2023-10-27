@@ -273,13 +273,13 @@ var_dump($_SESSION["pagina"]);
                 </div>
                 <div class="linea-filtro-adopcion-tarjetas"></div>
 
-                <div id="btn__control">
+                <div id="btn__control" class="btn__control">
                     <button id="btn__next">Siguiente</button>
                     <div id="visor__page"></div>
                     <button id="btn__previous">Atras</button>
                 </div>
 
-                <div id="listado">
+                <div id="listado1">
 
                 </div>
 
@@ -431,7 +431,7 @@ var_dump($_SESSION["pagina"]);
         function refreshPage() {
             visor__page.innerHTML = page;
 
-            listado.innerHTML = "";
+            listado1.innerHTML = "";
 
             getAlumnos().then(alumnos => {
 
@@ -491,7 +491,7 @@ var_dump($_SESSION["pagina"]);
 
             clon.querySelector(".tito_img-perro-en-adopcion").setAttribute("src", "https://picsum.photos/200/300?random=" + info.id);
 
-            listado.appendChild(clon)
+            listado1.appendChild(clon)
         }
 
     </script>
