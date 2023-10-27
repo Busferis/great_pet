@@ -119,15 +119,18 @@ footer {
 }
 
 .caja-dess{
+    text-decoration: none ;
     display: flex;
     flex-direction: column;
     /* background-color: aqua; */
-    color: #f7cdaa;
     font-size: 16pt;
     margin-left: 40px;
     
 }
 
+.enlaces_footer{
+    color: #f7cdaa;
+}
 
 .caja-des h5 {
     font-size: 13pt;
@@ -149,7 +152,6 @@ footer {
     cursor: pointer;
 
 }
-
 .logo_contacto
 {
     /* background-color: aqua; */
@@ -171,9 +173,55 @@ footer {
 
 
 @media (max-width: 800px) {
-    footer {
-        display: none;
+    .caja-contenedora-footer {
+        min-width: auto;
+        width: 400px;
+        max-width: auto;
+        /* display: none; */
 
     }
 
+    .caja-footer_1{
+        display: none;
+    }
+
+
+    .contenedor_caja_2_3_4{
+        /* background-color: #f7cdaa; */
+        margin-left: 0px;
+        width: 20px;
+        width: 700px;
+    }
+
+    .caja-titulo-texto-footer{
+        /* background-color: aliceblue; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja-footer_3-linea{
+        width: 85%;
+    }
+    .titulo-contactos-footer{
+        font-size: 10pt;
+    }
+    .caja-dess{
+        position: relative;
+        top: -9px;
+    }
+
+    .caja-footer_3-linea{
+        width: 90%;
+    }
+    .caja-footer_3-linea2{
+        width: 70%;
+    }
+    .caja-des1{
+        font-size: 11pt;
+        padding: 15px;
+        padding-left: 20px;
+    }
+    
 }

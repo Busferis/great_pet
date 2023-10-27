@@ -27,6 +27,9 @@ var_dump($_SESSION["pagina"]);
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -973,7 +976,6 @@ var_dump($_SESSION["pagina"]);
 
 
 
-
     <footer>
         <div class="caja-contenedora-footer">
 
@@ -994,7 +996,7 @@ var_dump($_SESSION["pagina"]);
 
 
                     <div class="caja-footer_4-descripcion">
-                        <div class="caja-des roboto">
+                        <div class="caja-des caja-des1 roboto">
 
                             <div class="a-footer">
                                 <a>
@@ -1015,26 +1017,43 @@ var_dump($_SESSION["pagina"]);
                             <h2>Contactos</h2>
                         </div>
                     </div>
-                    <div class="caja-footer_3-linea"></div>
+                    <div class="caja-footer_3-linea caja-footer_3-linea2"></div>
                     <div class="caja-footer_4-descripcion">
-                        <div class="caja-des roboto">
+                        <div class="caja-des caja-dess roboto">
 
-                            <div class="a-footer">
-                                <H5>Gmail: </H5>
-                                <a><u>greatpet2023@gmail.com</u></a>
-                            </div>
-                            <div class="a-footer ">
-                                <H5 class="hlds">Whatsapp: </H5>
-                                <a><u>+54 9 11 6244 - 4423</u></a>
-                            </div>
-                            <div class="a-footer">
-                                <H5 class="hlds">Facebook: </H5>
-                                <a><u>Great Pet Arg</u></a>
-                            </div>
+                            <a href="mailto:dani.gimenez5330@gmail.com" >
+
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-regular fa-envelope" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Gmail</p>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/541162444423" enlaces_footer >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-whatsapp" style="color: #f7cdaa;"></i>
+                                    </div>
+                                    <p class="enlaces_footer">WhastApp</p>
+                                </div>
+                            </a>
+
+                            <a href="#" >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-instagram" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Intagram</p>
+                                </div>
+                            </a>
+
                         </div>
                     </div>
                 </div>
-
 
 
 
