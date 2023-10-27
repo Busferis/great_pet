@@ -433,7 +433,7 @@ var_dump($_SESSION["pagina"]);
         // peticion a la api en modo get
         async function getAlumnos() {
 
-            const response = await fetch("api/usuario/listByCantPage/10/" + page);
+            const response = await fetch("api/usuario/listByCantPage/9/" + page);
 
             const data = await response.json();
 
