@@ -197,10 +197,10 @@ var_dump($_SESSION["pagina"]);
 
                             <div class="tarjeta1-busqueda-mini-descripcion">
 
-                                <div class="tito_img-perro-en-busqueda">
+                                <div class="tito_img-perro-en-busqueda img1">
                                     <div class="tipo_de_recompensas"></div>
                                     <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
+                                        <div class="contenedor_nombre_centrado roboto2">Melly</div>
                                     </div>
 
                                 </div>
@@ -227,7 +227,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculinoa</div>
+                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
                                         </div>
 
                                     </div>
@@ -241,7 +241,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
+                                            <div class="caja1_minidescripcion_der roboto">Salchicha</div>
                                         </div>
 
                                     </div>
@@ -255,7 +255,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
+                                            <div class="caja1_minidescripcion_der roboto">6 meses</div>
                                         </div>
 
                                     </div>
@@ -277,11 +277,11 @@ var_dump($_SESSION["pagina"]);
 
                             <div class="tarjeta1-busqueda-mini-descripcion">
 
-                                <div class="tito_img-perro-en-busqueda">
+                                <div class="tito_img-perro-en-busqueda img2">
                                     <div class="tipo_de_recompensas"></div>
 
                                     <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
+                                        <div class="contenedor_nombre_centrado roboto2">Dona</div>
                                     </div>
 
                                 </div>
@@ -293,7 +293,89 @@ var_dump($_SESSION["pagina"]);
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
                                             <div class="ubicaciom_mascota_busqueda_tarjeta">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
+                                                <div class="roboto">Alberti, Malvinas Argentinas</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                        <div class="caja_contenedora_dato1 ">
+                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                        </div>
+
+                                        <div class="linea-recta-medio-tarjetas"></div>
+
+                                        <div class="caja_contededora_dato">
+                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                        <div class="caja_contenedora_dato1 ">
+                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
+                                        </div>
+
+                                        <div class="linea-recta-medio-tarjetas"></div>
+
+                                        <div class="caja_contededora_dato">
+                                            <div class="caja1_minidescripcion_der roboto">Maltés</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                        <div class="caja_contenedora_dato1 ">
+                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
+                                        </div>
+
+                                        <div class="linea-recta-medio-tarjetas"></div>
+
+                                        <div class="caja_contededora_dato">
+                                            <div class="caja1_minidescripcion_der roboto">5 meses</div>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
+                                    <a href="mas-info-busqueda.html">
+                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
+                                            Ver Mas
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="tarjeta1-busqueda-mini-descripcion">
+
+                                <div class="tito_img-perro-en-busqueda img7">
+                                    <div class="tipo_de_recompensas"></div>
+
+                                    <div class="cajacontenedora_nombre">
+                                        <div class="contenedor_nombre_centrado roboto2">Sam</div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mini-informacion-tarjeta-busqueda">
+
+                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                                <i class="material-icons-outlined icono_location">location_on</i>
+                                                <div class="roboto">Villa Rosa, Malvinas Argentinas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -322,7 +404,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
+                                            <div class="caja1_minidescripcion_der roboto">Salchicha</div>
                                         </div>
 
                                     </div>
@@ -336,89 +418,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda">
-                                    <div class="tipo_de_recompensas"></div>
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
+                                            <div class="caja1_minidescripcion_der roboto">2 años</div>
                                         </div>
 
                                     </div>
@@ -449,11 +449,11 @@ var_dump($_SESSION["pagina"]);
 
                             <div class="tarjeta1-busqueda-mini-descripcion">
 
-                                <div class="tito_img-perro-en-busqueda">
+                                <div class="tito_img-perro-en-busqueda img4">
                                     <div class="tipo_de_recompensas"></div>
 
                                     <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
+                                        <div class="contenedor_nombre_centrado roboto2">Mini</div>
                                     </div>
 
                                 </div>
@@ -465,7 +465,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
                                             <div class="ubicaciom_mascota_busqueda_tarjeta">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
+                                                <div class="roboto">Grand Bourg, Malvinas Argentinas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -480,7 +480,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculino</div>
+                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
                                         </div>
 
                                     </div>
@@ -508,7 +508,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
+                                            <div class="caja1_minidescripcion_der roboto">7 años</div>
                                         </div>
 
                                     </div>
@@ -530,11 +530,11 @@ var_dump($_SESSION["pagina"]);
 
                             <div class="tarjeta1-busqueda-mini-descripcion">
 
-                                <div class="tito_img-perro-en-busqueda">
+                                <div class="tito_img-perro-en-busqueda img5">
                                     <div class="tipo_de_recompensas"></div>
 
                                     <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
+                                        <div class="contenedor_nombre_centrado roboto2">Hulk</div>
                                     </div>
 
                                 </div>
@@ -575,7 +575,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
+                                            <div class="caja1_minidescripcion_der roboto">Pitbull</div>
                                         </div>
 
                                     </div>
@@ -589,7 +589,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
+                                            <div class="caja1_minidescripcion_der roboto">2 años</div>
                                         </div>
 
                                     </div>
@@ -612,11 +612,11 @@ var_dump($_SESSION["pagina"]);
 
                             <div class="tarjeta1-busqueda-mini-descripcion">
 
-                                <div class="tito_img-perro-en-busqueda">
+                                <div class="tito_img-perro-en-busqueda img6">
                                     <div class="tipo_de_recompensas"></div>
 
                                     <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
+                                        <div class="contenedor_nombre_centrado roboto2">pipo</div>
                                     </div>
 
                                 </div>
@@ -628,7 +628,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
                                             <div class="ubicaciom_mascota_busqueda_tarjeta">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
+                                                <div class="roboto">Del viso, Malvinas Argentinas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -671,7 +671,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
+                                            <div class="caja1_minidescripcion_der roboto">4 años</div>
                                         </div>
 
                                     </div>
@@ -703,11 +703,11 @@ var_dump($_SESSION["pagina"]);
 
                             <div class="tarjeta1-busqueda-mini-descripcion">
 
-                                <div class="tito_img-perro-en-busqueda">
+                                <div class="tito_img-perro-en-busqueda img3">
                                     <div class="tipo_de_recompensas"></div>
 
                                     <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
+                                        <div class="contenedor_nombre_centrado roboto2">Barbie</div>
                                     </div>
 
                                 </div>
@@ -719,7 +719,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
                                             <div class="ubicaciom_mascota_busqueda_tarjeta">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
+                                                <div class="roboto">Los polvorines, Malvinas Argentinas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -734,7 +734,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculino</div>
+                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
                                         </div>
 
                                     </div>
@@ -748,7 +748,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
+                                            <div class="caja1_minidescripcion_der roboto">Caniche</div>
                                         </div>
 
                                     </div>
@@ -762,7 +762,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
+                                            <div class="caja1_minidescripcion_der roboto">1 año</div>
                                         </div>
 
                                     </div>
@@ -784,11 +784,11 @@ var_dump($_SESSION["pagina"]);
 
                             <div class="tarjeta1-busqueda-mini-descripcion">
 
-                                <div class="tito_img-perro-en-busqueda">
+                                <div class="tito_img-perro-en-busqueda img8">
                                     <div class="tipo_de_recompensas"></div>
 
                                     <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
+                                        <div class="contenedor_nombre_centrado roboto2">Toti</div>
                                     </div>
 
                                 </div>
@@ -800,7 +800,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
                                             <div class="ubicaciom_mascota_busqueda_tarjeta">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
+                                                <div class="roboto">Grand Bourg, Malvinas Argentinas</div>
                                             </div>
                                         </div>
                                     </div>
@@ -829,7 +829,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
+                                            <div class="caja1_minidescripcion_der roboto">Bulldog frances</div>
                                         </div>
 
                                     </div>
@@ -843,7 +843,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
+                                            <div class="caja1_minidescripcion_der roboto">3 años</div>
                                         </div>
 
                                     </div>
@@ -866,11 +866,11 @@ var_dump($_SESSION["pagina"]);
 
                             <div class="tarjeta1-busqueda-mini-descripcion">
 
-                                <div class="tito_img-perro-en-busqueda">
+                                <div class="tito_img-perro-en-busqueda img9">
                                     <div class="tipo_de_recompensas"></div>
 
                                     <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">TITO</div>
+                                        <div class="contenedor_nombre_centrado roboto2">Sasha</div>
                                     </div>
 
                                 </div>
@@ -897,7 +897,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculino</div>
+                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
                                         </div>
 
                                     </div>
@@ -911,7 +911,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
+                                            <div class="caja1_minidescripcion_der roboto">Rottweiler</div>
                                         </div>
 
                                     </div>
@@ -925,7 +925,7 @@ var_dump($_SESSION["pagina"]);
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 meses</div>
+                                            <div class="caja1_minidescripcion_der roboto">5 meses</div>
                                         </div>
 
                                     </div>

@@ -212,7 +212,6 @@
 
 .tito_img-perro-en-busqueda {
     position: relative;
-    background-image: url("../img/tito_calderon.jpg");
     height: 46%;
     width: 100%;
     border-radius: 50px;
@@ -220,6 +219,79 @@
     background-position: center;
     background-size: cover;
 }
+
+
+.img1{
+    background-image: url("../img/1.jpg");
+    
+    background-position: auto; 
+}
+
+.img2{
+    background-image: url("../img/2.jpg");
+}
+.img3{
+    background-image: url("../img/3.png");
+}
+.img4{
+    background-image: url("../img/4.png");
+}
+.img5{
+    background-image: url("../img/5.jpg");
+}
+.img6{
+    background-image: url("../img/6.jpg");
+}
+.img7{
+    background-image: url("../img/7.png");
+    background-position: initial; 
+}
+.img8{
+    background-image: url("../img/8.png");
+}
+.img9{
+    background-image: url("../img/9.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .tipo_de_recompensas {
     background-image: url('../img/recopensa-efectivo-busqueda.png');
@@ -442,8 +514,9 @@
     width: 90%;
     height: 40%;
     margin-top: 70px;
-    padding: 5px;
+    padding: 0px;
     display: flex;
+    justify-content: space-between;
 }
 
 .caja-info-mascota-qr-realizado {
@@ -458,12 +531,13 @@
 
 
 .caja-foto-mascota-qr-realizado {
-    background-image: url('../img/juani_qrrrrrr.png');
+    background-image: url('../img/1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border: #fcf2eb 4px solid;
-    width: 50%;
+    width: 45%;
+    margin-left: 30px;
     height: 100%;
     border-radius: 40px;
 }
