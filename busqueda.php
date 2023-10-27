@@ -1037,7 +1037,7 @@ var_dump($_SESSION["pagina"]);
                                     <div class="logo_contacto">
                                         <i class="fa-brands fa-whatsapp" style="color: #f7cdaa;"></i>
                                     </div>
-                                    <p class="enlaces_footer">WhastApp</p>
+                                    <p class="enlaces_footer">WhatsApp</p>
                                 </div>
                             </a>
 
@@ -1047,7 +1047,7 @@ var_dump($_SESSION["pagina"]);
                                         <i class="fa-brands fa-instagram" style="color: #f7cdaa;"></i>
                                     </div>
 
-                                    <p class="enlaces_footer">Intagram</p>
+                                    <p class="enlaces_footer">Instagram</p>
                                 </div>
                             </a>
 

@@ -52,9 +52,14 @@ a {
     text-decoration: none;
 }
 #listado {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 35px;
+   width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }
 h4{
     letter-spacing: 1px;

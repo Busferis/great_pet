@@ -26,7 +26,7 @@ if (isset($_POST["nombre"]) && isset($_POST["edad"]) && isset($_POST["sexo"]) &&
         } else {
             $insertarSql = "INSERT INTO `mascotas` (id_usuario, nombre, edad, sexo, especie, raza, localidad) VALUES ('$id_usuario', '$nombre', '$edad', '$sexo', '$especie', '$raza', '$localidad')";
             if (mysqli_query($con, $insertarSql)) {
-                header("Location: mis_mascotas.html");
+                header("Location: mis_mascotas.php");
                 exit();
             } else {
                 echo "Error en el registro. Por favor, inténtalo de nuevo.";

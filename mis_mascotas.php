@@ -34,35 +34,37 @@
 
 <body>
 
-    <content>
+    <template id="tpl__carnet">
 
-        <template class="tpl__carnet">
+        <div class="tarjetas_mascotas_mis_mascotas">
 
-            <div class="tarjetas_mascotas_mis_mascotas">
+            <div class="img_tarjeta_mis_mascota"></div>
 
-                <div class="img_tarjeta_mis_mascota"></div>
-
-                <div class="contenedor_nombre_mis_mascota">
-                    <div class="nombre_mascota_tarjeta_mis_mascotas lexend"></div>
-                    <div class="contenedor_ver_delet">
-                        <a href="#">
-                            <div class="contenedor_generador_mis_mascotas roboto2">
-                                <p>Ver</p>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="contenedor_generador_mis_mascotas roboto2">
-                                <span class="material-symbols-outlined delete">
-                                    delete
-                                </span>
-                            </div>
-                        </a>
-                    </div>
+            <div class="contenedor_nombre_mis_mascota">
+                <div class="nombre_mascota_tarjeta_mis_mascotas lexend">
+                    <p class="nombre_mascota">Nombre</p>
                 </div>
-
+                <div class="contenedor_ver_delet">
+                    <a href="#">
+                        <div class="contenedor_generador_mis_mascotas roboto2">
+                            <p>Ver</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="contenedor_generador_mis_mascotas roboto2">
+                            <span class="material-symbols-outlined delete">
+                                delete
+                            </span>
+                        </div>
+                    </a>
+                </div>
             </div>
 
-        </template>
+        </div>
+
+    </template>
+
+    <content>
 
         <div class="contenedor-MAS-main-adopcion">
 
@@ -81,7 +83,7 @@
                         
                     </div>
 
-                    <a href="registro_mascotas.php">
+                    <!-- <a href="registro_mascotas.php">
                         <div class="tarjetas_mascotas_mis_mascota">
                             <div class="fondo_tarjeta_agregar_mascota">
 
@@ -97,7 +99,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </a> -->
 
                 </div>
 
@@ -118,9 +120,10 @@
 
                     console.log(alumnos);
 
-                    alumnos.forEach( row => {
-                        createCard(row);        
+                    alumnos.forEach(row => {
+                        createCard(row);
                     });
+                    listado.innerHTML = listado.innerHTML + '<a href="registro_mascotas.php"><div class="tarjetas_mascotas_mis_mascota"><div class="fondo_tarjeta_agregar_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></div></a>';
 
                 });
         }
@@ -164,8 +167,7 @@
                 const tpl = tpl__carnet.content
                 const clon = tpl.cloneNode(true);
 
-                clon.querySelector(".tarjeta1-adopcion-mini-descripcion").setAttribute("id-card", "carnet-"+info.id_mascota);
-                clon.querySelector(".nombre_mascota_tarjeta_mis_mascotas lexend").innerHTML = info.nombre;
+                clon.querySelector(".nombre_mascota").innerHTML = info.nombre;
 
                 listado.appendChild(clon)
         }
