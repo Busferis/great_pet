@@ -25,6 +25,9 @@ var_dump($_SESSION["pagina"]);
     <link rel="icon" href="img/logo_pestaña.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
@@ -159,7 +162,7 @@ var_dump($_SESSION["pagina"]);
             </div>
         </div>
 
-
+        <div class="contenedor_para_fondo">
         <div class="contenedor2-main-index">
             <div class="tarjetas">
                 <div class="tarj">
@@ -249,7 +252,7 @@ var_dump($_SESSION["pagina"]);
                 </div>
             </div>
         </div>
-
+    </div>
 
 
     </main>
@@ -279,7 +282,7 @@ var_dump($_SESSION["pagina"]);
                             <div class="a-footer">
                                 <a>
                                     Great Peat es una asociación civil sin fines de lucro abocada a difundir, proteger y
-                                        promover los derechos de los animales.</a>
+                                    promover los derechos de los animales.</a>
                             </div>
 
                         </div>
@@ -297,19 +300,34 @@ var_dump($_SESSION["pagina"]);
                     </div>
                     <div class="caja-footer_3-linea"></div>
                     <div class="caja-footer_4-descripcion">
-                        <div class="caja-des roboto">
+                        <div class="caja-des caja-dess roboto">
 
-                            <div class="a-footer">
-                                <H5 >Gmail :</H5>
-                                <a><u>greatpet2023@gmail.com</u></a>
+                            <div class="a-footer_1 lexend">
+                                <a href="mailto:greatpet2023@gmail.com">
+                                    <div class="logo_contacto">
+                                        <i class="fa-regular fa-envelope" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <a>Gmail</a>
+                                </a>
                             </div>
-                            <div class="a-footer ">
-                                <H5 class="hlds">whastapp :</H5>
-                                <a><u>+54 9 11 6244 - 4423</u></a>
+                            <div class="a-footer_1 lexend">
+                                <a href="https://wa.me/541162444423">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-whatsapp" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <a>WhastApp</a>
+                                </a>
                             </div>
-                            <div class="a-footer">
-                                <H5 class="hlds">facebook :</H5>
-                                <a><u>Great Pet Arg</u></a>
+                            <div class="a-footer_1 lexend">
+                                <a href="#">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-instagram" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <a>Intagram</a>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -318,13 +336,6 @@ var_dump($_SESSION["pagina"]);
 
 
 
-                <!-- <div class="caja-titulo-texto-footer">
-                    <div class="caja-footer_2-titulo"></div>
-                    <div class="caja-footer_3-linea"></div>
-                    <div class="caja-footer_4-descripcion">
-                        
-                    </div>
-                </div> -->
             </div>
         </div>
     </footer>
