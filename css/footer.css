@@ -13,6 +13,24 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .caja-contenedora-footer {
     /* background-color: #b4e9bd; */
     width: 90%;
@@ -30,7 +48,7 @@ footer {
     width: 340px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
 }
 
 
@@ -98,12 +116,52 @@ footer {
     letter-spacing: 1px;
     padding-top: 15px;
 
+}
 
+.caja-dess{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    color: #f7cdaa;
+    font-size: 16pt;
+    margin-left: 40px;
+    
 }
 
 
 .caja-des h5 {
     font-size: 13pt;
+}
+
+.a-footer_1{
+    /* background-color: #c47432c8; */
+    
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-right:20px ;
+    transition: all 0.3s;
+}
+.a-footer_1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.logo_contacto
+{
+    /* background-color: aqua; */
+    height: 40px; 
+    width: 40px;
+}
+
+.logo_contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;    
 }
 
 .hlds {
@@ -115,6 +173,7 @@ footer {
 @media (max-width: 800px) {
     footer {
         display: none;
+
     }
 
 }
