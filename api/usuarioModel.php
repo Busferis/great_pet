@@ -17,7 +17,7 @@
 
 		public function listAll(){
 
-			$response = $this->db->query("SELECT * FROM mascotas where id_usuario=7");
+			$response = $this->db->query("SELECT * FROM mascotas where id_usuario=4");
 
 			$list = array("errno" => 400, "error" => "No hay mascotas");
 
