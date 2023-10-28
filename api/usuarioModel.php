@@ -15,9 +15,11 @@
 			$this->db = new mysqli("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
 		}
 
-		public function listAll(){
+		public function listAll($id){
 
-			$response = $this->db->query("SELECT * FROM mascotas where id_usuario=4");
+			$id_value = $id[0];
+
+			$response = $this->db->query("SELECT * FROM mascotas where id_usuario='".$id_value."'");
 
 			$list = array("errno" => 400, "error" => "No hay mascotas");
 

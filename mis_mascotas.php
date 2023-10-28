@@ -221,22 +221,30 @@
 
                 getAlumnos().then(alumnos => {
 
-                    console.log(alumnos);
-
+                if (alumnos.errno && alumnos.errno === 400) {
+                    // Add the code here to display the error message
+                    listado.innerHTML += '<a href="registro_mascotas.php"><div class="tarjetas_mascotas_mis_mascota"><div class="fondo_tarjeta_agregar_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></div></a>';
+                } else {
                     alumnos.forEach(row => {
                         createCard(row);
                     });
-                    listado.innerHTML = listado.innerHTML + '<a href="registro_mascotas.php"><div class="tarjetas_mascotas_mis_mascota"><div class="fondo_tarjeta_agregar_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></div></a>';
-
-                });
+                    listado.innerHTML += '<a href="registro_mascotas.php"><div class="tarjetas_mascotas_mis_mascota"><div class="fondo_tarjeta_agregar_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></div></a>';
+                }
+            });
         }
 
         // peticion a la api en modo get
         async function getAlumnos(){
 
-            const response = await fetch("api/usuario/listAll/");
+            var id=<?php echo $id_usuario; ?>;
+
+            const response = await fetch("api/usuario/listAll/" + id + "/");
+
+            console.log(response);
 
             const data = await response.json();
+
+            console.log(data);
 
             return data;
         }
