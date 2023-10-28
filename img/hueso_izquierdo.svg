@@ -1,1 +1,12 @@
-bIndustryNews&&n.isMsbInternalTenant(),"msbdsbmtindustrynews");i(n.config.msbDsbIndustryNewsTimeFrameOff,"msbdsbnwstmoff");i(n.config.msbDsbAdditionalRecommendedPeople10,"msbdsb10addrp");i(n.config.msbDsbFileReqTeamsIntent,"msbdsbfrteam");i(n.config.msbDsbFileRequestZeroQuery&&n.config.msbDsbFileReqTeamsIntent,"msbdsbtestziteams");i(n.config.msbDsbMeetingPrepOff,"msbdsbmeetingprepoff");i(!n.config.msbDsbUseServerGleam,"msbdsbtenantsetoff");i(n.config.undocked,"msbdsbmtwin11");i(n.config.undocked&&n.config.msbDsbUseServerGleam,"msbdsbmtwin11tenantlogo");i(n.config.msbDsbWide,"msbdsbwide");i(!!n.config.msbDsbRecPeopleMaxNumberMTFlight,n.config.msbDsbRecPeopleMaxNumberMTFlight);i(n.config.msbDsbBookmarksAnswerEnabled,"msbdsbbkmrk");i(n.config.msbDsbReplaceBookmarksWithPopularSearch,"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 750" style="enable-background:new 0 0 500 750;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFA75A;}
+</style>
+<path id="HUESO_29_" class="st0" d="M502,167.5c0,0-64.9-164.3-251.2-164.1S42.2,188.7,42.2,188.7S24.3,262.4,83.6,345
+	c12.1,16.8,12.7,41.9,1.6,59.7c-9.7,15.8-19.1,32.3-20.4,34.8C50.1,469.6,39.9,504,41,539.6c1.6,49.5,24.9,94.9,54.5,128.5
+	c34.5,39.1,78.6,65.5,125,74.7c47.2,9.4,95.8,1.3,141.6-15.6c26.7-9.9,50.4-18.7,75.7-42.7c27.7-26.3,58.2-80.9,62.7-125L502,167.5z
+	"/>
+</svg>

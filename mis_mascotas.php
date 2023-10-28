@@ -261,6 +261,8 @@
                 const clon = tpl.cloneNode(true);
 
                 clon.querySelector(".nombre_mascota").innerHTML = info.nombre;
+                clon.querySelector(".img_tarjeta_mis_mascota").style.backgroundImage = "url('img/" + info.imagen + "')";
+
 
                 listado.appendChild(clon)
         }

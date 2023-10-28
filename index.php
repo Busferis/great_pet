@@ -176,12 +176,12 @@ var_dump($_SESSION["pagina"]);
                     </div>
 
                     <div class="texto-tarjeta">
-                        <div class="titulo-tarjeta lexend">Adopcion</div>
+                        <div class="titulo-tarjeta lexend">Adopción</div>
                         <div class="parrafo-tarjeta roboto">Adopta tu amigo peludo y cambia dos vidas para siempre. Encuentra a tu compañero ideal aquí.</div>
                     </div>
 
 
-                    <a class="ir-link" href="adopcion.html">
+                    <a class="ir-link" href="adopcion.php">
                         <div class="caja-ir">
                             <h3 class="ir sigmar">IR</h3>
                         </div>
@@ -201,7 +201,7 @@ var_dump($_SESSION["pagina"]);
                         <div class="titulo-tarjeta lexend">Busqueda</div>
                         <div class="parrafo-tarjeta roboto">Encuentra tu compañero perfecto: explora nuestra sección de búsqueda de mascotas</div>
                     </div>
-                    <a class="ir-link" href="busqueda.html">
+                    <a class="ir-link" href="busqueda.php">
                         <div class="caja-ir">
                             <h3 class="ir sigmar">IR</h3>
                         </div>
@@ -223,7 +223,7 @@ var_dump($_SESSION["pagina"]);
                         <div class="parrafo-tarjeta roboto">QR: conoce a nuestras mascotas y accede a su información con un escaneo rápido.</div>
                     </div>
 
-                    <a class="ir-link" href="qr.html1">
+                    <a class="ir-link" href="qr.php">
                         <div class="caja-ir">
                             <h3 class="ir sigmar">IR</h3>
                         </div>
@@ -244,7 +244,7 @@ var_dump($_SESSION["pagina"]);
                         <div class="parrafo-tarjeta roboto">Descubre servicios de calidad para tus mascotas: recomendaciones para su bienestar y felicidad.</div>
                     </div>
 
-                    <a class="ir-link" href="servicios.html">
+                    <a class="ir-link" href="servicios.php">
                         <div class="caja-ir">
                             <h3 class="ir sigmar">IR</h3>
                         </div>

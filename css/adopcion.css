@@ -208,6 +208,31 @@
 
 
 
+    .btn__control {
+        display: flex;
+        gap: 15px;
+        padding: 30px;
+        align-items: center;
+        position: relative;
+        left: -470;
+    }
+
+    .boton_s_a {
+        background-color: #f7cdaa;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-size:10pt;
+        color: #603813;
+        letter-spacing: 1px;
+    }
+
+    .numero_pestaña {
+        font-size: 14pt;
+        color: #603813;
+    }
+
+
 
 
 /*                          tarjetas                                       */
@@ -322,9 +347,6 @@
 
 }
 
-.material-icons-outlined{
-    font-size: 25pt;
-}
 
 .ubicaciom_mascota_adopcion_tarjeta {
     display: flex;
@@ -335,7 +357,9 @@
     white-space: nowrap;
     color: #603813;
 }
-
+.LOGO_LOCALIDAD{
+    font-size: 17pt;
+}
 
 
 .texto_ubicacion_mascota {}
@@ -532,7 +556,7 @@
 
 
 .FOTO-animal-ver-mas {
-    background-image: url("../img/tito_calderon.jpg");
+    background-image: url("../imgenes_perros/11.jpg");
     height: 100%;
     width: 100%;
     background-position: center;

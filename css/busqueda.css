@@ -184,7 +184,7 @@
     /* background-color: rgb(109, 153, 192); */
     height: 1650px;
     width: 85%;
-    margin-top: 50px;
+/*    margin-top: 50px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,7 +222,7 @@
 
 
 .img1{
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/1.png");
     
     background-position: auto; 
 }
@@ -237,7 +237,7 @@
     background-image: url("../img/4.png");
 }
 .img5{
-    background-image: url("../img/5.jpg");
+    background-image: url("../img/5.png");
 }
 .img6{
     background-image: url("../img/6.jpg");
@@ -256,7 +256,35 @@
 
 
 
+/*
 
+    PARA TIRAR FACHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+*/
+
+ .btn__control {
+        display: flex;
+        gap: 15px;
+        padding: 30px;
+        align-items: center;
+        position: relative;
+        left: -470;
+    }
+
+    .boton_s_a {
+        background-color: #f7cdaa;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-size:10pt;
+        color: #603813;
+        letter-spacing: 1px;
+    }
+
+    .numero_pestaña {
+        font-size: 14pt;
+        color: #603813;
+    }
 
 
 
@@ -486,10 +514,12 @@
     height: 900px;
     border-radius: 100px;
     margin-top: 200px;
+    margin-bottom: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+
 
 }
 
@@ -531,7 +561,7 @@
 
 
 .caja-foto-mascota-qr-realizado {
-    background-image: url('../img/1.jpg');
+    background-image: url('../img/1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -914,6 +944,21 @@
         width: 95%;
         margin-top: 10px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .contenedor-tarjetas-busqueda-mini-descripcion{
         /* display: none; */

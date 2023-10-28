@@ -157,7 +157,7 @@ var_dump($_SESSION["pagina"]);
                                 <div class="des-mascota-adopcion-tarjeta">
                                     <div class="caja-ubicaciom_mascota_adopcion_tarjeta">
                                         <div class="ubicaciom_mascota_adopcion_tarjeta">
-                                            <i class="material-icons-outlined ">location_on</i>
+                                            <i class="material-icons-outlined LOGO_LOCALIDAD">location_on</i>
                                             <div class="asd roboto">Aqui va la localidad</div>
                                         </div>
                                     </div>
@@ -272,11 +272,10 @@ var_dump($_SESSION["pagina"]);
 
                 </div>
                 <div class="linea-filtro-adopcion-tarjetas"></div>
-
                 <div id="btn__control" class="btn__control">
-                    <button id="btn__next">Siguiente</button>
-                    <div id="visor__page"></div>
-                    <button id="btn__previous">Atras</button>
+                    <button id="btn__previous" class="boton_s_a roboto">Atras</button>
+                    <div id="visor__page" class="numero_pestaña roboto"></div>
+                    <button id="btn__next" class="boton_s_a roboto">Siguiente</button>
                 </div>
 
                 <div id="listado1">
@@ -485,11 +484,14 @@ var_dump($_SESSION["pagina"]);
 
             clon.querySelector(".tarjeta1-adopcion-mini-descripcion").setAttribute("id-card", "carnet-" + info.id_adoptable);
             clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
+            clon.querySelector(".asd").innerHTML = info.localidad + ", Malvinas Argentinas"; 
             clon.querySelector(".caja1_minidescripcion_sexo").innerHTML = info.sexo;
             clon.querySelector(".caja1_minidescripcion_raza").innerHTML = info.raza;
             clon.querySelector(".caja1_minidescripcion_edad").innerHTML = info.edad;
 
-            clon.querySelector(".tito_img-perro-en-adopcion").setAttribute("src", "https://picsum.photos/200/300?random=" + info.id);
+            // clon.querySelector(".tito_img-perro-en-adopcion").setAttribute("src", "https://picsum.photos/200/300?random=" + info.id);
+            clon.querySelector(".tito_img-perro-en-adopcion").style.backgroundImage = "url('imgenes_perros/" + info.imagen + "')";
+
 
             listado1.appendChild(clon)
         }

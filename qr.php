@@ -317,7 +317,7 @@ var_dump($_SESSION["pagina"]);
         return data;
     }
 
-    loadListado("https://mattprofe.com.ar/alumno/great_pet/api/usuario/listar_mascota_qr/2").then(mascotas => {
+    loadListado("https://mattprofe.com.ar/alumno/great_pet/api/usuario/listar_mascota_qr/7").then(mascotas => {
         if (mascotas[0].errno == 200) {
 
             mascotas[1].forEach(mascota => {

@@ -135,7 +135,7 @@ var_dump($_SESSION["pagina"]);
 
 
 
-    <main>
+<main>
 
         <div class="contenedor-sevicios-main-adopcion">
 
@@ -172,10 +172,10 @@ var_dump($_SESSION["pagina"]);
                     <div class="titulo_descripcion_contactos">
                         <div class="titulo_tipo_reco lexend">
                             <div class="nombre_empresa_servicio">
-                                <p>PeloPets</p>
+                                <p>Amor Animal</p>
                             </div>
                             <div class="contenedor_tipo_servicios">
-                                <div class="tipo_servicio">
+                                <div class="tipo_servicio roboto2">
                                     <p>Veterinario</p>
                                 </div>
                             </div>
@@ -184,39 +184,73 @@ var_dump($_SESSION["pagina"]);
 
                         </div>
                         <div class="contenedor_parrafo_info_reco releway">
-                            <p class="parrafo_info_reco">En Clínica Veterinaria PeloPets, nos preocupamos por el
+                            <p class="parrafo_info_reco">En Clínica Veterinaria Comunidad Amor Animal, nos preocupamos por el
                                 bienestar y la salud de tus queridas mascotas. Nuestro equipo de profesionales
                                 veterinarios altamente capacitados está dedicado a brindar atención médica integral y de
-                                calidad a todos los animales que ingresan por nuestras puertas.
+                                calidad.
                         </div>
 
+
+                        <div class="contenedor_aaaaaaa">
                         <div class="contactos_refu">
+
                             <div class="contenedor_contactos_refuguios">
 
-                                <div class="contactos_refuguios_mail_num">
-                                    <span class="material-icons-outlined icons_telefono_mail">
-                                        call
+                                <div class="info_horarios">
+                                    <span class="material-icons-outlined icons_telefono_mail" id="reloj">
+                                        schedule
                                     </span>
-                                    <p class="email_num_ref roboto"><u>+54 9 11 1122 4322</u></p>
-                                </div>
-                                <div class="contactos_refuguios_mail_num">
-                                    <span class="material-icons-outlined icons_telefono_mail">
-                                        email
-                                    </span>
-                                    <p class="email_num_ref roboto"><u>pelopets5220@gmail.com</u></p>
+                                    <p class="email_num_ref roboto horarios" id="horarios">Lunes a Sabados (09:00 - 13:00 / 16:00 - 19:30) <br> Domingos GUARDIA (09:00 - 13:00)</p>
                                 </div>
 
                             </div>
                         </div>
 
+
+                        <div class="contactos_refu">
+                            <div class="contenedor_contactos_refuguios">
+
+                                <div class="contactos_refuguios_mail_num">
+                                    <a href="tel:1166960614" target="_blank" class="links_servicios email_num_ref roboto">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                call
+                                            </span>
+                                            <p>Numero</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="contactos_refuguios_mail_num">
+                                    <a href="https://maps.app.goo.gl/TLbf5xDyYsFJdPso7" target="_blank" class="links_servicios email_num_ref roboto">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                place
+                                            </span>
+                                            <p>Ubicación</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="contactos_refuguios_mail_num">
+                                    <a href="mailto:pelopets5220@gmail.com" target="_blank" class="links_servicios email_num_ref roboto">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                email
+                                            </span>
+                                            <p >pelo@pets</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        </div>
+
                     </div>
                 </div>
-
-
-
-
-
-
 
 
                 <div class="tarjeta_servicios">
@@ -228,10 +262,10 @@ var_dump($_SESSION["pagina"]);
                     <div class="titulo_descripcion_contactos">
                         <div class="titulo_tipo_reco lexend">
                             <div class="nombre_empresa_servicio">
-                                <p>Solo Mascotas</p>
+                                <p>Mascotas Felices</p>
                             </div>
                             <div class="contenedor_tipo_servicios">
-                                <div class="tipo_servicio">
+                                <div class="tipo_servicio roboto2">
                                     <p>Forrajeria</p>
                                 </div>
                             </div>
@@ -240,40 +274,67 @@ var_dump($_SESSION["pagina"]);
 
                         </div>
                         <div class="contenedor_parrafo_info_reco releway">
-                            <p class="parrafo_info_reco">Bienvenido a Solo Mascotas, tu destino de confianza para todas
-                                las necesidades de alimentación y suministros para tus animales. En La Forrajera, nos
-                                dedicamos a proporcionar productos de alta calidad y un servicio excepcional para
-                                satisfacer las demandas de los amantes de los animales y los criadores.
+                            <p class="parrafo_info_reco">Bienvenido a Mascotas Felices, tu destino de confianza para todas
+                                las necesidades de alimentación y suministros para tus animales. En nuestra forrajeria, nos
+                                dedicamos a proporcionar productos de alta calidad y un servicio excepcional para las mascotas.
+                        </div>
+
+                        <div class="contenedor_aaaaaaa">
+                        <div class="contactos_refu">
+                            <div class="contenedor_contactos_refuguios">
+
+                                <div class="info_horarios">
+                                    <span class="material-icons-outlined icons_telefono_mail" id="reloj">
+                                        schedule
+                                    </span>
+                                    <p class="email_num_ref roboto horarios" id="horarios">Lunes a Sabados (09:00 - 13:30 / 16:00 - 20:00) <br> Domingos (CERRADO)</p>
+                                </div>
+
+                            </div>
                         </div>
 
                         <div class="contactos_refu">
                             <div class="contenedor_contactos_refuguios">
 
                                 <div class="contactos_refuguios_mail_num">
-                                    <span class="material-icons-outlined icons_telefono_mail">
-                                        call
-                                    </span>
-                                    <p class="email_num_ref roboto"><u>+54 9 11 8293 3392</u></p>
+                                    <a href="tel:0230491200" target="_blank" class="links_servicios email_num_ref roboto">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                call
+                                            </span>
+                                            <p>Numero</p>
+                                        </div>
+                                    </a>
                                 </div>
+
                                 <div class="contactos_refuguios_mail_num">
-                                    <span class="material-icons-outlined icons_telefono_mail">
-                                        email
-                                    </span>
-                                    <p class="email_num_ref roboto"><u>solomascotas01@gmail.com</u></p>
+                                    <a href="https://maps.app.goo.gl/D9keedq6JtbM1WJKA" target="_blank" class="links_servicios email_num_ref roboto">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                place
+                                            </span>
+                                            <p>Ubicación</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="contactos_refuguios_mail_num">
+                                    <a href="mailto:mascotasfelicesvet@outlook.com" target="_blank" class="links_servicios email_num_ref roboto">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                email
+                                            </span>
+                                            <p>mascotas@felices</p>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
                         </div>
+                        </div>
 
                     </div>
                 </div>
-
-
-
-
-
-
-
 
 
                 <div class="tarjeta_servicios">
@@ -285,10 +346,10 @@ var_dump($_SESSION["pagina"]);
                     <div class="titulo_descripcion_contactos">
                         <div class="titulo_tipo_reco lexend">
                             <div class="nombre_empresa_servicio">
-                                <p>Moño y Hueso</p>
+                                <p>Parque Alvear</p>
                             </div>
                             <div class="contenedor_tipo_servicios">
-                                <div class="tipo_servicio">
+                                <div class="tipo_servicio roboto2">
                                     <p>Peluqueria Canina</p>
                                 </div>
                             </div>
@@ -297,28 +358,63 @@ var_dump($_SESSION["pagina"]);
 
                         </div>
                         <div class="contenedor_parrafo_info_reco releway">
-                            <p class="parrafo_info_reco">Bienvenido a Moño y Huesos, el lugar perfecto para consentir a
+                            <p class="parrafo_info_reco">Bienvenido a Peluqueria Canina Parque Alvear, el lugar perfecto para consentir a
                                 tu fiel amigo de cuatro patas. Nos especializamos en brindar servicios de aseo y
                                 estilismo de alta calidad para animales.</p>
+                        </div>
+
+                        <div class="contenedor_aaaaaaa">
+                        <div class="contactos_refu">
+                            <div class="contenedor_contactos_refuguios">
+
+                                <div class="info_horarios">
+                                    <span class="material-icons-outlined icons_telefono_mail" id="reloj_parque">
+                                        schedule
+                                    </span>
+                                    <p class="email_num_ref roboto horarios" id="horarios_parque">Lunes a Sabados (09:00 - 15:00) <br> Domingos (CERRADO)</p>
+                                </div>
+
+                            </div>
                         </div>
 
                         <div class="contactos_refu">
                             <div class="contenedor_contactos_refuguios">
 
                                 <div class="contactos_refuguios_mail_num">
-                                    <span class="material-icons-outlined icons_telefono_mail">
-                                        call
-                                    </span>
-                                    <p class="email_num_ref roboto"><u>+54 9 11 1482 2735</u></p>
+                                    <a href="tel:1114822735" target="_blank" class="links_servicios email_num_ref roboto">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                call
+                                            </span>
+                                            <p>Numero</p>
+                                        </div>
+                                    </a>
                                 </div>
+
                                 <div class="contactos_refuguios_mail_num">
-                                    <span class="material-icons-outlined icons_telefono_mail">
-                                        email
-                                    </span>
-                                    <p class="email_num_ref roboto"><u>moñosyhuesos32@gmail.com</u></p>
+                                    <a href="https://maps.app.goo.gl/TLbf5xDyYsFJdPso7" target="_blank" class="links_servicios email_num_ref roboto">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                place
+                                            </span>
+                                            <p>Ubicación</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="contactos_refuguios_mail_num">
+                                    <a href="mailto:kari.allende@hotmail.com" class="email_num_ref roboto links_servicios">
+                                        <div class="contactos_refuguios_mail_num">
+                                            <span class="material-icons-outlined icons_telefono_mail" id="iconos_serv">
+                                                email
+                                            </span>
+                                            <p>parque@alvear</p>
+                                        </div>
+                                    </a>
                                 </div>
 
                             </div>
+                        </div>
                         </div>
 
                     </div>
@@ -326,10 +422,9 @@ var_dump($_SESSION["pagina"]);
             </div>
 
 
-
-
         </div>
     </main>
+
 
 
 
