@@ -5,6 +5,10 @@ session_start();
 if (isset($_SESSION["id_usuario"])) {
     $id_usuario = $_SESSION["id_usuario"];
 }
+else{
+    header("Location: index.php");
+    exit();
+}
 if (isset($_SESSION["localidad"])) {
     $localidad = $_SESSION["localidad"];
 }

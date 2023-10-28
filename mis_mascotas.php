@@ -5,6 +5,10 @@
     if (isset($_SESSION["id_usuario"])) {
         $id_usuario = $_SESSION["id_usuario"];
     }
+    else{
+        header("Location: index.php");
+        exit();
+    }
     if (isset($_SESSION["localidad"])) {
         $localidad = $_SESSION["localidad"];
     }
@@ -59,7 +63,7 @@
                             <p>Ver</p>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" onclick="displayConfirm(this)">
                         <div class="contenedor_generador_mis_mascotas roboto2">
                             <span class="material-symbols-outlined delete">
                                 delete
@@ -277,13 +281,32 @@
                 console.log(info);
                 const tpl = tpl__carnet.content
                 const clon = tpl.cloneNode(true);
-                console.log(info.imagen);
 
+                clon.querySelector(".tarjetas_mascotas_mis_mascotas").setAttribute("id-card", info.id_mascota);
                 clon.querySelector(".nombre_mascota").innerHTML = info.nombre;
                 clon.querySelector(".img_tarjeta_mis_mascota").style.backgroundImage = "url('img/" + info.imagen + "')";
 
 
                 listado.appendChild(clon)
+        }
+
+        async function displayConfirm(element){
+            let text;
+            const petCard = event.currentTarget.closest('.tarjetas_mascotas_mis_mascotas');
+            const petId = petCard.getAttribute('id-card');
+            console.log(petId);
+            if (confirm("¿Realmente desea eliminar la mascota con el ID " + petId + "?") == true) {
+
+                const response = await fetch("api/usuario/eliminarMascota/" + petId + "/");
+
+                console.log(response);
+
+                const data = await response.json();
+
+                console.log(data);
+
+                refreshPage();
+            }
         }
 
     </script>

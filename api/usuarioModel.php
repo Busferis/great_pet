@@ -119,6 +119,30 @@
 
 			return $list;
 		}
+
+		public function eliminarMascota($id_mascota){
+
+			$id_valor = $id_mascota[0];
+
+			try {
+		        $response = $this->db->query("DELETE FROM mascotas where id_mascota='".$id_valor."'");
+		        
+		        if ($response === false) {
+		            throw new Exception("Error deleting the pet");
+		        }
+
+		        if ($this->db->affected_rows > 0) {
+		            $list = array("errno" => 200, "message" => "La mascota ha sido eliminada exitosamente");
+		        } else {
+		            $list = array("errno" => 400, "error" => "No se encontró la mascota a eliminar");
+		        }
+		    } catch (Exception $e) {
+		        $list = array("errno" => 400, "error" => $e->getMessage());
+		    }
+
+			return $list;
+
+		}
 	}
 
 
