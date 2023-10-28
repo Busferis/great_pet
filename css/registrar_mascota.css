@@ -110,6 +110,7 @@ transition: all 0.3s;
     & .subir_imagen_icono{
         color: rgba(128, 128, 128, 0.478);
         transform: scale(1.1);
+        cursor: pointer;
     }
 }
 
@@ -355,7 +356,6 @@ input[type=submit]:hover{
 }
 
 .garo_arreglo{
-
     left: 15px;
 }
 
@@ -367,6 +367,11 @@ input[type=submit]:hover{
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
 
 
 /*                    termina botones perros gatos                      */

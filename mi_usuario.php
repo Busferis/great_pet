@@ -42,6 +42,11 @@
     <main>
         <div class="contenedor-mi_usuario">
             <div class="caja_principal1">
+                <button onclick="goBack()" class="boton_ir_atras"><span class="material-icons-outlined flecha_ir_atras">
+                    arrow_back
+                    </span>
+                </button>
+
                 <div class="titulo_mi_perfil lexend"><p>Mi Perfil</p></div>
                 <div class="linea_mis_mascotas"></div>
 
@@ -107,6 +112,8 @@
         </div>
 
     </main>
+    
+    <script src="ir_atras.js"></script>
 
 </body>
 </html>

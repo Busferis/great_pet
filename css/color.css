@@ -75,3 +75,30 @@ h4{
     padding: 30px;
     align-items: center;
 }
+
+.boton_ir_atras {
+    position: absolute;
+    background-color: #ffa75a;
+    width: 130px;
+    height: 60px;
+    left: 0;
+    top: 0;
+    border: none;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flecha_ir_atras {
+    font-size: 30pt;
+    color: #603813;
+    transition: all 0.3s;
+}
+
+.boton_ir_atras:hover{
+    & .flecha_ir_atras{
+        transform: scale(1.2);
+    }
+} 

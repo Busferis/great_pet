@@ -1,6 +1,5 @@
 /*                            QR                            */
 
-@media screen and (min-width:601px) {
     .contenedor-QR-main-adopcion {
         background-color: #fcf2eb;
         width: 100%;
@@ -509,7 +508,7 @@
         display: none;
     }
 
-}
+
 
 
 

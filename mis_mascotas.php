@@ -54,7 +54,7 @@
                     <p class="nombre_mascota">Nombre</p>
                 </div>
                 <div class="contenedor_ver_delet">
-                    <a href="#">
+                    <a href="ver_mi_mascota.html">
                         <div class="contenedor_generador_mis_mascotas roboto2">
                             <p>Ver</p>
                         </div>
@@ -79,6 +79,11 @@
         <div class="contenedor-MAS-main-adopcion">
 
             <div class="caja_principal1">
+
+                 <button onclick="goBack()" class="boton_ir_atras"><span class="material-icons-outlined flecha_ir_atras">
+                    arrow_back
+                    </span>
+                </button>
 
                 <div class="titulo_principal lexend">
                     <P>Mis Mascotas</P>
@@ -203,6 +208,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="ir_atras.js"></script>
 
     <script type="text/javascript">
 

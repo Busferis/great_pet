@@ -77,6 +77,12 @@ else{
     <main>
         <div class="contenedor-MAS-main-adopcion">
             <div class="caja_principal1">
+
+                 <button onclick="goBack()" class="boton_ir_atras"><span class="material-icons-outlined flecha_ir_atras">
+                    arrow_back
+                </span>
+                </button>
+
                 <form action="" method="POST" enctype="multipart/form-data" class="estructura_from">
 
                     <div class="titulo_principal lexend">
@@ -168,6 +174,8 @@ else{
                 </form>
             </div>
         </div>
+
     </main>
+    <script src="ir_atras.js"></script>
 </body>
 </html>
