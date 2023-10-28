@@ -9,6 +9,9 @@ if (isset($_SESSION["localidad"])) {
     $localidad = $_SESSION["localidad"];
 }
 
+$one=false;
+$two=false;
+
 if (isset($_POST["nombre"]) && isset($_POST["edad"]) && isset($_POST["sexo"]) && isset($_POST["especie"]) && isset($_POST["raza"])) {
         $con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
 
@@ -26,8 +29,7 @@ if (isset($_POST["nombre"]) && isset($_POST["edad"]) && isset($_POST["sexo"]) &&
         } else {
             $insertarSql = "INSERT INTO `mascotas` (id_usuario, nombre, edad, sexo, especie, raza, localidad) VALUES ('$id_usuario', '$nombre', '$edad', '$sexo', '$especie', '$raza', '$localidad')";
             if (mysqli_query($con, $insertarSql)) {
-                header("Location: mis_mascotas.php");
-                exit();
+                $one=true;
             } else {
                 echo "Error en el registro. Por favor, inténtalo de nuevo.";
             }
@@ -35,14 +37,25 @@ if (isset($_POST["nombre"]) && isset($_POST["edad"]) && isset($_POST["sexo"]) &&
 
         if (isset($_FILES["file1"]) && $_FILES["file1"]["error"] === 0) {
             $nom_archivo=$_FILES['file1']['name'];
+            // var_dump($ruta);
             $ruta="img/".$nom_archivo;
             $archivo=$_FILES['file1']['tmp_name'];
             $subir=move_uploaded_file($archivo, $ruta);
-            $sentencia_img="UPDATE mascotas SET imagen='".$ruta."' WHERE nombre='".$_POST['nombre']."' ";
+            // var_dump($subir);
+            $ruta2="../img/".$nom_archivo;
+            $sentencia_img="UPDATE mascotas SET imagen='".$ruta2."' WHERE nombre='".$_POST['nombre']."' ";
+            // var_dump($sentencia_img);
             $con->query($sentencia_img) or die ("Error al subir imagen: ".mysqli_error($con));
+            $two=true;
+
         } else {
             // Handle the case when no file was uploaded or an error occurred during upload
             echo "No file uploaded or an error occurred during upload.";
+        }
+
+        if ($one==true && $two==true) {
+            header("Location: mis_mascotas.php");
+            exit();
         }
 
     mysqli_close($con);

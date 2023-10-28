@@ -269,6 +269,7 @@
                 console.log(info);
                 const tpl = tpl__carnet.content
                 const clon = tpl.cloneNode(true);
+                console.log(info.imagen);
 
                 clon.querySelector(".nombre_mascota").innerHTML = info.nombre;
                 clon.querySelector(".img_tarjeta_mis_mascota").style.backgroundImage = "url('img/" + info.imagen + "')";
