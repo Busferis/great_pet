@@ -48,7 +48,7 @@ if (isset($_POST["nombre"]) && isset($_POST["edad"]) && isset($_POST["sexo"]) &&
     mysqli_close($con);
 }
 else{
-    echo "Falta algo";
+    // echo "Falta algo";
 }
 
 ?>

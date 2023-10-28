@@ -11,7 +11,7 @@ if (isset($_SESSION["id_usuario"])) {
     $modo = 0;
 }
 $_SESSION["pagina"] = 2;
-var_dump($_SESSION["pagina"]);
+// var_dump($_SESSION["pagina"]);
 
 ?>
 

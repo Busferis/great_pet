@@ -9,7 +9,7 @@
         $localidad = $_SESSION["localidad"];
     }
 
-    var_dump($id_usuario);
+    // var_dump($id_usuario);
 
 ?>
 

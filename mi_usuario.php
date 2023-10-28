@@ -14,7 +14,7 @@
     if (isset($_SESSION["id_usuario"])) {
         $id_usuario = $_SESSION["id_usuario"];
     }
-    var_dump($id_usuario);
+    // var_dump($id_usuario);
 
 ?>
 

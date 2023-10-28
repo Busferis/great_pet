@@ -12,7 +12,7 @@ if (isset($_SESSION["id_usuario"])) {
     exit();
 }
 $_SESSION["pagina"] = 4;
-var_dump($_SESSION["pagina"]);
+// var_dump($_SESSION["pagina"]);
 
 ?>
 
