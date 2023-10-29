@@ -165,7 +165,7 @@ body{
 .logotipo-tarjeta {
     /* background-color: rgb(238, 130, 238); */
     height: 100%;
-    width: auto;
+    width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,6 +369,10 @@ body{
         border-radius: 50px;
         width: 150px;
 
+    }
+
+    .logotipo-tarjeta{
+        width: auto;
     }
 
     .img-tarjeta1 {

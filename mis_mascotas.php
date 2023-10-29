@@ -38,8 +38,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/mis_mascotas.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mis_mascotas.css">
+    <link rel="stylesheet" type="text/css" href="menu/styles.css">
 
 
     <title>Great Pet</title>
@@ -76,6 +78,82 @@
         </div>
 
     </template>
+
+
+   <header>
+        <div class="headersi">
+
+            <a href="index.php">
+                <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
+            </a>
+
+            <nav class=" roboto2">
+                <div class="menu-icon" id="menu-icon">&#9776;</div>
+                <ul class="navegacion menu" id="menu">
+                    <H2 class="nombre_proyecto_en_menu sigmar">Great Pet</H2>
+
+                    <div class="linea_menu_res"></div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="index.php">
+                                <h4>Inicio</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="#">
+                                <h4>Adopción</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="busqueda.php">
+                                <h4>Búsqueda</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="qr.php">
+                                <h4>QR</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="servicios.php">
+                                <h4>Servicios</h4>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="redesu roboto">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombre.'' ?>
+                        <span class="material-icons-outlined dropbtn flecha_abajo">
+                            expand_more
+                        </span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="mi_usuario.php" class="opciones roboto">Mi Perfil</a>
+                        <a href="mis_mascotas.php" class="opciones roboto">Mis Mascotas</a>
+                        <a href="logout.php" class="opciones roboto">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+
+            <script src="menu/script.js"></script>
+        
+        </div>
+    </header>
 
 
     <content>
