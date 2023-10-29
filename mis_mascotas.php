@@ -324,14 +324,17 @@
 
             const response = await fetch("api/usuario/listAll/" + id + "/");
 
-            console.log(response);
+            console.log("holaa"+id);
 
             const data = await response.json();
 
             console.log(data);
 
+            
             return data;
         }
+
+
 
 
         // peticion a la api en modo post
