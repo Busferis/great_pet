@@ -2,6 +2,9 @@
 
     session_start();
 
+    if (isset($_SESSION["nombre"])) {
+        $nombre = $_SESSION["nombre"];
+    }
     if (isset($_SESSION["id_usuario"])) {
         $id_usuario = $_SESSION["id_usuario"];
     }
