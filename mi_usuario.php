@@ -30,14 +30,87 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/mi_usuario.css">
+    <link rel="stylesheet" type="text/css" href="menu/styles.css">
 
     <title>Great Pet</title>
 </head>
 
 <body>
+
+
+<header>
+        <div class="headersi">
+
+            <a href="index.php">
+                <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
+            </a>
+
+            <nav class=" roboto2">
+                <div class="menu-icon" id="menu-icon">&#9776;</div>
+                <ul class="navegacion menu" id="menu">
+                    <H2 class="nombre_proyecto_en_menu sigmar">Great Pet</H2>
+
+                    <div class="linea_menu_res"></div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="index.php">
+                                <h4>Inicio</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="#">
+                                <h4>Adopción</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="busqueda.php">
+                                <h4>Búsqueda</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="qr.php">
+                                <h4>QR</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="servicios.php">
+                                <h4>Servicios</h4>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <div id="boton_sesion">
+                
+            </div>
+
+            <script src="menu/script.js"></script>
+        
+        </div>
+    </header>
+
 
     <main>
         <div class="contenedor-mi_usuario">
@@ -112,8 +185,115 @@
         </div>
 
     </main>
+
+    <footer>
+        <div class="caja-contenedora-footer">
+
+            <div class="caja-footer_1">
+                <img class="img-footer" src="img/logo-footer.png" alt="">
+            </div>
+
+            <div class="contenedor_caja_2_3_4">
+                <div class="caja-titulo-texto-footer">
+                    <div class="caja-footer_2-titulo">
+                        <div class="titulo-contactos-footer roboto">
+                            <h2>¿Quienes somos?</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="caja-footer_3-linea"></div>
+
+
+                    <div class="caja-footer_4-descripcion">
+                        <div class="caja-des caja-des1 roboto">
+
+                            <div class="a-footer">
+                                <a>
+                                    Great Peat es una asociación civil sin fines de lucro abocada a difundir, proteger y
+                                    promover los derechos de los animales.</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="caja-titulo-texto-footer">
+                    <div class="caja-footer_2-titulo">
+                        <div class="titulo-contactos-footer roboto">
+                            <h2>Contactos</h2>
+                        </div>
+                    </div>
+                    <div class="caja-footer_3-linea caja-footer_3-linea2"></div>
+                    <div class="caja-footer_4-descripcion">
+                        <div class="caja-des caja-dess roboto">
+
+                            <a href="mailto:dani.gimenez5330@gmail.com" >
+
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-regular fa-envelope" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Gmail</p>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/541162444423" enlaces_footer >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-whatsapp" style="color: #f7cdaa;"></i>
+                                    </div>
+                                    <p class="enlaces_footer">WhatsApp</p>
+                                </div>
+                            </a>
+
+                            <a href="#" >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-instagram" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Instagram</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </footer>
     
     <script src="ir_atras.js"></script>
+
+    <script type="text/javascript">
+
+    function modo(){
+      var modo=<?php echo $modo; ?>;
+      boton_sesion.innerHTML = "";
+        if (modo==1) {
+            const tpl = tpl__carnet1.content
+            const clon = tpl.cloneNode(true);
+            boton_sesion.appendChild(clon);
+        }
+        if (modo==0) {
+         const tpl = tpl__carnet2.content
+         const clon = tpl.cloneNode(true);
+         boton_sesion.appendChild(clon);
+        }
+    }
+
+    modo();
+
+</script>
 
 </body>
 </html>
