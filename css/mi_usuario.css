@@ -15,7 +15,7 @@
     max-width: 1300px;
     margin-top: 200px;
     margin-bottom: 200px;
-    border-radius: 20px;
+/*    border-radius: 20px;*/
     padding: 20px 0 50px 0;
     background-color: #f7cdaa;
     border-radius: 60px;
@@ -113,17 +113,22 @@
 
 .modificar_datos{
     background-color: #ffa75a;
-    height: 100%;
-    width: 200px;
-    border-radius: 20px;
-    font-size: 20pt;
+    position: absolute;
+    height: 70px;
+    width: auto;
+    padding: 0 30px;
+    bottom: -10px;
+    right: -10px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+    font-size: 25pt;
     color:#603813;
     border: solid 0 transparent;
     transition: all 0.3s;
 }
 
 .modificar_datos:hover{
-    color:#603813ac;
+    color: #60381369;
     transform: scale(1.1);
-    border: solid 6px #60381371;
+    cursor: pointer;
 }

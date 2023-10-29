@@ -2,6 +2,9 @@
 
 session_start();
 
+if (isset($_SESSION["nombre"])) {
+    $nombre = $_SESSION["nombre"];
+}
 if (isset($_SESSION["id_usuario"])) {
     $id_usuario = $_SESSION["id_usuario"];
 }
@@ -82,14 +85,96 @@ else{
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/registrar_mascota.css">
+    <link rel="stylesheet" type="text/css" href="menu/styles.css">
 
     <title>Great Pet</title>
 </head>
 
 <body>
+
+<header>
+        <div class="headersi">
+
+            <a href="index.php">
+                <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
+            </a>
+
+            <nav class=" roboto2">
+                <div class="menu-icon" id="menu-icon">&#9776;</div>
+                <ul class="navegacion menu" id="menu">
+                    <H2 class="nombre_proyecto_en_menu sigmar">Great Pet</H2>
+
+                    <div class="linea_menu_res"></div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="index.php">
+                                <h4>Inicio</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="#">
+                                <h4>Adopción</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="busqueda.php">
+                                <h4>Búsqueda</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="qr.php">
+                                <h4>QR</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="servicios.php">
+                                <h4>Servicios</h4>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <div class="redesu roboto">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombre.'' ?>
+                        <span class="material-icons-outlined dropbtn flecha_abajo">
+                            expand_more
+                        </span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="mi_usuario.php" class="opciones roboto">Mi Perfil</a>
+                        <a href="mis_mascotas.php" class="opciones roboto">Mis Mascotas</a>
+                        <a href="logout.php" class="opciones roboto">Cerrar sesión</a>
+                    </div>
+                </div>
+            </div>
+
+            <script src="menu/script.js"></script>
+        
+        </div>
+    </header>
+
 
     <main>
         <div class="contenedor-MAS-main-adopcion">
@@ -134,16 +219,31 @@ else{
                                 </div>
                             
                                 
-                                <input type="file" name="file1" id="file1" style="display: none;">
-                                <label for="file1" class="custom-file-upload">
+                                <div class="subir_imagen">
+                                    <label for="file1" class="custom-file-upload">
                                         <div class="subir_imagen">
+                                            <div class="conenedor_muestra_img">
+                                                <img id="imagen_seleccionada"  >                                                            
+                                            </div>
                                             <span class="material-icons-outlined subir_imagen_icono">
                                                 drive_folder_upload
                                             </span>
                                         </div>
-                                </label>
-                                </input>
+                                    </label>
+                                    <input type="file" name="file1" id="file1" style="display: none;">
+                                </div>
+
                                 
+
+
+
+
+
+
+
+
+
+
                             </div>
                         </div>
 
@@ -193,6 +293,120 @@ else{
         </div>
 
     </main>
+
+    <script>
+        // Obtén el elemento input de tipo archivo
+        const fileInput = document.getElementById("file1");
+
+        // Obtén el elemento de imagen donde se mostrará la imagen seleccionada
+        const imagenSeleccionada = document.getElementById("imagen_seleccionada");
+        
+        // Escucha el evento 'change' en el input de tipo archivo
+        fileInput.addEventListener("change", function () {
+    // Verifica si se ha seleccionado un archivo
+    if (fileInput.files.length > 0) {
+        // Obtén el primer archivo seleccionado (asumiendo que solo se permite seleccionar uno)
+        const selectedFile = fileInput.files[0];
+
+        // Crea una URL temporal para la imagen seleccionada
+        const imageURL = URL.createObjectURL(selectedFile);
+
+        // Establece la fuente de la imagen para mostrarla en la caja .subir_imagen
+        imagenSeleccionada.src = imageURL;
+    } else {
+        // Si el usuario cancela la selección, limpia la imagen
+        imagenSeleccionada.src = "";
+    }
+});
+
+    </script>
+
+    <footer>
+        <div class="caja-contenedora-footer">
+
+            <div class="caja-footer_1">
+                <img class="img-footer" src="img/logo-footer.png" alt="">
+            </div>
+
+            <div class="contenedor_caja_2_3_4">
+                <div class="caja-titulo-texto-footer">
+                    <div class="caja-footer_2-titulo">
+                        <div class="titulo-contactos-footer roboto">
+                            <h2>¿Quienes somos?</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="caja-footer_3-linea"></div>
+
+
+                    <div class="caja-footer_4-descripcion">
+                        <div class="caja-des caja-des1 roboto">
+
+                            <div class="a-footer">
+                                <a>
+                                    Great Peat es una asociación civil sin fines de lucro abocada a difundir, proteger y
+                                    promover los derechos de los animales.</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="caja-titulo-texto-footer">
+                    <div class="caja-footer_2-titulo">
+                        <div class="titulo-contactos-footer roboto">
+                            <h2>Contactos</h2>
+                        </div>
+                    </div>
+                    <div class="caja-footer_3-linea caja-footer_3-linea2"></div>
+                    <div class="caja-footer_4-descripcion">
+                        <div class="caja-des caja-dess roboto">
+
+                            <a href="mailto:dani.gimenez5330@gmail.com" >
+
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-regular fa-envelope" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Gmail</p>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/541162444423" enlaces_footer >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-whatsapp" style="color: #f7cdaa;"></i>
+                                    </div>
+                                    <p class="enlaces_footer">WhatsApp</p>
+                                </div>
+                            </a>
+
+                            <a href="#" >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-instagram" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Instagram</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </footer>
+
     <script src="ir_atras.js"></script>
 </body>
 </html>

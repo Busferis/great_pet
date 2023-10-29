@@ -191,9 +191,9 @@
 
                 </div>
 
-                <div class="contenedor_boton_modificar">
+                
                     <a href="modificar.php"><input type="button"  class="modificar_datos lexend" value="Modificar"></a>
-                </div>
+                
 
             </div>
         </div>

@@ -6,12 +6,12 @@
 
 
 .caja_principal1{
-     margin-top: 100px;   /*     111111111111111111111111111111111111  BORRAR   1111111111111111111111111111                   */
     position: relative;
     width: 900px;
     max-width: 1100px;
     height: 700px;
-    /* margin-top: 100px; */
+     margin-top: 160px; 
+     margin-bottom: 200px;
     border-radius: 20px;
     padding: 20px 0 80px 0;
     background-color: #f7cdaa;
@@ -101,9 +101,10 @@
 }
 
 .subir_imagen_icono{
-font-size: 80pt;
-color: gray;
-transition: all 0.3s;
+    z-index: 20;
+    font-size: 80pt;
+    color: gray;
+    transition: all 0.3s;
 }
 
 .subir_imagen:hover{
@@ -120,7 +121,28 @@ transition: all 0.3s;
     cursor: pointer;
 }
 
+.conenedor_muestra_img {
+    position: absolute;
+    height: 215px;
+    width: 290px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px aliceblue solid;
+}
 
+
+
+#imagen_seleccionada {
+    max-width: 400px;
+    z-index: 100;
+    background-color: aliceblue;
+    max-height:auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
 
 
 
@@ -187,7 +209,8 @@ input[type=submit]{
     position: absolute;
     background-color: #ffa75a;
     height: 70px;
-    width: 200px;
+    width: auto;
+    padding: 0 30px;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
     display: flex;

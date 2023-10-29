@@ -2,6 +2,9 @@
 
     session_start();
 
+    if (isset($_SESSION["nombre"])) {
+        $nombre = $_SESSION["nombre"];
+    }
     if (isset($_SESSION["id_usuario"])) {
         $id_usuario = $_SESSION["id_usuario"];
     }
@@ -42,7 +45,6 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/mis_mascotas.css">
     <link rel="stylesheet" type="text/css" href="menu/styles.css">
-
 
     <title>Great Pet</title>
 </head>
