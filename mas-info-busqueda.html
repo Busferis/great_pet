@@ -25,34 +25,64 @@
 <body>
     <header>
         <div class="headersi">
+
             <a href="index.php">
                 <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
             </a>
-            <div class="navegacion roboto">
-                <a class="TEXTO-LINK" href="index.php">
-                    <h3>Inicio</h3>
-                </a>
-                <a class="TEXTO-LINK" href="adopcion.php">
-                    <h3>Adopción</h3>
-                </a>
-                <a class="TEXTO-LINK" href="busqueda.php">
-                    <h3>Búsqueda</h3>
-                </a>
-                <a class="TEXTO-LINK" href="qr.php">
-                    <h3>QR</h3>
-                </a>
-                <a class="TEXTO-LINK" href="servicios.php">
-                    <h3>Servicios</h3>
-                </a>
+
+            <nav class=" roboto2">
+                <div class="menu-icon" id="menu-icon">&#9776;</div>
+                <ul class="navegacion menu" id="menu">
+                    <H2 class="nombre_proyecto_en_menu sigmar">Great Pet</H2>
+
+                    <div class="linea_menu_res"></div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="index.php">
+                                <h4>Inicio</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="adopcion.php">
+                                <h4>Adopción</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="#">
+                                <h4>Búsqueda</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="qr.php">
+                                <h4>QR</h4>
+                            </a>
+                        </li>
+                    </div>
+
+                    <div class="contenedor_navegacion">
+                        <li>
+                            <a class="TEXTO-LINK" href="servicios.php">
+                                <h4>Servicios</h4>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <div id="boton_sesion">
+                
             </div>
-            <div class="redes roboto">
-                <a href="login.php">
-                    <!-- <h5 class="inicio-seccion">Iniciar Seccion</h5>
-                </a> -->
-                    <a href="registro.php">
-                        <h5 class="registrarse">Iniciar sesión</h5>
-                    </a>
-            </div>
+            <script src="menu/script.js"></script>
         </div>
     </header>
 
@@ -80,7 +110,7 @@
                     <div class="caja-info-mascota-qr-realizado">
 
                         <div class="titulo-info-qr-realizado lexend">
-                            <p>MI HISTORIA</p>
+                            <p>Mi Historia</p>
                         </div>
                         <div class="linea-qr-realizado"></div>
                         <div class="datos-qr-realizado roboto">
@@ -288,6 +318,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="menu_responsive.js"></script>
 
 </body>
 

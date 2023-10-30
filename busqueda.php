@@ -216,11 +216,26 @@ $_SESSION["pagina"] = 3;
                                 <div class="mini-informacion-tarjeta-busqueda">
 
                                     <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
                                             <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
+                                        </div>
+
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -228,7 +243,7 @@ $_SESSION["pagina"] = 3;
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>
@@ -297,11 +312,26 @@ $_SESSION["pagina"] = 3;
                                 <div class="mini-informacion-tarjeta-busqueda">
 
                                     <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Alberti, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
+                                        </div>
+
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -309,7 +339,7 @@ $_SESSION["pagina"] = 3;
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>
@@ -379,11 +409,26 @@ $_SESSION["pagina"] = 3;
                                 <div class="mini-informacion-tarjeta-busqueda">
 
                                     <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Villa Rosa, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
+                                        </div>
+
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -391,7 +436,7 @@ $_SESSION["pagina"] = 3;
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>
@@ -469,11 +514,26 @@ $_SESSION["pagina"] = 3;
                                 <div class="mini-informacion-tarjeta-busqueda">
 
                                     <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Grand Bourg, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
+                                        </div>
+
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -481,7 +541,7 @@ $_SESSION["pagina"] = 3;
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>
@@ -550,11 +610,26 @@ $_SESSION["pagina"] = 3;
                                 <div class="mini-informacion-tarjeta-busqueda">
 
                                     <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
+                                        </div>
+
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -562,7 +637,7 @@ $_SESSION["pagina"] = 3;
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>
@@ -632,11 +707,26 @@ $_SESSION["pagina"] = 3;
                                 <div class="mini-informacion-tarjeta-busqueda">
 
                                     <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Del viso, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
+                                        </div>
+
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -644,7 +734,7 @@ $_SESSION["pagina"] = 3;
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>
@@ -723,11 +813,26 @@ $_SESSION["pagina"] = 3;
                                 <div class="mini-informacion-tarjeta-busqueda">
 
                                     <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Los polvorines, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
+                                        </div>
+
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -735,7 +840,7 @@ $_SESSION["pagina"] = 3;
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>
@@ -804,19 +909,33 @@ $_SESSION["pagina"] = 3;
                                 <div class="mini-informacion-tarjeta-busqueda">
 
                                     <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Grand Bourg, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
 
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>
@@ -836,7 +955,7 @@ $_SESSION["pagina"] = 3;
                                         <div class="linea-recta-medio-tarjetas"></div>
 
                                         <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Bulldog frances</div>
+                                            <div class="caja1_minidescripcion_der roboto">Bulldog</div>
                                         </div>
 
                                     </div>
@@ -885,20 +1004,34 @@ $_SESSION["pagina"] = 3;
 
                                 <div class="mini-informacion-tarjeta-busqueda">
 
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+                                   <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
                                         <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta">
+                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
                                                 <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas, Malvinas Argentinas</div>
+                                                <div class="roboto">Tortuguitas</div>
                                             </div>
                                         </div>
-                                    </div>
 
+                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                            </div>
+
+                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                            <div class="caja_contededora_dato">
+                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
 
                                     <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
 
                                         <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
                                         </div>
 
                                         <div class="linea-recta-medio-tarjetas"></div>

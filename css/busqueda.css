@@ -1,6 +1,7 @@
 .contenedor2-main-adopcion {
+
     width: 100%;
-    height: 2500px;
+    height: auto;
     display: flex;
     flex-direction: column;
 
@@ -83,7 +84,7 @@
 }
 
 .mensaje-cartel {
-    /* background-color: rgb(234, 255, 0); */
+/*     background-color: rgb(234, 255, 0); */
     padding-top: 5px;
     height: 45px;
     width: 100%;
@@ -401,12 +402,15 @@
 
 }
 
+
+
+
 .ubicaciom_mascota_busqueda_tarjeta {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-size: 11pt;
+    font-size: 15pt;
     white-space: nowrap;
     color: #603813;
 
@@ -421,6 +425,14 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+.caja_contenedora_dato1_responsive{
+    display: none;
+}
+
+
 
 .linea-recta-medio-tarjetas {
     background-color: #603813;
@@ -447,7 +459,7 @@
 
 .contenedor_VER-MAS-mascota-adopcion-tarjeta {
     /* background-color: rgb(127, 255, 212); */
-    width: 100%;
+    width: auto;
     height: 15%;
     display: flex;
     justify-content: center;
@@ -597,7 +609,7 @@
 
 
 .caja-ubicacion-mascota-qr-realizado {
-    /* background-color: rgba(0, 0, 255, 0.33); */
+    /* background-color: rgba(0, 255, 170, 0.33); */
     width: 450px;
     height: 100%;
     border-radius: 40px;
@@ -605,6 +617,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+
 }
 
 .img-ubicacion-qr-realizado {
@@ -669,8 +682,8 @@
     height: calc(85% /3);
     display: flex;
     align-items: center;
-    width: 360px;
-    margin-left: 90px;
+    width: 100%;
+    margin-left: 0px;
 
 }
 
@@ -840,6 +853,42 @@
 @media (max-width: 800px) {
 
 
+    
+    .contenedor_VER-MAS-mascota-adopcion-tarjeta{
+        /* background-color: #ee920c; */
+        position: absolute;
+        bottom: -3px;
+        right: -3px;
+        height: auto;
+    }
+
+    .VER-MAS-mascota-adopcion-tarjeta{
+        /* background-color: #fc7b7b60; */
+        position: relative;
+        width: 120px;
+        height: 33px;
+        border-radius: 12px;
+        font-size: 15pt;
+        border: none;
+        border-radius: 0px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 35px;
+
+
+    }
+
+    .VER-MAS-mascota-adopcion-tarjeta:hover{
+        /* color: #60381369; */
+        cursor: pointer;
+        border: none;
+        transform: none;
+        background-color: #ffa75a8b;
+
+    }
+
+    .redesu{
+        margin-right: 25px;
+    }
 
 
     .contenedor_cartel_busqueda {
@@ -913,7 +962,10 @@
 
     .caja-contenedora-tarjetas-adopcion {
         /* display: none; */
+/*        background-color: blueviolet;*/
         width: 100%;
+        height: 2300px;
+        margin-bottom: 80px;
     }
 
     .caja-filtro-adopcion{
@@ -947,7 +999,9 @@
 
 
 
-
+    .des-mascota-busqueda-tarjeta{
+        border-radius: 10px;
+    }
 
 
 
@@ -961,26 +1015,35 @@
 
 
     .contenedor-tarjetas-busqueda-mini-descripcion{
+/*        background-color: aquamarine;*/
         /* display: none; */
-        height: 1800px;
+        height: auto;
         width: 400px;
+        margin-bottom: 10px;
 
     }
 
-    .tarjeta1-busqueda-mini-descripcion{
-        /* display: none; */
-
+    .icono_location{
+        color: #603813;
+        position: relative;
+        top: 2px;
     }
 
+    
+
     .tarjeta1-busqueda-mini-descripcion{
-        height: 300px;
-        width: 170px;
+        height: 200px;
+        width: 400px;
         border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .tito_img-perro-en-busqueda{
-        border-radius: 23px;
-        /* height: 50%; */
+        border-radius: 26px;
+        height: 100%;
+        width: 50%;
     }
 
     .tipo_de_recompensas{
@@ -989,13 +1052,32 @@
     }
 
     .contenedor_nombre_centrado{
+        position: absolute;
         font-size: 15pt;
-        border-radius: 14px;
+        border-radius: 0px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border: #f7cdaa 4px solid;
+        left: -4px;
+        bottom: -1px;
+    }
+
+     .cajacontenedora_nombre{
+/*        background-color: red;*/
+        position: relative;
+        position: absolute;
+        bottom: -3px;
+        height: 40px;
     }
 
 
-    .icono_location{
-        display: none;
+    .contenedor_nombre_centrado{
+    padding: 4px 16px;
+    }
+
+
+
+    .icono_location{ 
     }
 
     .localidad-dato-busqueda{
@@ -1011,20 +1093,45 @@
     }
 
     .ubicaciom_mascota_busqueda_tarjeta{
-        font-size: 8pt;
+        font-size: 12pt;
     }
 
+    .caja-ubicaciom_mascota_busqueda_tarjeta{
+    display: none;
+    }
+
+
+
     .caja_contenedora_dato1{
+        
         width: 80px;
-        font-size: 10pt;
+        font-size: 12pt;
         width: 50px;
         margin-left: 10px;
+        justify-content: start;
+    }
+
+    .caja_contenedora_dato1_icono_loc{
+        margin-left: 5px;
+    }
+
+    .caja_contenedora_dato1_responsive{
+        height: 100%;
+        display: flex;
     }
 
 
     .linea-recta-medio-tarjetas{
-        margin-left: 60px;
+        margin-left: 52px;
+        width: 2px;
     }
+
+
+    .linea-recta-medio-tarjetas_localidad{
+        margin-left: 42px;
+    }
+
+
     .caja_contededora_dato{
         /* background-color: #ee920c; */
         margin-left: 10px;
@@ -1033,25 +1140,139 @@
     }
 
     .caja1_minidescripcion_der {
-        font-size: 9PT;
+        font-size: 12PT;
         overflow: hidden;
     }
 
 
     .mini-informacion-tarjeta-busqueda{
-        margin-top: 18px;
-    }
-
-
-    .VER-MAS-mascota-adopcion-tarjeta{
-        width: 100px;
-        height: 35px;
-        border-radius: 12px;
-        font-size: 15pt;
+    margin-top: 20px;
+    height: 70%;
+    width: 49%;
+    padding: 0 10px;
+    border-radius: 10px;
     }
 
 
 
+    /*                 VER MAS                 */
+
+
+
+
+    .caja-centradora-qr-realizado{
+        width: 400PX;
+        height: auto;
+        border-radius: 30px;
+        margin-top: 180px;
+        padding-bottom: 30px;
+    }
+
+    .caja-titulo-qr-realizado{
+        background-color: #ffa75a;
+        color: #fcf2eb;
+        font-size: 25px;
+        letter-spacing:0.5px;
+        width: 70%;
+        height: 60px;
+        border-radius: 20px;
+        top: -30px;
+        border: #fcf2eb 5px solid;
+    }
+
+
+    .caja-mascota-info-foto-qr-marcota-realizado{
+        /* display: none; */
+        flex-direction: column;
+        /* background-color: #ee920c; */
+        height: auto;
+        align-items: center;
+        margin-top: 50px;
+        justify-content: start;
+        padding-bottom: 40px;
+    }
+
+    .caja-foto-mascota-qr-realizado{
+        /* background-color: aquamarine; */
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+    }
+
+    .caja-info-mascota-qr-realizado{
+        /* display: none; */
+        /* background-color: #59255694; */
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .titulo-info-qr-realizado{
+        font-size: 22pt;
+    }
+
+    .datos-qr-realizado{
+        height: 100%;
+        width: 100%;
+        font-size: 14pt;
+    }
+
+    .linea-qr-realizado{
+        height: 3px;
+        margin-bottom: 9px;
+    }
+    
+
+
+    .caja-mascota-info-foto-qr-marcota-realizadob{
+        /* display: none; */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* background-color: #e774df77; */
+        margin-top: 0;
+        height: auto;
+        justify-content: start;
+    }
+
+    .caja-ubicacion-mascota-qr-realizado{
+        /* background-color: #2eb36e56; */
+        width: 100%;
+        height: auto;
+        height: 330px;
+        bottom: -230px;
+    }
+
+    .titulo-info-qr-realizado{
+        font-size: 22pt;
+        /* background-color: #603813; */
+        height: 40px;
+    }
+
+    .a-linea-qr-realizado{
+        height: 3px;
+    }
+
+    .img-ubicacion-qr-realizado{
+        height: 70%;
+        top: 60px;
+        height: 250px;
+        border-radius: 20px;
+    }
+
+
+
+    .caja-info-dueño-qr-realizado{
+        /* display: none; */
+        width: 100%;
+        position: relative;
+        top: -360px;
+    }
+
+    .b-dato-qr-r{
+        font-size: 18px;
+        padding: 12px 13px;
+    }
 
 
 }

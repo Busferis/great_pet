@@ -173,10 +173,16 @@ footer {
 
 
 @media (max-width: 800px) {
+
+    footer{
+        margin-top: 10px;
+    }
+
     .caja-contenedora-footer {
         min-width: auto;
         width: 400px;
         max-width: auto;
+        /* margin-top: 2000px; */
         /* display: none; */
 
     }
