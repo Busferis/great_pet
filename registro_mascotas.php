@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_SESSION["nombre"])) {
-    $nombre = $_SESSION["nombre"];
+    $nombreUsuario = $_SESSION["nombre"];
 }
 if (isset($_SESSION["id_usuario"])) {
     $id_usuario = $_SESSION["id_usuario"];
@@ -158,7 +158,7 @@ else{
 
             <div class="redesu roboto">
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombre.'' ?>
+                    <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombreUsuario.'' ?>
                         <span class="material-icons-outlined dropbtn flecha_abajo">
                             expand_more
                         </span></button>
