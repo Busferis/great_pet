@@ -862,7 +862,7 @@
 
 
 
-
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 
 
 
@@ -870,6 +870,9 @@
 
 
 @media (max-width: 800px) {
+    *{
+        box-sizing: border-box;
+    }
 
     .caja-fodo-titulo-adopta{
         margin-top: 0;
