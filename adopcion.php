@@ -137,9 +137,11 @@ $_SESSION["pagina"] = 2;
 
     <content>
 
-        <template id="tpl__carnet">
-            <div class="contenedor-tarjetas-adopcion-mini-descripcion">
+        <!-- <div class="contenedor-tarjetas-adopcion-mini-descripcion"> -->
+
+             <template id="tpl__carnet">
                         <div class="tarjeta1-adopcion-mini-descripcion">
+
                             <div class="tito_img-perro-en-adopcion">
 
                                 <div class="cajacontenedora_nombre_huesos">
@@ -154,19 +156,36 @@ $_SESSION["pagina"] = 2;
 
                             <div class="mini-informacion-tarjeta-adopcion">
 
-                                <div class="des-mascota-adopcion-tarjeta">
+                                <div class="des-mascota-adopcion-tarjeta localidad-dato-busqueda">
                                     <div class="caja-ubicaciom_mascota_adopcion_tarjeta">
                                         <div class="ubicaciom_mascota_adopcion_tarjeta">
                                             <i class="material-icons-outlined LOGO_LOCALIDAD">location_on</i>
                                             <div class="asd roboto">Aqui va la localidad</div>
                                         </div>
                                     </div>
+
+
+                                    <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                                        <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                            <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                                        </div>
+
+                                        <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                                        <div class="caja_contededora_dato">
+                                            <div class="caja1_minidescripcion_der asde roboto">Tortuguitas</div>
+                                        </div>
+
+                                    </div>
+
+
                                 </div>
 
-                                <div class="des-mascota-adopcion-tarjeta">
+                                <div class="des-mascota-adopcion-tarjeta tamoño-defauld-dato">
 
                                     <div class="caja_contenedora_dato1">
-                                        <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                                        <div class="caja1_minidescripcion_iz roboto ">Sexo</div>
                                     </div>
 
                                     <div class="linea-recta-medio"></div>
@@ -176,9 +195,9 @@ $_SESSION["pagina"] = 2;
                                     </div>
 
                                 </div>
-                                <div class="des-mascota-adopcion-tarjeta">
+                                <div class="des-mascota-adopcion-tarjeta tamoño-defauld-dato">
                                     <div class="caja_contenedora_dato1">
-                                        <div class="caja1_minidescripcion_iz roboto">RAZA</div>
+                                        <div class="caja1_minidescripcion_iz roboto">Raza</div>
                                     </div>
 
                                     <div class="linea-recta-medio"></div>
@@ -188,9 +207,9 @@ $_SESSION["pagina"] = 2;
                                     </div>
                                 </div>
 
-                                <div class="des-mascota-adopcion-tarjeta">
+                                <div class="des-mascota-adopcion-tarjeta tamoño-defauld-dato">
                                     <div class="caja_contenedora_dato1">
-                                        <div class="caja1_minidescripcion_iz roboto">EDAD</div>
+                                        <div class="caja1_minidescripcion_iz roboto">Edad</div>
                                     </div>
 
                                     <div class="linea-recta-medio"></div>
@@ -213,8 +232,14 @@ $_SESSION["pagina"] = 2;
                             </div>
 
                         </div>
-            </div>
-        </template>
+            
+             </template>
+        <!-- </div> -->
+
+
+
+
+
 
         <div class="contenedor2-main-adopcion">
             <div class="caja-fodo-titulo-adopta">
@@ -223,14 +248,15 @@ $_SESSION["pagina"] = 2;
                     <div class="logo_negro-fondo-cartel"></div>
 
                     <div class="img-perro-adopcion">
+                        
                     </div>
 
                     <div class="texto-adopcion-header">
                         <div class="titulo-adopcion-header sigmar">
-                            <H5>Mascotas En ADOPCION</H5>
+                            <H5>Mascotas en adopción</H5>
                         </div>
                         <div class="mensaje-adopcion-header releway">
-                            <p>¡El hogar se viste de alegría cuando adoptas una mascota!</p>
+                            <p>¡El hogar se viste de felicidad con una mascota!</p>
                         </div>
                     </div>
 
@@ -484,7 +510,8 @@ $_SESSION["pagina"] = 2;
 
             clon.querySelector(".tarjeta1-adopcion-mini-descripcion").setAttribute("id-card", "carnet-" + info.id_adoptable);
             clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
-            clon.querySelector(".asd").innerHTML = info.localidad + ", Malvinas Argentinas"; 
+            clon.querySelector(".asd").innerHTML = info.localidad /*+ ", Malvinas Argentinas"*/; 
+            // clon.querySelector(".asde").innerHTML = info.localidad /*+ ", Malvinas Argentinas"*/;             
             clon.querySelector(".caja1_minidescripcion_sexo").innerHTML = info.sexo;
             clon.querySelector(".caja1_minidescripcion_raza").innerHTML = info.raza;
             clon.querySelector(".caja1_minidescripcion_edad").innerHTML = info.edad;

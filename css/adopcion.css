@@ -142,6 +142,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 150px;
+    margin: auto;
 }
 
 .caja-filtro-adopcion {
@@ -231,6 +232,18 @@
     .numero_pestaña {
         font-size: 14pt;
         color: #603813;
+    }
+
+    #listado1 {
+/*        display: grid;*/
+        /* grid-template-columns: auto auto auto; */
+        /* background-color: aquamarine; */
+        width: 1120px;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 35px;
+        height: auto;
     }
 
 
@@ -363,7 +376,9 @@
 }
 
 
-.texto_ubicacion_mascota {}
+.texto_ubicacion_mascota {
+
+}
 
 
 .mini-informacion-tarjeta-adopcion {
@@ -841,10 +856,320 @@
 
 }
 
+.caja_contenedora_dato1_responsive{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 800px) {
 
-    .caja-contenedora-tarjetas-adopcion{
-        display: none;
+    .caja-fodo-titulo-adopta{
+        margin-top: 0;
+        height: 400px;
+        min-width: 450px;
+        margin-bottom: 50px;
     }
+
+    .contanedora-caja-fodo-titulo-adopta{
+        min-width: 400px;
+        max-width: 650px;
+        margin: 0 0px;
+    }
+
+    .logo_negro-fondo-cartel {
+        /* display: none; */       width: 330px;
+        height: 310px;
+        top: auto;
+        bottom: -30px;
+        right: -0px;
+        z-index: 2;
+        /* transform: scaleX(-1); */
+        
+    }
+
+
+    .img-perro-adopcion {
+/*        background-color: aliceblue;*/
+        background-image: url("../img/perro_responsive_cartel.png");
+        /* display: none; */
+        margin-top: 130px;
+        width: 250px;
+        position: absolute;
+        left: -10px;
+    }
+
+    .texto-adopcion-header{
+        position: relative;
+        left: 200px;
+        width: 240px;
+        margin-top: 70px;
+        margin-left: 10px;
+        align-items: center;
+
+    }
+
+    .titulo-adopcion-header{
+        /* display: none; */
+        font-size: 30px;
+        line-height: 28px;
+        text-align: center;
+        width: auto;
+        width: 200PX;
+    }
+
+
+     .mensaje-adopcion-header{
+        font-size: 13pt;
+        justify-content: start;
+        align-items: start;       padding: 5px 0 2px 0;
+        height: 40px;
+        text-align: center;
+
+     }
+
+
+
+
+     /*                  FILTRO                  */
+    
+
+     .caja-contenedora-tarjetas-adopcion {
+        /* display: none; */
+/*        background-color: blueviolet;*/
+        width: 100%;
+        height: 2300px;
+        margin-bottom: 80px;
+    }
+
+    .caja-filtro-adopcion{
+        /* display: none; */
+        width: 90%;
+        height: 80px;
+    }
+
+    .selec-filtro{
+        /* display: none; */
+        width: 100%;
+    }
+
+    .SELECT-1 {
+        width: 100px;
+        font-size: 10pt;
+    }
+
+    .buscar-filtro-adopcion:hover {
+        color: #fcf2eb;
+        transform: scale(1.15);
+    
+    }
+
+
+    .linea-filtro-adopcion-tarjetas{
+        /* display: none; */
+        width: 95%;
+        margin-top: 10px;
+    }
+
+
+
+    .des-mascota-busqueda-tarjeta{
+        border-radius: 10px;
+    }
+
+
+    /*               TARJETAS              */
+
+    .contenedor-tarjetas-adopcion-mini-descripcion{
+        /* display: none; */
+        height: auto;
+        width: 400px;
+        margin-bottom: 10px;
+     }
+
+     .tarjeta1-adopcion-mini-descripcion{
+        position: relative;
+        height: 200px;
+        width: 400px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px
+
+     }
+
+
+     #listado1 {
+/*        background-color: rebeccapurple;*/
+        width: 400px;
+        
+    }
+
+    .caja-ubicaciom_mascota_adopcion_tarjeta{
+        display: none;
+        }
+
+    .caja_contenedora_dato1_responsive{
+        display: block;
+    }
+    
+    .tamoño-defauld-dato{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .ubicaciom_mascota_busqueda_tarjeta{
+        font-size: 12pt;
+    }
+
+    .caja-ubicaciom_mascota_busqueda_tarjeta{
+    display: none;
+    }
+
+    .icono_location{
+        color: #603813;
+        position: relative;
+/*        top: 2px;*/
+    }
+
+    .linea-recta-medio-tarjetas{
+        margin-left: 52px;
+        width: 2px;
+    }
+
+
+    .caja_contenedora_dato1{
+        
+        width: 80px;
+        font-size: 12pt;
+        width: 50px;
+        margin-left: 10px;
+        justify-content: start;
+    }
+
+    .caja_contenedora_dato1_icono_loc{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .caja_contenedora_dato1_responsive{
+        height: 100%;
+        display: flex;
+    }
+
+    .linea-recta-medio-tarjetas_localidad{
+        margin-left: 52px;
+        background-color: #603813;
+        height: 80%;
+        
+    }
+
+    .linea-recta-medio{
+        margin-left: 52px;
+        width: 2px;
+    }
+
+
+    .caja_contededora_dato{
+        /* background-color: #ee920c; */
+        margin-left: 10px;
+        width: auto;
+        max-width: 80px;
+    }
+
+    .caja1_minidescripcion_der {
+        font-size: 12PT;
+        overflow: hidden;
+    }
+
+    .caja1_minidescripcion_iz{
+        width: auto;
+        font-size: 16px;
+    }
+
+    .tito_img-perro-en-adopcion{
+        width: 50%;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .mini-informacion-tarjeta-adopcion{
+        width: 49%;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    .tamoño-defauld-dato{
+        width: 100%;
+    }
+
+
+    .des-mascota-adopcion-tarjeta{
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .caja1_minidescripcion_iz{
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+    .contenedor_VER-MAS-mascota-adopcion-tarjeta{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .VER-MAS-mascota-adopcion-tarjeta{
+        position: absolute;
+        bottom: -5px;
+        right:-5px; 
+        width: 120px;
+        height: 33px;
+        border-radius: 12px;
+        font-size: 15pt;
+        border: none;
+        border-radius: 0px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 35px;
+
+    }
+
+    .contenedor_nombre_centrado{
+        padding: 4px 16px;
+        position: absolute;
+        font-size: 15pt;
+        border-radius: 0px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border: #f7cdaa 4px solid;
+        left: -4px;
+        bottom: -1px;
+    }
+
+    .cajacontenedora_nombre_huesos{
+        position: relative;
+        position: absolute;
+        bottom: -3px;
+        height: 40px;
+}
+
+
 
 }
