@@ -57,27 +57,37 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     <link rel="stylesheet" href="css/registro.css">
 </head>
 <body class="releway">
+    <div class="caja_contenedora_login_img">
+
+    <div class="img-logo-gp"></div>
+
     <div class="registro">
-        <h1 class="roboto">Registro</h1>
+        <h1 class="titulo_i_s lexend">Registro</h1>
         <form action="" method="POST">
             <div class="input">
                 <div class="nombres">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="text" name="apellido" placeholder="Apellido" required>
+                    <input type="text" name="nombre" placeholder="Nombre" class="nombre_apellido" required>
+                    <input type="text" name="apellido" placeholder="Apellido" class="nombre_apellido" required>
                 </div>
                 <input type="email" name="email" placeholder="Correo electronico" required>
-                <input type="number" name="telefono" placeholder="Num. de telefono" required>
-                <select name="localidad">
-                    <option value="1667">Tortuguitas</option>
+                <input type="number" name="telefono" placeholder="Numero. ej: 1123624722" required>
+                <select name="localidad" class="localidad">
+                    <option value="Tortuguitas">Tortuguitas</option>
+                    <option value="Grand Bourg">Grand Bourg</option>
+                    <option value="Pablo Nogués">Pablo Nogués</option>
+                    <option value="Adolfo Sourdeaux">Adolfo Sourdeaux</option>
+                    <option value="Villa de Mayo">Villa de Mayo</option>
+                    <option value="Tierras Altas">Tierras Altas</option>
+                    <option value="Los Polvorines">Los Polvorines</option>
+                    <option value="El triángulo">El Triángulo</option>
                 </select>
                 <input type="password" name="password" placeholder="Contraseña" id="myInput" required>
                 <!-- <input type="password" name="confirmar_password" placeholder="Repetir contraseña" id="myInput2" required> -->
-                <div>
+                <div class="mostrar_contraseña_politica_privacidad">
                     <input type="checkbox" onclick="myFunction()"><label>Mostrar contraseña</label>
                 </div>
             </div>
-            <hr class="hr">
-            <div class="checkbox">
+            <div class="checkbox mostrar_contraseña_politica_privacidad">
                 <input type="checkbox" name="politica_privacidad"><label>Acepto la <a href="politica_de_privacidad.php">Politica de Privacidad</a> de Great Pet</label>
             </div>
             <div class="button">
@@ -100,6 +110,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                 }
             </script>
         </form>
+    </div>
+
+
     </div>
 </body>
 </html>
