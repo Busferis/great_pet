@@ -34,6 +34,7 @@ else{
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/ver_mi_mascota.css">
+    <link rel="stylesheet" type="text/css" href="menu/styles.css">
 
     <title>Great Pet</title>
 </head>
@@ -64,7 +65,7 @@ else{
 
                     <div class="contenedor_navegacion">
                         <li>
-                            <a class="TEXTO-LINK" href="#">
+                            <a class="TEXTO-LINK" href="adopcion.php">
                                 <h4>Adopción</h4>
                             </a>
                         </li>

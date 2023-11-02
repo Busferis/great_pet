@@ -136,6 +136,20 @@
     transition: all 0.3s;
 }
 
+.contenedor_generador_mis_mascotas_eliminar{
+    background-color: #fce8d9;
+    height: 60px;
+    border-radius: 20px;
+    padding: 0 12PX;
+    font-size: 17pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #f7cdaa 5px solid;
+    color: #ffa75a;
+    transition: all 0.3s;
+}
+
 .contenedor_generador_mis_mascotas:hover {
     transform: scale(1.1);
 }
