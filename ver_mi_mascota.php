@@ -332,7 +332,11 @@ else{
     </footer>
 
     <script type="text/javascript">
-        
+        async function hola(){
+            var puto = JSON.parse(sessionStorage.getItem("mascota"));
+            console.log(puto);
+        }
+        hola();
     </script>
 
     <script src="ir_atras.js"></script>

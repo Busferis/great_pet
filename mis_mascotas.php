@@ -85,7 +85,7 @@
                     <p class="nombre_mascota">Nombre</p>
                 </div>
                 <div class="contenedor_ver_delet">
-                    <a href="#" onclick="idmascota(this)">
+                    <a href="ver_mi_mascota.php" onclick="idmascota(this)">
                         <div class="contenedor_generador_mis_mascotas roboto2" id="contenedor_generador_mis_mascotas">
                             <p>Ver</p>
                         </div>
@@ -439,7 +439,7 @@
 
             const data = await response.json();
 
-            sessionStorage.setItem("mascota", data);
+            sessionStorage.setItem("mascota", JSON.stringify(data));
 
             console.log(data);
 
