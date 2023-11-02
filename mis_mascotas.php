@@ -395,10 +395,15 @@
         async function idmascota(element){
             const petCard = event.currentTarget.closest('.tarjetas_mascotas_mis_mascotas');
             const petId = petCard.getAttribute('id-card');
-            <?php $_SESSION["nombre"] ?>= petId;
-            <?php
-                echo ($_SESSION["nombre"]);
-            ?>
+            const response = await fetch("api/usuario/listAll/" + petId + "/");
+
+            console.log("holaa"+petId);
+
+            const data = await response.json();
+
+            console.log(data);
+
+            return data;
         }
 
     </script>
