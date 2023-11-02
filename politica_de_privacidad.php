@@ -8,23 +8,23 @@
 
 	<header>
         <div class="headersi">
-            <a href="index.html">
+            <a href="index.php">
                 <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
             </a>
             <div class="navegacion roboto">
-                <a class="TEXTO-LINK" href="index.html">
+                <a class="TEXTO-LINK" href="index.php">
                     <h3>Inicio</h3>
                 </a>
-                <a class="TEXTO-LINK" href="adopcion.html">
+                <a class="TEXTO-LINK" href="adopcion.php">
                     <h3>Adopcion</h3>
                 </a>
-                <a class="TEXTO-LINK" href="busqueda.html">
+                <a class="TEXTO-LINK" href="busqueda.php">
                     <h3>Busqueda</h3>
                 </a>
-                <a class="TEXTO-LINK" href="qr.html">
+                <a class="TEXTO-LINK" href="qr.php">
                     <h3>QR</h3>
                 </a>
-                <a class="TEXTO-LINK" href="servicios.html">
+                <a class="TEXTO-LINK" href="servicios.php">
                     <h3>Servicios</h3>
                 </a>
             </div>

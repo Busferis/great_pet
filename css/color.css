@@ -89,6 +89,7 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .flecha_ir_atras {
