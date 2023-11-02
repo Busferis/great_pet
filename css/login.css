@@ -86,7 +86,7 @@ body{
 .titulo_i_s{
     margin-top: 10px;
     font-size: 30pt;
-    color: #ee920c;
+    color: white;
 }
 
 .input input {
@@ -171,7 +171,7 @@ input::placeholder {
 .cajas_re_ingresar{
         /* padding: 12px; */
         font-size: 12pt;
-        background-color: #ee940cb6;
+        background-color: #ee920c;
         border: none;
         border-radius: 9px;
         cursor: pointer;
@@ -184,5 +184,5 @@ input::placeholder {
 
 
 .cajas_re_ingresar:hover{
-    background-color: #ee920c;
+    background-color: #ee940cb6;
 }
