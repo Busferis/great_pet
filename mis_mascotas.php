@@ -47,6 +47,29 @@
     <link rel="stylesheet" type="text/css" href="menu/styles.css">
 
     <title>Great Pet</title>
+
+    <style>
+        .perdido {
+            background-color: #ff5a5a;
+            height: 200px;
+            width: 400px;
+            border-radius: 30px;
+            display: flex;
+        }
+        .perdidoBoton {
+            background-color: #fce8d9;
+            color: #ff0000;
+            border: #ff0000 5px solid;
+            height: 60px;
+            border-radius: 20px;
+            padding: 0 12PX;
+            font-size: 17pt;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,12 +86,12 @@
                 </div>
                 <div class="contenedor_ver_delet">
                     <a href="ver_mi_mascota.php" onclick="idmascota(this)">
-                        <div class="contenedor_generador_mis_mascotas roboto2">
+                        <div class="contenedor_generador_mis_mascotas roboto2" id="contenedor_generador_mis_mascotas">
                             <p>Ver</p>
                         </div>
                     </a>
                     <a href="#" onclick="displayConfirm(this)">
-                        <div class="contenedor_generador_mis_mascotas roboto2">
+                        <div class="contenedor_generador_mis_mascotas_eliminar roboto2" id="contenedor_generador_mis_mascotas2">
                             <span class="material-symbols-outlined delete">
                                 delete
                             </span>
@@ -368,6 +391,21 @@
                 clon.querySelector(".tarjetas_mascotas_mis_mascotas").setAttribute("id-card", info.id_mascota);
                 clon.querySelector(".nombre_mascota").innerHTML = info.nombre;
                 clon.querySelector(".img_tarjeta_mis_mascota").style.backgroundImage = "url('img/" + info.imagen + "')";
+
+                console.log(info);
+                const listaPokemones = info.estado;
+                console.log(listaPokemones);
+                if (listaPokemones == "Perdido") {
+                    let tarjeta = clon.querySelector(".tarjetas_mascotas_mis_mascotas");
+                    tarjeta.classList.add("perdido");
+                    tarjeta.classList.remove("no_perdido");
+                    clon.querySelector(".contenedor_generador_mis_mascotas").classList.add("perdidoBoton");
+                    clon.querySelector(".contenedor_generador_mis_mascotas_eliminar").classList.add("perdidoBoton");
+                    // clon.querySelector(".contenedor_generador_mis_mascotas").style.color = "#ff0000";
+                    // clon.querySelector(".contenedor_generador_mis_mascotas").style.border = "#ff0000 5px solid";
+                } else if (listaPokemones == "") {
+                    console.log("No esta perdido");
+                }
 
 
                 listado.appendChild(clon)
