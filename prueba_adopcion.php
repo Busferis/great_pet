@@ -11,8 +11,9 @@ if (isset($_SESSION["id_usuario"])) {
     $modo = 0;
 }
 $_SESSION["pagina"] = 2;
-// var_dump($_SESSION["pagina"]);
+var_dump($_SESSION["pagina"]);
 
+require("conection_DB.php");
 ?>
 
 <!DOCTYPE html>
@@ -129,12 +130,6 @@ $_SESSION["pagina"] = 2;
 
 
 
-
-
-
-
-
-
     <content>
 
         <template id="tpl__carnet">
@@ -157,7 +152,7 @@ $_SESSION["pagina"] = 2;
                                 <div class="des-mascota-adopcion-tarjeta">
                                     <div class="caja-ubicaciom_mascota_adopcion_tarjeta">
                                         <div class="ubicaciom_mascota_adopcion_tarjeta">
-                                            <i class="material-icons-outlined LOGO_LOCALIDAD">location_on</i>
+                                            <i class="material-icons-outlined ">location_on</i>
                                             <div class="asd roboto">Aqui va la localidad</div>
                                         </div>
                                     </div>
@@ -239,11 +234,41 @@ $_SESSION["pagina"] = 2;
             </div>
 
 
+            <form method="GET" action="prueba_adopcion.php">
+                <!-- animal - genero - edad -->
+                <label for="filtro-especie">Especie:</label>
+                <select name="filtro-especie" id="filtro-especie">
+                    <option value="todos">Todos</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                </select>
+
+                <label for="filtro-sexo">Genero:</label>
+                <select name="filtro-sexo" id="filtro-sexo">
+                    <option value="todos">Todos</option>
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                </select>
+
+            <!--     
+                <label for="filtro-edad">Edad:</label>
+                <select name="filtro-edad" id="filtro-edad">
+                    <option value="">Todos</option>
+                    <option value="">2/11 Meses</option>
+                    <option value="">1/3 Años</option>
+                    <option value="">4/6 Años</option>
+                    <option value="">7/10 Años</option>
+                    <option value="">11/15 Años</option>
+                </select> -->
+
+                <input type="submit" name="filtro">
+            </form> 
 
 
-            <div class="caja-contenedora-tarjetas-adopcion">
+            <!-- <div class="caja-contenedora-tarjetas-adopcion">
                 <div class="caja-filtro-adopcion">
                     <div class="selec-filtro">
+
                         <form method="post">
                         <select name="select-filtro-oficial-1" class="SELECT-1 roboto2">
                             <option value="perro" selected class="options-select">Perros</option>
@@ -260,18 +285,20 @@ $_SESSION["pagina"] = 2;
                         <input type="submit" value="search" class="material-icons-outlined buscar-filtro-adopcion">
                         </form>
 
-
                     </div>
 
-                </div>
+                </div> -->
                 <div class="linea-filtro-adopcion-tarjetas"></div>
-                <div id="btn__control" class="btn__control">
-                    <button id="btn__previous" class="boton_s_a roboto">Atras</button>
-                    <div id="visor__page" class="numero_pestaña roboto"></div>
-                    <button id="btn__next" class="boton_s_a roboto">Siguiente</button>
+
+                <div id="btn_control" class="btn_control">
+                    <button id="btn__next">Siguiente</button>
+                    <div id="visor__page"></div>
+                    <button id="btn__previous">Atras</button>
                 </div>
 
                 <div id="listado1">
+
+                </div>
 
                 </div>
 
@@ -281,43 +308,36 @@ $_SESSION["pagina"] = 2;
 
     </content>
 
-
 <?php  
-    include("conection_DB.php");
-    $especie_filtro = "";
-    $sexo_filtro = "";
-    
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $especie_filtro = $_POST["select-filtro-oficial-1"];
-    echo "El valor seleccionado es: " . $especie_filtro;
-}
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $sexo_filtro = $_POST["select-filtro-oficial-2"];
-    echo "El valor seleccionado es: " . $sexo_filtro;
-}
-    $especie_buscar=$especie_filtro;
-    $sexo_buscar=$sexo_filtro;
-    $conex=conectar();
-    $sql = "SELECT * FROM mascotas WHERE especie = '$especie_buscar' AND sexo = '$sexo_buscar';";
-    $resultado = $conex->query($sql);
 
-    foreach($resultado as $row){
-        $nombre=$row['nombre'];
-        $edad=$row['edad'];
-        $especie=$row['especie'];
-        echo"<br>Nombre:$nombre, Edad:$edad, Especie:$especie";
+$especie = isset($_GET['filtro-especie']) ? $_GET['filtro-especie'] : '';
+$sexo = isset($_GET['filtro-sexo']) ? $_GET['filtro-sexo'] : '';
+$edad = isset($_GET['filtro-edad']) ? $_GET['filtro-edad'] : '';
+
+if ($especie=='todos' && $sexo=='todos') {
+    $consulta = "SELECT * FROM mascotas;";
+}else if($especie=='todos'){
+    $consulta = "SELECT * FROM mascotas WHERE sexo like '$sexo';";
+}else if($sexo=='todos'){
+    $consulta = "SELECT * FROM mascotas WHERE especie like '$especie';";
+}else{
+    $consulta = "SELECT * FROM mascotas WHERE especie like '$especie' AND sexo like '$sexo';";    
+}
+var_dump($consulta);
+if ($result = mysqli_query($mysqli, $consulta)) {
+    while ($row = mysqli_fetch_array($result)) {
+        $sexo = $row['sexo'];
+        $nombre = $row['nombre'];
+        $especie = $row['especie'];
+        echo "<br>Nombre: $nombre, Sexo: $sexo, Especie: $especie";
     }
-// Cerrar la conexión
-$conex->close();
+} else {
+    echo "Error en la consulta: " . mysqli_error($mysqli);
+}
+
+$result = mysqli_query($mysqli, $consulta);
+
 ?>
-
-
-
-
-
-
-
-
 
 
 
@@ -470,6 +490,8 @@ $conex->close();
 
             const data = await response.json();
 
+            console.log(data);
+
             return data;
         }
 
@@ -504,14 +526,11 @@ $conex->close();
 
             clon.querySelector(".tarjeta1-adopcion-mini-descripcion").setAttribute("id-card", "carnet-" + info.id_adoptable);
             clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
-            clon.querySelector(".asd").innerHTML = info.localidad + ", Malvinas Argentinas"; 
             clon.querySelector(".caja1_minidescripcion_sexo").innerHTML = info.sexo;
             clon.querySelector(".caja1_minidescripcion_raza").innerHTML = info.raza;
             clon.querySelector(".caja1_minidescripcion_edad").innerHTML = info.edad;
 
-            // clon.querySelector(".tito_img-perro-en-adopcion").setAttribute("src", "https://picsum.photos/200/300?random=" + info.id);
-            clon.querySelector(".tito_img-perro-en-adopcion").style.backgroundImage = "url('imgenes_perros/" + info.imagen + "')";
-
+            clon.querySelector(".tito_img-perro-en-adopcion").setAttribute("src", "https://picsum.photos/200/300?random=" + info.id);
 
             listado1.appendChild(clon)
         }
