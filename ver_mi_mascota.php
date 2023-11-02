@@ -1,22 +1,16 @@
 <?php
+session_start();
 
-    session_start();
-
-    if (isset($_SESSION["nombre"])) {
-        $nombre = $_SESSION["nombre"];
-    }
-    if (isset($_SESSION["id_usuario"])) {
-        $id_usuario = $_SESSION["id_usuario"];
-    }
-    else{
-        header("Location: index.php");
-        exit();
-    }
-    if (isset($_SESSION["localidad"])) {
-        $localidad = $_SESSION["localidad"];
-    }
-
-    // var_dump($id_usuario);
+if (isset($_SESSION["nombre"])) {
+    $nombre = $_SESSION["nombre"];
+}
+if (isset($_SESSION["id_usuario"])) {
+    $id_usuario = $_SESSION["id_usuario"];
+}
+else{
+    header("Location: index.php");
+    exit();
+}
 
 ?>
 
@@ -31,58 +25,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/mis_mascotas.css">
-    <link rel="stylesheet" type="text/css" href="menu/styles.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/ver_mi_mascota.css">
 
     <title>Great Pet</title>
 </head>
 
 <body>
 
-    <template id="tpl__carnet">
-
-        <div class="tarjetas_mascotas_mis_mascotas">
-
-            <div class="img_tarjeta_mis_mascota"></div>
-
-            <div class="contenedor_nombre_mis_mascota">
-                <div class="nombre_mascota_tarjeta_mis_mascotas lexend">
-                    <p class="nombre_mascota">Nombre</p>
-                </div>
-                <div class="contenedor_ver_delet">
-                    <a href="ver_mi_mascota.php" onclick="idmascota(this)">
-                        <div class="contenedor_generador_mis_mascotas roboto2">
-                            <p>Ver</p>
-                        </div>
-                    </a>
-                    <a href="#" onclick="displayConfirm(this)">
-                        <div class="contenedor_generador_mis_mascotas roboto2">
-                            <span class="material-symbols-outlined delete">
-                                delete
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </template>
-
-
-   <header>
+    <header>
         <div class="headersi">
 
             <a href="index.php">
@@ -151,54 +109,133 @@
                     </div>
                 </div>
             </div>
-
             <script src="menu/script.js"></script>
-        
         </div>
     </header>
 
-
     <content>
 
-        <div class="contenedor-MAS-main-adopcion">
-
-            <div class="caja_principal1">
-
-                 <button onclick="goBack()" class="boton_ir_atras"><span class="material-icons-outlined flecha_ir_atras">
+        <div class="contenedor-qr-realizado-main-adopcion">
+            <div class="caja-centradora-qr-realizado">
+                <button onclick="goBack()" class="boton_ir_atras"><span class="material-icons-outlined flecha_ir_atras">
                     arrow_back
-                    </span>
+                </span>
                 </button>
 
-                <div class="titulo_principal lexend">
-                    <P>Mis Mascotas</P>
+                <div class="caja-titulo-qr-realizado sigmar">
+                    <p>JUANITA</p>
+                    
                 </div>
 
-                <div class="linea_mis_mascotas"></div>
+                <div class="caja-mascota-info-foto-qr-marcota-realizado">
+                    <div class="caja-foto-mascota-qr-realizado"> </div>
 
+                    <div class="caja-info-mascota-qr-realizado">
 
-                <div class="contenedor_tarjetas_mis_mascotas">
+                        <div class="titulo-info-qr-realizado lexend"> <p>Mascota</p> </div>
+                        <div class="linea-qr-realizado"></div>
+                        <div class="datos-qr-realizado">
 
-                    <div id="listado">
-                        
+                            <div class="caja-datos-qr-realizado">
+                                <div class="a-dato-qr-r roboto"><p>Nombre</p></div>
+                                <div class="b-dato-qr-r roboto">Juanita</div>
+                                
+                            </div>
+
+                            <div class="caja-datos-qr-realizado">
+                                <div class="a-dato-qr-r roboto">Edad</div>
+                                <div class="b-dato-qr-r roboto">2 Años</div>
+                                                                
+                            </div>
+                            <div class="caja-datos-qr-realizado">
+                                <div class="a-dato-qr-r roboto">Sexo</div>
+                                <div class="b-dato-qr-r roboto">Femenino</div>
+
+                                
+                            </div>
+                            <div class="caja-datos-qr-realizado">
+                                <div class="a-dato-qr-r roboto">Raza</div>
+                                <div class="b-dato-qr-r roboto">Pitbull</div>
+                                
+                            </div>
+
+                        </div>
+
                     </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
 
-                    <!-- <a href="registro_mascotas.php">
-                        <div class="tarjetas_mascotas_mis_mascota">
-                            <div class="fondo_tarjeta_agregar_mascota">
+        <div class="fondo_qr_responsive">
+            <div class="contenedor_todo_qr">
 
-                                <div class="contenedor_mas_a_m">
-                                    <span class="material-icons-outlined mas_añadir_m">
-                                        add
-                                    </span>
 
-                                    <div class="texto_añadir_mascota roboto2">
-                                        <P>AÑADIR MASCOTA</P>
-                                    </div>
-
-                                </div>
+                <div class="me_encontraste sigmar">
+                    <p>¡ME ENCONTRASTE!</p>
+                </div>
+                <div class="mega_tarjeta_mascota_qr">
+                    <div class="contenedor_img1">
+                        <div class="foto_1">
+                            <div class="nombre_mascota_reponsive_qr lexend ">
+                                <P>Juanita</P>
                             </div>
                         </div>
-                    </a> -->
+                    </div>
+                
+                 
+                 
+                    <div class="contenedores_datos_mascota">
+                    
+                        <div class="tituli_contenedor_responsive_qr lexend">
+                            <p>Mascota</p>
+                        </div>
+
+                        <div class="tituli_contenedor_responsive_qr2 lexend">
+                            <p>Dueño</p>
+                        </div>
+
+                        <div class="caja_contenedora_datos_qr_reponsive arriba_caja_contenedora_datos_qr_reponsive">
+                            <div class="contenedor_color_dartos_qr_re">
+                                <div class="color_pate_iz1 lexend"><P>Edad</P></div>
+                                <div class="color_pate_dr1 roboto2"> 2 Años</div>
+                            </div>
+                            <div class="contenedor_color_dartos_qr_re">
+                                <div class="color_pate_iz1 lexend">Sexo</div>
+                                <div class="color_pate_dr1 roboto2">Femenino</div>
+                            </div>
+                            <div class="contenedor_color_dartos_qr_re">
+                                <div class="color_pate_iz1 lexend">Raza</div>
+                                <div class="color_pate_dr1 roboto2">Pitbull</div>
+                            </div>
+                     
+                        </div>
+                        <div class="caja_contenedora_datos_qr_reponsive arriba_caja_contenedora_datos_qr_reponsive">
+                            <div class="contenedor_color_dartos_qr_re">
+                                <div class="color_pate_iz222 lexend"><P>Nombre</P></div>
+                                <div class="color_pate_dr222 roboto2">Daniel Gimenez</div>
+                            </div>
+                            <div class="contenedor_color_dartos_qr_re2">
+                                <div class="color_pate_iz2 lexend">Enviar Mensaje</div>
+                                <a href="https://wa.me/541162444423" class="color_pate_dr2 roboto2">
+                                <div class="caja_img_wp_qr_re"><img src="img/whatsapp-fill.svg" alt="whatsapp">                                </div>
+                                </a>
+                            </div>
+                          
+                     
+                        </div> 
+                    </div>
+
+
+                    <div class="contenedores_datos_mascota2">
+                        <div class="tituli_contenedor_responsive_qr3 lexend">
+                            <p>Ubicación</p>
+                        </div>
+                        <div class="caja_contenedora_datos_qr_reponsive">
+                            <iframe class="img-ubicacion-qr-realizado2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26312.465050589446!2d-58.76746792293106!3d-34.476049543910825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc988e12661a07%3A0xa51def392da2533!2sTortuguitas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1693261106036!5m2!1ses-419!2sar" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -292,116 +329,12 @@
             </div>
         </div>
     </footer>
-    
-    <script src="ir_atras.js"></script>
 
     <script type="text/javascript">
-
-        refreshPage();
-
-        function refreshPage(){
-
-                listado.innerHTML = "";
-
-                getAlumnos().then(alumnos => {
-
-                if (alumnos.errno && alumnos.errno === 400) {
-                    // Add the code here to display the error message
-                    listado.innerHTML += '<a href="registro_mascotas.php"><div class="tarjetas_mascotas_mis_mascota"><div class="fondo_tarjeta_agregar_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></div></a>';
-                } else {
-                    alumnos.forEach(row => {
-                        createCard(row);
-                    });
-                    listado.innerHTML += '<a href="registro_mascotas.php"><div class="tarjetas_mascotas_mis_mascota"><div class="fondo_tarjeta_agregar_mascota"><div class="contenedor_mas_a_m"><span class="material-icons-outlined mas_añadir_m">add</span><div class="texto_añadir_mascota roboto2"><P>AÑADIR MASCOTA</P></div></div></div></div></a>';
-                }
-            });
-        }
-
-        // peticion a la api en modo get
-        async function getAlumnos(){
-
-            var id=<?php echo $id_usuario; ?>;
-
-            const response = await fetch("api/usuario/listAll/" + id + "/");
-
-            console.log("holaa"+id);
-
-            const data = await response.json();
-
-            console.log(data);
-
-            
-            return data;
-        }
-
-
-
-
-        // peticion a la api en modo post
-
-        async function postUsuario(info){
-
-            let frm = new FormData;
-
-            frm.append("name", info.name);
-
-
-            let config = {
-                body: frm,
-                method: "POST"
-            }
-
-            const response = await fetch("api/usuario/add", config);
-
-            const data = await response.json();
-
-            return data;
-        }
-
-
-        // crear una plantilla
-        function createCard (info) {
-                console.log(info);
-                const tpl = tpl__carnet.content
-                const clon = tpl.cloneNode(true);
-
-                clon.querySelector(".tarjetas_mascotas_mis_mascotas").setAttribute("id-card", info.id_mascota);
-                clon.querySelector(".nombre_mascota").innerHTML = info.nombre;
-                clon.querySelector(".img_tarjeta_mis_mascota").style.backgroundImage = "url('img/" + info.imagen + "')";
-
-
-                listado.appendChild(clon)
-        }
-
-        async function displayConfirm(element){
-            let text;
-            const petCard = event.currentTarget.closest('.tarjetas_mascotas_mis_mascotas');
-            const petId = petCard.getAttribute('id-card');
-            console.log(petId);
-            if (confirm("¿Realmente desea eliminar la mascota con el ID " + petId + "?") == true) {
-
-                const response = await fetch("api/usuario/eliminarMascota/" + petId + "/");
-
-                console.log(response);
-
-                const data = await response.json();
-
-                console.log(data);
-
-                refreshPage();
-            }
-        }
-
-        async function idmascota(element){
-            const petCard = event.currentTarget.closest('.tarjetas_mascotas_mis_mascotas');
-            const petId = petCard.getAttribute('id-card');
-            <?php $_SESSION["nombre"] ?>= petId;
-            <?php
-                echo ($_SESSION["nombre"]);
-            ?>
-        }
-
+        
     </script>
+
+    <script src="ir_atras.js"></script>
 
 </body>
 
