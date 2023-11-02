@@ -61,9 +61,12 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         <h1 class="roboto">Registro</h1>
         <form action="" method="POST">
             <div class="input">
-                <input type="text" name="nombre" placeholder="Nombre" required>
-                <input type="text" name="apellido" placeholder="Apellido" required>
+                <div class="nombres">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                </div>
                 <input type="email" name="email" placeholder="Correo electronico" required>
+                <input type="number" name="telefono" placeholder="Num. de telefono" required>
                 <select name="localidad">
                     <option value="1667">Tortuguitas</option>
                 </select>
