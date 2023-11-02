@@ -85,7 +85,7 @@
                     <p class="nombre_mascota">Nombre</p>
                 </div>
                 <div class="contenedor_ver_delet">
-                    <a href="ver_mi_mascota.php" onclick="idmascota(this)">
+                    <a href="#" onclick="idmascota(this)">
                         <div class="contenedor_generador_mis_mascotas roboto2" id="contenedor_generador_mis_mascotas">
                             <p>Ver</p>
                         </div>
@@ -433,11 +433,13 @@
         async function idmascota(element){
             const petCard = event.currentTarget.closest('.tarjetas_mascotas_mis_mascotas');
             const petId = petCard.getAttribute('id-card');
-            const response = await fetch("api/usuario/listAll/" + petId + "/");
+            const response = await fetch("api/usuario/buscar/" + petId + "/");
 
             console.log("holaa"+petId);
 
             const data = await response.json();
+
+            sessionStorage.setItem("mascota", data);
 
             console.log(data);
 
