@@ -378,7 +378,7 @@
             const petCard = event.currentTarget.closest('.tarjetas_mascotas_mis_mascotas');
             const petId = petCard.getAttribute('id-card');
             console.log(petId);
-            if (confirm("¿Realmente desea eliminar la mascota con el ID " + petId + "?") == true) {
+            if (confirm("¿Realmente desea eliminar la mascota?") == true) {
 
                 const response = await fetch("api/usuario/eliminarMascota/" + petId + "/");
 
