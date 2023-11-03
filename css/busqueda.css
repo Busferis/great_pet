@@ -204,7 +204,7 @@
     position: relative;
     background-color: #f7cdaa;
     height: 500px;
-    width: calc(90% / 3 - 2%);
+    /*width: calc(90% / 3 - 2%);*/
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -454,6 +454,15 @@
 }
 
 .caja1_minidescripcion_der {
+    font-size: 14PT;
+}
+.caja1_minidescripcion_der1 {
+    font-size: 14PT;
+}
+.caja1_minidescripcion_der2 {
+    font-size: 14PT;
+}
+.caja1_minidescripcion_der3 {
     font-size: 14PT;
 }
 

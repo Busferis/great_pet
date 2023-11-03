@@ -186,7 +186,7 @@ $_SESSION["pagina"] = 3;
                         <div class="linea-recta-medio-tarjetas"></div>
 
                         <div class="caja_contededora_dato">
-                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
+                            <div class="caja1_minidescripcion_der1 roboto">Femenino</div>
                         </div>
 
                     </div>
@@ -200,7 +200,7 @@ $_SESSION["pagina"] = 3;
                         <div class="linea-recta-medio-tarjetas"></div>
 
                         <div class="caja_contededora_dato">
-                            <div class="caja1_minidescripcion_der roboto">Maltés</div>
+                            <div class="caja1_minidescripcion_der2 roboto">Maltés</div>
                         </div>
 
                     </div>
@@ -214,7 +214,7 @@ $_SESSION["pagina"] = 3;
                         <div class="linea-recta-medio-tarjetas"></div>
 
                         <div class="caja_contededora_dato">
-                            <div class="caja1_minidescripcion_der roboto">5 meses</div>
+                            <div class="caja1_minidescripcion_der3 roboto">5 meses</div>
                         </div>
 
                     </div>
@@ -499,6 +499,11 @@ $_SESSION["pagina"] = 3;
 
             clon.querySelector(".tarjeta1-busqueda-mini-descripcion").setAttribute("id-card", "carnet-" + info.id_adoptable);
             clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
+            clon.querySelector(".caja1_minidescripcion_der1").innerHTML = info.sexo;
+            clon.querySelector(".caja1_minidescripcion_der2").innerHTML = info.raza;
+            clon.querySelector(".caja1_minidescripcion_der3").innerHTML = info.edad;
+            clon.querySelector(".caja1_minidescripcion_der").innerHTML = info.localidad;
+            clon.querySelector(".tito_img-perro-en-busqueda").style.backgroundImage = "url('img/" + info.imagen + "')";
             // clon.querySelector(".ubicacion").innerHTML = info.localidad /*+ ", Malvinas Argentinas"*/; 
             // clon.querySelector(".asde").innerHTML = info.localidad /*+ ", Malvinas Argentinas"*/;             
             // clon.querySelector(".caja1_minidescripcion_sexo").innerHTML = info.sexo;
