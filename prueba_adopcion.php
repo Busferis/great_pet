@@ -10,8 +10,8 @@ if (isset($_SESSION["id_usuario"])) {
 } else{
     $modo = 0;
 }
-$_SESSION["pagina"] = 2;
-var_dump($_SESSION["pagina"]);
+// $_SESSION["pagina"] = 2;
+// var_dump($_SESSION["pagina"]);
 
 require("conection_DB.php");
 ?>
@@ -35,7 +35,7 @@ require("conection_DB.php");
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/adopcion.css">
+    <link rel="stylesheet" href="css/adopcion.css?id=a">
     <link rel="stylesheet" type="text/css" href="menu/styles.css">
 
     <title>Great Pet</title>
@@ -132,84 +132,6 @@ require("conection_DB.php");
 
     <content>
 
-        <template id="tpl__carnet">
-            <div class="contenedor-tarjetas-adopcion-mini-descripcion">
-                        <div class="tarjeta1-adopcion-mini-descripcion">
-                            <div class="tito_img-perro-en-adopcion">
-
-                                <div class="cajacontenedora_nombre_huesos">
-                                    <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_izquierdo.svg"
-                                            alt=""></div>
-                                    <div class="contenedor_nombre_centrado roboto2">Aqui va el nombre</div>
-                                    <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_derecho.svg"
-                                            alt=""></div>
-                                </div>
-
-                            </div>
-
-                            <div class="mini-informacion-tarjeta-adopcion">
-
-                                <div class="des-mascota-adopcion-tarjeta">
-                                    <div class="caja-ubicaciom_mascota_adopcion_tarjeta">
-                                        <div class="ubicaciom_mascota_adopcion_tarjeta">
-                                            <i class="material-icons-outlined ">location_on</i>
-                                            <div class="asd roboto">Aqui va la localidad</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="des-mascota-adopcion-tarjeta">
-
-                                    <div class="caja_contenedora_dato1">
-                                        <div class="caja1_minidescripcion_iz roboto">SEXO</div>
-                                    </div>
-
-                                    <div class="linea-recta-medio"></div>
-
-                                    <div class="caja_contededora_dato">
-                                        <div class="caja1_minidescripcion_sexo roboto">Aqui va el sexo</div>
-                                    </div>
-
-                                </div>
-                                <div class="des-mascota-adopcion-tarjeta">
-                                    <div class="caja_contenedora_dato1">
-                                        <div class="caja1_minidescripcion_iz roboto">RAZA</div>
-                                    </div>
-
-                                    <div class="linea-recta-medio"></div>
-
-                                    <div class="caja_contededora_dato">
-                                        <div class="caja1_minidescripcion_raza roboto">Aqui va la raza</div>
-                                    </div>
-                                </div>
-
-                                <div class="des-mascota-adopcion-tarjeta">
-                                    <div class="caja_contenedora_dato1">
-                                        <div class="caja1_minidescripcion_iz roboto">EDAD</div>
-                                    </div>
-
-                                    <div class="linea-recta-medio"></div>
-
-                                    <div class="caja_contededora_dato">
-                                        <div class="caja1_minidescripcion_edad roboto">Aqui va la edad</div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-
-                            <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                <a href="adop-mas-info.html">
-                                    <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                        Ver Mas
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-            </div>
-        </template>
 
         <div class="contenedor2-main-adopcion">
             <div class="caja-fodo-titulo-adopta">
@@ -234,71 +156,50 @@ require("conection_DB.php");
             </div>
 
 
-            <form method="GET" action="prueba_adopcion.php">
-                <!-- animal - genero - edad -->
-                <label for="filtro-especie">Especie:</label>
-                <select name="filtro-especie" id="filtro-especie">
-                    <option value="todos">Todos</option>
-                    <option value="perro">Perro</option>
-                    <option value="gato">Gato</option>
-                </select>
 
-                <label for="filtro-sexo">Genero:</label>
-                <select name="filtro-sexo" id="filtro-sexo">
-                    <option value="todos">Todos</option>
-                    <option value="macho">Macho</option>
-                    <option value="hembra">Hembra</option>
-                </select>
-
-            <!--     
-                <label for="filtro-edad">Edad:</label>
-                <select name="filtro-edad" id="filtro-edad">
-                    <option value="">Todos</option>
-                    <option value="">2/11 Meses</option>
-                    <option value="">1/3 Años</option>
-                    <option value="">4/6 Años</option>
-                    <option value="">7/10 Años</option>
-                    <option value="">11/15 Años</option>
-                </select> -->
-
-                <input type="submit" name="filtro">
-            </form> 
-
-
-            <!-- <div class="caja-contenedora-tarjetas-adopcion">
+            <div class="caja-contenedora-tarjetas-adopcion">
                 <div class="caja-filtro-adopcion">
                     <div class="selec-filtro">
 
-                        <form method="post">
-                        <select name="select-filtro-oficial-1" class="SELECT-1 roboto2">
-                            <option value="perro" selected class="options-select">Perros</option>
-                            <option value="gato" class="options-select">Gatos</option>
-                        </select>
+                        <form method="POST" action="prueba_adopcion.php" class="caja-filtro-adopcion">
+                            <select name="filtro-especie" id="filtro-especie" class="SELECT-1 roboto2">
+                                <option value="todos" selected class="options-select">Todos</option>
+                                <option value="perro" class="options-select">Perro</option>
+                                <option value="gato" class="options-select">Gato</option>
+                            </select>
 
+                            <select name="filtro-sexo" id="filtro-sexo" class="SELECT-1 roboto2">
+                                <option value="todos" selected class="options-select">Todos</option>
+                                <option value="macho" class="options-select">Macho</option>
+                                <option value="hembra" class="options-select">Hembra</option>
+                            </select>
 
-                        <select name="select-filtro-oficial-2" class="SELECT-1 roboto2">
-                            <option value="macho" selected class="options-select">Masculino</option>
-                            <option value="hembra" class="options-select">Femenino</option>
-                        </select>
+                            
+                            <select name="filtro-edad" id="filtro-edad" class="SELECT-1 roboto2">
+                                <option value="todos" selected class="options-select">Todos</option>
+                                <option value="1-3" class="options-select">1/3 Años</option>
+                                <option value="4-6" class="options-select">4/6 Años</option>
+                                <option value="7-10" class="options-select">7/10 Años</option>
+                                <option value="11-15" class="options-select">11/15 Años</option>
+                            </select>
 
-
-                        <input type="submit" value="search" class="material-icons-outlined buscar-filtro-adopcion">
-                        </form>
+                            <!-- <input type="submit" name="filtro" class="material-icons-outlined buscar-filtro-adopcion">   -->
+                            <input type="submit" value="search" name="filtro" class="material-icons-outlined buscar-filtro-adopcion">
+                        </form> 
 
                     </div>
 
-                </div> -->
+                </div>
+
                 <div class="linea-filtro-adopcion-tarjetas"></div>
 
-                <div id="btn_control" class="btn_control">
-                    <button id="btn__next">Siguiente</button>
-                    <div id="visor__page"></div>
-                    <button id="btn__previous">Atras</button>
+                <div id="btn__control" class="btn__control">
+                    <button id="btn__previous" class="boton_s_a roboto">Atras</button>
+                    <div id="visor__page" class="numero_pestaña roboto"></div>
+                    <button id="btn__next" class="boton_s_a roboto">Siguiente</button>
                 </div>
 
                 <div id="listado1">
-
-                </div>
 
                 </div>
 
@@ -310,32 +211,150 @@ require("conection_DB.php");
 
 <?php  
 
-$especie = isset($_GET['filtro-especie']) ? $_GET['filtro-especie'] : '';
-$sexo = isset($_GET['filtro-sexo']) ? $_GET['filtro-sexo'] : '';
-$edad = isset($_GET['filtro-edad']) ? $_GET['filtro-edad'] : '';
+$especie = isset($_POST['filtro-especie']) ? $_POST['filtro-especie'] : '';
+$sexo = isset($_POST['filtro-sexo']) ? $_POST['filtro-sexo'] : '';
+$edad = isset($_POST['filtro-edad']) ? $_POST['filtro-edad'] : '';
 
-if ($especie=='todos' && $sexo=='todos') {
+if ($especie == 'todos' && $sexo == 'todos' && $edad == 'todos') {
     $consulta = "SELECT * FROM mascotas;";
-}else if($especie=='todos'){
-    $consulta = "SELECT * FROM mascotas WHERE sexo like '$sexo';";
-}else if($sexo=='todos'){
-    $consulta = "SELECT * FROM mascotas WHERE especie like '$especie';";
-}else{
-    $consulta = "SELECT * FROM mascotas WHERE especie like '$especie' AND sexo like '$sexo';";    
-}
-var_dump($consulta);
-if ($result = mysqli_query($mysqli, $consulta)) {
-    while ($row = mysqli_fetch_array($result)) {
-        $sexo = $row['sexo'];
-        $nombre = $row['nombre'];
-        $especie = $row['especie'];
-        echo "<br>Nombre: $nombre, Sexo: $sexo, Especie: $especie";
+} elseif ($especie == 'todos' && $sexo == 'todos') {
+    // Solo se seleccionó filtro de edad
+    if ($edad == '1-3' || $edad == '4-6' || $edad == '7-10' || $edad == '11-15') {
+        list($minEdad, $maxEdad) = explode('-', $edad);
+        $consulta = "SELECT * FROM mascotas WHERE edad >= $minEdad AND edad <= $maxEdad;";
+    } else {
+        // Rango de edad no válido
+        $consulta = "SELECT * FROM mascotas;";
+    }
+} elseif ($especie == 'todos') {
+    // Se seleccionó filtro de edad y sexo
+    if ($edad == '1-3' || $edad == '4-6' || $edad == '7-10' || $edad == '11-15') {
+        list($minEdad, $maxEdad) = explode('-', $edad);
+        $consulta = "SELECT * FROM mascotas WHERE sexo LIKE '$sexo' AND edad >= $minEdad AND edad <= $maxEdad;";
+    } else {
+        // Rango de edad no válido
+        $consulta = "SELECT * FROM mascotas WHERE sexo LIKE '$sexo';";
+    }
+} elseif ($sexo == 'todos') {
+    // Se seleccionó filtro de edad y especie
+    if ($edad == '1-3' || $edad == '4-6' || $edad == '7-10' || $edad == '11-15') {
+        list($minEdad, $maxEdad) = explode('-', $edad);
+        $consulta = "SELECT * FROM mascotas WHERE especie LIKE '$especie' AND edad >= $minEdad AND edad <= $maxEdad;";
+    } else {
+        // Rango de edad no válido
+        $consulta = "SELECT * FROM mascotas WHERE especie LIKE '$especie';";
     }
 } else {
-    echo "Error en la consulta: " . mysqli_error($mysqli);
+    // Se seleccionó filtro de especie, sexo y edad
+    if ($edad == '1-3' || $edad == '4-6' || $edad == '7-10' || $edad == '11-15') {
+        list($minEdad, $maxEdad) = explode('-', $edad);
+        $consulta = "SELECT * FROM mascotas WHERE especie LIKE '$especie' AND sexo LIKE '$sexo' AND edad >= $minEdad AND edad <= $maxEdad;";
+    } else {
+        // Rango de edad no válido
+        $consulta = "SELECT * FROM mascotas WHERE especie LIKE '$especie' AND sexo LIKE '$sexo';";
+    }
+} 
+
+if(!isset($_POST["filtro"])){
+    $consulta = "SELECT * FROM mascotas;";
 }
 
+$tarjetas = '';
+
 $result = mysqli_query($mysqli, $consulta);
+
+$tarjetas = array(); // Inicializa un arreglo para almacenar las tarjetas
+
+while ($row = mysqli_fetch_array($result)) {
+    $nombre = $row['nombre'];
+    $localidad = $row['localidad'];
+    $sexo = $row['sexo'];
+    $raza = $row['raza'];
+    $edad = $row['edad'];
+
+    // Construir la tarjeta de mascota con los datos de la consulta
+    $tarjeta = <<<HTML
+        <div class="tarjeta1-adopcion-mini-descripcion">
+            <div class="tito_img-perro-en-adopcion">
+                <div class="cajacontenedora_nombre_huesos">
+                    <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_izquierdo.svg" alt=""></div>
+                    <div class="contenedor_nombre_centrado roboto2">$nombre</div>
+                    <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_derecho.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="mini-informacion-tarjeta-adopcion">
+                <div class="des-mascota-adopcion-tarjeta">
+                    <div class="caja-ubicaciom_mascota_adopcion_tarjeta">
+                        <div class="ubicaciom_mascota_adopcion_tarjeta">
+                            <i class="material-icons-outlined">location_on</i>
+                            <div class="asd roboto">$localidad</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="des-mascota-adopcion-tarjeta">
+                    <div class="caja_contenedora_dato1">
+                        <div class="caja1_minidescripcion_iz roboto">SEXO</div>
+                    </div>
+                    <div class="linea-recta-medio"></div>
+                    <div class="caja_contededora_dato">
+                        <div class="caja1_minidescripcion_sexo roboto">$sexo</div>
+                    </div>
+                </div>
+                <div class="des-mascota-adopcion-tarjeta">
+                    <div class="caja_contenedora_dato1">
+                        <div class="caja1_minidescripcion_iz roboto">RAZA</div>
+                    </div>
+                    <div class="linea-recta-medio"></div>
+                    <div class="caja_contededora_dato">
+                        <div class="caja1_minidescripcion_raza roboto">$raza</div>
+                    </div>
+                </div>
+                <div class="des-mascota-adopcion-tarjeta">
+                    <div class="caja_contenedora_dato1">
+                        <div class="caja1_minidescripcion_iz roboto">EDAD</div>
+                    </div>
+                    <div class="linea-recta-medio"></div>
+                    <div class="caja_contededora_dato">
+                        <div class="caja1_minidescripcion_edad roboto">$edad</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
+                <a href="adop-mas-info.html">
+                    <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
+                        Ver Mas
+                    </div>
+                </a>
+            </div>
+        </div>
+    HTML;
+
+    // Agregar la tarjeta al arreglo
+    $tarjetas[] = $tarjeta;
+}
+
+// Ahora, fuera del bucle, puedes mostrar todas las tarjetas juntas
+
+echo '<div class="contenedor_centrar_contenedor"><div class="contenedor-tarjetas">';
+foreach ($tarjetas as $tarjeta) {
+    echo $tarjeta;
+}
+echo '</div> </div>';
+
+
+// var_dump($consulta);
+// if ($result = mysqli_query($mysqli, $consulta)) {
+//     while ($row = mysqli_fetch_array($result)) {
+//         $sexo = $row['sexo'];
+//         $nombre = $row['nombre'];
+//         $especie = $row['especie'];
+//         echo "<br>Nombre: $nombre, Sexo: $sexo, Especie: $especie";
+//     }
+// } else {
+//     echo "Error en la consulta: " . mysqli_error($mysqli);
+// }
+
+
 
 ?>
 
@@ -489,8 +508,6 @@ $result = mysqli_query($mysqli, $consulta);
             const response = await fetch("api/usuario/listByCantPage/9/" + page);
 
             const data = await response.json();
-
-            console.log(data);
 
             return data;
         }
