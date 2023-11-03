@@ -253,6 +253,10 @@ if ($especie == 'todos' && $sexo == 'todos' && $edad == 'todos') {
         // Rango de edad no válido
         $consulta = "SELECT * FROM mascotas WHERE especie LIKE '$especie' AND sexo LIKE '$sexo';";
     }
+} 
+
+if(!isset($_POST["filtro"])){
+    $consulta = "SELECT * FROM mascotas;";
 }
 
 $tarjetas = '';
