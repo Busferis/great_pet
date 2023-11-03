@@ -124,7 +124,7 @@ else{
                 </button>
 
                 <div class="caja-titulo-qr-realizado lexend">
-                    <p>Iformación</p>
+                    <p>Información</p>
                     
                 </div>
 
@@ -167,6 +167,7 @@ else{
                     
                 </div>
             </div>
+            <button onclick="displayConfirm(this)">Se perdio mi mascota</button>
         </div>
 
         <div class="fondo_qr_responsive">
@@ -332,6 +333,7 @@ else{
     </footer>
 
     <script type="text/javascript">
+
         async function hola(){
             var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
             console.log(datos_mascotas);
@@ -351,6 +353,24 @@ else{
             document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
         }
         hola();
+
+        async function displayConfirm(element){
+            var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
+            console.log(datos_mascotas);
+            var id_mascota = datos_mascotas[0].id_mascota;
+            if (confirm("¿Realmente desea dar esta mascota como perdida?") == true) {
+
+                const response = await fetch("api/usuario/busquedaMascota/" + id_mascota + "/");
+
+                console.log(response);
+
+                const data = await response.json();
+
+                console.log(data);
+                window.location.href = "https://mattprofe.com.ar/alumno/great_pet/mis_mascotas.php";
+            }
+        }
+
     </script>
 
     <script src="ir_atras.js"></script>

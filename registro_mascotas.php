@@ -124,7 +124,7 @@ else{
 
                     <div class="contenedor_navegacion">
                         <li>
-                            <a class="TEXTO-LINK" href="#">
+                            <a class="TEXTO-LINK" href="adopcion.php">
                                 <h4>Adopción</h4>
                             </a>
                         </li>
