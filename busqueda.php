@@ -135,7 +135,105 @@ $_SESSION["pagina"] = 3;
 
 
 
-    <main>
+    <content>
+
+        <template id="tpl__carnet">
+            <div class="tarjeta1-busqueda-mini-descripcion">
+
+                <div class="tito_img-perro-en-busqueda img2">
+                    <!-- <div class="tipo_de_recompensas"></div> -->
+
+                    <div class="cajacontenedora_nombre">
+                        <div class="contenedor_nombre_centrado roboto2">Dona</div>
+                    </div>
+
+                </div>
+
+
+                <div class="mini-informacion-tarjeta-busqueda">
+
+                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
+
+                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
+                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
+                                <i class="material-icons-outlined icono_location">location_on</i>
+                                <div class="ubicacion roboto">Tortuguitas</div>
+                            </div>
+                        </div>
+
+                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
+                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
+                            </div>
+
+                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
+
+                            <div class="caja_contededora_dato">
+                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                        <div class="caja_contenedora_dato1 ">
+                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
+                        </div>
+
+                        <div class="linea-recta-medio-tarjetas"></div>
+
+                        <div class="caja_contededora_dato">
+                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
+                        </div>
+
+                    </div>
+
+                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                        <div class="caja_contenedora_dato1 ">
+                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
+                        </div>
+
+                        <div class="linea-recta-medio-tarjetas"></div>
+
+                        <div class="caja_contededora_dato">
+                            <div class="caja1_minidescripcion_der roboto">Maltés</div>
+                        </div>
+
+                    </div>
+
+                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
+
+                        <div class="caja_contenedora_dato1 ">
+                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
+                        </div>
+
+                        <div class="linea-recta-medio-tarjetas"></div>
+
+                        <div class="caja_contededora_dato">
+                            <div class="caja1_minidescripcion_der roboto">5 meses</div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
+                    <a href="mas-info-busqueda.html">
+                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
+                            Ver Mas
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </template>
 
         <div class="contenedor2-main-adopcion">
 
@@ -195,906 +293,8 @@ $_SESSION["pagina"] = 3;
                     <button id="btn__next" class="boton_s_a roboto">Siguiente</button>
                 </div>
 
-                <div class="contenedor-tarjetas-busqueda-mini-descripcion">
-
-                    <!-- <div class="tarjetas-adopcion-mini-descripcion-columns"> -->
-
-                        <!-- <div class="tarjetas-busqueda-mini-descripcion-row"> -->
-
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img1">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">Melly</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Dachshund</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">6 meses</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img2">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">Dona</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Maltés</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">5 meses</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img7">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">Sam</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Salchicha</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">2 años</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-
-
-                        <!-- </div> -->
-
-
-
-                        <!-- <div class="tarjetas-busqueda-mini-descripcion-row"> -->
-
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img4">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">Mini</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">7 años</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img5">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">Hulk</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Pitbull</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">2 años</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img6">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">pipo</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Sin Raza</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">4 años</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-
-
-                        <!-- </div> -->
-
-
-
-
-                        <!-- <div class="tarjetas-busqueda-mini-descripcion-row"> -->
-
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img3">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">Barbie</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Caniche</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">1 año</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img8">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">Toti</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                    <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Masculino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Bulldog</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">3 años</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-
-                            <div class="tarjeta1-busqueda-mini-descripcion">
-
-                                <div class="tito_img-perro-en-busqueda img9">
-                                    <!-- <div class="tipo_de_recompensas"></div> -->
-
-                                    <div class="cajacontenedora_nombre">
-                                        <div class="contenedor_nombre_centrado roboto2">Sasha</div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="mini-informacion-tarjeta-busqueda">
-
-                                   <div class="des-mascota-busqueda-tarjeta localidad-dato-busqueda">
-
-                                        <div class="caja-ubicaciom_mascota_busqueda_tarjeta">
-                                            <div class="ubicaciom_mascota_busqueda_tarjeta ">
-                                                <i class="material-icons-outlined icono_location">location_on</i>
-                                                <div class="roboto">Tortuguitas</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="caja_contenedora_dato1_responsive des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                            <div class="caja_contenedora_dato1 caja_contenedora_dato1_icono_loc">
-                                                <div class="caja1_minidescripcion_iz roboto"><i class="material-icons-outlined icono_location">location_on</i></div>
-                                            </div>
-
-                                            <div class="linea-recta-medio-tarjetas linea-recta-medio-tarjetas_localidad"></div>
-
-                                            <div class="caja_contededora_dato">
-                                                <div class="caja1_minidescripcion_der roboto">Tortuguitas</div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Sexo</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Femenino</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Raza</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">Rottweiler</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="des-mascota-busqueda-tarjeta tamoño-defauld-dato">
-
-                                        <div class="caja_contenedora_dato1 ">
-                                            <div class="caja1_minidescripcion_iz roboto">Edad</div>
-                                        </div>
-
-                                        <div class="linea-recta-medio-tarjetas"></div>
-
-                                        <div class="caja_contededora_dato">
-                                            <div class="caja1_minidescripcion_der roboto">5 meses</div>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
-                                <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                    <a href="mas-info-busqueda.html">
-                                        <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
-                                            Ver Mas
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                            </div>
-
-
-
-                        <!-- </div> -->
-
-
-
-
-
-                    <!-- </div> -->
-
+                <div id="listado1">
+                    
                 </div>
 
             </div>
@@ -1102,7 +302,7 @@ $_SESSION["pagina"] = 3;
 
         </div>
 
-    </main>
+    </content>
 
 
 
@@ -1220,6 +420,97 @@ $_SESSION["pagina"] = 3;
         }
 
         modo();
+
+        let page = 1;
+
+        refreshPage();
+
+        btn__next.addEventListener("click", e => {
+            page++;
+
+            refreshPage();
+        })
+
+        btn__previous.addEventListener("click", e => {
+
+            if (page > 1) {
+                page--;
+            }
+
+            refreshPage();
+
+        })
+
+
+        function refreshPage() {
+            visor__page.innerHTML = page;
+
+            listado1.innerHTML = "";
+
+            getAlumnos().then(alumnos => {
+
+                console.log(alumnos);
+
+                alumnos.forEach(row => {
+                    createCard(row);
+                });
+
+            });
+        }
+
+        // peticion a la api en modo get
+        async function getAlumnos() {
+
+            const response = await fetch("api/usuario/listByCantPageBusqueda/9/" + page);
+
+            const data = await response.json();
+
+            return data;
+        }
+
+
+        // peticion a la api en modo post
+
+        async function postUsuario(info) {
+
+            let frm = new FormData;
+
+            frm.append("name", info.name);
+
+
+            let config = {
+                body: frm,
+                method: "POST"
+            }
+
+            const response = await fetch("api/usuario/add", config);
+
+            const data = await response.json();
+
+            return data;
+        }
+
+
+        // crear una plantilla
+        function createCard(info) {
+            console.log(info);
+            const tpl = tpl__carnet.content
+            const clon = tpl.cloneNode(true);
+
+            clon.querySelector(".tarjeta1-busqueda-mini-descripcion").setAttribute("id-card", "carnet-" + info.id_adoptable);
+            clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
+            // clon.querySelector(".ubicacion").innerHTML = info.localidad /*+ ", Malvinas Argentinas"*/; 
+            // clon.querySelector(".asde").innerHTML = info.localidad /*+ ", Malvinas Argentinas"*/;             
+            // clon.querySelector(".caja1_minidescripcion_sexo").innerHTML = info.sexo;
+            // clon.querySelector(".caja1_minidescripcion_raza").innerHTML = info.raza;
+            // clon.querySelector(".caja1_minidescripcion_edad").innerHTML = info.edad;
+
+            // clon.querySelector(".tito_img-perro-en-adopcion").setAttribute("src", "https://picsum.photos/200/300?random=" + info.id);
+            // clon.querySelector(".tito_img-perro-en-adopcion").style.backgroundImage = "url('imgenes_perros/" + info.imagen + "')";
+
+
+            listado1.appendChild(clon)
+        }
 
     </script>
 
