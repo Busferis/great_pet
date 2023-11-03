@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&family=Raleway:wght@300&family=Roboto:wght@300;500&family=Sigmar&display=swap');
+
 
 .sigmar {
     font-family: 'Sigmar', cursive;
@@ -15,6 +17,11 @@
     font-weight: 300;
 }
 
+.lexend {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+
 a{
 	color: blue;
     text-decoration: none;
@@ -22,22 +29,87 @@ a{
 }
 
 body{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: rgb(83, 83, 83);
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background-image: url(../img/fondo-main_liviano.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    overflow-y: hidden;
+    justify-content: center;
 }
-.login{
-	display: flex;
+.caja_contenedora_login_img{
+        /* background: #ffe4c46b; */
+        width: 1050px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.contenedor_inputs_mas {
+    /* background-color: red; */
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 130px;
-    background-color: white;
-    padding: 65px;
-    border-radius: 35px;
 }
-.input input{
-	padding: 8px;
+
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin-top: 130px; */
+    background-color: #ffffff57;
+    border: white 2px solid;
+    padding: 25px 50px;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+}
+
+.img-logo-gp{
+    background-image: url(../img/logo_definitivo.png);
+    background-size: cover;
+    background-position: center;
+    /* width: 100px; */
+    /* height: 200px; */
+    /* background-color: red; */
+    width: 500px;
+    height: 500px;
+}
+
+.titulo_i_s{
+    margin-top: 10px;
+    font-size: 30pt;
+    color: white;
+}
+
+.input input {
+    padding: 8px;
+    background: transparent;
+    border: none;
+    border-bottom: white 1px solid;
+    /* border-radius: 10px; */
+    color: white;
+    font-size: 14pt;
+}
+
+.input input:focus {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding-left: 10px;
+  	outline: none;
+}
+
+
+.input input::placeholder {
+ font-size: 12pt;
+ color: rgba(255, 255, 255, 0.582);
 }
 .input{
 	display: flex;
@@ -46,10 +118,16 @@ body{
 	width: 345px;
 }
 .botones{
-	display: flex;
-	gap: 187px;
-    margin-top: 10px;
+    display: flex;
+    /* gap: 187px; */
+    margin-top: 30px;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #a32f2f00;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 30px;
 }
 input::placeholder {
   	font-size: 1.2em;
@@ -61,13 +139,50 @@ input::placeholder {
 	display: flex;
 	flex-direction: column;
 }
-input[type="submit"]{
-	padding: 12px;
-    font-size: 12pt;
-    background-color: darkorange;
-    border: none;
-    border-radius: 9px;
-    cursor: pointer;
+.registrarse_style{
+    background-color: #ffffff00 !important;
+    border: white 2px solid !important;
+    border-radius: 10px;
+    width: 99% !important;
+    height: 41px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 1px !important;*/
+}
+.registrarse_style:hover{
+    background-color: #ffffff36 !important;
+}
+
+.mos_con_s{
     color: white;
-    font-weight: 600;
+    font-size: 10pt;
+}
+
+.contenedor_mostrar_contraseña {
+    /* background-color: #3f8a8a3d; */
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+
+
+.cajas_re_ingresar{
+        /* padding: 12px; */
+        font-size: 12pt;
+        background-color: #ee920c;
+        border: none;
+        border-radius: 9px;
+        cursor: pointer;
+        color: white;
+        font-weight: 600;
+/*        border: darkorange 2px solid;*/
+        height: 45px;
+        width: 100%;
+}
+
+
+.cajas_re_ingresar:hover{
+    background-color: #ee940cb6;
 }

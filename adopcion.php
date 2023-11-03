@@ -145,11 +145,11 @@ $_SESSION["pagina"] = 2;
                             <div class="tito_img-perro-en-adopcion">
 
                                 <div class="cajacontenedora_nombre_huesos">
-                                    <!-- <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_izquierdo.svg"
-                                            alt=""></div> -->
+                                    <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_izquierdo.svg"
+                                            alt=""></div>
                                     <div class="contenedor_nombre_centrado roboto2">Aqui va el nombre</div>
-                                    <!-- <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_derecho.svg"
-                                            alt=""></div> -->
+                                    <div class="hueso1"><img class="medida_hueso_centrado" src="img/hueso_derecho.svg"
+                                            alt=""></div>
                                 </div>
 
                             </div>

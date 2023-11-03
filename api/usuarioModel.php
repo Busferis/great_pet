@@ -143,6 +143,26 @@
 			return $list;
 
 		}
+
+		public function buscar($id_busqueda){
+
+			$id_value3 = $id_busqueda[0];
+
+			$response = $this->db->query("SELECT * FROM mascotas where id_mascota='".$id_value3."'");
+
+			$list = array("errno" => 400, "error" => "No hay mascotas");
+
+			if($response->num_rows > 0 ){
+
+				// responde con una matriz asociativa
+				$list = $response->fetch_all(MYSQLI_ASSOC);
+
+				// $list = array_merge(array("errno" => 200, "error" => "Se han listado usuarios", "num_rows" => $response->num_rows), $list);
+
+			}
+
+			return $list;
+		}
 	}
 
 

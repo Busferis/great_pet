@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&family=Raleway:wght@300&family=Roboto:wght@300;500&family=Sigmar&display=swap');
 
 .sigmar {
     font-family: 'Sigmar', cursive;
@@ -14,6 +15,10 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
+.lexend {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
 
 a{
 	color: blue;
@@ -26,24 +31,59 @@ a{
 }
 
 body{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: rgb(83, 83, 83);
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background-image: url(../img/fondo-main_liviano.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    overflow-y: hidden;
+    justify-content: center;
 }
+
+.caja_contenedora_login_img{
+    /* background: #ffe4c46b; */
+    width: 1050px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo-gp {
+    background-image: url(../img/logo_definitivo.png);
+    background-size: cover;
+    background-position: center;
+    /* background-color: red; */
+    width: 500px;
+    height: 500px;
+}
+
+
 .registro{
-	display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
-    background-color: white;
-    padding: 60px;
-    padding-top: 30px;
-    border-radius: 35px;
+    /* justify-content: center; */
+    /* margin-top: 130px; */
+    background-color: #ffffff57;
+    border: white 2px solid;
+    padding: 25px 50px;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
 }
-.input input{
-	padding: 8px;
+
+
+.titulo_i_s {
+    margin-top: 10px;
+    font-size: 30pt;
+    color: white;
 }
+
 .input{
 	display: flex;
 	flex-direction: column;
@@ -52,7 +92,56 @@ body{
 }
 input::placeholder {
   	font-size: 1.2em;
+    color:white;
+    font-size: 12;
 }
+
+.input input{
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px  white solid;
+    color: white;
+    font-size: 12PT;
+}
+.input input:focus{
+    outline: none;
+    font-size: 13pt;
+
+}
+
+.nombres{
+        display: flex;
+    justify-content: space-between;
+}
+
+input.nombre_apellido {
+    width: 150px;
+}
+select.localidad {
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px white solid;
+    color: white;
+    font-size: 14pt;
+}
+select.localidad:focus {
+    outline: none;
+}
+
+select.localidad option {
+    background-color: white;
+    color: rgb(62, 62, 62);
+}
+
+.mostrar_contraseña_politica_privacidad {
+    display: flex;
+    /*background-color: #c715854d;*/
+    align-items: center;
+    color: white;
+}
+
 .checkbox{
 	padding: 10px 0
 }
@@ -63,10 +152,17 @@ input::placeholder {
 input[type="submit"]{
 	padding: 12px;
     font-size: 12pt;
-    background-color: darkorange;
+    background-color: #ee920c;
     border: none;
-    border-radius: 6px;
+    border-radius: 9px;
     cursor: pointer;
     color: white;
     font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]:hover{
+    background-color: #ee940ca5;
+
 }
