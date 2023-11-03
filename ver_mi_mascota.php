@@ -129,7 +129,7 @@ else{
                 </div>
 
                 <div class="caja-mascota-info-foto-qr-marcota-realizado">
-                    <div class="caja-foto-mascota-qr-realizado"> </div>
+                    <div class="caja-foto-mascota-qr-realizado" id="imagen"> </div>
 
                     <div class="caja-info-mascota-qr-realizado">
 
@@ -139,24 +139,24 @@ else{
 
                             <div class="caja-datos-qr-realizado">
                                 <div class="a-dato-qr-r roboto"><p>Nombre</p></div>
-                                <div class="b-dato-qr-r roboto">Juanita</div>
+                                <div class="b-dato-qr-r roboto" id="hola_puto">Juanita</div>
                                 
                             </div>
 
                             <div class="caja-datos-qr-realizado">
                                 <div class="a-dato-qr-r roboto">Edad</div>
-                                <div class="b-dato-qr-r roboto">2 Años</div>
+                                <div class="b-dato-qr-r roboto" id="hola_putito">2 Años</div>
                                                                 
                             </div>
                             <div class="caja-datos-qr-realizado">
                                 <div class="a-dato-qr-r roboto">Sexo</div>
-                                <div class="b-dato-qr-r roboto">Femenino</div>
+                                <div class="b-dato-qr-r roboto" id="hola_putas">Femenino</div>
 
                                 
                             </div>
                             <div class="caja-datos-qr-realizado">
                                 <div class="a-dato-qr-r roboto">Raza</div>
-                                <div class="b-dato-qr-r roboto">Pitbull</div>
+                                <div class="b-dato-qr-r roboto" id="hola_putitas">Pitbull</div>
                                 
                             </div>
 
@@ -335,6 +335,20 @@ else{
         async function hola(){
             var puto = JSON.parse(sessionStorage.getItem("mascota"));
             console.log(puto);
+            var nombre = puto[0].nombre;
+            var edad = puto[0].edad;
+            var sexo = puto[0].sexo;
+            var raza = puto[0].raza;
+            var imagen = puto[0].imagen;
+            console.log(nombre);
+            console.log(edad);
+            console.log(sexo);
+            console.log(raza);
+            document.getElementById("hola_puto").innerHTML = nombre;
+            document.getElementById("hola_putito").innerHTML = edad;
+            document.getElementById("hola_putas").innerHTML = sexo;
+            document.getElementById("hola_putitas").innerHTML = raza;
+            document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
         }
         hola();
     </script>
