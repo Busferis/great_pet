@@ -128,7 +128,7 @@ body{
 .contenedor2-main-index {
     /* background-color: #daeeb4; */
     height: 100%;
-    width: 1200px;
+    width: 1400px;
     padding-top: 140px;
     padding-bottom: 200px;
     display: flex;
@@ -136,26 +136,28 @@ body{
 }
 
 .tarjetas {
-    /* background-color: #ceb6a3; */
+/*    background-color: #ceb6a3;*/
     position: relative;
     /* top: -70px; */
     /* border-radius: 10%; */
-    height: 1000px;
+    height: auto;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .tarj {
     position: relative;
     background-color: #f7cdaa;
     height: 200px;
-    width: 65%;
+    width: 600px;
     border-radius: 100px;
     border-bottom-right-radius: 30px;
-    margin: 35PX;
+/*    margin: 35PX;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,8 +198,9 @@ body{
 
 .texto-tarjeta {
     /* background-color: rgb(0, 255, 255); */
-    width: 800px;
-    padding-left: 50px;
+    width: 620px;
+    padding-left: 30px;
+    padding-right: 50px;
     position: relative;
     top: -8px;
 }
@@ -234,6 +237,7 @@ body{
 .titulo-tarjeta {
     font-size: 25pt;
     color: #ffa75a;
+    margin-bottom: 10px;
 }
 
 .parrafo-tarjeta {
@@ -246,8 +250,6 @@ body{
     background-color: #ffa75a;
     height: 50px;
     width: 150px;
-    bottom: -70px;
-    left: 8px;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
     display: flex;
@@ -269,6 +271,9 @@ body{
 
 .ir-link {
     text-decoration: none !important;
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
 }
 .ondas_responsive{
     display: none;

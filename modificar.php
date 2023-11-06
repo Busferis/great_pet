@@ -51,16 +51,23 @@
 	<title>Document</title>
     <link rel="stylesheet" href="css/registro.css">
 </head>
-<body class="releway">
-    <div class="registro">
-        <h1 class="roboto">Modificacion</h1>
+<body class="body_modif releway">
+    <div class="registro registro_modif">
+        <h1 class=" titulo_i_s lexend ">Modificacion</h1>
         <form action="" method="POST">
             <div class="input">
                 <input type="text" name="nombre" placeholder="Nombre" <?php echo "value='$nombre'" ?> required>
                 <input type="text" name="apellido" placeholder="Apellido" <?php echo "value='$apellido'" ?> required>
                 <input type="email" name="email" placeholder="Correo electronico" <?php echo "value='$email'" ?> required>
-                <select name="localidad">
-                    <option value="1667">Tortuguitas</option>
+                <select name="localidad" class="localidad">
+                    <option value="Tortuguitas">Tortuguitas</option>
+                    <option value="Grand Bourg">Grand Bourg</option>
+                    <option value="Pablo Nogués">Pablo Nogués</option>
+                    <option value="Adolfo Sourdeaux">Adolfo Sourdeaux</option>
+                    <option value="Villa de Mayo">Villa de Mayo</option>
+                    <option value="Tierras Altas">Tierras Altas</option>
+                    <option value="Los Polvorines">Los Polvorines</option>
+                    <option value="El triángulo">El Triángulo</option>
                 </select>
             </div>
             <div class="button">
