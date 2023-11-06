@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo-send</title>
+
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+<body>
+
+	<div id="container">
+		<form action="">
+
+			<div class="frm-container">
+
+				<div class="frm-title">
+					MP-Mailer
+				</div>
+
+				<div class="frm-data">
+					<label for="destinatario">Destinatario</label>
+					<input type="email" name="destinatario" id="txtDestinatario" required>
+
+					<label for="motivo">Motivo</label>
+					<input type="text" name="motivo" id="txtMotivo" required>
+
+					<label for="contenido">Contenido</label>
+					<textarea name="contenido" id="txtContenido" required></textarea>
+				</div>
+
+				<div class="frm-controls">
+					<input type="submit" name="enviar" id="btnSubmit" value="Enviar Mail">
+				</div>
+
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="funciones.js"></script>	
+</body>
+</html>

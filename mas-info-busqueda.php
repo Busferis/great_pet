@@ -25,22 +25,21 @@ else{
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/ver_mi_mascota.css">
+    <link rel="stylesheet" href="css/busqueda.css">
     <link rel="stylesheet" type="text/css" href="menu/styles.css">
 
     <title>Great Pet</title>
 </head>
 
 <body>
-
     <header>
         <div class="headersi">
 
@@ -73,7 +72,7 @@ else{
 
                     <div class="contenedor_navegacion">
                         <li>
-                            <a class="TEXTO-LINK" href="busqueda.php">
+                            <a class="TEXTO-LINK" href="#">
                                 <h4>Búsqueda</h4>
                             </a>
                         </li>
@@ -110,22 +109,27 @@ else{
                     </div>
                 </div>
             </div>
+
             <script src="menu/script.js"></script>
         </div>
     </header>
 
-    <content>
+
+
+
+
+
+
+
+
+    <main>
 
         <div class="contenedor-qr-realizado-main-adopcion">
-            <div class="caja-centradora-qr-realizado">
-                <button onclick="goBack()" class="boton_ir_atras"><span class="material-icons-outlined flecha_ir_atras">
-                    arrow_back
-                </span>
-                </button>
 
-                <div class="caja-titulo-qr-realizado lexend">
-                    <p>Información</p>
-                    
+            <div class="caja-centradora-qr-realizado">
+                <div class="caja-titulo-qr-realizado sigmar">
+                    <p>Mas Información</p>
+
                 </div>
 
                 <div class="caja-mascota-info-foto-qr-marcota-realizado">
@@ -133,118 +137,129 @@ else{
 
                     <div class="caja-info-mascota-qr-realizado">
 
-                        <div class="titulo-info-qr-realizado lexend"> <p>Mascota</p> </div>
+                        <div class="titulo-info-qr-realizado lexend">
+                            <p>Mi Historia</p>
+                        </div>
                         <div class="linea-qr-realizado"></div>
-                        <div class="datos-qr-realizado">
+                        <div class="datos-qr-realizado roboto">
+                            Melly, una perra de 6 meses, está perdida y necesitamos encontrarla. Es probable que esté
+                            merodeando por zonas de Malvinas Argentinas. Lleva un collar rojo con el sistema QR de GREAT
+                            PET.
 
-                            <div class="caja-datos-qr-realizado">
-                                <div class="a-dato-qr-r roboto"><p>Nombre</p></div>
-                                <div class="b-dato-qr-r roboto" id="nombre_id">Juanita</div>
-                                
-                            </div>
-
-                            <div class="caja-datos-qr-realizado">
-                                <div class="a-dato-qr-r roboto">Edad</div>
-                                <div class="b-dato-qr-r roboto" id="edad_id">2 Años</div>
-                                                                
-                            </div>
-                            <div class="caja-datos-qr-realizado">
-                                <div class="a-dato-qr-r roboto">Sexo</div>
-                                <div class="b-dato-qr-r roboto" id="sexo_id">Femenino</div>
-
-                                
-                            </div>
-                            <div class="caja-datos-qr-realizado">
-                                <div class="a-dato-qr-r roboto">Raza</div>
-                                <div class="b-dato-qr-r roboto" id="raza_id">Pitbull</div>
-                                
-                            </div>
 
                         </div>
 
                     </div>
-                    
-                    
+
+
                 </div>
-            </div>
-            <button onclick="displayConfirm(this)">Se perdio mi mascota</button>
-        </div>
-
-        <div class="fondo_qr_responsive">
-            <div class="contenedor_todo_qr">
 
 
-                <div class="me_encontraste sigmar">
-                    <p>¡ME ENCONTRASTE!</p>
-                </div>
-                <div class="mega_tarjeta_mascota_qr">
-                    <div class="contenedor_img1">
-                        <div class="foto_1">
-                            <div class="nombre_mascota_reponsive_qr lexend ">
-                                <P>Juanita</P>
-                            </div>
-                        </div>
-                    </div>
-                
-                 
-                 
-                    <div class="contenedores_datos_mascota">
-                    
-                        <div class="tituli_contenedor_responsive_qr lexend">
-                            <p>Mascota</p>
-                        </div>
-
-                        <div class="tituli_contenedor_responsive_qr2 lexend">
-                            <p>Dueño</p>
-                        </div>
-
-                        <div class="caja_contenedora_datos_qr_reponsive arriba_caja_contenedora_datos_qr_reponsive">
-                            <div class="contenedor_color_dartos_qr_re">
-                                <div class="color_pate_iz1 lexend"><P>Edad</P></div>
-                                <div class="color_pate_dr1 roboto2"> 2 Años</div>
-                            </div>
-                            <div class="contenedor_color_dartos_qr_re">
-                                <div class="color_pate_iz1 lexend">Sexo</div>
-                                <div class="color_pate_dr1 roboto2">Femenino</div>
-                            </div>
-                            <div class="contenedor_color_dartos_qr_re">
-                                <div class="color_pate_iz1 lexend">Raza</div>
-                                <div class="color_pate_dr1 roboto2">Pitbull</div>
-                            </div>
-                     
-                        </div>
-                        <div class="caja_contenedora_datos_qr_reponsive arriba_caja_contenedora_datos_qr_reponsive">
-                            <div class="contenedor_color_dartos_qr_re">
-                                <div class="color_pate_iz222 lexend"><P>Nombre</P></div>
-                                <div class="color_pate_dr222 roboto2">Daniel Gimenez</div>
-                            </div>
-                            <div class="contenedor_color_dartos_qr_re2">
-                                <div class="color_pate_iz2 lexend">Enviar Mensaje</div>
-                                <a href="https://wa.me/541162444423" class="color_pate_dr2 roboto2">
-                                <div class="caja_img_wp_qr_re"><img src="img/whatsapp-fill.svg" alt="whatsapp">                                </div>
-                                </a>
-                            </div>
-                          
-                     
-                        </div> 
-                    </div>
+                <div class="caja-mascota-info-foto-qr-marcota-realizadob">
 
 
-                    <div class="contenedores_datos_mascota2">
-                        <div class="tituli_contenedor_responsive_qr3 lexend">
+                    <div class="caja-ubicacion-mascota-qr-realizado">
+                        <div class="titulo-info-qr-realizado lexend">
                             <p>Ubicación</p>
                         </div>
-                        <div class="caja_contenedora_datos_qr_reponsive">
-                            <iframe class="img-ubicacion-qr-realizado2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26312.465050589446!2d-58.76746792293106!3d-34.476049543910825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc988e12661a07%3A0xa51def392da2533!2sTortuguitas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1693261106036!5m2!1ses-419!2sar" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="a-linea-qr-realizado"></div>
+                        <iframe class="img-ubicacion-qr-realizado"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26312.465050589446!2d-58.76746792293106!3d-34.476049543910825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc988e12661a07%3A0xa51def392da2533!2sTortuguitas%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1693261106036!5m2!1ses-419!2sar"
+                            width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="caja-info-dueño-qr-realizado">
+                        <div class="titulo-info-qr-realizado lexend">
+                            <p>Dueño</p>
                         </div>
+                        <div class="a-linea-qr-realizado"></div>
+
+                        <div class="datos-dueño-qr-realizado">
+
+                            <div class="caja-datos-dueño-qr-realizado">
+                                <div class="a-dato-qr-r roboto">
+                                    <p>Nombre</p>
+                                </div>
+                                <div class="b-dato-qr-r roboto">Ivan Rossini</div>
+
+                            </div>
+
+                            <div class="caja-datos-dueño-qr-realizado">
+                                <div class="a-dato-qr-r roboto">Telefono</div>
+                                <a href='https://wa.me/541162444423'>
+                                    <div class="b-dato-qr-r roboto"> +54 9 11 5343 8743</div>
+                                </a>
+
+                            </div>
+                            <div class="caja-datos-dueño-qr-realizado">
+                                <div class="a-dato-qr-r roboto">Gmail</div>
+                                <div class="b-dato-qr-r roboto">ivan@gmail.com</div>
+
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
-        </div>
 
-    </content>
+
+
+            <!-- <div class="cajacontenedora-explicacion_recompensas">
+                <div class="titulo-recom lexend">
+                    <P>Niveles de Recompensas</P>
+                </div>
+                <div class="linea_recom"></div>
+                <div class="contenedor_t_d_r">
+
+                    <div class="caja_recompensas">
+                        <div class="titulo_tipo_de_recompensa lexend">EFECTIVO</div>
+                        <div class="linea_tarjeta_recompensas"></div>
+                        <div class="img_tipo_recompensas tipo_efectivo"></div>
+                        <div class="explic_tipo_recompensa roboto">
+                            <p>Una cantidad de dinero como agradecimiento por encontrar y devolver a la mascota perdida.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caja_recompensas">
+                        <div class="titulo_tipo_de_recompensa lexend">REGALO</div>
+                        <div class="linea_tarjeta_recompensas"></div>
+                        <div class="img_tipo_recompensas tipo_regalo"></div>
+                        <div class="explic_tipo_recompensa roboto">
+                            <p>Dar regalos o productos como recompensa por encontrar y devolver a la mascota perdida.</p>
+                        </div>
+                    </div>
+                    <div class="caja_recompensas">
+                        <div class="titulo_tipo_de_recompensa lexend">GRACIAS</div>
+                        <div class="linea_tarjeta_recompensas"></div>
+                        <div class="img_tipo_recompensas tipo_gracias"></div>
+                        <div class="explic_tipo_recompensa roboto">
+                            <p>Agradecen sin ofrecer recompensa material, expresando su gratitud verbalmente o con gestos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div class="caja-contenedora-footer">
@@ -346,34 +361,16 @@ else{
             console.log(edad);
             console.log(sexo);
             console.log(raza);
-            document.getElementById("nombre_id").innerHTML = nombre;
-            document.getElementById("edad_id").innerHTML = edad;
-            document.getElementById("sexo_id").innerHTML = sexo;
-            document.getElementById("raza_id").innerHTML = raza;
+            // document.getElementById("nombre_id").innerHTML = nombre;
+            // document.getElementById("edad_id").innerHTML = edad;
+            // document.getElementById("sexo_id").innerHTML = sexo;
+            // document.getElementById("raza_id").innerHTML = raza;
             document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
         }
         hola();
-
-        async function displayConfirm(element){
-            var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
-            console.log(datos_mascotas);
-            var id_mascota = datos_mascotas[0].id_mascota;
-            if (confirm("¿Realmente desea dar esta mascota como perdida?") == true) {
-
-                const response = await fetch("api/usuario/busquedaMascota/" + id_mascota + "/");
-
-                console.log(response);
-
-                const data = await response.json();
-
-                console.log(data);
-                window.location.href = "https://mattprofe.com.ar/alumno/great_pet/mis_mascotas.php/";
-            }
-        }
-
     </script>
 
-    <script src="ir_atras.js"></script>
+    <script src="menu_responsive.js"></script>
 
 </body>
 

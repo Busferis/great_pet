@@ -51,13 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 }
 
-if (isset($_SESSION["registro_exitoso"])) {
-    if ($_SESSION["registro_exitoso"] == true) {
-        echo "Registro exitoso. Ahora puedes iniciar sesión.";
-        unset($_SESSION["registro_exitoso"]);
-    }
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -75,6 +68,31 @@ if (isset($_SESSION["registro_exitoso"])) {
 	crossorigin="anonymous"> -->
 </head>
 <body class="releway">
+
+	<?php
+
+	if (isset($_SESSION["registro_exitoso"])) {
+	    if ($_SESSION["registro_exitoso"] == true) {
+	        echo "<div style='display: flex;
+	    	background-color: white;
+	    	height: 50px;
+	    	align-items: center;
+	    	font-weight: bold;
+	    	justify-content: center;''>Hemos enviado un correo de verificación a su dirección. Por favor, verifique su correo electrónico para completar el registro.</div>";
+	        unset($_SESSION["registro_exitoso"]);
+	    }
+	}
+
+	if (isset($_GET["verify"])) {
+	   echo "<div style='display: flex;
+	    	background-color: white;
+	    	height: 50px;
+	    	align-items: center;
+	    	font-weight: bold;
+	    	justify-content: center;''>Holo</div>"
+	}
+
+	?>
 	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
 	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
 	crossorigin="anonymous"></script> -->

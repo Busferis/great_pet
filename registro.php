@@ -7,6 +7,10 @@ if (isset($_SESSION["id_usuario"])) {
     exit();
 }
 
+$msg1 = false;
+$mgs2 = false;
+$mgs3 = false;
+
 if (isset($_POST["email"]) && isset($_POST["password"])) {
         $con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
 
@@ -18,7 +22,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         // $confirmarPassword = $_POST["confirmar_password"];
 
         if (!isset($_POST["politica_privacidad"])) {
-            echo "Debes aceptar la Política de Privacidad antes de continuar.";
+            $msg1 = true;
         }
 
         // else if ($password !== $confirmarPassword) {
@@ -29,7 +33,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
             $res = mysqli_query($con, $sql);
 
             if (mysqli_num_rows($res) > 0) {
-            	echo "El email ya está registrado.";
+            	$msg2 = true;
             } else {
                 $insertarSql = "INSERT INTO `usuarios` (email, contraseña, nombre, apellido, localidad, contacto, fechaRegistro)
                  VALUES ('$email', '$password', '$nombre', '$apellido', '$localidad', '', CURRENT_TIMESTAMP)";
@@ -38,7 +42,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                     header("Location: login.php");
                     exit();
                 } else {
-                    echo "Error en el registro. Por favor, inténtalo de nuevo.";
+                    $msg3 = true;
                 }
             }
         }
@@ -57,6 +61,38 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     <link rel="stylesheet" href="css/registro.css">
 </head>
 <body class="releway">
+
+    <?php
+
+        if (isset($msg1) && $msg1 == true) {
+           echo "<div style='display: flex;
+           background-color: white;
+           height: 50px;
+           align-items: center;
+           font-weight: bold;
+           justify-content: center;''>Debe aceptar la Política de Privacidad antes de continuar.</div>";
+        }
+
+        if (isset($msg2) && $msg2 == true) {
+           echo "<div style='display: flex;
+           background-color: white;
+           height: 50px;
+           align-items: center;
+           font-weight: bold;
+           justify-content: center;''>El email ya está registrado.</div>";
+        }
+
+        if (isset($msg3) && $msg3 == true) {
+           echo "<div style='display: flex;
+           background-color: white;
+           height: 50px;
+           align-items: center;
+           font-weight: bold;
+           justify-content: center;''>Error en el registro. Por favor, inténtalo de nuevo.</div>";
+        }
+
+    ?>
+
     <div class="caja_contenedora_login_img">
 
     <div class="img-logo-gp"></div>
@@ -69,7 +105,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                     <input type="text" name="nombre" placeholder="Nombre" class="nombre_apellido" required>
                     <input type="text" name="apellido" placeholder="Apellido" class="nombre_apellido" required>
                 </div>
-                <input type="email" name="email" placeholder="Correo electronico" required>
+                <input type="email" name="email" id="txtDestinatario" placeholder="Correo electronico" required>
                 <input type="number" name="telefono" placeholder="Numero. ej: 1123624722" required>
                 <select name="localidad" class="localidad">
                     <option value="Tortuguitas">Tortuguitas</option>
@@ -91,7 +127,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                 <input type="checkbox" name="politica_privacidad"><label>Acepto la <a href="politica_de_privacidad.php">Politica de Privacidad</a> de Great Pet</label>
             </div>
             <div class="button">
-                <input type="submit" value="Registrar">
+                <input type="submit" id="btnSubmit" value="Registrar">
             </div>
             <script>
                 function myFunction() {
@@ -114,5 +150,6 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
 
 
     </div>
+    <script type="text/javascript" src="funciones.js"></script> 
 </body>
 </html>

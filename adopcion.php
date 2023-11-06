@@ -297,7 +297,7 @@ $_SESSION["pagina"] = 2;
                     </div>
 
                 </div>
-                <div class="linea-filtro-adopcion-tarjetas"></div>
+                <!-- <div class="linea-filtro-adopcion-tarjetas"></div> -->
                 <div id="btn__control" class="btn__control">
                     <button id="btn__previous" class="boton_s_a roboto">Atras</button>
                     <div id="visor__page" class="numero_pestaña roboto"></div>

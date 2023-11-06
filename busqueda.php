@@ -224,7 +224,7 @@ $_SESSION["pagina"] = 3;
                 </div>
 
                 <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                    <a href="mas-info-busqueda.html">
+                    <a href="mas-info-busqueda.php" onclick="idmascota(this)">
                         <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
                             Ver Mas
                         </div>
@@ -497,7 +497,7 @@ $_SESSION["pagina"] = 3;
             const tpl = tpl__carnet.content
             const clon = tpl.cloneNode(true);
 
-            clon.querySelector(".tarjeta1-busqueda-mini-descripcion").setAttribute("id-card", "carnet-" + info.id_adoptable);
+            clon.querySelector(".tarjeta1-busqueda-mini-descripcion").setAttribute("id-card", info.id_mascota);
             clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
             clon.querySelector(".caja1_minidescripcion_der1").innerHTML = info.sexo;
             clon.querySelector(".caja1_minidescripcion_der2").innerHTML = info.raza;
@@ -515,6 +515,22 @@ $_SESSION["pagina"] = 3;
 
 
             listado1.appendChild(clon)
+        }
+
+        async function idmascota(element){
+            const petCard = event.currentTarget.closest('.tarjeta1-busqueda-mini-descripcion');
+            const petId = petCard.getAttribute('id-card');
+            const response = await fetch("api/usuario/buscar/" + petId + "/");
+
+            console.log("holaa"+petId);
+
+            const data = await response.json();
+
+            sessionStorage.setItem("mascota", JSON.stringify(data));
+
+            console.log(data);
+
+            return data;
         }
 
     </script>
