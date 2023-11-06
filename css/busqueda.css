@@ -108,11 +108,12 @@
 .caja-contenedora-tarjetas-adopcion {
     /* background-color: #ffa75a; */
     margin-top: 50px;
-    height: 2050px;
+    height: auto;
     width: 1400px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 200px;
 }
 
 .caja-filtro-adopcion {
@@ -838,6 +839,104 @@
     color: #603813;
 }
 
+
+/*                           CARTEL ADOPTAR BUSQUEDA                         */
+
+.contenedora-centrar_caja_adoptar_buscar {
+    background-color: #f7cdaa;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+/*    margin-bottom: 200px;*/
+}
+
+
+.caja_adoptar_buscar {
+/*    background-color: #66339973;*/
+    height: 100%;
+    width: 1400px;
+    display: flex;
+}
+
+
+.titulo_texto_botom_ {
+/*    background-color: red;*/
+    width: 74%;
+    height: 100%;
+    padding: 45px 0 0 0;
+}
+
+.contenedor_img_registrar_mascota{
+/*    background-color: blue;*/
+    width: 26%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.img_registrar_mascota {
+    background-image: url(../img/busqueda-tarjeta.png);
+    background-size: cover;
+/*    background-color: rebeccapurple;*/
+    background-image: center;
+    width: 324px;
+    height: 330px;
+}
+
+
+.titulo_cartel_registrar {
+    width: 100%;
+    font-size: 40pt;
+    color: #ffa75a;
+    display: flex;
+    justify-content: start;
+    padding: 0 0 0 30px;
+}
+
+.texto_cartel_registrar {
+/*    background-color: aqua;*/
+    font-size: 24pt;
+    padding: 0 60px 0 30px;
+    color: #603813;
+    margin-top: 10px;
+}
+
+.boton_cartel_registrar {
+    width: 100%;
+/*    background-color: beige;*/
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.link_dar_en_adopcion {
+    background-color: #ffa75a;
+    text-decoration: none;
+    color: white;
+    border: #efc49f 4px solid;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 20pt;
+    letter-spacing: 2px;
+    transition: all 0.1s;
+
+}
+
+.link_dar_en_adopcion:hover{
+    border: white 4px solid;
+    background-color: #ffa75a7a;
+}
+
+
+
+/*                        FIN   CARTEL ADOPTAR BUSQUEDA                         */
 
 
 

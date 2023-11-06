@@ -306,7 +306,22 @@ $_SESSION["pagina"] = 3;
 
 
 
+    <div class="contenedora-centrar_caja_adoptar_buscar">
 
+        <div class="caja_adoptar_buscar">
+            <div class="titulo_texto_botom_">
+                <div class="titulo_cartel_registrar lexend">Como Buscar tu Mascota</div>
+                <div class="texto_cartel_registrar roboto">Si quieres encontrar a tu mascota, te animamos a publicar su información en nuestra página. ¡Comencemos!</div>
+                <div class="boton_cartel_registrar">
+                    <a class="link_dar_en_adopcion releway" href="mis_mascotas.php">Buscar</a>
+                </div>
+            </div>
+            <div class="contenedor_img_registrar_mascota">
+            <div class="img_registrar_mascota"></div>
+            </div>
+        </div>
+
+    </div>
 
 
 
