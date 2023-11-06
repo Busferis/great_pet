@@ -329,6 +329,7 @@
     background-size: cover;
 }
 
+
 .tito_img-perro-en-adopcion {
     position: relative;
     background-image: url("../img/tito_calderon.jpg");
@@ -899,7 +900,7 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    margin-bottom: 200px;
+/*    margin-bottom: 200px;*/
 }
 
 
