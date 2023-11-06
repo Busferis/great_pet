@@ -83,13 +83,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	    }
 	}
 
-	if (isset($_GET["verify"])) {
-	   echo "<div style='display: flex;
+	if (isset($_SESSION["verificacion_exitosa"])) {
+	    if ($_SESSION["verificacion_exitosa"] == true) {
+	        echo "<div style='display: flex;
 	    	background-color: white;
 	    	height: 50px;
 	    	align-items: center;
 	    	font-weight: bold;
-	    	justify-content: center;''>Holo</div>"
+	    	justify-content: center;''>Su cuenta ha sido confirmada con éxito</div>";
+	        unset($_SESSION["verificacion_exitosa"]);
+	    }
 	}
 
 	?>

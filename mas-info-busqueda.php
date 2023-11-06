@@ -6,10 +6,9 @@ if (isset($_SESSION["nombre"])) {
 }
 if (isset($_SESSION["id_usuario"])) {
     $id_usuario = $_SESSION["id_usuario"];
-}
-else{
-    header("Location: index.php");
-    exit();
+    $modo = 1;
+} else{
+    $modo = 0;
 }
 
 ?>
@@ -40,6 +39,29 @@ else{
 </head>
 
 <body>
+
+    <template id="tpl__carnet1">
+        <div class="redesu roboto">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombre.'' ?>
+                    <span class="material-icons-outlined dropbtn flecha_abajo">
+                        expand_more
+                    </span></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="mi_usuario.php" class="opciones roboto">Mi Perfil</a>
+                    <a href="mis_mascotas.php" class="opciones roboto">Mis Mascotas</a>
+                    <a href="logout.php" class="opciones roboto">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="tpl__carnet2">
+        <div class="redes roboto">
+            <a href="login.php" class="registrarse">Iniciar sesión</a>
+        </div>
+    </template>
+
     <header>
         <div class="headersi">
 
@@ -96,18 +118,8 @@ else{
                 </ul>
             </nav>
 
-            <div class="redesu roboto">
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombre.'' ?>
-                        <span class="material-icons-outlined dropbtn flecha_abajo">
-                            expand_more
-                        </span></button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="mi_usuario.php" class="opciones roboto">Mi Perfil</a>
-                        <a href="mis_mascotas.php" class="opciones roboto">Mis Mascotas</a>
-                        <a href="logout.php" class="opciones roboto">Cerrar sesión</a>
-                    </div>
-                </div>
+            <div id="boton_sesion">
+                
             </div>
 
             <script src="menu/script.js"></script>
@@ -142,7 +154,7 @@ else{
                         </div>
                         <div class="linea-qr-realizado"></div>
                         <div class="datos-qr-realizado roboto">
-                            Melly, una perra de 6 meses, está perdida y necesitamos encontrarla. Es probable que esté
+                            Laika, una gata de 10 meses, está perdida y necesitamos encontrarla. Es probable que esté
                             merodeando por zonas de Malvinas Argentinas. Lleva un collar rojo con el sistema QR de GREAT
                             PET.
 
@@ -368,6 +380,23 @@ else{
             document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
         }
         hola();
+
+        function modo(){
+            var modo=<?php echo $modo; ?>;
+            boton_sesion.innerHTML = "";
+            if (modo==1) {
+                const tpl = tpl__carnet1.content
+                const clon = tpl.cloneNode(true);
+                boton_sesion.appendChild(clon);
+            }
+            if (modo==0) {
+                const tpl = tpl__carnet2.content
+                const clon = tpl.cloneNode(true);
+                boton_sesion.appendChild(clon);
+            }
+        }
+
+        modo();
     </script>
 
     <script src="menu_responsive.js"></script>

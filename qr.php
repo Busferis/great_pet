@@ -337,7 +337,7 @@ $_SESSION["pagina"] = 4;
         imagen = document.createElement("img");
         new QRious({
             element: imagen,
-            value: "https://mattprofe.com.ar/alumno/great_pet/info-qr.html?id_mascota=" + id,
+            value: "https://mattprofe.com.ar/alumno/great_pet/info-qr.php?id_mascota=" + id,
             size: 500,
             backgroundAlpha: 0,
             foreground: "black",
