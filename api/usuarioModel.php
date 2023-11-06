@@ -225,6 +225,33 @@
 			return $list;
 
 		}
+
+		public function busquedaMascota2($id_busqueda2){
+
+			$id_value4 = $id_busqueda2[0];
+
+			$sql = "UPDATE mascotas SET estado = '' WHERE id_mascota ='".$id_value4."'";
+
+			if($response = $this->db->query($sql) === TRUE){
+				echo "Record updated successfully";
+			} else {
+			  	echo "Error updating record: " . $conn->error;
+			}
+
+			$list = array("errno" => 400, "error" => "No hay mascotas");
+
+			if($response->num_rows > 0 ){
+
+				// responde con una matriz asociativa
+				$list = $response->fetch_all(MYSQLI_ASSOC);
+
+				// $list = array_merge(array("errno" => 200, "error" => "Se han listado usuarios", "num_rows" => $response->num_rows), $list);
+
+			}
+
+			return $list;
+
+		}
 	}
 
 

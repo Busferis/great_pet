@@ -116,6 +116,14 @@ else{
 
     <content>
 
+        <template id="tpl_boton1">
+            <button onclick="displayConfirmPerdido(this)">Se perdio mi mascota</button>
+        </template>
+
+        <template id="tpl_boton2">
+            <button onclick="displayConfirmEncontrado(this)">Se encontro a mi mascota</button>
+        </template>
+
         <div class="contenedor-qr-realizado-main-adopcion">
             <div class="caja-centradora-qr-realizado">
                 <button onclick="goBack()" class="boton_ir_atras"><span class="material-icons-outlined flecha_ir_atras">
@@ -167,7 +175,9 @@ else{
                     
                 </div>
             </div>
-            <button onclick="displayConfirm(this)">Se perdio mi mascota</button>
+            <div id="boton">
+                
+            </div>
         </div>
 
         <div class="fondo_qr_responsive">
@@ -342,6 +352,7 @@ else{
             var sexo = datos_mascotas[0].sexo;
             var raza = datos_mascotas[0].raza;
             var imagen = datos_mascotas[0].imagen;
+            var estado = datos_mascotas[0].estado;
             console.log(nombre);
             console.log(edad);
             console.log(sexo);
@@ -351,24 +362,63 @@ else{
             document.getElementById("sexo_id").innerHTML = sexo;
             document.getElementById("raza_id").innerHTML = raza;
             document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
+            createButton(estado);
         }
         hola();
 
-        async function displayConfirm(element){
+        async function displayConfirmPerdido(element){
             var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
             console.log(datos_mascotas);
             var id_mascota = datos_mascotas[0].id_mascota;
+            var estado = datos_mascotas[0].estado;
             if (confirm("¿Realmente desea dar esta mascota como perdida?") == true) {
 
                 const response = await fetch("api/usuario/busquedaMascota/" + id_mascota + "/");
 
                 console.log(response);
 
+                redirectToNewPage();
+
                 const data = await response.json();
 
                 console.log(data);
-                window.location.href = "https://mattprofe.com.ar/alumno/great_pet/mis_mascotas.php/";
             }
+        }
+
+        async function displayConfirmEncontrado(element){
+            var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
+            console.log(datos_mascotas);
+            var id_mascota = datos_mascotas[0].id_mascota;
+            var estado = datos_mascotas[0].estado;
+            if (confirm("¿Realmente desea dar esta mascota como encontrada?") == true) {
+
+                const response = await fetch("api/usuario/busquedaMascota2/" + id_mascota + "/");
+
+                console.log(response);
+
+                redirectToNewPage();
+
+                const data = await response.json();
+
+                console.log(data);
+            }
+        }
+
+        function createButton(estado){
+            console.log(estado);
+            if (estado == "Perdido") {
+                const tpl = tpl_boton2.content
+                clon = tpl.cloneNode(true);
+            } else {
+                const tpl = tpl_boton1.content
+                clon = tpl.cloneNode(true);
+            }
+            
+            boton.appendChild(clon)
+        }
+
+        function redirectToNewPage() {
+           window.location.replace('https://mattprofe.com.ar/alumno/great_pet/mis_mascotas.php');
         }
 
     </script>
