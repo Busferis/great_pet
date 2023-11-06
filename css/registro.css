@@ -44,6 +44,11 @@ body{
     justify-content: center;
 }
 
+.body_modif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .caja_contenedora_login_img{
     /* background: #ffe4c46b; */
     width: 100%;
@@ -75,7 +80,13 @@ body{
     border-radius: 15px;
     width: auto;
     height: auto;
+
 }
+
+.registro_modif{
+    height: 330px;
+}
+
 
 
 .titulo_i_s {
