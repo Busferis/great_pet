@@ -345,14 +345,24 @@ else{
     <script type="text/javascript">
 
         async function hola(){
-            var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
-            console.log(datos_mascotas);
-            var nombre = datos_mascotas[0].nombre;
-            var edad = datos_mascotas[0].edad;
-            var sexo = datos_mascotas[0].sexo;
-            var raza = datos_mascotas[0].raza;
-            var imagen = datos_mascotas[0].imagen;
-            var estado = datos_mascotas[0].estado;
+            var petId = sessionStorage.getItem("mascota");
+            console.log(petId);
+            const response = await fetch("api/usuario/buscar/" + petId + "/");
+            console.log("holaa"+petId);
+            const data = await response.json();
+            console.log(data);
+            holo(data);
+            return data;
+        }
+        hola();
+
+        async function holo(data){
+            var nombre = data[0].nombre;
+            var edad = data[0].edad;
+            var sexo = data[0].sexo;
+            var raza = data[0].raza;
+            var imagen = data[0].imagen;
+            var estado = data[0].estado;
             console.log(nombre);
             console.log(edad);
             console.log(sexo);
@@ -364,20 +374,23 @@ else{
             document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
             createButton(estado);
         }
-        hola();
 
         async function displayConfirmPerdido(element){
-            var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
-            console.log(datos_mascotas);
-            var id_mascota = datos_mascotas[0].id_mascota;
-            var estado = datos_mascotas[0].estado;
+            var petId = sessionStorage.getItem("mascota");
+            console.log(petId);
+            const response = await fetch("api/usuario/buscar/" + petId + "/");
+            console.log("holaa"+petId);
+            const data = await response.json();
+            console.log(data);
+            var id_mascota = data[0].id_mascota;
+            var estado = data[0].estado;
             if (confirm("¿Realmente desea dar esta mascota como perdida?") == true) {
 
                 const response = await fetch("api/usuario/busquedaMascota/" + id_mascota + "/");
 
                 console.log(response);
 
-                redirectToNewPage();
+                redirectToNewPage2();
 
                 const data = await response.json();
 
@@ -386,10 +399,14 @@ else{
         }
 
         async function displayConfirmEncontrado(element){
-            var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
-            console.log(datos_mascotas);
-            var id_mascota = datos_mascotas[0].id_mascota;
-            var estado = datos_mascotas[0].estado;
+            var petId = sessionStorage.getItem("mascota");
+            console.log(petId);
+            const response = await fetch("api/usuario/buscar/" + petId + "/");
+            console.log("holaa"+petId);
+            const data = await response.json();
+            console.log(data);
+            var id_mascota = data[0].id_mascota;
+            var estado = data[0].estado;
             if (confirm("¿Realmente desea dar esta mascota como encontrada?") == true) {
 
                 const response = await fetch("api/usuario/busquedaMascota2/" + id_mascota + "/");
@@ -419,6 +436,10 @@ else{
 
         function redirectToNewPage() {
            window.location.replace('https://mattprofe.com.ar/alumno/great_pet/mis_mascotas.php');
+        }
+
+        function redirectToNewPage2() {
+           window.location.replace('https://mattprofe.com.ar/alumno/great_pet/publicar_busqueda.php');
         }
 
     </script>
