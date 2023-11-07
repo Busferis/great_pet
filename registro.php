@@ -66,8 +66,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     <?php
 
         if (isset($msg1) && $msg1 == true) {
-           echo "<div style='display: flex;
-           background-color: white;
+           echo "<div style='display: flex;     
+            background-color: #ff000070;
+            color: white;
            height: 50px;
            align-items: center;
            font-weight: bold;
@@ -76,7 +77,8 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
 
         if (isset($msg2) && $msg2 == true) {
            echo "<div style='display: flex;
-           background-color: white;
+           background-color: #37ff0066;
+           color:white;
            height: 50px;
            align-items: center;
            font-weight: bold;
@@ -84,8 +86,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         }
 
         if (isset($msg3) && $msg3 == true) {
-           echo "<div style='display: flex;
-           background-color: white;
+           echo "<div style='display: flex;     
+           background-color: #ff000070;
+           color: white;
            height: 50px;
            align-items: center;
            font-weight: bold;

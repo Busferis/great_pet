@@ -79,7 +79,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_SESSION["registro_exitoso"])) {
 	    if ($_SESSION["registro_exitoso"] == true) {
 	        echo "<div style='display: flex;
-	    	background-color: white;
+	        background-color: #ffa700a1;
+    		color: white;
 	    	height: 50px;
 	    	align-items: center;
 	    	font-weight: bold;
@@ -91,7 +92,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_SESSION["verificacion_exitosa"])) {
 	    if ($_SESSION["verificacion_exitosa"] == true) {
 	        echo "<div style='display: flex;
-	    	background-color: white;
+            background-color: #37ff0066;
+           	color:white;
 	    	height: 50px;
 	    	align-items: center;
 	    	font-weight: bold;
@@ -101,8 +103,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 
 	if (isset($msg) && $msg == true) {
-           echo "<div style='display: flex;
-           background-color: white;
+           echo "<div style='display: flex;       
+    	   background-color: #ff000070;
+    	   color: white;
            height: 50px;
            align-items: center;
            font-weight: bold;
