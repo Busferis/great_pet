@@ -1,0 +1,349 @@
+<?php
+session_start();
+
+if (isset($_SESSION["nombre"])) {
+    $nombre = $_SESSION["nombre"];
+}
+if (isset($_SESSION["id_usuario"])) {
+    $id_usuario = $_SESSION["id_usuario"];
+    $modo = 1;
+} else{
+    $modo = 0;
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo_pestaña.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/adopcion.css">
+    <link rel="stylesheet" type="text/css" href="menu/styles.css">
+
+    <title>Great Pet</title>
+</head>
+
+<body>
+
+	<template id="tpl__carnet1">
+        <div class="redesu roboto">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn a"><?php echo ''.$nombre.'' ?>
+                    <span class="material-icons-outlined dropbtn flecha_abajo">
+                        expand_more
+                    </span></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="mi_usuario.php" class="opciones roboto">Mi Perfil</a>
+                    <a href="mis_mascotas.php" class="opciones roboto">Mis Mascotas</a>
+                    <a href="logout.php" class="opciones roboto">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="tpl__carnet2">
+        <div class="redes roboto">
+            <a href="login.php" class="registrarse">Iniciar sesión</a>
+        </div>
+    </template>
+
+    <header>
+        <div class="headersi">
+            <a href="index.php">
+                <img class="img-header FOTO-LOGO" src="img/logo_definitivo.png" alt="s">
+            </a>
+            <div class="navegacion roboto">
+                <a class="TEXTO-LINK" href="index.php">
+                    <h3>Inicio</h3>
+                </a>
+                <a class="TEXTO-LINK" href="adopcion.php">
+                    <h3>Adopción</h3>
+                </a>
+                <a class="TEXTO-LINK" href="busqueda.php">
+                    <h3>Búsqueda</h3>
+                </a>
+                <a class="TEXTO-LINK" href="qr.php">
+                    <h3>QR</h3>
+                </a>
+                <a class="TEXTO-LINK" href="servicios.php">
+                    <h3>Servicios</h3>
+                </a>
+            </div>
+            <div id="boton_sesion">
+                
+            </div>
+            <script src="menu/script.js"></script>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <main>
+
+        <div class="contenedor-MAS-main-adopcion">
+            <div class="contenedora_caja_mas_info">
+
+                <div class="caja-mas-info-mascotas">
+                    <div class="caja-titulo-mas-sobre-mi">
+                        <div class="titulo-mas-sobre-mi sigmar">
+                            <H2>MAS SOBRE MI </H2>
+                        </div>
+                    </div>
+                    <div class="contenedora-foto-historia">
+                        <div class="imagen-animal-ver-mas">
+                            <div class="FOTO-animal-ver-mas" id="imagen"></div>
+                            <div class="contenedor_nombre_mascota_ver_mas">
+                                <div class="nombre_mascota_ver_mas lexend" id="nombre">Rocky</div>
+                            </div>
+                        </div>
+
+                        <div class="historia-animal-ver-mas">
+                            <div class="titulo_historia_ver_mas lexend">
+                                <H3>MI HISTORIA</H3>
+                            </div>
+                            <div class="linea_titulo_descripcion_historia"></div>
+                            <div class="dedscripcion_historia_ver_mas roboto">
+                                <p id="descripcion"> Rocky es un perro Beagle de 2 años que está en busca de un hogar donde le brinden mucho amor y protección. Es un perro juguetón y se lleva muy bien con los niños.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caja-info_refuguio_ver_mas">
+                        <div class="info_refuguio_ver_mas">
+                            <div class="titulo_refuguio_ver_mas lexend">
+                                REFUGIO
+                            </div>
+                            <div class="linea-refugio-ver-mas">
+                            </div>
+
+                            <div class="contatos_imagen_refugio_ver_mas">
+
+                                <div class="contenedor_img_refuguio_ver_mas">
+                                    <div class="img_refuguio_ver_mas"></div>
+                                </div>
+
+                                <div class="cajas_contactos_refuguio_ver_mas">
+                                    <div class="cajas_contenedoras_contactos_ver_mas ">
+
+                                        <div class="mail_telefono_refugio_ver_mas roboto">
+                                            <span class="material-icons-outlined icons_telefono_mail">
+                                                call
+                                            </span>
+                                            <p><U>+54 9 11 3465 3456</U></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="cajas_contenedoras_contactos_ver_mas ">
+
+
+                                        <div class="mail_telefono_refugio_ver_mas roboto">
+                                            <span class="material-icons-outlined icons_telefono_mail">
+                                                email
+                                            </span>
+                                            <P><u>huellasdeamor2120@gmail.com</u></P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+
+        <div class="fondo_caja_contenedora_raaum">
+            <div class="caja_contenedora_raaum">
+                <div class="titulo_raaum lexend">
+                    <p>RECOMENDACIONES <BR> AL ADOPTAR UNA MASCOTA</p>
+                </div>
+                <div class="linea_raaum"></div>
+                <div class="cajas_descripcion">
+                    <div class="caja_raaum">
+                        <div class="titulo_recomendaciones_raaum lexend"><p>Preparación de la casa</p></div>
+                        <div class="linea_recomendaciones_raaum"></div>
+                        <div class="descripcion_recomendaciones_raaum roboto"><p>Preparar la casa para la llegada de tu nueva mascota implica eliminar objetos peligrosos, crear un espacio propio con sus pertenencias y proteger los muebles y áreas que quieres mantener fuera de su alcance. También es importante asegurar puertas y ventanas, revisar la seguridad del jardín y tener a mano suministros como comida, agua y juguetes adecuados.</p></div>
+                    </div>
+                    <div class="caja_raaum">
+                        <div class="titulo_recomendaciones_raaum lexend"><p>¿Como alimentar a mi mascota?</p></div>
+                        <div class="linea_recomendaciones_raaum"></div>
+                        <div class="descripcion_recomendaciones_raaum roboto ">Alimentar correctamente a una mascota implica proporcionarle alimentos balanceados y específicos para su especie, en porciones controladas según su peso y nivel de actividad. Es esencial tener agua fresca disponible en todo momento. Evita alimentos tóxicos, realiza cambios de dieta gradualmente y ofrece golosinas con moderación. Consultar con un veterinario es clave para determinar las necesidades dietéticas específicas de tu mascota.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="caja-contenedora-footer">
+
+            <div class="caja-footer_1">
+                <img class="img-footer" src="img/logo-footer.png" alt="">
+            </div>
+
+            <div class="contenedor_caja_2_3_4">
+                <div class="caja-titulo-texto-footer">
+                    <div class="caja-footer_2-titulo">
+                        <div class="titulo-contactos-footer roboto">
+                            <h2>¿Quienes somos?</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="caja-footer_3-linea"></div>
+
+
+                    <div class="caja-footer_4-descripcion">
+                        <div class="caja-des caja-des1 roboto">
+
+                            <div class="a-footer">
+                                <a>
+                                    Great Peat es una asociación civil sin fines de lucro abocada a difundir, proteger y
+                                    promover los derechos de los animales.</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="caja-titulo-texto-footer">
+                    <div class="caja-footer_2-titulo">
+                        <div class="titulo-contactos-footer roboto">
+                            <h2>Contactos</h2>
+                        </div>
+                    </div>
+                    <div class="caja-footer_3-linea caja-footer_3-linea2"></div>
+                    <div class="caja-footer_4-descripcion">
+                        <div class="caja-des caja-dess roboto">
+
+                            <a href="mailto:dani.gimenez5330@gmail.com" >
+
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-regular fa-envelope" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Gmail</p>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/541162444423" enlaces_footer >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-whatsapp" style="color: #f7cdaa;"></i>
+                                    </div>
+                                    <p class="enlaces_footer">WhatsApp</p>
+                                </div>
+                            </a>
+
+                            <a href="#" >
+                                <div class="a-footer_1 lexend">
+                                    <div class="logo_contacto">
+                                        <i class="fa-brands fa-instagram" style="color: #f7cdaa;"></i>
+                                    </div>
+
+                                    <p class="enlaces_footer">Instagram</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+
+    	function modo(){
+            var modo=<?php echo $modo; ?>;
+            boton_sesion.innerHTML = "";
+            if (modo==1) {
+                const tpl = tpl__carnet1.content
+                const clon = tpl.cloneNode(true);
+                boton_sesion.appendChild(clon);
+            }
+            if (modo==0) {
+                const tpl = tpl__carnet2.content
+                const clon = tpl.cloneNode(true);
+                boton_sesion.appendChild(clon);
+            }
+        }
+
+        modo();
+
+        async function hola(){
+            var petId = sessionStorage.getItem("mascota");
+            console.log(petId);
+            const response = await fetch("api/usuario/buscar2/" + petId + "/");
+            console.log("holaa"+petId);
+            const data = await response.json();
+            console.log(data);
+            holo(data);
+            return data;
+        }
+        hola();
+
+        async function holo(data){
+            var nombre = data[0].nombre;
+            var imagen = data[0].imagen;
+            var descripcion = data[0].descripcion;
+            console.log(nombre);
+            document.getElementById("imagen").style.backgroundImage = "url('imgenes_perros/" + imagen + "')";
+            document.getElementById("descripcion").innerHTML = descripcion;
+            document.getElementById("nombre").innerHTML = nombre;
+        }
+    	
+    </script>
+
+</body>
+
+</html>
