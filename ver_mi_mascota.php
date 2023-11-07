@@ -117,11 +117,11 @@ else{
     <content>
 
         <template id="tpl_boton1">
-            <button onclick="displayConfirmPerdido(this)">Se perdio mi mascota</button>
+            <button onclick="displayConfirmPerdido(this)" class="estilos_botones roboto">Dar en Búsqueda</button>
         </template>
 
         <template id="tpl_boton2">
-            <button onclick="displayConfirmEncontrado(this)">Se encontro a mi mascota</button>
+            <button onclick="displayConfirmEncontrado(this)" class="estilos_botones estilos_botones_color roboto">Terminar Búsqueda</button>
         </template>
 
         <div class="contenedor-qr-realizado-main-adopcion">
@@ -137,7 +137,9 @@ else{
                 </div>
 
                 <div class="caja-mascota-info-foto-qr-marcota-realizado">
-                    <div class="caja-foto-mascota-qr-realizado" id="imagen"> </div>
+                    <div class="caja-foto-mascota-qr-realizado" id="imagen"> 
+                
+                </div>
 
                     <div class="caja-info-mascota-qr-realizado">
 
@@ -169,15 +171,23 @@ else{
                             </div>
 
                         </div>
-
-                    </div>
+                        </div>
+                    
                     
                     
                 </div>
-            </div>
-            <div id="boton">
+                    <div class="caja-estado_mascota">
+                    <div class="titulo-info-qr-realizado lexend"><p>Estado de Mascota</p></div>
+                    <div class="linea-qr-realizado linea-qr-realizado_estado"></div>
+                    <div class="contenedor_botones">
+                        <div id="boton"></div>
+                        <div id="a" class="estilos_botones roboto">BOTON 2</div>
+                    </div>
+                </div>
                 
+
             </div>
+
         </div>
 
         <div class="fondo_qr_responsive">
