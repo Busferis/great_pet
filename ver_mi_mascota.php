@@ -124,6 +124,14 @@ else{
             <button onclick="displayConfirmEncontrado(this)" class="estilos_botones estilos_botones_color roboto">Terminar Búsqueda</button>
         </template>
 
+        <template id="tpl_boton3">
+            <button onclick="displayConfirmPerdido(this)" class="estilos_botones roboto">Dar en Adopción</button>
+        </template>
+
+        <template id="tpl_boton4">
+            <button onclick="displayConfirmEncontrado(this)" class="estilos_botones estilos_botones_color roboto">Terminar Adopción</button>
+        </template>
+
         <div class="contenedor-qr-realizado-main-adopcion">
             <div class="caja-centradora-qr-realizado">
                 <button onclick="goBack()" class="boton_ir_atras"><span class="material-icons-outlined flecha_ir_atras">
@@ -181,7 +189,7 @@ else{
                     <div class="linea-qr-realizado linea-qr-realizado_estado"></div>
                     <div class="contenedor_botones">
                         <div id="boton"></div>
-                        <div id="a" class="estilos_botones roboto">BOTON 2</div>
+                        <div id="boton2"></div>
                     </div>
                 </div>
                 
@@ -442,6 +450,19 @@ else{
             }
             
             boton.appendChild(clon)
+        }
+
+        function createButton2(estado){
+            console.log(estado);
+            if (estado == "Perdido") {
+                const tpl = tpl_boton4.content
+                clon = tpl.cloneNode(true);
+            } else {
+                const tpl = tpl_boton3.content
+                clon = tpl.cloneNode(true);
+            }
+            
+            boton2.appendChild(clon)
         }
 
         function redirectToNewPage() {
