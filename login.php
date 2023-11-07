@@ -6,6 +6,8 @@ if (isset($_SESSION["id_usuario"])) {
     exit();
 }
 
+$msg = false;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_POST["email"]) && isset($_POST["password"])) {
 		$con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
@@ -44,9 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			} elseif ($_SESSION["pagina"] == 5){
 				header("Location: servicios.php");
 	        	exit();
+			} elseif (!isset($_SESSION["pagina"])){
+				header("Location: index.php");
+	        	exit();
 			}
 	    } else {
-	        echo "Correo o contraseña inválidos.";
+	        $msg = true;
 	    }
 	}
 }
@@ -94,6 +99,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	        unset($_SESSION["verificacion_exitosa"]);
 	    }
 	}
+
+	if (isset($msg) && $msg == true) {
+           echo "<div style='display: flex;
+           background-color: white;
+           height: 50px;
+           align-items: center;
+           font-weight: bold;
+           justify-content: center;''>Correo o contraseña inválidos.</div>";
+        }
 
 	?>
 	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
