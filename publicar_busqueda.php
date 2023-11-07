@@ -1,50 +1,21 @@
 <?php
 
-session_start();
-
-if (isset($_SESSION["id_usuario"])) {
-    header("Location: panel.php");
-    exit();
+if (isset($_GET['id'])){
+    $id = $_GET['id'];
 }
 
-$msg1 = false;
-$mgs2 = false;
-$mgs3 = false;
-
-if (isset($_POST["email"]) && isset($_POST["password"])) {
+if (isset($_POST["descripcion"]) && isset($_POST["fecha"])) {
         $con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
 
-        $nombre = $_POST["nombre"];
-        $apellido = $_POST["apellido"];
-        $email = $_POST["email"];
-        $password = md5($_POST["password"]);
-        $localidad = $_POST["localidad"];
+        $descripcion = $_POST["descripcion"];
+        $fecha = $_POST["fecha"];
         // $confirmarPassword = $_POST["confirmar_password"];
-
-        if (!isset($_POST["politica_privacidad"])) {
-            $msg1 = true;
-        }
-
-        // else if ($password !== $confirmarPassword) {
-        //     echo "Las contraseñas no coinciden.";
-        // } 
-        else {
-            $sql = "SELECT * FROM `usuarios` WHERE email = '$email'";
-            $res = mysqli_query($con, $sql);
-
-            if (mysqli_num_rows($res) > 0) {
-                $msg2 = true;
-            } else {
-                $insertarSql = "INSERT INTO `usuarios` (email, contraseña, nombre, apellido, localidad, contacto, fechaRegistro)
-                 VALUES ('$email', '$password', '$nombre', '$apellido', '$localidad', '', CURRENT_TIMESTAMP)";
-                if (mysqli_query($con, $insertarSql)) {
-                    $_SESSION["registro_exitoso"] = true;
-                    header("Location: login.php");
-                    exit();
-                } else {
-                    $msg3 = true;
-                }
-            }
+        $insertarSql = "UPDATE `mascotas` SET descripcion = '$descripcion', fecha_desaparicion = '$fecha' WHERE id_mascota = '$id'";
+        if (mysqli_query($con, $insertarSql)) {
+            header("Location: mis_mascotas.php");
+            exit();
+        } else {
+            echo "Error: " . $insertarSql . "<br>" . mysqli_error($con);
         }
 
     mysqli_close($con);
@@ -86,9 +57,6 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                 </div>
 
                 <div class="linea_mis_mascotas"></div>
-
-
-
 
                 <form action="" method="POST">
                     <div class="contenedor_tarjetas_mis_mascotas">

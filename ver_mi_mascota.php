@@ -390,7 +390,7 @@ else{
 
                 console.log(response);
 
-                redirectToNewPage2();
+                redirectToNewPage2(petId);
 
                 const data = await response.json();
 
@@ -438,8 +438,8 @@ else{
            window.location.replace('https://mattprofe.com.ar/alumno/great_pet/mis_mascotas.php');
         }
 
-        function redirectToNewPage2() {
-           window.location.replace('https://mattprofe.com.ar/alumno/great_pet/publicar_busqueda.php');
+        function redirectToNewPage2(petId) {
+           window.location.replace(`https://mattprofe.com.ar/alumno/great_pet/publicar_busqueda.php?id=${petId}`);
         }
 
     </script>
