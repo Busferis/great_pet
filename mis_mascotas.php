@@ -433,17 +433,9 @@
         async function idmascota(element){
             const petCard = event.currentTarget.closest('.tarjetas_mascotas_mis_mascotas');
             const petId = petCard.getAttribute('id-card');
-            const response = await fetch("api/usuario/buscar/" + petId + "/");
 
-            console.log("holaa"+petId);
+            sessionStorage.setItem("mascota", petId);
 
-            const data = await response.json();
-
-            sessionStorage.setItem("mascota", JSON.stringify(data));
-
-            console.log(data);
-
-            return data;
         }
 
     </script>

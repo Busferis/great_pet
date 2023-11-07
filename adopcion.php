@@ -326,7 +326,14 @@ $_SESSION["pagina"] = 2;
                 <div class="titulo_cartel_registrar lexend">Como dar en Adopción una Mascota</div>
                 <div class="texto_cartel_registrar roboto">Si deseas encontrar hogar para una mascota, te invitamos a registrarla en nuestra página. ¡Comencemos!</div>
                 <div class="boton_cartel_registrar">
-                    <a class="link_dar_en_adopcion releway" href="mis_mascotas.php">REGISTRAR</a>
+                    <?php
+                        if (isset($_SESSION["id_usuario"])){
+                            echo "<a class='link_dar_en_adopcion releway' href='mis_mascotas.php'>REGISTRAR</a>";
+                        } else {
+                            echo "<a class='link_dar_en_adopcion releway' href='registro.php'>REGISTRAR</a>";
+                        }
+
+                    ?>
                 </div>
             </div>
             <div class="contenedor_img_registrar_mascota">

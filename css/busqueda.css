@@ -506,6 +506,46 @@
 
 
 
+.fechaaa
+{
+    background-color:#ffa75a;
+    height: 110px;
+    border-radius: 20px;
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+}
+
+.fecha2{ 
+    /* background-color: #ffa75a; */
+    font-size: 18pt;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    
+    
+}
+
+.fechaa{
+    background-color: white;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: #bd9c8100 4px solid ;
+    color: #603813;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fecha:focus {
+    border: #603813 4px solid ;
+    outline: none;
+}
+
+
+
 
 
 
@@ -617,6 +657,11 @@
     position: relative;
 }
 
+.caja-info-dueño-qr-realizado_fecha {
+    position: absolute;
+    bottom: 5px;
+    height: auto;
+}
 
 .caja-ubicacion-mascota-qr-realizado {
     /* background-color: rgba(0, 255, 170, 0.33); */
@@ -661,17 +706,22 @@
     margin-bottom: 15px;
 }
 
+.a-linea-qr-realizado_fecha {
+    height: 6px !important;
+    margin-top: 9px;
+}
+
 .datos-qr-realizado {
-    /* background-color: rgba(240, 248, 255, 0.279); */
+/*    background-color: rgba(240, 248, 255, 0.279);*/
     height: 250px;
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     font-size: 18pt;
     text-align: center;
     color: #603813;
+    box-sizing: border-box;
+     word-wrap: break-word;
 }
 
 .datos-dueño-qr-realizado {

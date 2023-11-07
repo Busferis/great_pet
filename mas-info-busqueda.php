@@ -153,7 +153,7 @@ if (isset($_SESSION["id_usuario"])) {
                             <p>Mi Historia</p>
                         </div>
                         <div class="linea-qr-realizado"></div>
-                        <div class="datos-qr-realizado roboto">
+                        <div class="datos-qr-realizado roboto" id="descripcion">
                             Laika, una gata de 10 meses, está perdida y necesitamos encontrarla. Es probable que esté
                             merodeando por zonas de Malvinas Argentinas. Lleva un collar rojo con el sistema QR de GREAT
                             PET.
@@ -182,6 +182,16 @@ if (isset($_SESSION["id_usuario"])) {
                     </div>
 
                     <div class="caja-info-dueño-qr-realizado">
+                        
+                        <div class="caja-info-dueño-qr-realizado caja-info-dueño-qr-realizado_fecha">
+                                <label for="fecha" class="titulo-info-qr-realizado lexend">Fecha desaparición</label>
+                                <div class=" a-linea-qr-realizado_fecha a-linea-qr-realizado "></div>
+
+                                <div class="b-dato-qr-r roboto">20/02/20</div>
+
+
+                        </div>
+
                         <div class="titulo-info-qr-realizado lexend">
                             <p>Dueño</p>
                         </div>
@@ -212,6 +222,8 @@ if (isset($_SESSION["id_usuario"])) {
                             </div>
 
                         </div>
+
+                        
 
                     </div>
 
@@ -362,24 +374,32 @@ if (isset($_SESSION["id_usuario"])) {
     <script type="text/javascript">
 
         async function hola(){
-            var datos_mascotas = JSON.parse(sessionStorage.getItem("mascota"));
-            console.log(datos_mascotas);
-            var nombre = datos_mascotas[0].nombre;
-            var edad = datos_mascotas[0].edad;
-            var sexo = datos_mascotas[0].sexo;
-            var raza = datos_mascotas[0].raza;
-            var imagen = datos_mascotas[0].imagen;
+            var petId = sessionStorage.getItem("mascota");
+            console.log(petId);
+            const response = await fetch("api/usuario/buscar/" + petId + "/");
+            console.log("holaa"+petId);
+            const data = await response.json();
+            console.log(data);
+            holo(data);
+            return data;
+        }
+        hola();
+
+        async function holo(data){
+            var nombre = data[0].nombre;
+            var edad = data[0].edad;
+            var sexo = data[0].sexo;
+            var raza = data[0].raza;
+            var imagen = data[0].imagen;
+            var estado = data[0].estado;
+            var descripcion = data[0].descripcion;
             console.log(nombre);
             console.log(edad);
             console.log(sexo);
             console.log(raza);
-            // document.getElementById("nombre_id").innerHTML = nombre;
-            // document.getElementById("edad_id").innerHTML = edad;
-            // document.getElementById("sexo_id").innerHTML = sexo;
-            // document.getElementById("raza_id").innerHTML = raza;
             document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
+            document.getElementById("descripcion").innerHTML = descripcion;
         }
-        hola();
 
         function modo(){
             var modo=<?php echo $modo; ?>;

@@ -38,6 +38,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                 $insertarSql = "INSERT INTO `usuarios` (email, contraseña, nombre, apellido, localidad, contacto, fechaRegistro)
                  VALUES ('$email', '$password', '$nombre', '$apellido', '$localidad', '', CURRENT_TIMESTAMP)";
                 if (mysqli_query($con, $insertarSql)) {
+                    $newUserId = mysqli_insert_id($con);
                     $_SESSION["registro_exitoso"] = true;
                     header("Location: login.php");
                     exit();
