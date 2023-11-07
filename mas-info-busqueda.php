@@ -187,7 +187,7 @@ if (isset($_SESSION["id_usuario"])) {
                                 <label for="fecha" class="titulo-info-qr-realizado lexend">Fecha desaparición</label>
                                 <div class=" a-linea-qr-realizado_fecha a-linea-qr-realizado "></div>
 
-                                <div class="b-dato-qr-r roboto">20/02/20</div>
+                                <div class="b-dato-qr-r roboto" id="date">20/02/20</div>
 
 
                         </div>
@@ -393,12 +393,14 @@ if (isset($_SESSION["id_usuario"])) {
             var imagen = data[0].imagen;
             var estado = data[0].estado;
             var descripcion = data[0].descripcion;
+            var fecha = data[0].fecha_desaparicion;
             console.log(nombre);
             console.log(edad);
             console.log(sexo);
             console.log(raza);
             document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
             document.getElementById("descripcion").innerHTML = descripcion;
+            document.getElementById("date").innerHTML = fecha;
         }
 
         function modo(){

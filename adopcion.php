@@ -224,7 +224,7 @@ $_SESSION["pagina"] = 2;
 
 
                             <div class="contenedor_VER-MAS-mascota-adopcion-tarjeta">
-                                <a href="adop-mas-info.html">
+                                <a href="adop-mas-info.php" onclick="idmascota(this)">
                                     <div class="VER-MAS-mascota-adopcion-tarjeta roboto2">
                                         Ver Mas
                                     </div>
@@ -530,7 +530,7 @@ $_SESSION["pagina"] = 2;
             const tpl = tpl__carnet.content
             const clon = tpl.cloneNode(true);
 
-            clon.querySelector(".tarjeta1-adopcion-mini-descripcion").setAttribute("id-card", "carnet-" + info.id_adoptable);
+            clon.querySelector(".tarjeta1-adopcion-mini-descripcion").setAttribute("id-card", info.id_adoptable);
             clon.querySelector(".contenedor_nombre_centrado").innerHTML = info.nombre;
             clon.querySelector(".asd").innerHTML = info.localidad /*+ ", Malvinas Argentinas"*/; 
             // clon.querySelector(".asde").innerHTML = info.localidad /*+ ", Malvinas Argentinas"*/;             
@@ -543,6 +543,14 @@ $_SESSION["pagina"] = 2;
 
 
             listado1.appendChild(clon)
+        }
+
+        async function idmascota(element){
+            const petCard = event.currentTarget.closest('.tarjeta1-adopcion-mini-descripcion');
+            const petId = petCard.getAttribute('id-card');
+
+            sessionStorage.setItem("mascota", petId);
+
         }
 
     </script>

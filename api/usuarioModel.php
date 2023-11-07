@@ -199,6 +199,26 @@
 			return $list;
 		}
 
+		public function buscar2($id_busqueda){
+
+			$id_value3 = $id_busqueda[0];
+
+			$response = $this->db->query("SELECT * FROM adoptables where id_adoptable='".$id_value3."'");
+
+			$list = array("errno" => 400, "error" => "No hay mascotas");
+
+			if($response->num_rows > 0 ){
+
+				// responde con una matriz asociativa
+				$list = $response->fetch_all(MYSQLI_ASSOC);
+
+				// $list = array_merge(array("errno" => 200, "error" => "Se han listado usuarios", "num_rows" => $response->num_rows), $list);
+
+			}
+
+			return $list;
+		}
+
 		public function busquedaMascota($id_busqueda2){
 
 			$id_value4 = $id_busqueda2[0];
