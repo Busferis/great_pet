@@ -182,6 +182,16 @@ if (isset($_SESSION["id_usuario"])) {
                     </div>
 
                     <div class="caja-info-dueño-qr-realizado">
+                        
+                        <div class="caja-info-dueño-qr-realizado caja-info-dueño-qr-realizado_fecha">
+                                <label for="fecha" class="titulo-info-qr-realizado lexend">Fecha desaparición</label>
+                                <div class=" a-linea-qr-realizado_fecha a-linea-qr-realizado "></div>
+
+                                <div class="b-dato-qr-r roboto">20/02/20</div>
+
+
+                        </div>
+
                         <div class="titulo-info-qr-realizado lexend">
                             <p>Dueño</p>
                         </div>
@@ -212,6 +222,8 @@ if (isset($_SESSION["id_usuario"])) {
                             </div>
 
                         </div>
+
+                        
 
                     </div>
 

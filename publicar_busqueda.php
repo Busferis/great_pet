@@ -71,21 +71,6 @@ if (isset($_POST["descripcion"]) && isset($_POST["fecha"])) {
 
                         <div class="contenedor_selec_fecha">
 
-                            <!-- <div class="seleccionnm">
-                                <p class="titulo_selecionar roboto">Tipo de recompensa </p>
-                                <div class="opciones_rew">
-                                    <input type="radio" id="opcion1" name="opcion" value="opcion1">
-                                    <label for="opcion1" class="recompensas_img"><img class="recompensas_img"
-                                        src="/img/recopensa-efectivo-busqueda.png" alt=""></label><br>
-                                    <input type="radio" id="opcion2" name="opcion" value="opcion2">
-                                    <label for="opcion2" class="recompensas_img"><img class="recompensas_img"
-                                        src="/img/recopensa-regalo-busqueda.png" alt=""></label><br>
-                                    <input type="radio" id="opcion3" name="opcion" value="opcion3">
-                                    <label for="opcion3" class="recompensas_img"><img class="recompensas_img"
-                                        src="/img/recopensa-gracias-busqueda.png" alt=""></label><br><br>
-                                </div>
-                            </div> -->
-
                             <div class="fechaaa">
                                 <label for="fecha" class="fecha2 roboto">Fecha desaparición</label>
                                 <input type="date" id="fecha" name="fecha" class="roboto">
