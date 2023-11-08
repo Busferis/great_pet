@@ -96,6 +96,7 @@
 			
 			$cant = $parameters[CANT];
 
+<<<<<<< HEAD
 			$edad = "all";
 
 			$sexo = "all";
@@ -128,6 +129,15 @@
 			
 
 			
+=======
+			$edad = $_POST["edad"];
+
+			$sexo = $_POST["sexo"];
+
+			$especie = $_POST["especie"];
+
+			$localidad = $_POST["localidad"];
+>>>>>>> d92ba7acbd2232982159efcdcb0393ccf8d6837a
 
 			
 
@@ -490,6 +500,7 @@
 
 		}
 
+<<<<<<< HEAD
 		public function delete() {
 		   try {
 		       // Get the last id from the 'adoptables' table
@@ -547,6 +558,38 @@
 
 		   $list = array("errno" => 400, "error" => "No hay mascotas");
 
+=======
+		public function adoptar($id_adoptar){
+
+		   $id_value4 = $id_adoptar[0];
+
+		   $response = $this->db->query("SELECT * FROM mascotas where id_mascota='".$id_value4."'");
+
+		   if($response->num_rows > 0 ){
+		       $data = $response->fetch_all(MYSQLI_ASSOC);
+		   }
+
+		   $sql1 = "INSERT INTO adoptables (nombre, edad, sexo, especie, raza, localidad, imagen) VALUES ('".$data[0]['nombre']."', '".$data[0]['edad']."', '".$data[0]['sexo']."', '".$data[0]['especie']."', '".$data[0]['raza']."', '".$data[0]['localidad']."', '".$data[0]['imagen']."')";
+
+		   $sql2 = "UPDATE mascotas SET estado = 'Adopcion' WHERE id_mascota = '".$id_value4."'";
+
+		   if($this->db->query($sql1) === TRUE){
+		       echo "Record inserted successfully";
+		   } else {
+		       echo "Error inserting record: " . $this->db->error;
+		   }
+
+		   if($this->db->query($sql2) === TRUE){
+		       echo "Record updated successfully";
+		   } else {
+		       echo "Error updating record: " . $this->db->error;
+		   }
+
+		   $response = $this->db->query("SELECT * FROM mascotas where id_mascota='".$id_value4."'");
+
+		   $list = array("errno" => 400, "error" => "No hay mascotas");
+
+>>>>>>> d92ba7acbd2232982159efcdcb0393ccf8d6837a
 		   if($response->num_rows > 0 ){
 		       $list = $response->fetch_all(MYSQLI_ASSOC);
 		   }
