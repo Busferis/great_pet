@@ -72,7 +72,8 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
            height: 50px;
            align-items: center;
            font-weight: bold;
-           justify-content: center;''>Debe aceptar la Política de Privacidad antes de continuar.</div>";
+           justify-content: center;
+           width: 100%;''>Debe aceptar la Política de Privacidad antes de continuar.</div>";
         }
 
         if (isset($msg2) && $msg2 == true) {
@@ -82,7 +83,8 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
            height: 50px;
            align-items: center;
            font-weight: bold;
-           justify-content: center;''>El email ya está registrado.</div>";
+           justify-content: center;
+           width: 100%;''>El email ya está registrado.</div>";
         }
 
         if (isset($msg3) && $msg3 == true) {
@@ -92,7 +94,8 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
            height: 50px;
            align-items: center;
            font-weight: bold;
-           justify-content: center;''>Error en el registro. Por favor, inténtalo de nuevo.</div>";
+           justify-content: center;
+           width: 100%;''>Error en el registro. Por favor, inténtalo de nuevo.</div>";
         }
 
     ?>
