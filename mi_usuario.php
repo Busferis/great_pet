@@ -166,12 +166,7 @@
 
                         <div class="contenedor_datos_fila">
 
-                            <div class="cajas_de_datos_">
-                                <div class="tipo_de_datos roboto2 fdn">Fecha de Nacimiento</div>
-                                <div class="resuiltado_dato roboto">
-                                    <p>30/03/05</p>
-                                </div>
-                            </div>
+                            
                             <div class="cajas_de_datos_">
                                 <div class="tipo_de_datos roboto2">Telefono</div>
                                 <div class="resuiltado_dato roboto">
