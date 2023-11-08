@@ -311,14 +311,14 @@ $_SESSION["pagina"] = 4;
 <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
 
 <script>
-    var id=<?php echo $id_usuario; ?>;
+    var id_usuario=<?php echo $id_usuario; ?>;
     async function loadListado(url) {
         const response = await fetch(url);
         const data = await response.json();
         return data;
     }
 
-    loadListado("https://mattprofe.com.ar/alumno/great_pet/api/usuario/listar_mascota_qr/" + id).then(mascotas => {
+    loadListado("https://mattprofe.com.ar/alumno/great_pet/api/usuario/listar_mascota_qr/" + id_usuario).then(mascotas => {
         if (mascotas[0].errno == 200) {
 
             mascotas[1].forEach(mascota => {

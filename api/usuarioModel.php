@@ -96,6 +96,87 @@
 			
 			$cant = $parameters[CANT];
 
+			$edad = $_POST["edad"];
+
+			$sexo = $_POST["sexo"];
+
+			$especie = $_POST["especie"];
+
+			$localidad = $_POST["localidad"];
+
+			
+
+			$filtros =" where ";
+
+			if ($edad=="all" && $sexo=="all" && $especie=="all" && $localidad=="all") {
+				$filtros="";
+			}
+
+
+
+
+			if ($edad!="all") {
+
+				$min = explode("/", $edad)[0];
+				$max = explode("/", $edad)[1];
+				$edad_filtro="`edad`>= $min AND edad <= $max";
+
+			}
+
+			if ($localidad!="all") {
+
+				$localidad_filtro="`localidad`= '$localidad'";
+			}
+
+			if ($sexo!="all") {
+
+				$sexo_filtro="`sexo`= '$sexo'";
+			}
+
+			if ($especie!="all") {
+
+				$especie_filtro="`especie`= '$especie'";
+			}
+
+
+
+			if (isset($edad_filtro)){
+				$filtros.= $edad_filtro;
+
+				if (isset($sexo_filtro) || isset($especie_filtro) || isset($localidad_filtro)){
+					$filtros.= " and ";
+
+				}
+			}
+
+			if (isset($sexo_filtro)){
+				$filtros.= $sexo_filtro;
+
+				if (isset($especie_filtro) || isset($localidad_filtro)){
+					$filtros.= " and ";
+
+				}
+			}
+
+			if (isset($especie_filtro)){
+				$filtros.= $especie_filtro;
+
+				if (isset($localidad_filtro)){
+
+					$filtros.= " and ";
+
+				}
+			}
+
+			if (isset($localidad_filtro)){
+				$filtros.= $localidad_filtro;
+
+			}
+
+
+
+
+
 			if(!isset($parameters[PAGE])){
 				return array("errno" => 400, "error" => "Falta especificar la pagina");
 			}
@@ -104,7 +185,7 @@
 
 			$limit = " LIMIT $page, $cant";
 
-			$response = $this->db->query("SELECT * FROM adoptables $limit");
+			$response = $this->db->query("SELECT * FROM adoptables $filtros $limit");
 
 			$list = array("errno" => 400, "error" => "No hay usuarios");
 
@@ -273,38 +354,41 @@
 
 		}
 
-		public function adoptar($id_adoptar, $nombre, $edad, $sexo, $raza, $imagen, $localidad){
+		public function adoptar($id_adoptar){
 
-			$id_value4 = $id_adoptar[0];
-			$nombre_value = $nombre[0];
-			$edad_value = $edad[0];
-			$sexo_value = $sexo[0];
-			$especie_value = $especie[0];
-			$raza_value = $raza[0];
-			$localidad_value = $localidad[0];
+		   $id_value4 = $id_adoptar[0];
 
-			$sql = "INSERT INTO adoptables (nombre, edad, sexo, especie, raza, localidad) VALUES ('$nombre_value', '$edad_value', '$sexo_value', '$especie_value', '$raza_value', '$localidad_value')";
+		   $response = $this->db->query("SELECT * FROM mascotas where id_mascota='".$id_value4."'");
 
-			if($response = $this->db->query($sql) === TRUE){
-				$new_id = $this->db->insert_id;
-				echo "Record updated successfully";
-			} else {
-			  	echo "Error updating record: " . $conn->error;
-			}
+		   if($response->num_rows > 0 ){
+		       $data = $response->fetch_all(MYSQLI_ASSOC);
+		   }
 
-			$list = array("errno" => 400, "error" => "No hay mascotas");
+		   $sql1 = "INSERT INTO adoptables (nombre, edad, sexo, especie, raza, localidad, imagen) VALUES ('".$data[0]['nombre']."', '".$data[0]['edad']."', '".$data[0]['sexo']."', '".$data[0]['especie']."', '".$data[0]['raza']."', '".$data[0]['localidad']."', '".$data[0]['imagen']."')";
 
-			if($response->num_rows > 0 ){
+		   $sql2 = "UPDATE mascotas SET estado = 'Adopcion' WHERE id_mascota = '".$id_value4."'";
 
-				// responde con una matriz asociativa
-				$list = $response->fetch_all(MYSQLI_ASSOC);
+		   if($this->db->query($sql1) === TRUE){
+		       echo "Record inserted successfully";
+		   } else {
+		       echo "Error inserting record: " . $this->db->error;
+		   }
 
-				// $list = array_merge(array("errno" => 200, "error" => "Se han listado usuarios", "num_rows" => $response->num_rows), $list);
+		   if($this->db->query($sql2) === TRUE){
+		       echo "Record updated successfully";
+		   } else {
+		       echo "Error updating record: " . $this->db->error;
+		   }
 
-			}
+		   $response = $this->db->query("SELECT * FROM mascotas where id_mascota='".$id_value4."'");
 
-			return $list;
+		   $list = array("errno" => 400, "error" => "No hay mascotas");
 
+		   if($response->num_rows > 0 ){
+		       $list = $response->fetch_all(MYSQLI_ASSOC);
+		   }
+
+		   return $list;
 		}
 	}
 

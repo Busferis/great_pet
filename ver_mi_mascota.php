@@ -448,15 +448,9 @@ else{
             const data = await response.json();
             console.log(data);
             var id_mascota = data[0].id_mascota;
-            var nombre = data[0].nombre;
-            var edad = data[0].edad;
-            var sexo = data[0].sexo;
-            var raza = data[0].raza;
-            var imagen = data[0].imagen;
-            var localidad = data[0].localidad;
             if (confirm("¿Realmente desea dar en adopcion a esta mascota?") == true) {
 
-                const response = await fetch("api/usuario/adoptar/" + id_mascota + "/" + nombre + "/" + edad + "/" + sexo + "/" + raza + "/" + imagen + "/" + localidad + "/");
+                const response = await fetch("api/usuario/adoptar/" + id_mascota + "/");
 
                 console.log(response);
 
@@ -466,7 +460,7 @@ else{
 
                 var id_adoptable = data[0];
 
-                redirectToNewPage3(id_adoptable);
+                console.log(id)
             }
         }
 

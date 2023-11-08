@@ -69,6 +69,26 @@
             align-items: center;
             transition: all 0.3s;
         }
+        .adopcion {
+            background-color: rgb(0 255 0);
+            height: 200px;
+            width: 400px;
+            border-radius: 30px;
+            display: flex;
+        }
+        .adopcionBoton {
+            background-color: #fce8d9;
+            color: #154f00;
+            border: #145f00 5px solid;
+            height: 60px;
+            border-radius: 20px;
+            padding: 0 12PX;
+            font-size: 17pt;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+        }
     </style>
 </head>
 
@@ -403,8 +423,14 @@
                     clon.querySelector(".contenedor_generador_mis_mascotas_eliminar").classList.add("perdidoBoton");
                     // clon.querySelector(".contenedor_generador_mis_mascotas").style.color = "#ff0000";
                     // clon.querySelector(".contenedor_generador_mis_mascotas").style.border = "#ff0000 5px solid";
-                } else if (listaPokemones == "") {
-                    console.log("No esta perdido");
+                } else if (listaPokemones == "Adopcion") {
+                    let tarjeta = clon.querySelector(".tarjetas_mascotas_mis_mascotas");
+                    tarjeta.classList.add("adopcion");
+                    tarjeta.classList.remove("no_perdido");
+                    clon.querySelector(".contenedor_generador_mis_mascotas").classList.add("adopcionBoton");
+                    clon.querySelector(".contenedor_generador_mis_mascotas_eliminar").classList.add("adopcionBoton");
+                } else {
+                    console.log("Holo");
                 }
 
 
