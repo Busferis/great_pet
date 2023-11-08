@@ -4,12 +4,12 @@ if (isset($_GET['id'])){
     $id = $_GET['id'];
 }
 
-if (isset($_POST["descripcion"]) && isset($_POST["fecha"])) {
+if (isset($_POST["descripcion"])) {
         $con = mysqli_connect("localhost", "great_pet", "admin.greatpet.gecko23", "great_pet");
 
         $descripcion = $_POST["descripcion"];
         // $confirmarPassword = $_POST["confirmar_password"];
-        $insertarSql = "UPDATE `mascotas` SET descripcion = '$descripcion' WHERE id_mascota = '$id'";
+        $insertarSql = "UPDATE `adoptables` SET descripcion = '$descripcion' WHERE id_adoptable = '$id'";
         if (mysqli_query($con, $insertarSql)) {
             header("Location: mis_mascotas.php");
             exit();
@@ -60,7 +60,7 @@ if (isset($_POST["descripcion"]) && isset($_POST["fecha"])) {
 
 
 
-                <form>
+                <form action="" method="POST">
                     <div class="contenedor_tarjetas_mis_mascotas">
 
                         <div class="caja_contenedor_descripcion">

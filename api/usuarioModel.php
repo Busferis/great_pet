@@ -272,6 +272,40 @@
 			return $list;
 
 		}
+
+		public function adoptar($id_adoptar, $nombre, $edad, $sexo, $raza, $imagen, $localidad){
+
+			$id_value4 = $id_adoptar[0];
+			$nombre_value = $nombre[0];
+			$edad_value = $edad[0];
+			$sexo_value = $sexo[0];
+			$especie_value = $especie[0];
+			$raza_value = $raza[0];
+			$localidad_value = $localidad[0];
+
+			$sql = "INSERT INTO adoptables (nombre, edad, sexo, especie, raza, localidad) VALUES ('$nombre_value', '$edad_value', '$sexo_value', '$especie_value', '$raza_value', '$localidad_value')";
+
+			if($response = $this->db->query($sql) === TRUE){
+				$new_id = $this->db->insert_id;
+				echo "Record updated successfully";
+			} else {
+			  	echo "Error updating record: " . $conn->error;
+			}
+
+			$list = array("errno" => 400, "error" => "No hay mascotas");
+
+			if($response->num_rows > 0 ){
+
+				// responde con una matriz asociativa
+				$list = $response->fetch_all(MYSQLI_ASSOC);
+
+				// $list = array_merge(array("errno" => 200, "error" => "Se han listado usuarios", "num_rows" => $response->num_rows), $list);
+
+			}
+
+			return $list;
+
+		}
 	}
 
 

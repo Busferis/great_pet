@@ -125,11 +125,11 @@ else{
         </template>
 
         <template id="tpl_boton3">
-            <button onclick="displayConfirmPerdido(this)" class="estilos_botones roboto">Dar en Adopción</button>
+            <button onclick="displayConfirmAdopcion(this)" class="estilos_botones roboto">Dar en Adopción</button>
         </template>
 
         <template id="tpl_boton4">
-            <button onclick="displayConfirmEncontrado(this)" class="estilos_botones estilos_botones_color roboto">Terminar Adopción</button>
+            <button onclick="displayConfirmNoAdopcion(this)" class="estilos_botones estilos_botones_color roboto">Terminar Adopción</button>
         </template>
 
         <div class="contenedor-qr-realizado-main-adopcion">
@@ -391,6 +391,7 @@ else{
             document.getElementById("raza_id").innerHTML = raza;
             document.getElementById("imagen").style.backgroundImage = "url('img/" + imagen + "')";
             createButton(estado);
+            createButton2(estado);
         }
 
         async function displayConfirmPerdido(element){
@@ -439,6 +440,58 @@ else{
             }
         }
 
+        async function displayConfirmAdopcion(element){
+            var petId = sessionStorage.getItem("mascota");
+            console.log(petId);
+            const response = await fetch("api/usuario/buscar/" + petId + "/");
+            console.log("holaa"+petId);
+            const data = await response.json();
+            console.log(data);
+            var id_mascota = data[0].id_mascota;
+            var nombre = data[0].nombre;
+            var edad = data[0].edad;
+            var sexo = data[0].sexo;
+            var raza = data[0].raza;
+            var imagen = data[0].imagen;
+            var localidad = data[0].localidad;
+            if (confirm("¿Realmente desea dar en adopcion a esta mascota?") == true) {
+
+                const response = await fetch("api/usuario/adoptar/" + id_mascota + "/" + nombre + "/" + edad + "/" + sexo + "/" + raza + "/" + imagen + "/" + localidad + "/");
+
+                console.log(response);
+
+                const data = await response.json();
+
+                console.log(data);
+
+                var id_adoptable = data[0];
+
+                redirectToNewPage3(id_adoptable);
+            }
+        }
+
+        async function displayConfirmNoAdopcion(element){
+            var petId = sessionStorage.getItem("mascota");
+            console.log(petId);
+            const response = await fetch("api/usuario/buscar/" + petId + "/");
+            console.log("holaa"+petId);
+            const data = await response.json();
+            console.log(data);
+            var id_mascota = data[0].id_mascota;
+            if (confirm("¿Realmente desea dejar de dar en adopcion a esta mascota?") == true) {
+
+                // const response = await fetch("api/usuario/busquedaMascota/" + id_mascota + "/");
+
+                // console.log(response);
+
+                redirectToNewPage();
+
+                // const data = await response.json();
+
+                // console.log(data);
+            }
+        }
+
         function createButton(estado){
             console.log(estado);
             if (estado == "Perdido") {
@@ -454,7 +507,7 @@ else{
 
         function createButton2(estado){
             console.log(estado);
-            if (estado == "Perdido") {
+            if (estado == "Adopcion") {
                 const tpl = tpl_boton4.content
                 clon = tpl.cloneNode(true);
             } else {
@@ -471,6 +524,10 @@ else{
 
         function redirectToNewPage2(petId) {
            window.location.replace(`https://mattprofe.com.ar/alumno/great_pet/publicar_busqueda.php?id=${petId}`);
+        }
+
+        function redirectToNewPage3(petId) {
+           window.location.replace(`https://mattprofe.com.ar/alumno/great_pet/publicar_adopcion.php?id=${petId}`);
         }
 
     </script>
