@@ -474,15 +474,15 @@ else{
             var id_mascota = data[0].id_mascota;
             if (confirm("¿Realmente desea dejar de dar en adopcion a esta mascota?") == true) {
 
-                // const response = await fetch("api/usuario/busquedaMascota/" + id_mascota + "/");
+               // Call the deleteLastEntry function
+               const deleteResponse = await fetch("api/usuario/delete/", {
+                   method: 'DELETE',
+               });
 
-                // console.log(response);
+               const deleteData = await deleteResponse.json();
+               console.log(deleteData);
 
-                redirectToNewPage();
-
-                // const data = await response.json();
-
-                // console.log(data);
+               redirectToNewPage();
             }
         }
 
