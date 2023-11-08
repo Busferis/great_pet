@@ -127,7 +127,7 @@
 
 .selec-filtro {
     /* background-color: #f7cdaa; */
-    width: 75%;
+    width: 50%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -699,6 +699,12 @@
 
 }
 
+
+.titulo-info-qr-realizado_desaparicion  {
+    font-size: 25pt;
+}
+
+
 .linea-qr-realizado {
     background-color: #fcebfb;
     height: 1.5%;
@@ -966,8 +972,9 @@
     background-color: #ffa75a;
     text-decoration: none;
     color: white;
-    border: #efc49f 4px solid;
-    width: 250px;
+    border: #efc49f 4px solid;    
+    width: auto;
+    padding: 0 20px;
     height: 100%;
     display: flex;
     align-items: center;

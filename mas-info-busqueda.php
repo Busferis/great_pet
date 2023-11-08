@@ -184,7 +184,7 @@ if (isset($_SESSION["id_usuario"])) {
                     <div class="caja-info-dueño-qr-realizado">
                         
                         <div class="caja-info-dueño-qr-realizado caja-info-dueño-qr-realizado_fecha">
-                                <label for="fecha" class="titulo-info-qr-realizado lexend">Fecha desaparición</label>
+                                <label for="fecha" class="titulo-info-qr-realizado titulo-info-qr-realizado_desaparicion lexend">Fecha de desaparición</label>
                                 <div class=" a-linea-qr-realizado_fecha a-linea-qr-realizado "></div>
 
                                 <div class="b-dato-qr-r roboto" id="date">20/02/20</div>

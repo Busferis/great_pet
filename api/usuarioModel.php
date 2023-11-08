@@ -96,6 +96,40 @@
 			
 			$cant = $parameters[CANT];
 
+<<<<<<< HEAD
+			$edad = "all";
+
+			$sexo = "all";
+
+			$especie = "all";
+
+			$localidad = "all";
+
+			if (isset($_POST["edad"])) {
+
+				$edad = $_POST["edad"];
+			}
+
+			if (isset($_POST["sexo"])) {
+				
+				$sexo = $_POST["sexo"];
+			}
+
+			if (isset($_POST["especie"])) {
+				
+				$especie = $_POST["especie"];
+			}
+
+			if (isset($_POST["localidad"])) {
+				
+				$localidad = $_POST["localidad"];
+
+			}
+
+			
+
+			
+=======
 			$edad = $_POST["edad"];
 
 			$sexo = $_POST["sexo"];
@@ -103,6 +137,7 @@
 			$especie = $_POST["especie"];
 
 			$localidad = $_POST["localidad"];
+>>>>>>> d92ba7acbd2232982159efcdcb0393ccf8d6837a
 
 			
 
@@ -200,6 +235,7 @@
 
 			return $list;
 		}
+		
 
 		public function listByCantPageBusqueda($parameters){
 
@@ -212,6 +248,115 @@
 			
 			$cant = $parameters[CANT];
 
+			
+			$edad = "all";
+
+			$sexo = "all";
+
+			$especie = "all";
+
+			$localidad = "all";
+
+			if (isset($_POST["edad"])) {
+
+				$edad = $_POST["edad"];
+			}
+
+			if (isset($_POST["sexo"])) {
+				
+				$sexo = $_POST["sexo"];
+			}
+
+			if (isset($_POST["especie"])) {
+				
+				$especie = $_POST["especie"];
+			}
+
+			if (isset($_POST["localidad"])) {
+				
+				$localidad = $_POST["localidad"];
+				
+			}
+
+			
+
+			
+
+			
+
+			$filtros =" and ";
+
+			if ($edad=="all" && $sexo=="all" && $especie=="all" && $localidad=="all") {
+				$filtros="";
+			}
+
+
+
+
+			if ($edad!="all") {
+
+				$min = explode("/", $edad)[0];
+				$max = explode("/", $edad)[1];
+				$edad_filtro="`edad`>= $min AND edad <= $max";
+
+			}
+
+			if ($localidad!="all") {
+
+				$localidad_filtro="`localidad`= '$localidad'";
+			}
+
+			if ($sexo!="all") {
+
+				$sexo_filtro="`sexo`= '$sexo'";
+			}
+
+			if ($especie!="all") {
+
+				$especie_filtro="`especie`= '$especie'";
+			}
+
+
+
+			if (isset($edad_filtro)){
+				$filtros.= $edad_filtro;
+
+				if (isset($sexo_filtro) || isset($especie_filtro) || isset($localidad_filtro)){
+					$filtros.= " and ";
+
+				}
+			}
+
+			if (isset($sexo_filtro)){
+				$filtros.= $sexo_filtro;
+
+				if (isset($especie_filtro) || isset($localidad_filtro)){
+					$filtros.= " and ";
+
+				}
+			}
+
+			if (isset($especie_filtro)){
+				$filtros.= $especie_filtro;
+
+				if (isset($localidad_filtro)){
+
+					$filtros.= " and ";
+
+				}
+			}
+
+			if (isset($localidad_filtro)){
+				$filtros.= $localidad_filtro;
+
+			}
+
+
+
+
+
+
+
 			if(!isset($parameters[PAGE])){
 				return array("errno" => 400, "error" => "Falta especificar la pagina");
 			}
@@ -220,7 +365,7 @@
 
 			$limit = " LIMIT $page, $cant";
 
-			$response = $this->db->query("SELECT * FROM mascotas WHERE estado='Perdido' $limit");
+			$response = $this->db->query("SELECT * FROM mascotas WHERE  estado='Perdido' $filtros $limit");
 
 			$list = array("errno" => 400, "error" => "No hay usuarios");
 
@@ -235,6 +380,7 @@
 
 			return $list;
 		}
+
 
 		public function eliminarMascota($id_mascota){
 
@@ -354,6 +500,34 @@
 
 		}
 
+<<<<<<< HEAD
+		public function delete() {
+		   try {
+		       // Get the last id from the 'adoptables' table
+		       $response = $this->db->query("SELECT id_adoptable FROM adoptables ORDER BY id_adoptable DESC LIMIT 1");
+		       $data = $response->fetch_assoc();
+		       $last_id = $data['id_adoptable'];
+
+		       // Delete the row with the last id
+		       $response = $this->db->query("DELETE FROM adoptables WHERE id_adoptable = $last_id");
+
+		       if ($response === false) {
+		           throw new Exception("Error deleting the last entry");
+		       }
+
+		       if ($this->db->affected_rows > 0) {
+		           $list = array("errno" => 200, "message" => "The last entry has been deleted successfully");
+		       } else {
+		           $list = array("errno" => 400, "error" => "No entry found to delete");
+		       }
+		   } catch (Exception $e) {
+		       $list = array("errno" => 400, "error" => $e->getMessage());
+		   }
+
+		   return $list;
+		}
+
+
 		public function adoptar($id_adoptar){
 
 		   $id_value4 = $id_adoptar[0];
@@ -384,6 +558,38 @@
 
 		   $list = array("errno" => 400, "error" => "No hay mascotas");
 
+=======
+		public function adoptar($id_adoptar){
+
+		   $id_value4 = $id_adoptar[0];
+
+		   $response = $this->db->query("SELECT * FROM mascotas where id_mascota='".$id_value4."'");
+
+		   if($response->num_rows > 0 ){
+		       $data = $response->fetch_all(MYSQLI_ASSOC);
+		   }
+
+		   $sql1 = "INSERT INTO adoptables (nombre, edad, sexo, especie, raza, localidad, imagen) VALUES ('".$data[0]['nombre']."', '".$data[0]['edad']."', '".$data[0]['sexo']."', '".$data[0]['especie']."', '".$data[0]['raza']."', '".$data[0]['localidad']."', '".$data[0]['imagen']."')";
+
+		   $sql2 = "UPDATE mascotas SET estado = 'Adopcion' WHERE id_mascota = '".$id_value4."'";
+
+		   if($this->db->query($sql1) === TRUE){
+		       echo "Record inserted successfully";
+		   } else {
+		       echo "Error inserting record: " . $this->db->error;
+		   }
+
+		   if($this->db->query($sql2) === TRUE){
+		       echo "Record updated successfully";
+		   } else {
+		       echo "Error updating record: " . $this->db->error;
+		   }
+
+		   $response = $this->db->query("SELECT * FROM mascotas where id_mascota='".$id_value4."'");
+
+		   $list = array("errno" => 400, "error" => "No hay mascotas");
+
+>>>>>>> d92ba7acbd2232982159efcdcb0393ccf8d6837a
 		   if($response->num_rows > 0 ){
 		       $list = $response->fetch_all(MYSQLI_ASSOC);
 		   }
