@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 if (isset($_SESSION["nombre"])) {
     $nombre = $_SESSION["nombre"];
 }
@@ -12,6 +13,8 @@ if (isset($_SESSION["id_usuario"])) {
 }
 $_SESSION["pagina"] = 2;
 // var_dump($_SESSION["pagina"]);
+
+
 
 ?>
 
@@ -269,35 +272,51 @@ $_SESSION["pagina"] = 2;
 
             <div class="caja-contenedora-tarjetas-adopcion">
                 <div class="caja-filtro-adopcion">
-                    <div class="selec-filtro">
+                    <form class="selec-filtro" action="" method="GET" id="filtro__form" >
 
-                        <select name="select-filtro-oficial-1" class="SELECT-1 roboto2">
-                            <option value="value2" selected class="options-select">Perros</option>
-                            <option value="value3" class="options-select">Gatos</option>
+                        <select name="especie" class="SELECT-1 roboto2" id="select__especie">
+                            <option value="all" selected class="options-select">Todos</option>
+                            <option value="perro"  class="options-select">Perros</option>
+                            <option value="gato" class="options-select">Gatos</option>
                         </select>
 
-                        <select name="select-filtro-oficial-2" class="SELECT-1 roboto2">
-                            <option value="value2" class="options-select">2/11 Meses</option>
-                            <option value="value2" class="options-select" selected>1/3 Años</option>
-                            <option value="value2" class="options-select">4/6 Años</option>
-                            <option value="value2" class="options-select">7/10 Años</option>
-                            <option value="value2" class="options-select">11/15 Años</option>
+                        <select name="sexo" class="SELECT-1 roboto2" id="select__sexo">
+                            <option value="all" selected class="options-select">Todos</option>
+                            <option value="macho"  class="options-select">Macho</option>
+                            <option value="hembra" class="options-select">Hembra</option>
+                        </select>
+
+                        <select name="edad" class="SELECT-1 roboto2" id="select__edad">
+                            <option value="all" selected class="options-select"selected>Todos</option>
+                            <option value="1/3" class="options-select" >1/3 Años</option>
+                            <option value="4/6" class="options-select">4/6 Años</option>
+                            <option value="7/10" class="options-select">7/10 Años</option>
+                            <option value="11/15" class="options-select">11/15 Años</option>
+                        </select>
+                        
+
+                        <select name="sexo" class="SELECT-1 roboto2" id="select__localidad">
+                            <option value="all" selected class="options-select">Todas</option>
+                            <option value="Tortuguitas" class="options-select">Tortuguitas</option>
+                            <option value="Grand Bourg"  class="options-select">Grand Bourg</option>
+                            <option value="Pablo Nogués"  class="options-select">Pablo Nogués</option>
+                            <option value="Adolfo Sourdeaux"  class="options-select">Adolfo Sourdeaux</option>
+                            <option value="Vila Rosa"  class="options-select">Vila Rosa</option>
+                            <option value="Tierras Altas"  class="options-select">Tierras Altas</option>
+                            <option value="Polvorines"  class="options-select">Polvorines</option>
+                            <option value="El Triángulo"  class="options-select">El Triángulo</option>
                         </select>
 
 
-                        <select name="select-filtro-oficial-3" class="SELECT-1 roboto2">
-                            <option value="value2" selected class="options-select">Masculino</option>
-                            <option value="value3" class="options-select">Femenino</option>
-                        </select>
 
 
-                        <input type="button" value="search" class="material-icons-outlined buscar-filtro-adopcion">
+                        <input type="submit" value="search" class="material-icons-outlined buscar-filtro-adopcion">
 
 
-                    </div>
+                    </form>
 
                 </div>
-                <!-- <div class="linea-filtro-adopcion-tarjetas"></div> -->
+                <div class="linea-filtro-adopcion-tarjetas"></div>
                 <div id="btn__control" class="btn__control">
                     <button id="btn__previous" class="boton_s_a roboto">Atras</button>
                     <div id="visor__page" class="numero_pestaña roboto"></div>
@@ -323,14 +342,14 @@ $_SESSION["pagina"] = 2;
 
         <div class="caja_adoptar_buscar">
             <div class="titulo_texto_botom_">
-                <div class="titulo_cartel_registrar lexend">Como dar en Adopción una Mascota</div>
+                <div class="titulo_cartel_registrar lexend">Como dar en adopción una mascota</div>
                 <div class="texto_cartel_registrar roboto">Si deseas encontrar hogar para una mascota, te invitamos a registrarla en nuestra página. ¡Comencemos!</div>
                 <div class="boton_cartel_registrar">
                     <?php
                         if (isset($_SESSION["id_usuario"])){
-                            echo "<a class='link_dar_en_adopcion releway' href='mis_mascotas.php'>REGISTRAR</a>";
+                            echo "<a class='link_dar_en_adopcion releway' href='mis_mascotas.php'>Dar en adopción</a>";
                         } else {
-                            echo "<a class='link_dar_en_adopcion releway' href='registro.php'>REGISTRAR</a>";
+                            echo "<a class='link_dar_en_adopcion releway' href='registro.php'>Dar en adopción</a>";
                         }
 
                     ?>
@@ -437,6 +456,20 @@ $_SESSION["pagina"] = 2;
 
     <script type="text/javascript">
 
+
+        filtro__form.addEventListener("submit",async e=>{
+
+            e.preventDefault();
+
+
+            refreshPage();
+
+
+
+        })
+
+
+
         function modo(){
             var modo=<?php echo $modo; ?>;
             boton_sesion.innerHTML = "";
@@ -475,20 +508,29 @@ $_SESSION["pagina"] = 2;
         })
 
 
-        function refreshPage() {
+
+
+        async function refreshPage() {
+
             visor__page.innerHTML = page;
 
+            let data = new FormData();
+            data.append("sexo", select__sexo.value)
+            data.append("especie", select__especie.value)
+            data.append("edad", select__edad.value)
+            data.append("localidad", select__localidad.value)
+
+
+            const response = await fetch("api/usuario/listByCantPage/9/" + page, {method:"POST",body:data});
+
+            const info = await response.json();
+
             listado1.innerHTML = "";
-
-            getAlumnos().then(alumnos => {
-
-                console.log(alumnos);
-
-                alumnos.forEach(row => {
+            
+             info.forEach(row => {
                     createCard(row);
-                });
 
-            });
+                });
         }
 
         // peticion a la api en modo get

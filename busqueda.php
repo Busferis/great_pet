@@ -256,33 +256,34 @@ $_SESSION["pagina"] = 3;
 
             <div class="caja-contenedora-tarjetas-adopcion">
                 <div class="caja-filtro-adopcion">
-                    <div class="selec-filtro">
+                    <form class="selec-filtro" action="" method="GET" id="filtro__form" >
 
-                        <select name="select-filtro-oficial-1" class="SELECT-1 roboto2">
-                            <option value="value2" selected class="options-select">Perros</option>
-                            <option value="value3" class="options-select">Gatos</option>
+                        <select name="especie" class="SELECT-1 roboto2" id="select__especie">
+                            <option value="all" selected class="options-select">Todos</option>
+                            <option value="perro"  class="options-select">Perros</option>
+                            <option value="gato" class="options-select">Gatos</option>
+                        </select>
+                        
+
+                        <select name="sexo" class="SELECT-1 roboto2" id="select__localidad">
+                            <option value="all" selected class="options-select">Todas</option>
+                            <option value="Tortuguitas"  class="options-select">Tortuguitas</option>
+                            <option value="Grand Bourg"  class="options-select">Grand Bourg</option>
+                            <option value="Pablo Nogués"  class="options-select">Pablo Nogués</option>
+                            <option value="Adolfo Sourdeaux"  class="options-select">Adolfo Sourdeaux</option>
+                            <option value="Vila Rosa"  class="options-select">Vila Rosa</option>
+                            <option value="Tierras Altas"  class="options-select">Tierras Altas</option>
+                            <option value="Polvorines"  class="options-select">Polvorines</option>
+                            <option value="El Triángulo"  class="options-select">El Triángulo</option>
                         </select>
 
-                        <select name="select-filtro-oficial-2" class="SELECT-1 roboto2">
-                            <option value="value2" class="options-select" selected>Malvinas Argentinas</option>
-                            <option value="value2" class="options-select">Pilar</option>
-                            <option value="value2" class="options-select">José C. paz</option>
-                        </select>
 
 
-                        <select name="select-filtro-oficial-3" class="SELECT-1 roboto2">
-                            <option value="value2" selected class="options-select">Tortuguitas</option>
-                            <option value="value2" class="options-select">Grand Bourg</option>
-                            <option value="value2" class="options-select">Villa de Mayo</option>
-                            <option value="value3" class="options-select">Los Polvorines</option>
-                            <option value="value3" class="options-select">Pablo Nogués</option>
-                        </select>
+
+                        <input type="submit" value="search" class="material-icons-outlined buscar-filtro-adopcion">
 
 
-                        <input type="button" value="search" class="material-icons-outlined buscar-filtro-adopcion">
-
-
-                    </div>
+                    </form>
                 </div>
 
                 <div class="linea-filtro-adopcion-tarjetas"></div>
@@ -310,7 +311,7 @@ $_SESSION["pagina"] = 3;
 
         <div class="caja_adoptar_buscar">
             <div class="titulo_texto_botom_">
-                <div class="titulo_cartel_registrar lexend">Como Buscar a tu Mascota</div>
+                <div class="titulo_cartel_registrar lexend">Como buscar a tu mascota</div>
                 <div class="texto_cartel_registrar roboto">Si quieres encontrar a tu mascota, te animamos a publicar su información en nuestra página. ¡Comencemos!</div>
                 <div class="boton_cartel_registrar">
                     <?php
@@ -427,6 +428,35 @@ $_SESSION["pagina"] = 3;
 
     <script type="text/javascript">
 
+        // select__localidad.addEventListener("change",async e=>{
+
+        //     e.preventDefault();
+
+
+        //     refreshPage();
+
+        // })
+
+
+        // select__especie.addEventListener("change",async e=>{
+
+        //     e.preventDefault();
+
+
+        //     refreshPage();
+
+        // })
+
+        filtro__form.addEventListener("submit",async e=>{
+
+            e.preventDefault();
+
+
+            refreshPage();
+
+        })
+
+
         function modo(){
             var modo=<?php echo $modo; ?>;
             boton_sesion.innerHTML = "";
@@ -465,20 +495,25 @@ $_SESSION["pagina"] = 3;
         })
 
 
-        function refreshPage() {
+         async function refreshPage() {
+
             visor__page.innerHTML = page;
 
+            let data = new FormData();
+            data.append("especie", select__especie.value)
+            data.append("localidad", select__localidad.value)
+
+
+            const response = await fetch("api/usuario/listByCantPageBusqueda/9/" + page, {method:"POST",body:data});
+
+            const info = await response.json();
+
             listado1.innerHTML = "";
-
-            getAlumnos().then(alumnos => {
-
-                console.log(alumnos);
-
-                alumnos.forEach(row => {
+            
+             info.forEach(row => {
                     createCard(row);
-                });
 
-            });
+                });
         }
 
         // peticion a la api en modo get

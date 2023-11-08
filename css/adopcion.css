@@ -143,6 +143,7 @@
     flex-direction: column;
     margin-bottom: 150px;
     margin: auto;
+    margin-bottom: 200px;
 }
 
 .caja-filtro-adopcion {
@@ -156,7 +157,7 @@
 
 .selec-filtro {
     /* background-color: #f7cdaa; */
-    width: 60%;
+    width: 70%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -966,8 +967,9 @@
     background-color: #ffa75a;
     text-decoration: none;
     color: white;
-    border: #efc49f 4px solid;
-    width: 250px;
+    border: #efc49f 4px solid;    
+    width: auto;
+    padding: 0 20px;
     height: 100%;
     display: flex;
     align-items: center;

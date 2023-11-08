@@ -80,7 +80,7 @@ if (isset($_POST["descripcion"]) && isset($_POST["fecha"])) {
                         <div class="contenedor_selec_fecha">
 
                             <div class="fechaaa">
-                                <label for="fecha" class="fecha2 roboto">Fecha desaparición</label>
+                                <label for="fecha" class="fecha2 roboto">Fecha de desaparición</label>
                                 <input type="date" id="fecha" name="fecha" class="roboto">
 
 
