@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				</div>
 				<div class="botones">
 					<input type="submit" value="Ingresar" class="cajas_re_ingresar">
-					<a href="registro.php" class=" registrarse_style cajas_re_ingresar ">Registrarse</a>
+					<a href="#" class=" registrarse_style cajas_re_ingresar ">Registrarse</a>
 				</div>
 				<script>
 					function myFunction() {
